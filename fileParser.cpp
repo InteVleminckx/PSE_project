@@ -1,3 +1,4 @@
+
 //
 // Created by inte on 25.02.21.
 //
@@ -37,11 +38,11 @@ void fileParser::parseXML() {
                 transport = atoi(attr3->Value());
             }
 
-//            for (TiXmlNode *element = elem->FirstChild("CENTRA"); element != NULL; element = elem->NextSibling()){
-//
-//                cout << element->Value()<< endl;
-//
-//            }
+
+            for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL; element = element->NextSiblingElement()){
+                cout << element->FirstChild()->Value() <<endl;
+            }
+
         }
 
         else if (elemName == "VACCINATIECENTRUM"){

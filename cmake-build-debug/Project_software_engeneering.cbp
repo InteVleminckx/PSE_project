@@ -8,163 +8,159 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ttt_debug">
-				<Option output="/home/inte/CLionProjects/PSEgit/cmake-build-debug/ttt_debug" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option output="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/ttt_debug.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/inte/CLionProjects/PSEgit/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/intev/CLionProjects/PSEgit/gtest/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt_debug"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt_debug"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ttt_debug/fast">
-				<Option output="/home/inte/CLionProjects/PSEgit/cmake-build-debug/ttt_debug" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option output="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/ttt_debug.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/inte/CLionProjects/PSEgit/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/intev/CLionProjects/PSEgit/gtest/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt_debug/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt_debug/fast"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ttt">
-				<Option output="/home/inte/CLionProjects/PSEgit/cmake-build-debug/ttt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option output="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/ttt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/inte/CLionProjects/PSEgit/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/intev/CLionProjects/PSEgit/gtest/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ttt/fast">
-				<Option output="/home/inte/CLionProjects/PSEgit/cmake-build-debug/ttt" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/inte/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option output="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/ttt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/inte/CLionProjects/PSEgit/gtest/include"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/intev/CLionProjects/PSEgit/gtest/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/inte/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 ttt/fast"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinystr.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.h">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinystr.h">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxml.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.h">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxml.h">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/fileParser.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/fileParser.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/fileParser.h">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/fileParser.h">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/main.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/main.cpp">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/vaccinatiecentrum.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/vaccinatiecentrum.h">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/vaccinatiecentrum.h">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/CMakeLists.txt">
+		<Unit filename="C:/Users/intev/CLionProjects/PSEgit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

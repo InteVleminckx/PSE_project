@@ -50,23 +50,22 @@ cmake_force:
 #=============================================================================
 # Set environment variables for the build.
 
-# The shell in which to execute make rules.
-SHELL = /bin/sh
+SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = /home/inte/Documents/clion-2020.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = /home/inte/Documents/clion-2020.3.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inte/CLionProjects/PSEgit
+CMAKE_SOURCE_DIR = C:\Users\intev\CLionProjects\PSEgit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/inte/CLionProjects/PSEgit/cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ttt.dir/depend.make
@@ -77,132 +76,141 @@ include CMakeFiles/ttt.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ttt.dir/flags.make
 
-CMakeFiles/ttt.dir/fileParser.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/fileParser.cpp.o: ../fileParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt.dir/fileParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/fileParser.cpp.o -c /home/inte/CLionProjects/PSEgit/fileParser.cpp
+CMakeFiles/ttt.dir/fileParser.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/fileParser.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/fileParser.cpp.obj: ../fileParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt.dir/fileParser.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\fileParser.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\fileParser.cpp
 
 CMakeFiles/ttt.dir/fileParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/fileParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/fileParser.cpp > CMakeFiles/ttt.dir/fileParser.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\fileParser.cpp > CMakeFiles\ttt.dir\fileParser.cpp.i
 
 CMakeFiles/ttt.dir/fileParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/fileParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/fileParser.cpp -o CMakeFiles/ttt.dir/fileParser.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\fileParser.cpp -o CMakeFiles\ttt.dir\fileParser.cpp.s
 
-CMakeFiles/ttt.dir/main.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/main.cpp.o -c /home/inte/CLionProjects/PSEgit/main.cpp
+CMakeFiles/ttt.dir/main.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/main.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/main.cpp.obj: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\main.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\main.cpp
 
 CMakeFiles/ttt.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/main.cpp > CMakeFiles/ttt.dir/main.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\main.cpp > CMakeFiles\ttt.dir\main.cpp.i
 
 CMakeFiles/ttt.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/main.cpp -o CMakeFiles/ttt.dir/main.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\main.cpp -o CMakeFiles\ttt.dir\main.cpp.s
 
-CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o: ../vaccinatiecentrum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o -c /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp
+CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj: ../vaccinatiecentrum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\vaccinatiecentrum.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\vaccinatiecentrum.cpp
 
 CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp > CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\vaccinatiecentrum.cpp > CMakeFiles\ttt.dir\vaccinatiecentrum.cpp.i
 
 CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp -o CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\vaccinatiecentrum.cpp -o CMakeFiles\ttt.dir\vaccinatiecentrum.cpp.s
 
-CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o: ../TinyXML/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o -c /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp
+CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj: ../TinyXML/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\TinyXML\tinyxmlparser.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlparser.cpp
 
 CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp > CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlparser.cpp > CMakeFiles\ttt.dir\TinyXML\tinyxmlparser.cpp.i
 
 CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp -o CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlparser.cpp -o CMakeFiles\ttt.dir\TinyXML\tinyxmlparser.cpp.s
 
-CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o: ../TinyXML/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o -c /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp
+CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj: ../TinyXML/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\TinyXML\tinyxmlerror.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlerror.cpp
 
 CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp > CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlerror.cpp > CMakeFiles\ttt.dir\TinyXML\tinyxmlerror.cpp.i
 
 CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp -o CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxmlerror.cpp -o CMakeFiles\ttt.dir\TinyXML\tinyxmlerror.cpp.s
 
-CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o: ../TinyXML/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o -c /home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp
+CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj: ../TinyXML/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\TinyXML\tinyxml.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxml.cpp
 
 CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp > CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxml.cpp > CMakeFiles\ttt.dir\TinyXML\tinyxml.cpp.i
 
 CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp -o CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinyxml.cpp -o CMakeFiles\ttt.dir\TinyXML\tinyxml.cpp.s
 
-CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o: CMakeFiles/ttt.dir/flags.make
-CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o: ../TinyXML/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o -c /home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp
+CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj: CMakeFiles/ttt.dir/flags.make
+CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj: CMakeFiles/ttt.dir/includes_CXX.rsp
+CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj: ../TinyXML/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj"
+	C:\Qt\Tools\mingw810_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ttt.dir\TinyXML\tinystr.cpp.obj -c C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinystr.cpp
 
 CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp > CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.i
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinystr.cpp > CMakeFiles\ttt.dir\TinyXML\tinystr.cpp.i
 
 CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp -o CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.s
+	C:\Qt\Tools\mingw810_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\intev\CLionProjects\PSEgit\TinyXML\tinystr.cpp -o CMakeFiles\ttt.dir\TinyXML\tinystr.cpp.s
 
 # Object files for target ttt
 ttt_OBJECTS = \
-"CMakeFiles/ttt.dir/fileParser.cpp.o" \
-"CMakeFiles/ttt.dir/main.cpp.o" \
-"CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o" \
-"CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o" \
-"CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o" \
-"CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o" \
-"CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o"
+"CMakeFiles/ttt.dir/fileParser.cpp.obj" \
+"CMakeFiles/ttt.dir/main.cpp.obj" \
+"CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj" \
+"CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj" \
+"CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj" \
+"CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj" \
+"CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj"
 
 # External object files for target ttt
 ttt_EXTERNAL_OBJECTS =
 
-ttt: CMakeFiles/ttt.dir/fileParser.cpp.o
-ttt: CMakeFiles/ttt.dir/main.cpp.o
-ttt: CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o
-ttt: CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o
-ttt: CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o
-ttt: CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o
-ttt: CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o
-ttt: CMakeFiles/ttt.dir/build.make
-ttt: CMakeFiles/ttt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ttt"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttt.dir/link.txt --verbose=$(VERBOSE)
+ttt.exe: CMakeFiles/ttt.dir/fileParser.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/main.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj
+ttt.exe: CMakeFiles/ttt.dir/build.make
+ttt.exe: CMakeFiles/ttt.dir/linklibs.rsp
+ttt.exe: CMakeFiles/ttt.dir/objects1.rsp
+ttt.exe: CMakeFiles/ttt.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ttt.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ttt.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ttt.dir/build: ttt
+CMakeFiles/ttt.dir/build: ttt.exe
 
 .PHONY : CMakeFiles/ttt.dir/build
 
 CMakeFiles/ttt.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/ttt.dir/cmake_clean.cmake
+	$(CMAKE_COMMAND) -P CMakeFiles\ttt.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/ttt.dir/clean
 
 CMakeFiles/ttt.dir/depend:
-	cd /home/inte/CLionProjects/PSEgit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inte/CLionProjects/PSEgit /home/inte/CLionProjects/PSEgit /home/inte/CLionProjects/PSEgit/cmake-build-debug /home/inte/CLionProjects/PSEgit/cmake-build-debug /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\intev\CLionProjects\PSEgit C:\Users\intev\CLionProjects\PSEgit C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles\ttt.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ttt.dir/depend
 

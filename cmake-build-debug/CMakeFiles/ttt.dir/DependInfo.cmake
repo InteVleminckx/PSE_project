@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/fileParser.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/fileParser.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/main.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/main.cpp.o"
-  "/home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o"
+  "C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinystr.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxml.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/fileParser.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/fileParser.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/main.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/main.cpp.obj"
+  "C:/Users/intev/CLionProjects/PSEgit/vaccinatiecentrum.cpp" "C:/Users/intev/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
