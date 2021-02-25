@@ -1,0 +1,4 @@
+/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt_debug.dir
+/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt.dir
