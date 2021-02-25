@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/inte/CLionProjects/Project_software_engeneering/Fighterplane.cpp" "/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o"
-  "/home/inte/CLionProjects/Project_software_engeneering/TicTacToe.cpp" "/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o"
-  "/home/inte/CLionProjects/Project_software_engeneering/TicTacToeTests.cpp" "/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o"
+  "/home/inte/CLionProjects/PSEgit/Fighterplane.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o"
+  "/home/inte/CLionProjects/PSEgit/TicTacToe.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o"
+  "/home/inte/CLionProjects/PSEgit/TicTacToeTests.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

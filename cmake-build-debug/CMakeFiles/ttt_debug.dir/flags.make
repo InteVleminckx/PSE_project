@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/inte/CLionProjects/Project_software_engeneering/gtest/include 
+CXX_INCLUDES = -I/home/inte/CLionProjects/PSEgit/gtest/include 
 

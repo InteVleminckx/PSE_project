@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/inte/CLionProjects/Project_software_engeneering/TicTacToe.cpp
+/home/inte/CLionProjects/PSEgit/TicTacToe.cpp
 TicTacToe.h
-/home/inte/CLionProjects/Project_software_engeneering/TicTacToe.h
+/home/inte/CLionProjects/PSEgit/TicTacToe.h
 
-/home/inte/CLionProjects/Project_software_engeneering/TicTacToe.h
+/home/inte/CLionProjects/PSEgit/TicTacToe.h
 
-/home/inte/CLionProjects/Project_software_engeneering/TicTacToeMain.cpp
+/home/inte/CLionProjects/PSEgit/TicTacToeMain.cpp
 iostream
 -
 TicTacToe.h
-/home/inte/CLionProjects/Project_software_engeneering/TicTacToe.h
+/home/inte/CLionProjects/PSEgit/TicTacToe.h
 

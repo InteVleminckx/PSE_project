@@ -63,10 +63,10 @@ RM = /home/inte/Documents/clion-2020.3.2/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inte/CLionProjects/Project_software_engeneering
+CMAKE_SOURCE_DIR = /home/inte/CLionProjects/PSEgit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug
+CMAKE_BINARY_DIR = /home/inte/CLionProjects/PSEgit/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ttt.dir/depend.make
@@ -79,29 +79,29 @@ include CMakeFiles/ttt.dir/flags.make
 
 CMakeFiles/ttt.dir/TicTacToe.cpp.o: CMakeFiles/ttt.dir/flags.make
 CMakeFiles/ttt.dir/TicTacToe.cpp.o: ../TicTacToe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt.dir/TicTacToe.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TicTacToe.cpp.o -c /home/inte/CLionProjects/Project_software_engeneering/TicTacToe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt.dir/TicTacToe.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TicTacToe.cpp.o -c /home/inte/CLionProjects/PSEgit/TicTacToe.cpp
 
 CMakeFiles/ttt.dir/TicTacToe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TicTacToe.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/Project_software_engeneering/TicTacToe.cpp > CMakeFiles/ttt.dir/TicTacToe.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TicTacToe.cpp > CMakeFiles/ttt.dir/TicTacToe.cpp.i
 
 CMakeFiles/ttt.dir/TicTacToe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TicTacToe.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/Project_software_engeneering/TicTacToe.cpp -o CMakeFiles/ttt.dir/TicTacToe.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TicTacToe.cpp -o CMakeFiles/ttt.dir/TicTacToe.cpp.s
 
 CMakeFiles/ttt.dir/TicTacToeMain.cpp.o: CMakeFiles/ttt.dir/flags.make
 CMakeFiles/ttt.dir/TicTacToeMain.cpp.o: ../TicTacToeMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/TicTacToeMain.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TicTacToeMain.cpp.o -c /home/inte/CLionProjects/Project_software_engeneering/TicTacToeMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt.dir/TicTacToeMain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt.dir/TicTacToeMain.cpp.o -c /home/inte/CLionProjects/PSEgit/TicTacToeMain.cpp
 
 CMakeFiles/ttt.dir/TicTacToeMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt.dir/TicTacToeMain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/Project_software_engeneering/TicTacToeMain.cpp > CMakeFiles/ttt.dir/TicTacToeMain.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TicTacToeMain.cpp > CMakeFiles/ttt.dir/TicTacToeMain.cpp.i
 
 CMakeFiles/ttt.dir/TicTacToeMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt.dir/TicTacToeMain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/Project_software_engeneering/TicTacToeMain.cpp -o CMakeFiles/ttt.dir/TicTacToeMain.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TicTacToeMain.cpp -o CMakeFiles/ttt.dir/TicTacToeMain.cpp.s
 
 # Object files for target ttt
 ttt_OBJECTS = \
@@ -115,7 +115,7 @@ ttt: CMakeFiles/ttt.dir/TicTacToe.cpp.o
 ttt: CMakeFiles/ttt.dir/TicTacToeMain.cpp.o
 ttt: CMakeFiles/ttt.dir/build.make
 ttt: CMakeFiles/ttt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ttt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ttt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/ttt.dir/clean:
 .PHONY : CMakeFiles/ttt.dir/clean
 
 CMakeFiles/ttt.dir/depend:
-	cd /home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inte/CLionProjects/Project_software_engeneering /home/inte/CLionProjects/Project_software_engeneering /home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug /home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug /home/inte/CLionProjects/Project_software_engeneering/cmake-build-debug/CMakeFiles/ttt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/inte/CLionProjects/PSEgit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inte/CLionProjects/PSEgit /home/inte/CLionProjects/PSEgit /home/inte/CLionProjects/PSEgit/cmake-build-debug /home/inte/CLionProjects/PSEgit/cmake-build-debug /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ttt.dir/depend
 
