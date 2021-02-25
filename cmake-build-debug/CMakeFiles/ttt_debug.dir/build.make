@@ -77,60 +77,30 @@ include CMakeFiles/ttt_debug.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ttt_debug.dir/flags.make
 
-CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o: ../TicTacToe.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o -c /home/inte/CLionProjects/PSEgit/TicTacToe.cpp
+CMakeFiles/ttt_debug.dir/main.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
+CMakeFiles/ttt_debug.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ttt_debug.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/main.cpp.o -c /home/inte/CLionProjects/PSEgit/main.cpp
 
-CMakeFiles/ttt_debug.dir/TicTacToe.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/TicTacToe.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TicTacToe.cpp > CMakeFiles/ttt_debug.dir/TicTacToe.cpp.i
+CMakeFiles/ttt_debug.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/main.cpp > CMakeFiles/ttt_debug.dir/main.cpp.i
 
-CMakeFiles/ttt_debug.dir/TicTacToe.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/TicTacToe.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TicTacToe.cpp -o CMakeFiles/ttt_debug.dir/TicTacToe.cpp.s
-
-CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o: ../TicTacToeTests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o -c /home/inte/CLionProjects/PSEgit/TicTacToeTests.cpp
-
-CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/TicTacToeTests.cpp > CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.i
-
-CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/TicTacToeTests.cpp -o CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.s
-
-CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o: ../Fighterplane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o -c /home/inte/CLionProjects/PSEgit/Fighterplane.cpp
-
-CMakeFiles/ttt_debug.dir/Fighterplane.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/Fighterplane.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/Fighterplane.cpp > CMakeFiles/ttt_debug.dir/Fighterplane.cpp.i
-
-CMakeFiles/ttt_debug.dir/Fighterplane.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/Fighterplane.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/Fighterplane.cpp -o CMakeFiles/ttt_debug.dir/Fighterplane.cpp.s
+CMakeFiles/ttt_debug.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/main.cpp -o CMakeFiles/ttt_debug.dir/main.cpp.s
 
 # Object files for target ttt_debug
 ttt_debug_OBJECTS = \
-"CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o" \
-"CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o" \
-"CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o"
+"CMakeFiles/ttt_debug.dir/main.cpp.o"
 
 # External object files for target ttt_debug
 ttt_debug_EXTERNAL_OBJECTS =
 
-ttt_debug: CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o
-ttt_debug: CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o
-ttt_debug: CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o
+ttt_debug: CMakeFiles/ttt_debug.dir/main.cpp.o
 ttt_debug: CMakeFiles/ttt_debug.dir/build.make
 ttt_debug: CMakeFiles/ttt_debug.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ttt_debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ttt_debug"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttt_debug.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

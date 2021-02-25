@@ -1,7 +1,4 @@
 /home/inte/Documents/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/inte/CLionProjects/PSEgit
 -- Configuring done
-CMake Error at CMakeLists.txt:25 (add_executable):
-  No SOURCES given to target: ttt_debug
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /home/inte/CLionProjects/PSEgit/cmake-build-debug

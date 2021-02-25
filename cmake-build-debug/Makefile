@@ -156,116 +156,62 @@ ttt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/build
 .PHONY : ttt/fast
 
-Fighterplane.o: Fighterplane.cpp.o
+fileParser.o: fileParser.cpp.o
 
-.PHONY : Fighterplane.o
-
-# target to build an object file
-Fighterplane.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o
-.PHONY : Fighterplane.cpp.o
-
-Fighterplane.i: Fighterplane.cpp.i
-
-.PHONY : Fighterplane.i
-
-# target to preprocess a source file
-Fighterplane.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Fighterplane.cpp.i
-.PHONY : Fighterplane.cpp.i
-
-Fighterplane.s: Fighterplane.cpp.s
-
-.PHONY : Fighterplane.s
-
-# target to generate assembly for a file
-Fighterplane.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Fighterplane.cpp.s
-.PHONY : Fighterplane.cpp.s
-
-TicTacToe.o: TicTacToe.cpp.o
-
-.PHONY : TicTacToe.o
+.PHONY : fileParser.o
 
 # target to build an object file
-TicTacToe.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToe.cpp.o
-.PHONY : TicTacToe.cpp.o
+fileParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/fileParser.cpp.o
+.PHONY : fileParser.cpp.o
 
-TicTacToe.i: TicTacToe.cpp.i
+fileParser.i: fileParser.cpp.i
 
-.PHONY : TicTacToe.i
+.PHONY : fileParser.i
 
 # target to preprocess a source file
-TicTacToe.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToe.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToe.cpp.i
-.PHONY : TicTacToe.cpp.i
+fileParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/fileParser.cpp.i
+.PHONY : fileParser.cpp.i
 
-TicTacToe.s: TicTacToe.cpp.s
+fileParser.s: fileParser.cpp.s
 
-.PHONY : TicTacToe.s
+.PHONY : fileParser.s
 
 # target to generate assembly for a file
-TicTacToe.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToe.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToe.cpp.s
-.PHONY : TicTacToe.cpp.s
+fileParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/fileParser.cpp.s
+.PHONY : fileParser.cpp.s
 
-TicTacToeMain.o: TicTacToeMain.cpp.o
+main.o: main.cpp.o
 
-.PHONY : TicTacToeMain.o
+.PHONY : main.o
 
 # target to build an object file
-TicTacToeMain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToeMain.cpp.o
-.PHONY : TicTacToeMain.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-TicTacToeMain.i: TicTacToeMain.cpp.i
+main.i: main.cpp.i
 
-.PHONY : TicTacToeMain.i
-
-# target to preprocess a source file
-TicTacToeMain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToeMain.cpp.i
-.PHONY : TicTacToeMain.cpp.i
-
-TicTacToeMain.s: TicTacToeMain.cpp.s
-
-.PHONY : TicTacToeMain.s
-
-# target to generate assembly for a file
-TicTacToeMain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/TicTacToeMain.cpp.s
-.PHONY : TicTacToeMain.cpp.s
-
-TicTacToeTests.o: TicTacToeTests.cpp.o
-
-.PHONY : TicTacToeTests.o
-
-# target to build an object file
-TicTacToeTests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o
-.PHONY : TicTacToeTests.cpp.o
-
-TicTacToeTests.i: TicTacToeTests.cpp.i
-
-.PHONY : TicTacToeTests.i
+.PHONY : main.i
 
 # target to preprocess a source file
-TicTacToeTests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.i
-.PHONY : TicTacToeTests.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-TicTacToeTests.s: TicTacToeTests.cpp.s
+main.s: main.cpp.s
 
-.PHONY : TicTacToeTests.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-TicTacToeTests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.s
-.PHONY : TicTacToeTests.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -277,18 +223,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ttt"
 	@echo "... ttt_debug"
-	@echo "... Fighterplane.o"
-	@echo "... Fighterplane.i"
-	@echo "... Fighterplane.s"
-	@echo "... TicTacToe.o"
-	@echo "... TicTacToe.i"
-	@echo "... TicTacToe.s"
-	@echo "... TicTacToeMain.o"
-	@echo "... TicTacToeMain.i"
-	@echo "... TicTacToeMain.s"
-	@echo "... TicTacToeTests.o"
-	@echo "... TicTacToeTests.i"
-	@echo "... TicTacToeTests.s"
+	@echo "... fileParser.o"
+	@echo "... fileParser.i"
+	@echo "... fileParser.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

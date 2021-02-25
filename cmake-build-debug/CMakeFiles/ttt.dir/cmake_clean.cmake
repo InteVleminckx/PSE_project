@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ttt.dir/TicTacToe.cpp.o"
-  "CMakeFiles/ttt.dir/TicTacToeMain.cpp.o"
+  "CMakeFiles/ttt.dir/fileParser.cpp.o"
+  "CMakeFiles/ttt.dir/main.cpp.o"
   "ttt"
   "ttt.pdb"
 )

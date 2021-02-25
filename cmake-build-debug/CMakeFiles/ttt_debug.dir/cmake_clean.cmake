@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o"
-  "CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o"
-  "CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o"
+  "CMakeFiles/ttt_debug.dir/main.cpp.o"
   "ttt_debug"
   "ttt_debug.pdb"
 )

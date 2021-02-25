@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -pthread CMakeFiles/ttt_debug.dir/TicTacToe.cpp.o CMakeFiles/ttt_debug.dir/TicTacToeTests.cpp.o CMakeFiles/ttt_debug.dir/Fighterplane.cpp.o  -o ttt_debug   -L/home/inte/CLionProjects/PSEgit/gtest/lib  -Wl,-rpath,/home/inte/CLionProjects/PSEgit/gtest/lib -lgtest 
+/usr/bin/c++  -Wall -Werror -g  -pthread CMakeFiles/ttt_debug.dir/main.cpp.o  -o ttt_debug   -L/home/inte/CLionProjects/PSEgit/gtest/lib  -Wl,-rpath,/home/inte/CLionProjects/PSEgit/gtest/lib -lgtest 

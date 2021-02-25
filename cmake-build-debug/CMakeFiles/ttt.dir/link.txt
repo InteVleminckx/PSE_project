@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -pthread CMakeFiles/ttt.dir/TicTacToe.cpp.o CMakeFiles/ttt.dir/TicTacToeMain.cpp.o  -o ttt   -L/home/inte/CLionProjects/PSEgit/gtest/lib 
+/usr/bin/c++  -Wall -Werror -g  -pthread CMakeFiles/ttt.dir/fileParser.cpp.o CMakeFiles/ttt.dir/main.cpp.o  -o ttt   -L/home/inte/CLionProjects/PSEgit/gtest/lib 

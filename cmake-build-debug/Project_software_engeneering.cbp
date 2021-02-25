@@ -130,25 +130,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Exceptions.h">
-			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Fighterplane.cpp">
-			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TicTacToe.cpp">
-			<Option target="ttt_debug"/>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/fileParser.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TicTacToe.h">
-			<Option target="ttt_debug"/>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/fileParser.h">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TicTacToeMain.cpp">
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/TicTacToeTests.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/main.cpp">
 			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

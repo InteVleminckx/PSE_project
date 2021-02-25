@@ -19,10 +19,10 @@ set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp)
 set(DEBUG_SOURCE_FILES)
 
 # Create RELEASE target
-add_executable(ttt ${RELEASE_SOURCE_FILES})
+add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp)
 
 # Create DEBUG target
-add_executable(ttt_debug ${DEBUG_SOURCE_FILES})
+add_executable(ttt_debug ${DEBUG_SOURCE_FILES} main.cpp)
 
 # Link library
 target_link_libraries(ttt_debug gtest)
