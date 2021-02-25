@@ -1,3 +1,1 @@
-C:\Users\centu\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\ttt_debug.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\ttt_debug.dir/objects.a @CMakeFiles\ttt_debug.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -Wall -Werror -g  -pthread -Wl,--whole-archive CMakeFiles\ttt_debug.dir/objects.a -Wl,--no-whole-archive  -o ttt_debug.exe -Wl,--out-implib,libttt_debug.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ttt_debug.dir\linklibs.rsp
+/usr/bin/c++  -Wall -Werror -g  -pthread CMakeFiles/ttt_debug.dir/main.cpp.o  -o ttt_debug   -L/home/inte/CLionProjects/PSEgit/gtest/lib  -Wl,-rpath,/home/inte/CLionProjects/PSEgit/gtest/lib -lgtest 

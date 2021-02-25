@@ -1,13 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj"
-  "CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj"
-  "CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj"
-  "CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj"
-  "CMakeFiles/ttt.dir/fileParser.cpp.obj"
-  "CMakeFiles/ttt.dir/main.cpp.obj"
-  "libttt.dll.a"
-  "ttt.exe"
-  "ttt.exe.manifest"
+  "CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.o"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.o"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.o"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.o"
+  "CMakeFiles/ttt.dir/fileParser.cpp.o"
+  "CMakeFiles/ttt.dir/main.cpp.o"
+  "CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.o"
+  "ttt"
   "ttt.pdb"
 )
 

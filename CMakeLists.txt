@@ -13,14 +13,19 @@ include_directories(gtest/include)
 link_directories(gtest/lib)
 
 # Set source files for RELEASE target
-set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp)
+set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp vaccinatiecentrum.cpp vaccinatiecentrum.h)
 
 # Set source files for DEBUG target
 set(DEBUG_SOURCE_FILES)
 
 # Create RELEASE target
-add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp TinyXML/tinyxmlparser.cpp
-        TinyXML/tinyxmlerror.cpp TinyXML/tinyxml.h TinyXML/tinyxml.cpp TinyXML/tinystr.h TinyXML/tinystr.cpp)
+add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp
+        TinyXML/tinyxmlparser.cpp
+        TinyXML/tinyxmlerror.cpp
+        TinyXML/tinyxml.h
+        TinyXML/tinyxml.cpp
+        TinyXML/tinystr.h
+        TinyXML/tinystr.cpp)
 
 # Create DEBUG target
 add_executable(ttt_debug ${DEBUG_SOURCE_FILES} main.cpp)

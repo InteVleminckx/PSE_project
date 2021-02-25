@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ttt_debug.dir/main.cpp.obj"
-  "libttt_debug.dll.a"
-  "ttt_debug.exe"
-  "ttt_debug.exe.manifest"
+  "CMakeFiles/ttt_debug.dir/main.cpp.o"
+  "ttt_debug"
   "ttt_debug.pdb"
 )
 
