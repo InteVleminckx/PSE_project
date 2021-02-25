@@ -1,7 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ttt.dir/fileParser.cpp.o"
-  "CMakeFiles/ttt.dir/main.cpp.o"
-  "ttt"
+  "CMakeFiles/ttt.dir/TinyXML/tinystr.cpp.obj"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxml.cpp.obj"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxmlerror.cpp.obj"
+  "CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj"
+  "CMakeFiles/ttt.dir/fileParser.cpp.obj"
+  "CMakeFiles/ttt.dir/main.cpp.obj"
+  "libttt.dll.a"
+  "ttt.exe"
+  "ttt.exe.manifest"
   "ttt.pdb"
 )
 

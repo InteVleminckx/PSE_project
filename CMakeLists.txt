@@ -19,7 +19,8 @@ set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp)
 set(DEBUG_SOURCE_FILES)
 
 # Create RELEASE target
-add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp)
+add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp TinyXML/tinyxmlparser.cpp
+        TinyXML/tinyxmlerror.cpp TinyXML/tinyxml.h TinyXML/tinyxml.cpp TinyXML/tinystr.h TinyXML/tinystr.cpp)
 
 # Create DEBUG target
 add_executable(ttt_debug ${DEBUG_SOURCE_FILES} main.cpp)

@@ -1,4 +1,4 @@
-/home/inte/Documents/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/inte/CLionProjects/PSEgit
+C:\Users\centu\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\centu\CLionProjects\PSEgit
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/inte/CLionProjects/PSEgit/cmake-build-debug
+-- Build files have been written to: C:/Users/centu/CLionProjects/PSEgit/cmake-build-debug
