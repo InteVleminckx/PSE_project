@@ -18,6 +18,8 @@ private:
     string adres;
     int inwoners;
     int capaciteit;
+    int vaccins;
+    int vaccinated;
 
 public:
 
@@ -25,12 +27,15 @@ public:
     void setAdres(string &Cadres);
     void setInwoners(int &Cinwoners);
     void setCapaciteit(int &Ccapaciteit);
+    void setVaccins(int Cvaccinaties);
+    void setVaccinated(int Cvaccinated);
 
     string getNaam();
     string getAdres();
     int getInwoners();
     int getCapaciteit();
-
+    int getVaccins();
+    int getVaccinated();
 
 
 

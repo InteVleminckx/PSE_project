@@ -6,10 +6,11 @@
 
 int main(){
 
-    string file = "bestand1.xml";
+    string file = "../bestand1.xml";
 
     fileParser parsedFile;
     parsedFile.parseFile(file);
+    parsedFile.uitvoer();
 
     return 0;
 

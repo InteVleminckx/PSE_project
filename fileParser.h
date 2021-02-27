@@ -12,6 +12,7 @@
 #include <cmath>
 #include <algorithm>
 #include "vaccinatiecentrum.h"
+#include <fstream>
 using namespace std;
 
 class fileParser {
@@ -23,7 +24,8 @@ public:
     int leveringen;
     int interval;
     int transport;
-    vector<vaccinatiecentrum*> centra;
+    vector<vaccinatiecentrum> centra;
+
 
     //
 
@@ -31,6 +33,7 @@ public:
 
     int parseFile(string &file);
     void parseXML();
+    void uitvoer();
 
 };
 
