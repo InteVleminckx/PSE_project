@@ -4,7 +4,7 @@
 //
 
 #include "fileParser.h"
-#include <sstream>  // Required for stringstreams
+
 
 
 
@@ -76,23 +76,41 @@ void fileParser::parseXML() {
 }
 
 void fileParser::uitvoer() {
+
+    //aanmaken uitvoer bestand
     ofstream myfile;
+
+    //openen van het uitvoerbestand
     myfile.open("../uitvoer.txt");
+
+    //zolang de file open is
     if (myfile.is_open())
     {
+        //maken een ostringstream aan zodat we de integer kunnen opzetten in een string
         std::ostringstream HubVaccins; HubVaccins << leveringen;
+        //schrijven een string weg in het uitvoer bestand
         myfile << "Hub (" + HubVaccins.str() + " vaccins)\n";
+        //lopen over alle centra
         for (unsigned int i = 0; i < centra.size(); i++) {
+            //zetten de integer van het aantal vaccins in het centrum om naar een string
             std::ostringstream geleverdeVaccins; geleverdeVaccins << centra[i].getVaccins();
+            //schrijven een string weg in het uitvoer bestand
             myfile << "\t-> " + centra[i].getNaam() + "(" + geleverdeVaccins.str() + " vaccins)""\n";
         }
+        //wit regel in het bestand
         myfile << "\n";
+        //lopen terug over de centra
         for (unsigned int i = 0; i < centra.size(); i++) {
+            //zetten de integer van het aantal gevaccineerde in het centrum om naar een string
             std::ostringstream gevaccineerden; gevaccineerden << centra[i].getVaccinated();
+            //berekenen het aantal niet gevaccineerden
             int aantalNietGevaccineerden = centra[i].getInwoners() - centra[i].getVaccinated();
+            //zetten dit terug om naar een string
             std::ostringstream OutputAantalNietGevaccineerden; OutputAantalNietGevaccineerden << aantalNietGevaccineerden;
+            //schrijven dit weg in het output bestand
             myfile << centra[i].getNaam() + ": " + gevaccineerden.str() + " gevaccineerd, nog " + OutputAantalNietGevaccineerden.str() + " niet gevaccineerd\n";
         }
+        //we sluiten de file
         myfile.close();
     }
     else cerr << "Unable to open file";

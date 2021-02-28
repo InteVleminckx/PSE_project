@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\Maksim Karnaukh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\Maksim Karnaukh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = F:\ClionProjects\PSEgit
+CMAKE_SOURCE_DIR = C:\Users\intev\CLionProjects\PSEgit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = F:\ClionProjects\PSEgit\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = F:\ClionProjects\PSEgit\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Users\Maksim Karnaukh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Users\Maksim Karnaukh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\ClionProjects\PSEgit\cmake-build-debug\CMakeFiles F:\ClionProjects\PSEgit\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start F:\ClionProjects\PSEgit\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\intev\CLionProjects\PSEgit\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -320,6 +320,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ttt.dir\build.make CMakeFiles/ttt.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+transport.obj: transport.cpp.obj
+
+.PHONY : transport.obj
+
+# target to build an object file
+transport.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ttt.dir\build.make CMakeFiles/ttt.dir/transport.cpp.obj
+.PHONY : transport.cpp.obj
+
+transport.i: transport.cpp.i
+
+.PHONY : transport.i
+
+# target to preprocess a source file
+transport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ttt.dir\build.make CMakeFiles/ttt.dir/transport.cpp.i
+.PHONY : transport.cpp.i
+
+transport.s: transport.cpp.s
+
+.PHONY : transport.s
+
+# target to generate assembly for a file
+transport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ttt.dir\build.make CMakeFiles/ttt.dir/transport.cpp.s
+.PHONY : transport.cpp.s
+
 vaccinatiecentrum.obj: vaccinatiecentrum.cpp.obj
 
 .PHONY : vaccinatiecentrum.obj
@@ -375,6 +402,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... transport.obj
+	@echo ... transport.i
+	@echo ... transport.s
 	@echo ... vaccinatiecentrum.obj
 	@echo ... vaccinatiecentrum.i
 	@echo ... vaccinatiecentrum.s

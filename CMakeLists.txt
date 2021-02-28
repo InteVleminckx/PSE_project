@@ -13,7 +13,7 @@ include_directories(gtest/include)
 link_directories(gtest/lib)
 
 # Set source files for RELEASE target
-set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp vaccinatiecentrum.cpp vaccinatiecentrum.h)
+set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp vaccinatiecentrum.cpp vaccinatiecentrum.h transport.cpp transport.h)
 
 # Set source files for DEBUG target
 set(DEBUG_SOURCE_FILES)

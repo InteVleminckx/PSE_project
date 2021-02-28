@@ -26,7 +26,15 @@ CMakeFiles/ttt.dir/main.cpp.obj: ../TinyXML/tinystr.h
 CMakeFiles/ttt.dir/main.cpp.obj: ../TinyXML/tinyxml.h
 CMakeFiles/ttt.dir/main.cpp.obj: ../fileParser.h
 CMakeFiles/ttt.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/ttt.dir/main.cpp.obj: ../transport.h
 CMakeFiles/ttt.dir/main.cpp.obj: ../vaccinatiecentrum.h
+
+CMakeFiles/ttt.dir/transport.cpp.obj: ../TinyXML/tinystr.h
+CMakeFiles/ttt.dir/transport.cpp.obj: ../TinyXML/tinyxml.h
+CMakeFiles/ttt.dir/transport.cpp.obj: ../fileParser.h
+CMakeFiles/ttt.dir/transport.cpp.obj: ../transport.cpp
+CMakeFiles/ttt.dir/transport.cpp.obj: ../transport.h
+CMakeFiles/ttt.dir/transport.cpp.obj: ../vaccinatiecentrum.h
 
 CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj: ../vaccinatiecentrum.cpp
 CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj: ../vaccinatiecentrum.h

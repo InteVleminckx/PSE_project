@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ttt.dir/TinyXML/tinyxmlparser.cpp.obj"
   "CMakeFiles/ttt.dir/fileParser.cpp.obj"
   "CMakeFiles/ttt.dir/main.cpp.obj"
+  "CMakeFiles/ttt.dir/transport.cpp.obj"
   "CMakeFiles/ttt.dir/vaccinatiecentrum.cpp.obj"
   "libttt.dll.a"
   "ttt.exe"
