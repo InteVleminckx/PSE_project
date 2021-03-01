@@ -1,3 +1,3 @@
-"C:\Program Files\JetBrains\CLion 2020.2.5\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ttt.dir/objects.a
-C:\Qt\Tools\mingw810_64\bin\ar.exe cr CMakeFiles\ttt.dir/objects.a @CMakeFiles\ttt.dir\objects1.rsp
-C:\Qt\Tools\mingw810_64\bin\g++.exe -Wall -Werror -g  -pthread -Wl,--whole-archive CMakeFiles\ttt.dir/objects.a -Wl,--no-whole-archive  -o ttt.exe -Wl,--out-implib,libttt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ttt.dir\linklibs.rsp
+"C:\Users\Maksim Karnaukh\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ttt.dir/objects.a
+F:\mingw-w64\mingw64\bin\ar.exe cr CMakeFiles\ttt.dir/objects.a @CMakeFiles\ttt.dir\objects1.rsp
+F:\mingw-w64\mingw64\bin\g++.exe -Wall -Werror -g  -pthread -Wl,--whole-archive CMakeFiles\ttt.dir/objects.a -Wl,--no-whole-archive  -o ttt.exe -Wl,--out-implib,libttt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ttt.dir\linklibs.rsp

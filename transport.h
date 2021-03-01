@@ -24,6 +24,9 @@ private:
     int aantalVaccins;
     int leveringInterval;
     bool allVaccinated;
+    //aanmaken uitvoer bestand
+    ofstream OVP;
+    //openen van het uitvoerbestand
 
     vector<pair<string, int> > vaccinsTransport;
 
@@ -33,6 +36,8 @@ public:
     transport(fileParser &bestand);
 
     void transportSimulatie();
+
+    void vaccinatieInCentrum(vaccinatiecentrum &centrum);
 
 
 };
