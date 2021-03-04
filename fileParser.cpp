@@ -7,7 +7,6 @@
 
 
 
-
 int fileParser::parseFile(string &file) {
 
     if(!doc.LoadFile(file.c_str())) {std::cerr << doc.ErrorDesc() << std::endl; return 1;}
@@ -29,7 +28,6 @@ void fileParser::parseXML() {
     for (TiXmlElement *elem = root->FirstChildElement(); elem != NULL; elem = elem->NextSiblingElement()) {
         string elemName = elem->Value();
 
-
         if(elemName == "HUB") {
             TiXmlNode* attr1 = elem->FirstChild("levering")->FirstChild();
             TiXmlNode* attr2 = elem->FirstChild("interval")->FirstChild();
@@ -40,7 +38,6 @@ void fileParser::parseXML() {
                 interval = atoi(attr2->Value());
                 transport = atoi(attr3->Value());
             }
-
 
             for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL; element = element->NextSiblingElement()){
 //                cout << element->FirstChild()->Value() <<endl;
