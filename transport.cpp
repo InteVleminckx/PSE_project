@@ -27,7 +27,7 @@ void transport::transportSimulatie(fileParser &file) {
         //check allVaccinated
 
         //als interval om is, nieuwe levering in de hub
-        if (day % (leveringInterval+1) == 0) {aantalVaccins += file.leveringen;}
+        if (day % (leveringInterval+1) == 0) {aantalVaccins += file.leveringen; cout << "week: " << day/7 << endl;}
 
         for (unsigned int i = 0; i < file.centra.size(); i++){
 
@@ -40,14 +40,23 @@ void transport::transportSimulatie(fileParser &file) {
 
             int ladingen = 0;
             bool foundLadingen = false;
+
+            int tempVaccins = aantalVaccins;
+
             for (int j = 0; j < (vaccins_transport_min + file.transport)/file.transport; ++j) {
+                bool getLadingen = false;
+
+                if ((tempVaccins -= j*file.transport) > 0 ){getLadingen = true;}
+
                 if (j*file.transport + vaccinsCentrum >= capaciteitCentrum &&
-                    2*capaciteitCentrum >= j*file.transport + vaccinsCentrum && !foundLadingen){
+                    2*capaciteitCentrum >= j*file.transport + vaccinsCentrum && !foundLadingen && getLadingen){
                     ladingen = j; foundLadingen = true;
                 }
+
             }
 
             file.centra[i].setVaccins((ladingen*file.transport)+vaccinsCentrum);
+
             aantalVaccins -= ladingen*file.transport;
 
             OT << "Er werden " << ladingen << " ladingen (" << ladingen * file.transport <<
@@ -71,7 +80,7 @@ void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
     int inwonersGevaccineerd = min(vaccinsInCentrum, capaciteit);
     inwonersGevaccineerd = min(inwonersGevaccineerd, aantalOngevaccineerden); // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
 
-    centrum.setVaccinated(inwonersGevaccineerd);
+    centrum.setVaccinated(inwonersGevaccineerd + centrum.getVaccinated());
     centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
 
     if (inwonersGevaccineerd != 0) {

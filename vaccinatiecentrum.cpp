@@ -14,7 +14,7 @@ void vaccinatiecentrum::setCapaciteit(int &Ccapaciteit) {capaciteit = Ccapacitei
 
 void vaccinatiecentrum::setVaccins(int Cvaccinaties) {vaccins = Cvaccinaties;}
 
-void vaccinatiecentrum::setVaccinated(int Cvaccinated) {vaccinated += Cvaccinated;}
+void vaccinatiecentrum::setVaccinated(int Cvaccinated) {vaccinated = Cvaccinated;}
 
 string vaccinatiecentrum::getNaam() {return naam;}
 
