@@ -87,7 +87,7 @@ void fileParser::uitvoer() {
     if (Output.is_open())
     {
         //schrijven een string weg in het uitvoer bestand
-        Output << "Hub (" << leveringen << " vaccins)\n";
+        Output << "Hub (" << hubVaccins << " vaccins)\n";
         //lopen over alle centra
         for (unsigned int i = 0; i < centra.size(); i++) {
             //schrijven een string weg in het uitvoer bestand

@@ -5,17 +5,13 @@
 #include "transport.h"
 
 
-transport::transport(fileParser &bestand) {
-    file = bestand;
+transport::transport(fileParser &file) {
     leveringInterval = file.interval;
     aantalVaccins = 0;
-    allVaccinated = false;
-    transportSimulatie();
-
-
+    transportSimulatie(file);
 }
 
-void transport::transportSimulatie() {
+void transport::transportSimulatie(fileParser &file) {
 
     int day = 0;
 
@@ -27,7 +23,7 @@ void transport::transportSimulatie() {
     OVP.open("../overzichtVaccinatieprocedure.txt");
 
 
-    while (!allVaccinated){
+    while (!allPeopleVaccinated(file)){
         //check allVaccinated
 
         //als interval om is, nieuwe levering in de hub
@@ -63,6 +59,7 @@ void transport::transportSimulatie() {
         OT << "\n";
         day++;
     }
+    file.hubVaccins = aantalVaccins;
 }
 
 void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
@@ -77,6 +74,17 @@ void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
     centrum.setVaccinated(inwonersGevaccineerd);
     centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
 
-    OVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
+    if (inwonersGevaccineerd != 0) {
+        OVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
+    }
+}
+
+bool transport::allPeopleVaccinated(fileParser &file) {
+    for (unsigned int i = 0; i < file.centra.size(); i++) {
+        if (file.centra[i].getInwoners() != file.centra[i].getVaccinated()) {
+            return false;
+        }
+    }
+    return true;
 }
 

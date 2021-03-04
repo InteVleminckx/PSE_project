@@ -23,6 +23,7 @@ public:
 
     //HUB
     int leveringen;
+    int hubVaccins;
     int interval;
     int transport;
 

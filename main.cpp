@@ -14,6 +14,8 @@ int main(){
 
     transport transportSim(parsedFile);
 
+    parsedFile.uitvoer();
+
     return 0;
 
 }

@@ -20,10 +20,8 @@ using namespace std;
 class transport {
 private:
 
-    fileParser file;
     int aantalVaccins;
     int leveringInterval;
-    bool allVaccinated;
     //aanmaken uitvoer bestand
     ofstream OVP;
     //openen van het uitvoerbestand
@@ -33,11 +31,13 @@ private:
 
 public:
 
-    transport(fileParser &bestand);
+    transport(fileParser &file);
 
-    void transportSimulatie();
+    void transportSimulatie(fileParser &file);
 
     void vaccinatieInCentrum(vaccinatiecentrum &centrum);
+
+    bool allPeopleVaccinated(fileParser &file);
 
 
 };
