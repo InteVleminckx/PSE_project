@@ -23,11 +23,14 @@ void transport::transportSimulatie(fileParser &file) {
     OVP.open("../overzichtVaccinatieprocedure.txt");
 
 
-    while (!allPeopleVaccinated(file)){
+    while (!isAllPeopleVaccinated(file)){
         //check allVaccinated
 
         //als interval om is, nieuwe levering in de hub
-        if (day % (leveringInterval+1) == 0) {aantalVaccins += file.leveringen; cout << "week: " << day/7 << endl;}
+        if (day % (leveringInterval+1) == 0) {
+            aantalVaccins += file.leveringen;
+            cout << "week: " << day/7 << endl;
+        }
 
         for (unsigned int i = 0; i < file.centra.size(); i++){
 
@@ -78,7 +81,8 @@ void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
     int aantalOngevaccineerden = centrum.getInwoners() - centrum.getVaccinated();
 
     int inwonersGevaccineerd = min(vaccinsInCentrum, capaciteit);
-    inwonersGevaccineerd = min(inwonersGevaccineerd, aantalOngevaccineerden); // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
+    inwonersGevaccineerd = min(inwonersGevaccineerd, aantalOngevaccineerden);
+    // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
 
     centrum.setVaccinated(inwonersGevaccineerd + centrum.getVaccinated());
     centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
@@ -88,7 +92,7 @@ void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
     }
 }
 
-bool transport::allPeopleVaccinated(fileParser &file) {
+bool transport::isAllPeopleVaccinated(fileParser &file) {
     for (unsigned int i = 0; i < file.centra.size(); i++) {
         if (file.centra[i].getInwoners() != file.centra[i].getVaccinated()) {
             return false;

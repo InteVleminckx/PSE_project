@@ -37,7 +37,7 @@ public:
 
     void vaccinatieInCentrum(vaccinatiecentrum &centrum);
 
-    bool allPeopleVaccinated(fileParser &file);
+    bool isAllPeopleVaccinated(fileParser &file);
 
 
 };

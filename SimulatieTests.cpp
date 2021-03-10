@@ -80,7 +80,6 @@ TEST_F(SimulatieTest, HappyDay) {
     }
 
 
-
 }
 
 

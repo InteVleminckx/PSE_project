@@ -1,7 +1,9 @@
-
-//
-// Created by inte on 25.02.21.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 
 #include "fileParser.h"
 
@@ -9,7 +11,10 @@
 
 int fileParser::parseFile(string &file) {
 
-    if(!doc.LoadFile(file.c_str())) {std::cerr << doc.ErrorDesc() << std::endl; return 1;}
+    if(!doc.LoadFile(file.c_str())) {
+        std::cerr << doc.ErrorDesc() << std::endl;
+        return 1;
+    }
 
     root = doc.FirstChildElement();
 
@@ -39,8 +44,8 @@ void fileParser::parseXML() {
                 transport = atoi(attr3->Value());
             }
 
-            for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL; element = element->NextSiblingElement()){
-//                cout << element->FirstChild()->Value() <<endl;
+            for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL;
+                element = element->NextSiblingElement()){
                 string naam = element->FirstChild()->Value();
                 vaccinatiecentrum CENTRUM;
                 CENTRUM.setNaam(naam);
@@ -97,7 +102,8 @@ void fileParser::uitvoer() {
             //berekenen het aantal niet gevaccineerden
             int aantalNietGevaccineerden = centra[i].getInwoners() - centra[i].getVaccinated();
             //schrijven dit weg in het output bestand
-            Output << centra[i].getNaam() << ": " << centra[i].getVaccinated() << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+            Output << centra[i].getNaam() << ": " << centra[i].getVaccinated() << " gevaccineerd, nog " <<
+                aantalNietGevaccineerden << " niet gevaccineerd\n";
         }
         //we sluiten de file
         Output.close();
