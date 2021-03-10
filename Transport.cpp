@@ -5,16 +5,16 @@
  * @version:
 */
 
-#include "transport.h"
+#include "Transport.h"
 
 
-transport::transport(fileParser &file) {
+Transport::Transport(FileParser &file) {
     leveringInterval = file.interval;
     aantalVaccins = 0;
     transportSimulatie(file);
 }
 
-void transport::transportSimulatie(fileParser &file) {
+void Transport::transportSimulatie(FileParser &file) {
 
     int day = 0;
 
@@ -32,7 +32,7 @@ void transport::transportSimulatie(fileParser &file) {
         //als interval om is, nieuwe levering in de hub
         if (day % (leveringInterval+1) == 0) {
             aantalVaccins += file.leveringen;
-            cout << "week: " << day/7 << endl;
+//            cout << "week: " << day/7 << endl;
         }
 
         for (unsigned int i = 0; i < file.centra.size(); i++){
@@ -77,7 +77,7 @@ void transport::transportSimulatie(fileParser &file) {
     file.hubVaccins = aantalVaccins;
 }
 
-void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
+void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
 
     int vaccinsInCentrum = centrum.getVaccins();
     int capaciteit = centrum.getCapaciteit();
@@ -95,7 +95,7 @@ void transport::vaccinatieInCentrum(vaccinatiecentrum &centrum) {
     }
 }
 
-bool transport::isAllPeopleVaccinated(fileParser &file) {
+bool Transport::isAllPeopleVaccinated(FileParser &file) {
     for (unsigned int i = 0; i < file.centra.size(); i++) {
         if (file.centra[i].getInwoners() != file.centra[i].getVaccinated()) {
             return false;

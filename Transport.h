@@ -14,23 +14,18 @@
 #include <map>
 #include <cmath>
 #include <algorithm>
-#include "vaccinatiecentrum.h"
+#include "Vaccinatiecentrum.h"
 #include <fstream>
-#include "fileParser.h"
+#include "FileParser.h"
 #include <sstream>  // Required for stringstreams
 using namespace std;
 
-class transport {
+class Transport {
 private:
 
     int aantalVaccins;
     int leveringInterval;
-    //aanmaken uitvoer bestand
-    ofstream OVP;
-    //openen van het uitvoerbestand
-
-    vector<pair<string, int> > vaccinsTransport;
-
+    ofstream OVP; //overzichtVaccinatieProcedure
 
 public:
 
@@ -38,29 +33,29 @@ public:
      * Deze functie is de constructor voor de transportsimulatie
      * @param file : het .xml bestand dat ingelezen wordt.
      */
-    transport(fileParser &file);
+    Transport(FileParser &file);
 
     /*
      * Deze functie verzorgt de (automatische) verdeling van de vaccins over de vaccinatiecentra, met
      * telkens op het interval een levering vaccins aan de HUB.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
-    void transportSimulatie(fileParser &file);
+    void transportSimulatie(FileParser &file);
 
     /*
-     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het vaccinatiecentrum.
+     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
      * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal vaccins in
      * het centrum, en daarnaast wordt het aantal vaccins in het centrum verlaagd.
-     * @param centrum : het vaccinatiecentrum
+     * @param centrum : het Vaccinatiecentrum
      */
-    void vaccinatieInCentrum(vaccinatiecentrum &centrum);
+    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
 
     /*
      * Deze functie checkt of alle inwoners van alle centra gevaccineerd zijn.
      * @param file : het .xml bestand dat ingelezen wordt.
      * @return : true bij succes, false bij geen succes.
      */
-    bool isAllPeopleVaccinated(fileParser &file);
+    bool isAllPeopleVaccinated(FileParser &file);
 
 
 };

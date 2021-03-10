@@ -90,44 +90,44 @@ CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/SimulatieTests.cpp -o CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.s
 
-CMakeFiles/ttt_debug.dir/fileParser.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/fileParser.cpp.o: ../fileParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt_debug.dir/fileParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/fileParser.cpp.o -c /home/inte/CLionProjects/PSEgit/fileParser.cpp
+CMakeFiles/ttt_debug.dir/FileParser.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
+CMakeFiles/ttt_debug.dir/FileParser.cpp.o: ../FileParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ttt_debug.dir/FileParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/FileParser.cpp.o -c /home/inte/CLionProjects/PSEgit/FileParser.cpp
 
-CMakeFiles/ttt_debug.dir/fileParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/fileParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/fileParser.cpp > CMakeFiles/ttt_debug.dir/fileParser.cpp.i
+CMakeFiles/ttt_debug.dir/FileParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/FileParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/FileParser.cpp > CMakeFiles/ttt_debug.dir/FileParser.cpp.i
 
-CMakeFiles/ttt_debug.dir/fileParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/fileParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/fileParser.cpp -o CMakeFiles/ttt_debug.dir/fileParser.cpp.s
+CMakeFiles/ttt_debug.dir/FileParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/FileParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/FileParser.cpp -o CMakeFiles/ttt_debug.dir/FileParser.cpp.s
 
-CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o: ../vaccinatiecentrum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o -c /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp
+CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
+CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../Vaccinatiecentrum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o -c /home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp
 
-CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp > CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.i
+CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp > CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.i
 
-CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/vaccinatiecentrum.cpp -o CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.s
+CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp -o CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.s
 
-CMakeFiles/ttt_debug.dir/transport.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
-CMakeFiles/ttt_debug.dir/transport.cpp.o: ../transport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ttt_debug.dir/transport.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/transport.cpp.o -c /home/inte/CLionProjects/PSEgit/transport.cpp
+CMakeFiles/ttt_debug.dir/Transport.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
+CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Transport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ttt_debug.dir/Transport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttt_debug.dir/Transport.cpp.o -c /home/inte/CLionProjects/PSEgit/Transport.cpp
 
-CMakeFiles/ttt_debug.dir/transport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/transport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/transport.cpp > CMakeFiles/ttt_debug.dir/transport.cpp.i
+CMakeFiles/ttt_debug.dir/Transport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttt_debug.dir/Transport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/inte/CLionProjects/PSEgit/Transport.cpp > CMakeFiles/ttt_debug.dir/Transport.cpp.i
 
-CMakeFiles/ttt_debug.dir/transport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/transport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/transport.cpp -o CMakeFiles/ttt_debug.dir/transport.cpp.s
+CMakeFiles/ttt_debug.dir/Transport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttt_debug.dir/Transport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/inte/CLionProjects/PSEgit/Transport.cpp -o CMakeFiles/ttt_debug.dir/Transport.cpp.s
 
 CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o: CMakeFiles/ttt_debug.dir/flags.make
 CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o: ../TinyXML/tinyxmlparser.cpp
@@ -184,9 +184,9 @@ CMakeFiles/ttt_debug.dir/TinyXML/tinystr.cpp.s: cmake_force
 # Object files for target ttt_debug
 ttt_debug_OBJECTS = \
 "CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o" \
-"CMakeFiles/ttt_debug.dir/fileParser.cpp.o" \
-"CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o" \
-"CMakeFiles/ttt_debug.dir/transport.cpp.o" \
+"CMakeFiles/ttt_debug.dir/FileParser.cpp.o" \
+"CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o" \
+"CMakeFiles/ttt_debug.dir/Transport.cpp.o" \
 "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o" \
 "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlerror.cpp.o" \
 "CMakeFiles/ttt_debug.dir/TinyXML/tinyxml.cpp.o" \
@@ -196,9 +196,9 @@ ttt_debug_OBJECTS = \
 ttt_debug_EXTERNAL_OBJECTS =
 
 ttt_debug: CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o
-ttt_debug: CMakeFiles/ttt_debug.dir/fileParser.cpp.o
-ttt_debug: CMakeFiles/ttt_debug.dir/vaccinatiecentrum.cpp.o
-ttt_debug: CMakeFiles/ttt_debug.dir/transport.cpp.o
+ttt_debug: CMakeFiles/ttt_debug.dir/FileParser.cpp.o
+ttt_debug: CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o
+ttt_debug: CMakeFiles/ttt_debug.dir/Transport.cpp.o
 ttt_debug: CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o
 ttt_debug: CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlerror.cpp.o
 ttt_debug: CMakeFiles/ttt_debug.dir/TinyXML/tinyxml.cpp.o

@@ -5,9 +5,10 @@
  * @version:
 */
 
-#include "fileParser.h"
+#include "FileParser.h"
+#include "DesignByContract.h"
 
-int fileParser::parseFile(string &file) {
+int FileParser::parseFile(string &file) {
 
     if(!doc.LoadFile(file.c_str())) {
         std::cerr << doc.ErrorDesc() << std::endl;
@@ -26,7 +27,8 @@ int fileParser::parseFile(string &file) {
     return 0;
 }
 
-void fileParser::parseXML() {
+void FileParser::parseXML() {
+//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling parseXML");
 
     for (TiXmlElement *elem = root->FirstChildElement(); elem != NULL; elem = elem->NextSiblingElement()) {
         string elemName = elem->Value();
@@ -34,7 +36,7 @@ void fileParser::parseXML() {
         if(elemName == "HUB") {
             TiXmlNode* attr1 = elem->FirstChild("levering")->FirstChild();
             TiXmlNode* attr2 = elem->FirstChild("interval")->FirstChild();
-            TiXmlNode* attr3 = elem->FirstChild("transport")->FirstChild();
+            TiXmlNode* attr3 = elem->FirstChild("Transport")->FirstChild();
 
             if(attr1 != NULL && attr2 != NULL && attr3 != NULL){
                 leveringen = atoi(attr1->Value());
@@ -45,7 +47,7 @@ void fileParser::parseXML() {
             for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL;
                 element = element->NextSiblingElement()){
                 string naam = element->FirstChild()->Value();
-                vaccinatiecentrum CENTRUM;
+                Vaccinatiecentrum CENTRUM;
                 CENTRUM.setNaam(naam);
                 centra.push_back(CENTRUM);
             }
@@ -75,7 +77,8 @@ void fileParser::parseXML() {
     }
 }
 
-void fileParser::uitvoer() {
+void FileParser::uitvoer() {
+//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");
 
     //aanmaken uitvoer bestand
     ofstream Output;
@@ -109,6 +112,11 @@ void fileParser::uitvoer() {
     else cerr << "Unable to open file";
 }
 
-bool fileParser::properlyInitialized() {
+bool FileParser::properlyInitialized() {
+
     return _initCheck == this;
+}
+
+FileParser* FileParser::getFile() {
+    return this;
 }

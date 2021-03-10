@@ -15,7 +15,7 @@
 #include <algorithm>
 
 using namespace std;
-class vaccinatiecentrum {
+class Vaccinatiecentrum {
 private:
     string naam;
     string adres;
@@ -25,7 +25,6 @@ private:
     int vaccinated; // aantal gevaccineerden
 
 public:
-
     void setNaam(string &Cnaam);
     void setAdres(string &Cadres);
     void setInwoners(int &Cinwoners);
@@ -40,6 +39,7 @@ public:
     int getVaccins();
     int getVaccinated();
 
+    void isAdresGeldig(string &Cadres);
 };
 
 

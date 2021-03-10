@@ -4,21 +4,17 @@
  * @date:
  * @version:
 */
-#include "fileParser.h"
-#include "transport.h"
+#include "FileParser.h"
+#include "Transport.h"
 
 int main(){
 
     string file = "../bestand2.xml";
-
-    fileParser parsedFile;
+    FileParser parsedFile;
     parsedFile.parseFile(file);
     parsedFile.uitvoer();
-
-    transport transportSim(parsedFile);
-
+    Transport transportSim(parsedFile);
     parsedFile.uitvoer();
-
     return 0;
 
 }

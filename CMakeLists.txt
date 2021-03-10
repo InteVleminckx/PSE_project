@@ -14,33 +14,33 @@ link_directories(gtest/lib)
 
 # Set source files for RELEASE target
 set(RELEASE_SOURCE_FILES
-        main.cpp
-        fileParser.cpp
-        fileParser.h
-        vaccinatiecentrum.cpp
-        vaccinatiecentrum.h
-        transport.cpp
-        transport.h
+        runSimilatie.cpp
+        FileParser.cpp
+        FileParser.h
+        Vaccinatiecentrum.cpp
+        Vaccinatiecentrum.h
+        Transport.cpp
+        Transport.h
         DesignByContract.h
         )
 
 # Set source files for DEBUG target
 set(DEBUG_SOURCE_FILES
         SimulatieTests.cpp
-        fileParser.cpp
-        fileParser.h
-        vaccinatiecentrum.cpp
-        vaccinatiecentrum.h
-        transport.cpp
-        transport.h
+        FileParser.cpp
+        FileParser.h
+        Vaccinatiecentrum.cpp
+        Vaccinatiecentrum.h
+        Transport.cpp
+        Transport.h
         DesignByContract.h
         )
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES}
-        main.cpp
-        fileParser.cpp
-        fileParser.h
+        runSimilatie.cpp
+        FileParser.cpp
+        FileParser.h
         TinyXML/tinyxmlparser.cpp
         TinyXML/tinyxmlerror.cpp
         TinyXML/tinyxml.h
@@ -52,8 +52,8 @@ add_executable(ttt ${RELEASE_SOURCE_FILES}
 # Create DEBUG target
 add_executable(ttt_debug ${DEBUG_SOURCE_FILES}
         SimulatieTests.cpp
-        fileParser.cpp
-        fileParser.h
+        FileParser.cpp
+        FileParser.h
         TinyXML/tinyxmlparser.cpp
         TinyXML/tinyxmlerror.cpp
         TinyXML/tinyxml.h

@@ -14,12 +14,12 @@
 #include <map>
 #include <cmath>
 #include <algorithm>
-#include "vaccinatiecentrum.h"
+#include "Vaccinatiecentrum.h"
 #include <fstream>
 #include <sstream>  // Required for stringstreams
 using namespace std;
 
-class fileParser {
+class FileParser {
 public:
     TiXmlDocument doc;
     TiXmlElement* root;
@@ -30,9 +30,9 @@ public:
     int interval;
     int transport;
 
-    vector<vaccinatiecentrum> centra;
+    vector<Vaccinatiecentrum> centra;
 
-    fileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
+    FileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
 
     bool properlyInitialized();
 
@@ -60,6 +60,9 @@ public:
      * Deze functie is
      */
     void uitvoer();
+
+    FileParser* getFile();
+
 
 };
 
