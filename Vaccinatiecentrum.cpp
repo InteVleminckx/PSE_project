@@ -92,14 +92,23 @@ void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {
 
     bool isCorrectHouseNumber = false;
 
+
     //controllen huisnummer allemaal numbers laatste kan zowel nummer als letter zijn
-    for (unsigned int i = 0; i < beforeKomma[beforeKomma.size()-1].size()-1; ++i) {
-        if ('0' < beforeKomma[beforeKomma.size()-1][i] && beforeKomma[beforeKomma.size()-1][0] <= '9'){
+    if (beforeKomma[beforeKomma.size()-1].size() == 1){
+        if ('0' < beforeKomma[beforeKomma.size()-1][0] && beforeKomma[beforeKomma.size()-1][0] <= '9'){
             isCorrectHouseNumber = true;
         }
-        else{
-            isCorrectHouseNumber = false;
-            break;
+    }
+
+    else if (beforeKomma[beforeKomma.size()-1].size() > 1){
+        for (unsigned int i = 0; i < beforeKomma[beforeKomma.size()-1].size()-1; ++i) {
+            if ('0' < beforeKomma[beforeKomma.size()-1][i] && beforeKomma[beforeKomma.size()-1][i] <= '9'){
+                isCorrectHouseNumber = true;
+            }
+            else{
+                isCorrectHouseNumber = false;
+                break;
+            }
         }
     }
 
