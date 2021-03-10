@@ -1,6 +1,6 @@
 /*
  * korte beschrijving:
- * @author: Inte Vleminckx en Karnaukh Maksim
+ * @author: Vleminckx Inte en Karnaukh Maksim
  * @date:
  * @version:
 */
@@ -33,13 +33,17 @@ protected:
     }
 
     // Declares the variables your tests want to use.
-    fileParser parsedFile; // dit gebruiken ?
+    fileParser parsedFile;
 
 };
 
+
 // Tests the default constructor.
 TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
-    EXPECT_EQ(0, parsedFile.parseFile((string &) "../bestand1.xml"));
+
+    string file = "../bestand1.xml";
+    EXPECT_EQ(0, parsedFile.parseFile(file));
+
 }
 
 // Tests the "happy day" scenario
@@ -49,7 +53,7 @@ TEST_F(SimulatieTest, HappyDay) {
     EXPECT_GE(0, parsedFile.interval); // interval >= 0
     EXPECT_GE(0, parsedFile.transport); // transport >= 0
 
-    EXPECT_NE(0, parsedFile.centra.size()); // aantal centra != 0
+    EXPECT_GT((unsigned int) 0, parsedFile.centra.size()); // aantal centra > 0
 
     cout << "Start van de simulatie" << endl;
     cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
@@ -63,10 +67,10 @@ TEST_F(SimulatieTest, HappyDay) {
         EXPECT_GE(0, parsedFile.centra[centrum].getCapaciteit()); // capaciteit centrum >= 0
 
         EXPECT_GE(0, parsedFile.centra[centrum].getVaccins()); // vaccins in centrum >= 0
-        EXPECT_LE(parsedFile.centra[centrum].getCapaciteit()*2, parsedFile.centra[centrum].getVaccins()); // klopt dit ??
+        EXPECT_LE(parsedFile.centra[centrum].getCapaciteit()*2, parsedFile.centra[centrum].getVaccins());
 
         EXPECT_GE(0, parsedFile.centra[centrum].getVaccinated()); // gevaccineerden in centrum >= 0
-        EXPECT_LE(parsedFile.centra[centrum].getInwoners(), parsedFile.centra[centrum].getVaccinated()); // klopt dit ??
+        EXPECT_LE(parsedFile.centra[centrum].getInwoners(), parsedFile.centra[centrum].getVaccinated());
 
     }
 
@@ -81,7 +85,6 @@ TEST_F(SimulatieTest, HappyDay) {
         int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated();
         cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated() << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
-
 
 }
 

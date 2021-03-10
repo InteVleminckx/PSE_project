@@ -13,22 +13,54 @@ include_directories(gtest/include)
 link_directories(gtest/lib)
 
 # Set source files for RELEASE target
-set(RELEASE_SOURCE_FILES fileParser.cpp fileParser.h main.cpp vaccinatiecentrum.cpp vaccinatiecentrum.h transport.cpp transport.h SimulatieTests.cpp DesignByContract.h)
+set(RELEASE_SOURCE_FILES
+        main.cpp
+        fileParser.cpp
+        fileParser.h
+        vaccinatiecentrum.cpp
+        vaccinatiecentrum.h
+        transport.cpp
+        transport.h
+        DesignByContract.h
+        )
 
 # Set source files for DEBUG target
-set(DEBUG_SOURCE_FILES)
+set(DEBUG_SOURCE_FILES
+        SimulatieTests.cpp
+        fileParser.cpp
+        fileParser.h
+        vaccinatiecentrum.cpp
+        vaccinatiecentrum.h
+        transport.cpp
+        transport.h
+        DesignByContract.h
+        )
 
 # Create RELEASE target
-add_executable(ttt ${RELEASE_SOURCE_FILES} fileParser.cpp fileParser.h main.cpp
+add_executable(ttt ${RELEASE_SOURCE_FILES}
+        main.cpp
+        fileParser.cpp
+        fileParser.h
         TinyXML/tinyxmlparser.cpp
         TinyXML/tinyxmlerror.cpp
         TinyXML/tinyxml.h
         TinyXML/tinyxml.cpp
         TinyXML/tinystr.h
-        TinyXML/tinystr.cpp)
+        TinyXML/tinystr.cpp
+        )
 
 # Create DEBUG target
-add_executable(ttt_debug ${DEBUG_SOURCE_FILES} main.cpp)
+add_executable(ttt_debug ${DEBUG_SOURCE_FILES}
+        SimulatieTests.cpp
+        fileParser.cpp
+        fileParser.h
+        TinyXML/tinyxmlparser.cpp
+        TinyXML/tinyxmlerror.cpp
+        TinyXML/tinyxml.h
+        TinyXML/tinyxml.cpp
+        TinyXML/tinystr.h
+        TinyXML/tinystr.cpp
+        )
 
 # Link library
 target_link_libraries(ttt_debug gtest)

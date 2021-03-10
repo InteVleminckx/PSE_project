@@ -1,13 +1,11 @@
 /*
  * korte beschrijving:
- * @author: Inte Vleminckx en Karnaukh Maksim
+ * @author: Vleminckx Inte en Karnaukh Maksim
  * @date:
  * @version:
 */
 
 #include "fileParser.h"
-
-
 
 int fileParser::parseFile(string &file) {
 
