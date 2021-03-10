@@ -1,6 +1,9 @@
-//
-// Created by inte on 25.02.21.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_FILEPARSER_H
 #define PROJECT_SOFTWARE_ENGENEERING_FILEPARSER_H
@@ -23,7 +26,7 @@ public:
 
     //HUB
     int leveringen;
-    int hubVaccins;
+    int hubVaccins; // aantal vaccins in de HUB
     int interval;
     int transport;
 
@@ -37,14 +40,25 @@ public:
     /// \param file
     /// \preconditie: XML file met geldige invoer
     /// \return: true als de invoer geldig is, anders false
+    /*
+     * Deze functie is de constructor.
+     * @param file : het .xml bestand dat ingelezen wordt.
+     * @return : true als de invoer geldig is, anders false.
+     */
     int parseFile(string &file);
 
     /// \functie: parseXML
     /// \preconditie:
+    /*
+     * Deze functie is
+     */
     void parseXML();
 
     /// \functie: uitvoer
     /// \preconditie: Het systeem bevat een simulatie met de verschillende vaccinatiecentra
+    /*
+     * Deze functie is
+     */
     void uitvoer();
 
 };

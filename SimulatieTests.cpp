@@ -1,6 +1,9 @@
-//
-// Created by Maksim Karnaukh on 10/03/2021.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 
 #include <gtest/gtest.h>
 

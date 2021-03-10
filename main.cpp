@@ -1,6 +1,9 @@
-//
-// Created by inte on 25.02.21.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 #include "fileParser.h"
 #include "transport.h"
 

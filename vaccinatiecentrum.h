@@ -1,6 +1,9 @@
-//
-// Created by inte on 25.02.21.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_VACCINATIECENTRUM_H
 #define PROJECT_SOFTWARE_ENGENEERING_VACCINATIECENTRUM_H
@@ -18,8 +21,8 @@ private:
     string adres;
     int inwoners;
     int capaciteit;
-    int vaccins;
-    int vaccinated;
+    int vaccins; // vaccins in het centrum
+    int vaccinated; // aantal gevaccineerden
 
 public:
 
@@ -36,8 +39,6 @@ public:
     int getCapaciteit();
     int getVaccins();
     int getVaccinated();
-
-
 
 };
 

@@ -1,6 +1,9 @@
-//
-// Created by intev on 28/02/2021.
-//
+/*
+ * korte beschrijving:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date:
+ * @version:
+*/
 
 #include "transport.h"
 
