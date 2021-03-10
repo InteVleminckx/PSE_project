@@ -104,3 +104,7 @@ void fileParser::uitvoer() {
     }
     else cerr << "Unable to open file";
 }
+
+bool fileParser::properlyInitialized() {
+    return _initCheck == this;
+}

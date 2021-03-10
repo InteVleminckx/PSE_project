@@ -29,6 +29,10 @@ public:
 
     vector<vaccinatiecentrum> centra;
 
+    fileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
+
+    bool properlyInitialized();
+
     /// \functie: parseFile
     /// \param file
     /// \preconditie: XML file met geldige invoer
@@ -36,7 +40,7 @@ public:
     int parseFile(string &file);
 
     /// \functie: parseXML
-    /// \preconditie: Een ASCII bestand met daarop een beschrijving van de vaccinatiecentra
+    /// \preconditie:
     void parseXML();
 
     /// \functie: uitvoer

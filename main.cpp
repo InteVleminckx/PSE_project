@@ -6,7 +6,7 @@
 
 int main(){
 
-    string file = "../bestand1.xml";
+    string file = "../bestand2.xml";
 
     fileParser parsedFile;
     parsedFile.parseFile(file);

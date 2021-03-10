@@ -1,4 +1,4 @@
-/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir
-/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir
+F:/ClionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir
+F:/ClionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt.dir
+F:/ClionProjects/PSEgit/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/ClionProjects/PSEgit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
