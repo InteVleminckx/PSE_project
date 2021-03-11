@@ -186,6 +186,33 @@ FileParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/FileParser.cpp.s
 .PHONY : FileParser.cpp.s
 
+RunSimilatie.o: RunSimilatie.cpp.o
+
+.PHONY : RunSimilatie.o
+
+# target to build an object file
+RunSimilatie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/RunSimilatie.cpp.o
+.PHONY : RunSimilatie.cpp.o
+
+RunSimilatie.i: RunSimilatie.cpp.i
+
+.PHONY : RunSimilatie.i
+
+# target to preprocess a source file
+RunSimilatie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/RunSimilatie.cpp.i
+.PHONY : RunSimilatie.cpp.i
+
+RunSimilatie.s: RunSimilatie.cpp.s
+
+.PHONY : RunSimilatie.s
+
+# target to generate assembly for a file
+RunSimilatie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/RunSimilatie.cpp.s
+.PHONY : RunSimilatie.cpp.s
+
 SimulatieTests.o: SimulatieTests.cpp.o
 
 .PHONY : SimulatieTests.o
@@ -393,33 +420,6 @@ Vaccinatiecentrum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Vaccinatiecentrum.cpp.s
 .PHONY : Vaccinatiecentrum.cpp.s
 
-runSimilatie.o: runSimilatie.cpp.o
-
-.PHONY : runSimilatie.o
-
-# target to build an object file
-runSimilatie.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/runSimilatie.cpp.o
-.PHONY : runSimilatie.cpp.o
-
-runSimilatie.i: runSimilatie.cpp.i
-
-.PHONY : runSimilatie.i
-
-# target to preprocess a source file
-runSimilatie.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/runSimilatie.cpp.i
-.PHONY : runSimilatie.cpp.i
-
-runSimilatie.s: runSimilatie.cpp.s
-
-.PHONY : runSimilatie.s
-
-# target to generate assembly for a file
-runSimilatie.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/runSimilatie.cpp.s
-.PHONY : runSimilatie.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -433,6 +433,9 @@ help:
 	@echo "... FileParser.o"
 	@echo "... FileParser.i"
 	@echo "... FileParser.s"
+	@echo "... RunSimilatie.o"
+	@echo "... RunSimilatie.i"
+	@echo "... RunSimilatie.s"
 	@echo "... SimulatieTests.o"
 	@echo "... SimulatieTests.i"
 	@echo "... SimulatieTests.s"
@@ -454,9 +457,6 @@ help:
 	@echo "... Vaccinatiecentrum.o"
 	@echo "... Vaccinatiecentrum.i"
 	@echo "... Vaccinatiecentrum.s"
-	@echo "... runSimilatie.o"
-	@echo "... runSimilatie.i"
-	@echo "... runSimilatie.s"
 .PHONY : help
 
 

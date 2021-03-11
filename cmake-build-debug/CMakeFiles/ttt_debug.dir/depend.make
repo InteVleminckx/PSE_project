@@ -27,6 +27,7 @@ CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/internal/g
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/internal/gtest-string.h
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../DesignByContract.h
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../FileParser.h
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../SimulatieTests.cpp
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../TinyXML/tinystr.h
@@ -49,6 +50,7 @@ CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o: ../TinyXML/tinystr.h
 CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o: ../TinyXML/tinyxml.h
 CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o: ../TinyXML/tinyxmlparser.cpp
 
+CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../DesignByContract.h
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../FileParser.h
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../TinyXML/tinystr.h
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../TinyXML/tinyxml.h
@@ -56,6 +58,7 @@ CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Transport.cpp
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Transport.h
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Vaccinatiecentrum.h
 
+CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../DesignByContract.h
 CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../Vaccinatiecentrum.cpp
 CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../Vaccinatiecentrum.h
 

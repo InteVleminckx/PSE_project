@@ -14,7 +14,7 @@ link_directories(gtest/lib)
 
 # Set source files for RELEASE target
 set(RELEASE_SOURCE_FILES
-        runSimilatie.cpp
+        RunSimilatie.cpp
         FileParser.cpp
         FileParser.h
         Vaccinatiecentrum.cpp
@@ -38,7 +38,7 @@ set(DEBUG_SOURCE_FILES
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES}
-        runSimilatie.cpp
+        RunSimilatie.cpp
         FileParser.cpp
         FileParser.h
         TinyXML/tinyxmlparser.cpp

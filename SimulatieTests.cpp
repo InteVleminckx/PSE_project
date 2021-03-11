@@ -79,15 +79,18 @@ TEST_F(SimulatieTest, beforeSimulation) {
     }
 
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins() << " vaccins)""\n";
+        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
+            << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
     //lopen terug over de centra
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         //berekenen het aantal niet gevaccineerden
-        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated();
-        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated() << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
+                - parsedFile.centra[centrum].getVaccinated();
+        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
+            << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 
 }
@@ -110,7 +113,8 @@ TEST_F(SimulatieTest, afterSimulation){
         EXPECT_GE( parsedFile.centra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
         EXPECT_LE( parsedFile.centra[centrum].getVaccinated(), parsedFile.centra[centrum].getInwoners());
 
-        EXPECT_GE(parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated(), 0); //er kunnen niet meer mensen gevaccineerd zijn dan er inwoners zijn
+        //er kunnen niet meer mensen gevaccineerd zijn dan er inwoners zijn
+        EXPECT_GE(parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated(), 0);
 
     }
 
@@ -118,15 +122,18 @@ TEST_F(SimulatieTest, afterSimulation){
     cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
 
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins() << " vaccins)""\n";
+        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
+            << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
     //lopen terug over de centra
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         //berekenen het aantal niet gevaccineerden
-        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated();
-        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated() << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
+            - parsedFile.centra[centrum].getVaccinated();
+        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
+            << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 }
 

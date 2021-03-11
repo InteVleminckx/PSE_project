@@ -142,6 +142,9 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/RunSimilatie.cpp">
+			<Option target="ttt"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
@@ -183,9 +186,6 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.h">
 			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/runSimilatie.cpp">
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/CMakeLists.txt">

@@ -112,7 +112,8 @@ void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {
         }
     }
 
-    REQUIRE((isCorrectHouseNumber == true), "Geen geldig huisnummer, moet bestaan uit allemaal cijfers en laatste kan zowel cijfer als letter zijn.");
+    REQUIRE((isCorrectHouseNumber == true), "Geen geldig huisnummer, "
+        "moet bestaan uit allemaal cijfers en laatste kan zowel cijfer als letter zijn.");
     REQUIRE((beforeKomma.size() >= 2), "Geen geldig adres voor de komma.");
     REQUIRE((!afterKomma.empty()), "Geen geldig adres na de komma.");
 
