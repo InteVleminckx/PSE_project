@@ -34,6 +34,10 @@ void FileParser::parseXML() {
         string elemName = elem->Value();
 
         if(elemName == "HUB") {
+            HUBcounter++;
+
+            REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
+
             TiXmlNode* attr1 = elem->FirstChild("levering")->FirstChild();
             TiXmlNode* attr2 = elem->FirstChild("interval")->FirstChild();
             TiXmlNode* attr3 = elem->FirstChild("Transport")->FirstChild();
@@ -46,11 +50,17 @@ void FileParser::parseXML() {
 
             for (TiXmlNode* element = elem->FirstChildElement("CENTRA")->FirstChild(); element != NULL;
                 element = element->NextSiblingElement()){
+
+                REQUIRE((isAlpha(element->FirstChild()->Value()) == true), "Naam van een centrum moet een string zijn.");
+
                 string naam = element->FirstChild()->Value();
                 Vaccinatiecentrum CENTRUM;
                 CENTRUM.setNaam(naam);
                 centra.push_back(CENTRUM);
             }
+
+            REQUIRE((centra.size() >= 1), "Er moet minstens 1 of meer vaccininatiecentra zijn.");
+
         }
 
         else if (elemName == "VACCINATIECENTRUM"){
@@ -58,6 +68,12 @@ void FileParser::parseXML() {
             TiXmlNode* attr2 = elem->FirstChild("adres")->FirstChild();
             TiXmlNode* attr3 = elem->FirstChild("inwoners")->FirstChild();
             TiXmlNode* attr4 = elem->FirstChild("capaciteit")->FirstChild();
+
+            REQUIRE((isAlpha(attr1->Value()) == true), "Naam van een centum moet een string zijn.");
+            REQUIRE((isAlphaNum(attr2->Value()) == true), "Adres moet bestaan uit een string en integers.");
+            REQUIRE((isDigit(attr3->Value()) == true), "Inwoners moet een integer zijn.");
+            REQUIRE((isDigit(attr4->Value()) == true), "Capaciteit moet een integer zijn.");
+
             string adres = attr2->Value();
             int inwoners = atoi(attr3->Value());
             int capaciteit = atoi(attr4->Value());
@@ -119,4 +135,35 @@ bool FileParser::properlyInitialized() {
 
 FileParser* FileParser::getFile() {
     return this;
+}
+
+bool FileParser::isDigit(const string &str) {
+    for (unsigned int i = 0; i < str.size(); ++i) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+bool FileParser::isAlpha(const string &str) {
+    for (unsigned int i = 0; i < str.size(); ++i) {
+        if (str[i] != 32 ){
+            if (!(isalpha(str[i]))) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+bool FileParser::isAlphaNum(const string &str) {
+    for (unsigned int i = 0; i < str.size(); ++i) {
+        if (str[i] != 32 && str[i] != 44 && str[i] != 45) {
+            if (!isalnum(str[i])) {
+                return false;
+            }
+        }
+    }
+    return true;
 }

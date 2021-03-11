@@ -52,6 +52,12 @@ TEST_F(SimulatieTest, beforeSimulation) {
     string file = "../bestand1.xml";
     parsedFile.parseFile(file);
 
+//    int type = 0;
+//
+//    REQUIRE((typeid(parsedFile.leveringen) == typeid(type)), "Leveringen moet een integer zijn");
+
+
+//    REQUIRE((typeid(parsedFile.leveringen) != typeid(int)), "Leveringen moet een integer zijn");
     EXPECT_GE(parsedFile.leveringen, 0); // aantal leveringen >= 0
     EXPECT_GE(parsedFile.hubVaccins, 0); // aantal vaccins in hub >= 0
     EXPECT_GE(parsedFile.interval, 0); // interval >= 0
