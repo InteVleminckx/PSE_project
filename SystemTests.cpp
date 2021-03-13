@@ -36,7 +36,7 @@ protected:
 // Tests the default constructor.
 TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
 
-    string file = "../bestand1.xml";
+    string file = "../test-bestanden/systemFiles/systemTest1.xml";
     EXPECT_EQ(0, parsedFile.parseFile(file));
 
 }
@@ -44,16 +44,16 @@ TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
 // Tests the "beforeSimulation" scenario
 TEST_F(SimulatieTest, beforeSimulation) {
 
-    string file = "../bestand1.xml";
+    string file = "../test-bestanden/systemFiles/systemTest1.xml";
     parsedFile.parseFile(file);
 
     EXPECT_GE(parsedFile.leveringen, 0); // aantal leveringen >= 0
 
     EXPECT_GE(parsedFile.hubVaccins, 0); // aantal vaccins in hub >= 0
 
-    EXPECT_GE(parsedFile.interval, 0); // interval >= 0
+    EXPECT_GT(parsedFile.interval, 0); // interval > 0
 
-    EXPECT_GE(parsedFile.transport, 0); // Transport >= 0
+    EXPECT_GT(parsedFile.transport, 0); // Transport > 0
 
     EXPECT_GT(parsedFile.centra.size(), (unsigned) 0); // aantal centra > 0
 
@@ -96,7 +96,7 @@ TEST_F(SimulatieTest, beforeSimulation) {
 // Tests the "afterSimulation" scenario
 TEST_F(SimulatieTest, afterSimulation){
 
-    string file = "../systemFiles/bestand1.xml";
+    string file = "../test-bestanden/systemFiles/systemTest1.xml";
     parsedFile.parseFile(file);
     Transport transportSim(parsedFile);
 
@@ -137,7 +137,7 @@ TEST_F(SimulatieTest, afterSimulation){
 }
 
 TEST_F(SimulatieTest, NietGenoegVaccins){
-    string file = "../systemFiles/bestand2.xml";
+    string file = "../test-bestanden/systemFiles/systemTest2.xml";
     parsedFile.parseFile(file);
     Transport transportSim(parsedFile);
 

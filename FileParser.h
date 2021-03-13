@@ -59,7 +59,7 @@ public:
     /*
      * Deze functie is
      */
-    void uitvoer();
+    void uitvoer(bool begin = true);
 
     FileParser* getFile();
 

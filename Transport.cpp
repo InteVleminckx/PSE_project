@@ -32,7 +32,7 @@ void Transport::transportSimulatie(FileParser &file) {
         //als interval om is, nieuwe levering in de hub
         if (day % (leveringInterval+1) == 0) {
             aantalVaccins += file.leveringen;
-//            cout << "week: " << day/7 << endl;
+            cout << "week: " << day/7 << endl;
         }
 
         for (unsigned int i = 0; i < file.centra.size(); i++){
@@ -52,7 +52,7 @@ void Transport::transportSimulatie(FileParser &file) {
             for (int j = 0; j < (vaccins_transport_min + file.transport)/file.transport; ++j) {
                 bool getLadingen = false;
 
-                if ((tempVaccins -= j*file.transport) > 0 ){getLadingen = true;}
+                if ((tempVaccins - j*file.transport) > 0 ){getLadingen = true;}
 
                 if (j*file.transport + vaccinsCentrum >= capaciteitCentrum &&
                     2*capaciteitCentrum >= j*file.transport + vaccinsCentrum && !foundLadingen && getLadingen){

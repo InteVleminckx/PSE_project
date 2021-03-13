@@ -35,6 +35,7 @@ void FileParser::parseXML() {
 
         if(elemName == "HUB") {
             HUBcounter++;
+            hubVaccins = 0;
 
             REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
 
@@ -93,14 +94,22 @@ void FileParser::parseXML() {
     }
 }
 
-void FileParser::uitvoer() {
+void FileParser::uitvoer(bool begin) {
 //    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");
 
     //aanmaken uitvoer bestand
     ofstream Output;
 
-    //openen van het uitvoerbestand
-    Output.open("../uitvoer.txt");
+
+    if (begin){
+        //openen van het uitvoerbestand
+        Output.open("../simulatieOutput/uitvoerBegin.txt");
+    }
+
+    else {
+        //openen van het uitvoerbestand
+        Output.open("../simulatieOutput/uitvoerEinde.txt");
+    }
 
     //zolang de file open is
     if (Output.is_open())

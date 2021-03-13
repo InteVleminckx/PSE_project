@@ -1,10 +1,8 @@
 #FailedFiles:
 
-failedFile0:
-
-
 failedFile1:
 
+    - ">" achter "HUB" is weg
 
 failedFile2:
 
@@ -63,8 +61,6 @@ failedFile19:
 failedFile20:
 
 #succesFiles:
-
-succesFile0:
 
 
 succesFile1:
@@ -130,6 +126,8 @@ succesFile20:
 
 bestand1.xml:
 
+    Standaard testbestand van 
 
 bestand2.xml:
 
+    uitzonderlijke situatie, niet voldoende vaccins op alle centra aan volle capaciteit te geven
