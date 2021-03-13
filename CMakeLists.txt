@@ -34,6 +34,8 @@ set(DEBUG_SOURCE_FILES
         Transport.cpp
         Transport.h
         DesignByContract.h
+        InputTests.cpp
+        SystemTests.cpp
         )
 
 # Create RELEASE target
@@ -52,6 +54,8 @@ add_executable(ttt ${RELEASE_SOURCE_FILES}
 # Create DEBUG target
 add_executable(ttt_debug ${DEBUG_SOURCE_FILES}
         SimulatieTests.cpp
+        InputTests.cpp
+        SystemTests.cpp
         FileParser.cpp
         FileParser.h
         TinyXML/tinyxmlparser.cpp

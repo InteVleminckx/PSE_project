@@ -9,7 +9,7 @@
 
 int main(){
 
-    string file = "../bestand2.xml";
+    string file = "../bestand1.xml";
     FileParser parsedFile;
     parsedFile.parseFile(file);
     parsedFile.uitvoer();

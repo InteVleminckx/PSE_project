@@ -142,10 +142,16 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/InputTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/RunSimilatie.cpp">
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/SystemTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp">

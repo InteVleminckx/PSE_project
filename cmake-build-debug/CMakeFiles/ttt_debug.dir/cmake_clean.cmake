@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ttt_debug.dir/FileParser.cpp.o"
+  "CMakeFiles/ttt_debug.dir/InputTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o"
+  "CMakeFiles/ttt_debug.dir/SystemTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinystr.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxml.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlerror.cpp.o"

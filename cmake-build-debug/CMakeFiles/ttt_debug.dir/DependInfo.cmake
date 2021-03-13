@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/inte/CLionProjects/PSEgit/FileParser.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/FileParser.cpp.o"
+  "/home/inte/CLionProjects/PSEgit/InputTests.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/InputTests.cpp.o"
   "/home/inte/CLionProjects/PSEgit/SimulatieTests.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o"
+  "/home/inte/CLionProjects/PSEgit/SystemTests.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/SystemTests.cpp.o"
   "/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/TinyXML/tinystr.cpp.o"
   "/home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/TinyXML/tinyxml.cpp.o"
   "/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlerror.cpp" "/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlerror.cpp.o"

@@ -186,6 +186,33 @@ FileParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/FileParser.cpp.s
 .PHONY : FileParser.cpp.s
 
+InputTests.o: InputTests.cpp.o
+
+.PHONY : InputTests.o
+
+# target to build an object file
+InputTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/InputTests.cpp.o
+.PHONY : InputTests.cpp.o
+
+InputTests.i: InputTests.cpp.i
+
+.PHONY : InputTests.i
+
+# target to preprocess a source file
+InputTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/InputTests.cpp.i
+.PHONY : InputTests.cpp.i
+
+InputTests.s: InputTests.cpp.s
+
+.PHONY : InputTests.s
+
+# target to generate assembly for a file
+InputTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/InputTests.cpp.s
+.PHONY : InputTests.cpp.s
+
 RunSimilatie.o: RunSimilatie.cpp.o
 
 .PHONY : RunSimilatie.o
@@ -239,6 +266,33 @@ SimulatieTests.s: SimulatieTests.cpp.s
 SimulatieTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.s
 .PHONY : SimulatieTests.cpp.s
+
+SystemTests.o: SystemTests.cpp.o
+
+.PHONY : SystemTests.o
+
+# target to build an object file
+SystemTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SystemTests.cpp.o
+.PHONY : SystemTests.cpp.o
+
+SystemTests.i: SystemTests.cpp.i
+
+.PHONY : SystemTests.i
+
+# target to preprocess a source file
+SystemTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SystemTests.cpp.i
+.PHONY : SystemTests.cpp.i
+
+SystemTests.s: SystemTests.cpp.s
+
+.PHONY : SystemTests.s
+
+# target to generate assembly for a file
+SystemTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SystemTests.cpp.s
+.PHONY : SystemTests.cpp.s
 
 TinyXML/tinystr.o: TinyXML/tinystr.cpp.o
 
@@ -433,12 +487,18 @@ help:
 	@echo "... FileParser.o"
 	@echo "... FileParser.i"
 	@echo "... FileParser.s"
+	@echo "... InputTests.o"
+	@echo "... InputTests.i"
+	@echo "... InputTests.s"
 	@echo "... RunSimilatie.o"
 	@echo "... RunSimilatie.i"
 	@echo "... RunSimilatie.s"
 	@echo "... SimulatieTests.o"
 	@echo "... SimulatieTests.i"
 	@echo "... SimulatieTests.s"
+	@echo "... SystemTests.o"
+	@echo "... SystemTests.i"
+	@echo "... SystemTests.s"
 	@echo "... TinyXML/tinystr.o"
 	@echo "... TinyXML/tinystr.i"
 	@echo "... TinyXML/tinystr.s"

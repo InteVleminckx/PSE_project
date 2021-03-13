@@ -1,12 +1,7 @@
-/*
- * korte beschrijving: roept alle testen op
- * @author: Vleminckx Inte en Karnaukh Maksim
- * @date:
- * @version:1.0
-*/
-
+//
+// Created by inte on 13.03.21.
+//
 #include <gtest/gtest.h>
-
 #include "TinyXML/tinyxml.h"
 #include <string>
 #include <iostream>
@@ -52,22 +47,20 @@ TEST_F(SimulatieTest, beforeSimulation) {
     string file = "../bestand1.xml";
     parsedFile.parseFile(file);
 
-//    int type = 0;
-//
-//    REQUIRE((typeid(parsedFile.leveringen) == typeid(type)), "Leveringen moet een integer zijn");
-
-
-//    REQUIRE((typeid(parsedFile.leveringen) != typeid(int)), "Leveringen moet een integer zijn");
     EXPECT_GE(parsedFile.leveringen, 0); // aantal leveringen >= 0
+
     EXPECT_GE(parsedFile.hubVaccins, 0); // aantal vaccins in hub >= 0
+
     EXPECT_GE(parsedFile.interval, 0); // interval >= 0
+
     EXPECT_GE(parsedFile.transport, 0); // Transport >= 0
 
     EXPECT_GT(parsedFile.centra.size(), (unsigned) 0); // aantal centra > 0
 
     cout << "Start van de simulatie:" << endl;
-    cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
+    cout << "\n";
 
+    cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
 
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         EXPECT_NE("", parsedFile.centra[centrum].getNaam()); // naam mag niet leeg zijn
@@ -81,22 +74,21 @@ TEST_F(SimulatieTest, beforeSimulation) {
 
         EXPECT_GE( parsedFile.centra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
         EXPECT_LE( parsedFile.centra[centrum].getVaccinated(), parsedFile.centra[centrum].getInwoners());
-
     }
 
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
-            << " vaccins)""\n";
+        << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
     //lopen terug over de centra
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        //berekenen het aantal niet gevaccineerden
+    //berekenen het aantal niet gevaccineerden
         int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
-                - parsedFile.centra[centrum].getVaccinated();
+                                   - parsedFile.centra[centrum].getVaccinated();
         cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
-            << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 
 }
@@ -104,7 +96,7 @@ TEST_F(SimulatieTest, beforeSimulation) {
 // Tests the "afterSimulation" scenario
 TEST_F(SimulatieTest, afterSimulation){
 
-    string file = "../bestand1.xml";
+    string file = "../systemFiles/bestand1.xml";
     parsedFile.parseFile(file);
     Transport transportSim(parsedFile);
 
@@ -125,11 +117,12 @@ TEST_F(SimulatieTest, afterSimulation){
     }
 
     cout << "Einde van de simulatie:" << endl;
+    cout << "\n";
     cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
 
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
-            << " vaccins)""\n";
+        << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
@@ -137,14 +130,15 @@ TEST_F(SimulatieTest, afterSimulation){
     for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
         //berekenen het aantal niet gevaccineerden
         int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
-            - parsedFile.centra[centrum].getVaccinated();
+                                       - parsedFile.centra[centrum].getVaccinated();
         cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
-            << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 }
 
+TEST_F(SimulatieTest, NietGenoegVaccins){
+    string file = "../systemFiles/bestand2.xml";
+    parsedFile.parseFile(file);
+    Transport transportSim(parsedFile);
 
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
 }
