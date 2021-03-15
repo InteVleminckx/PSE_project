@@ -1,8 +1,8 @@
 <SIMULATIE>
     <HUB>
-        <levering>93000</levering>
-        <interval>6</interval>
-        <Transport>2000</Transport>
+        <levering>12345</levering>
+        <interval>5</interval>
+        <Transport>123</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
@@ -13,20 +13,20 @@
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>540173</inwoners>
-        <capaciteit>7500</capaciteit>
+        <inwoners>23456</inwoners>
+        <capaciteit>10000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>76935</inwoners>
-        <capaciteit>2000</capaciteit>
+        <inwoners>15975</inwoners>
+        <capaciteit>2500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>49451</inwoners>
-        <capaciteit>1000</capaciteit>
+        <inwoners>64656</inwoners>
+        <capaciteit>1650</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>

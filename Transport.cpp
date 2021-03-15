@@ -11,11 +11,14 @@
 Transport::Transport(FileParser &file) {
     leveringInterval = file.interval;
     aantalVaccins = 0;
+    _initCheck = this;
     transportSimulatie(file);
+
 }
 
 void Transport::transportSimulatie(FileParser &file) {
 
+    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling transportSimulatie");
     int day = 0;
 
     //aanmaken uitvoer bestand
@@ -79,6 +82,9 @@ void Transport::transportSimulatie(FileParser &file) {
 
 void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
 
+    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling vaccinatieInCentrum");
+
+
     int vaccinsInCentrum = centrum.getVaccins();
     int capaciteit = centrum.getCapaciteit();
     int aantalOngevaccineerden = centrum.getInwoners() - centrum.getVaccinated();
@@ -96,11 +102,18 @@ void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
 }
 
 bool Transport::isAllPeopleVaccinated(FileParser &file) {
+    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling isALlPeopleVaccinated");
+
     for (unsigned int i = 0; i < file.centra.size(); i++) {
         if (file.centra[i].getInwoners() != file.centra[i].getVaccinated()) {
             return false;
         }
     }
     return true;
+}
+
+bool Transport::properlyInitialized() {
+
+    return _initCheck == this;
 }
 

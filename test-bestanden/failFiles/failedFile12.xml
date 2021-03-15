@@ -1,6 +1,6 @@
 <SIMULATIE>
     <HUB>
-        <levering>93000</levering>
+        <levering>93000.0</levering>
         <interval>6</interval>
         <Transport>2000</Transport>
         <CENTRA>

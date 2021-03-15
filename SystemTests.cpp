@@ -36,9 +36,14 @@ protected:
 // Tests the default constructor.
 TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
 
-    string file = "../test-bestanden/systemFiles/systemTest1.xml";
-    EXPECT_EQ(0, parsedFile.parseFile(file));
-
+    for (unsigned int i = 1; i < 7; ++i) {
+        FileParser newParsedFile;
+        ostringstream number;
+        number << i;
+        string Number = number.str();
+        string file = "../test-bestanden/systemFiles/systemTest" + Number + ".xml";
+        EXPECT_EQ(0, newParsedFile.parseFile(file));
+    }
 }
 
 // Tests the "beforeSimulation" scenario

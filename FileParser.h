@@ -52,7 +52,7 @@ public:
     /*
      * Deze functie is
      */
-    void parseXML();
+    bool parseXML();
 
     /// \functie: uitvoer
     /// \preconditie: Het systeem bevat een simulatie met de verschillende vaccinatiecentra
@@ -61,9 +61,13 @@ public:
      */
     void uitvoer(bool begin = true);
 
-    static bool isDigit(const string &str);
-    static bool isAlpha(const string &str);
-    static bool isAlphaNum(const string &str);
+    bool isDigit(const string &str);
+    bool isAlpha(const string &str);
+    bool isAlphaNum(const string &str);
+    bool isTag(const string &tag, TiXmlElement *elem);
+    bool isLittleAlpha(const string &str);
+
+
 };
 
 

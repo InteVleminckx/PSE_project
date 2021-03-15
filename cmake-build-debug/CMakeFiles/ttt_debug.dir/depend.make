@@ -8,7 +8,32 @@ CMakeFiles/ttt_debug.dir/FileParser.cpp.o: ../TinyXML/tinystr.h
 CMakeFiles/ttt_debug.dir/FileParser.cpp.o: ../TinyXML/tinyxml.h
 CMakeFiles/ttt_debug.dir/FileParser.cpp.o: ../Vaccinatiecentrum.h
 
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-death-test.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-message.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-param-test.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-printers.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-test-part.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest-typed-test.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest_pred_impl.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/gtest_prod.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-internal.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-port.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-string.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-tuple.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../gtest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../DesignByContract.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../FileParser.h
 CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../InputTests.cpp
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../TinyXML/tinystr.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../TinyXML/tinyxml.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../Transport.h
+CMakeFiles/ttt_debug.dir/InputTests.cpp.o: ../Vaccinatiecentrum.h
 
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/gtest-death-test.h
 CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o: ../gtest/include/gtest/gtest-message.h

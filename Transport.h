@@ -23,6 +23,7 @@ using namespace std;
 class Transport {
 private:
 
+    Transport* _initCheck;
     int aantalVaccins;
     int leveringInterval;
     ofstream OVP; //overzichtVaccinatieProcedure
@@ -57,6 +58,8 @@ public:
      */
     bool isAllPeopleVaccinated(FileParser &file);
 
+
+    bool properlyInitialized();
 
 };
 

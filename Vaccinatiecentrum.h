@@ -39,7 +39,7 @@ public:
     int getVaccins();
     int getVaccinated();
 
-    void isAdresGeldig(string &Cadres);
+//    void isAdresGeldig(string &Cadres);
 };
 
 
