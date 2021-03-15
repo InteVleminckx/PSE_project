@@ -23,6 +23,7 @@ int FileParser::parseFile(string &file) {
         return 1;
     }
 
+    _initCheck = this;
     parseXML();
     return 0;
 }
@@ -95,7 +96,7 @@ void FileParser::parseXML() {
 }
 
 void FileParser::uitvoer(bool begin) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");
+    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");
 
     //aanmaken uitvoer bestand
     ofstream Output;
@@ -142,9 +143,6 @@ bool FileParser::properlyInitialized() {
     return _initCheck == this;
 }
 
-FileParser* FileParser::getFile() {
-    return this;
-}
 
 bool FileParser::isDigit(const string &str) {
     for (unsigned int i = 0; i < str.size(); ++i) {

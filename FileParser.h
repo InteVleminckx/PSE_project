@@ -61,8 +61,6 @@ public:
      */
     void uitvoer(bool begin = true);
 
-    FileParser* getFile();
-
     static bool isDigit(const string &str);
     static bool isAlpha(const string &str);
     static bool isAlphaNum(const string &str);
