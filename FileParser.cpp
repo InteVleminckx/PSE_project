@@ -87,7 +87,7 @@ void FileParser::parseXML() {
             for (TiXmlNode* element = CENTRA->FirstChild(); element != NULL;
                 element = element->NextSiblingElement()){
 
-//                REQUIRE((isAlpha(element->FirstChild()->Value()) == true), "Naam van een centrum moet een string zijn.");
+//             REQUIRE((isAlpha(element->FirstChild()->Value()) == true), "Naam van een centrum moet een string zijn.");
                 if (!isAlpha(element->FirstChild()->Value())){
                     cout << endl;
                     cerr << "Naam van een centrum moet een string zijn." << endl;
@@ -145,7 +145,6 @@ void FileParser::uitvoer(bool begin) {
 
     //aanmaken uitvoer bestand
     ofstream Output;
-
 
     if (begin){
         //openen van het uitvoerbestand

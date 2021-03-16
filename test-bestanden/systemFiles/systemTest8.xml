@@ -1,0 +1,24 @@
+<SIMULATIE>
+    <HUB>
+        <levering>12000</levering>
+        <interval>3</interval>
+        <Transport>1300</Transport>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>De Zoerla</centrum>
+        </CENTRA>
+    </HUB>
+    <VACCINATIECENTRUM>
+        <naam>Park Spoor Oost</naam>
+        <adres>Noordersingel 40, Antwerpen</adres>
+        <inwoners>95000</inwoners>
+        <capaciteit>3500</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>De Zoerla</naam>
+        <adres>Gevaertlaan 1, Westerlo</adres>
+        <inwoners>27500</inwoners>
+        <capaciteit>1987</capaciteit>
+    </VACCINATIECENTRUM>
+</SIMULATIE>
+

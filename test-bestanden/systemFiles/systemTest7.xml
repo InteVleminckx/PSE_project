@@ -1,6 +1,6 @@
 <SIMULATIE>
     <HUB>
-        <levering>93000</levering>
+        <levering>50000</levering>
         <interval>6</interval>
         <Transport>2000</Transport>
         <CENTRA>
@@ -8,31 +8,45 @@
             <centrum>AED Studios</centrum>
             <centrum>De Zoerla</centrum>
             <centrum>Flanders Expo</centrum>
+            <centrum>Luchtbal</centrum>
+            <centrum>Grote Markt</centrum>
         </CENTRA>
     </HUB>
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>540173</inwoners>
-        <capaciteit>7500</capaciteit>
+        <inwoners>500000</inwoners>
+        <capaciteit>20000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>76935</inwoners>
-        <capaciteit>2000</capaciteit>
+        <inwoners>140000</inwoners>
+        <capaciteit>4500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>49451</inwoners>
-        <capaciteit>1000</capaciteit>
+        <inwoners>164000</inwoners>
+        <capaciteit>6000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>
         <adres>Maaltekouter 1, Sint-Denijs-Westrem</adres>
-        <inwoners>257029</inwoners>
-        <capaciteit>3000</capaciteit>
+        <inwoners>89000</inwoners>
+        <capaciteit>4000</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>Luchtbal</naam>
+        <adres>Hertoginstraat 17, Antwerpen</adres>
+        <inwoners>84000</inwoners>
+        <capaciteit>8000</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>Grote Markt</naam>
+        <adres>Louisastraat 20, Antwerpen</adres>
+        <inwoners>123000</inwoners>
+        <capaciteit>15500</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
 

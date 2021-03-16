@@ -186,6 +186,9 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/UnitTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlerror.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o"
   "CMakeFiles/ttt_debug.dir/Transport.cpp.o"
+  "CMakeFiles/ttt_debug.dir/UnitTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o"
   "ttt_debug"
   "ttt_debug.pdb"

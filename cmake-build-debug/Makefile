@@ -444,6 +444,33 @@ Transport.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Transport.cpp.s
 .PHONY : Transport.cpp.s
 
+UnitTests.o: UnitTests.cpp.o
+
+.PHONY : UnitTests.o
+
+# target to build an object file
+UnitTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/UnitTests.cpp.o
+.PHONY : UnitTests.cpp.o
+
+UnitTests.i: UnitTests.cpp.i
+
+.PHONY : UnitTests.i
+
+# target to preprocess a source file
+UnitTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/UnitTests.cpp.i
+.PHONY : UnitTests.cpp.i
+
+UnitTests.s: UnitTests.cpp.s
+
+.PHONY : UnitTests.s
+
+# target to generate assembly for a file
+UnitTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/UnitTests.cpp.s
+.PHONY : UnitTests.cpp.s
+
 Vaccinatiecentrum.o: Vaccinatiecentrum.cpp.o
 
 .PHONY : Vaccinatiecentrum.o
@@ -514,6 +541,9 @@ help:
 	@echo "... Transport.o"
 	@echo "... Transport.i"
 	@echo "... Transport.s"
+	@echo "... UnitTests.o"
+	@echo "... UnitTests.i"
+	@echo "... UnitTests.s"
 	@echo "... Vaccinatiecentrum.o"
 	@echo "... Vaccinatiecentrum.i"
 	@echo "... Vaccinatiecentrum.s"

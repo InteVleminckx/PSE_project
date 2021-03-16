@@ -14,7 +14,7 @@
 #include "FileParser.h"
 #include "Transport.h"
 
-class SimulatieTest: public ::testing::Test {
+class SystemsTests: public ::testing::Test {
 protected:
     // virtual void SetUp() will be called before each test is run.  You
     // should define it if you need to initialize the variables.
@@ -34,7 +34,7 @@ protected:
 };
 
 // Tests the default constructor.
-TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
+TEST_F(SystemsTests, DefaultConstructor) { // naam test: DefaultConstructor
 
     for (unsigned int i = 1; i < 7; ++i) {
         FileParser newParsedFile;
@@ -47,7 +47,7 @@ TEST_F(SimulatieTest, DefaultConstructor) { // naam test: DefaultConstructor
 }
 
 // Tests the "beforeSimulation" scenario
-TEST_F(SimulatieTest, beforeSimulation) {
+TEST_F(SystemsTests, beforeSimulation) {
 
     string file = "../test-bestanden/systemFiles/systemTest1.xml";
     parsedFile.parseFile(file);
@@ -99,7 +99,7 @@ TEST_F(SimulatieTest, beforeSimulation) {
 }
 
 // Tests the "afterSimulation" scenario
-TEST_F(SimulatieTest, afterSimulation){
+TEST_F(SystemsTests, afterSimulation){
 
     string file = "../test-bestanden/systemFiles/systemTest1.xml";
     parsedFile.parseFile(file);
@@ -141,7 +141,7 @@ TEST_F(SimulatieTest, afterSimulation){
     }
 }
 
-TEST_F(SimulatieTest, NietGenoegVaccins){
+TEST_F(SystemsTests, NietGenoegVaccins){
     string file = "../test-bestanden/systemFiles/systemTest2.xml";
     parsedFile.parseFile(file);
     Transport transportSim(parsedFile);
