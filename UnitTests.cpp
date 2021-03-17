@@ -1,6 +1,11 @@
-//
-// Created by inte on 16.03.21.
-//
+/*
+ * korte beschrijving:
+ * Deze klasse checkt voor elke klasse of de functies erin werken met zelfgemaakte locale input (per functie).
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 18/03/2021
+ * @version: Specificatie 1.0
+*/
+
 #include <gtest/gtest.h>
 #include <string>
 #include <vector>
@@ -124,7 +129,7 @@ TEST_F(UnitTests, Functie_isAlphaNum){
 //
 //    string str = "geendigit";
 //    TiXmlElement* elem = new TiXmlElement("HUB");
-//    elem->FirstChildElement()->Value() = "leveringen";
+//    elem->FirstChildElement()->Value() = "fLeveringen";
 //
 //
 //    EXPECT_EQ(1, newFile->isTag(str, elem));

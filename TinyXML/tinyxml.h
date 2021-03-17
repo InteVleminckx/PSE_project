@@ -131,9 +131,9 @@ public:
 	virtual ~TiXmlVisitor() {}
 
 	/// Visit a document.
-	virtual bool VisitEnter( const TiXmlDocument& /*doc*/ )			{ return true; }
+	virtual bool VisitEnter( const TiXmlDocument& /*fDoc*/ )			{ return true; }
 	/// Visit a document.
-	virtual bool VisitExit( const TiXmlDocument& /*doc*/ )			{ return true; }
+	virtual bool VisitExit( const TiXmlDocument& /*fDoc*/ )			{ return true; }
 
 	/// Visit an element.
 	virtual bool VisitEnter( const TiXmlElement& /*element*/, const TiXmlAttribute* /*firstAttribute*/ )	{ return true; }
@@ -446,8 +446,8 @@ public:
 		    the text needs to define an element or junk will result. This is
 		    true of all input streams, but it's worth keeping in mind.
 
-		    A TiXmlDocument will read nodes until it reads a root element, and
-			all the children of that root element.
+		    A TiXmlDocument will read nodes until it reads a fRoot element, and
+			all the children of that fRoot element.
 	    */	
 	    friend std::ostream& operator<< (std::ostream& out, const TiXmlNode& base);
 
@@ -1445,7 +1445,7 @@ public:
 	*/
 	virtual const char* Parse( const char* p, TiXmlParsingData* data = 0, TiXmlEncoding encoding = TIXML_DEFAULT_ENCODING );
 
-	/** Get the root element -- the only top level element -- of the document.
+	/** Get the fRoot element -- the only top level element -- of the document.
 		In well formed XML, there should only be one. TinyXml is tolerant of
 		multiple elements at the document level.
 	*/
@@ -1494,9 +1494,9 @@ public:
 
 		The tab size needs to be enabled before the parse or load. Correct usage:
 		@verbatim
-		TiXmlDocument doc;
-		doc.SetTabSize( 8 );
-		doc.Load( "myfile.xml" );
+		TiXmlDocument fDoc;
+		fDoc.SetTabSize( 8 );
+		fDoc.Load( "myfile.xml" );
 		@endverbatim
 
 		@sa Row, Column
@@ -1574,10 +1574,10 @@ private:
 	easy to write a *lot* of code that looks like:
 
 	@verbatim
-	TiXmlElement* root = document.FirstChildElement( "Document" );
-	if ( root )
+	TiXmlElement* fRoot = document.FirstChildElement( "Document" );
+	if ( fRoot )
 	{
-		TiXmlElement* element = root->FirstChildElement( "Element" );
+		TiXmlElement* element = fRoot->FirstChildElement( "Element" );
 		if ( element )
 		{
 			TiXmlElement* child = element->FirstChildElement( "Child" );
@@ -1730,7 +1730,7 @@ private:
 	TiXmlPrinter printer;
 	printer.SetIndent( "\t" );
 
-	doc.Accept( &printer );
+	fDoc.Accept( &printer );
 	fprintf( stdout, "%s", printer.CStr() );
 	@endverbatim
 */

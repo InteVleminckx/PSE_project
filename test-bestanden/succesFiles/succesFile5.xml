@@ -1,7 +1,7 @@
 <SIMULATIE>
     <HUB>
         <levering>12345</levering>
-        <interval>5</interval>
+        <fInterval>5</fInterval>
         <Transport>123</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>

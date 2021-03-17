@@ -7,6 +7,7 @@
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_TRANSPORT_H
 #define PROJECT_SOFTWARE_ENGENEERING_TRANSPORT_H
+
 #include "TinyXML/tinyxml.h"
 #include <string>
 #include <iostream>
@@ -18,15 +19,15 @@
 #include <fstream>
 #include "FileParser.h"
 #include <sstream>  // Required for stringstreams
+
 using namespace std;
 
 class Transport {
-private:
 
     Transport* _initCheck;
-    int aantalVaccins;
-    int leveringInterval;
-    ofstream OVP; //overzichtVaccinatieProcedure
+    int fAantalVaccins;
+    int fLeveringInterval;
+    ofstream fOVP; //overzichtVaccinatieProcedure
 
 public:
 
@@ -38,7 +39,7 @@ public:
 
     /*
      * Deze functie verzorgt de (automatische) verdeling van de vaccins over de vaccinatiecentra, met
-     * telkens op het interval een levering vaccins aan de HUB.
+     * telkens op het fInterval een levering vaccins aan de HUB.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
     void transportSimulatie(FileParser &file);
@@ -52,7 +53,8 @@ public:
     void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
 
     /*
-     * Deze functie checkt of alle inwoners van alle centra gevaccineerd zijn.
+     * @functie : isAllPeopleVaccinated
+     * Deze functie checkt of alle inwoners van alle fCentra gevaccineerd zijn.
      * @param file : het .xml bestand dat ingelezen wordt.
      * @return : true bij succes, false bij geen succes.
      */

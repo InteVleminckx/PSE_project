@@ -1,8 +1,7 @@
 /*
- * korte beschrijving:
- * @author: Vleminckx Inte en Karnaukh Maksim
- * @date:
- * @version:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 18/03/2021
+ * @version: Specificatie 1.0
 */
 
 #include "Vaccinatiecentrum.h"

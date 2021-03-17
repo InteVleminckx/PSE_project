@@ -16,22 +16,24 @@
 #include <algorithm>
 #include "Vaccinatiecentrum.h"
 #include <fstream>
+#include "DesignByContract.h"
 #include <sstream>  // Required for stringstreams
 using namespace std;
 
 class FileParser {
+
+    TiXmlDocument fDoc;
+    TiXmlElement* fRoot;
+
 public:
-    TiXmlDocument doc;
-    TiXmlElement* root;
 
     //HUB
-    int leveringen;
-    int hubVaccins; // aantal vaccins in de HUB
-    int interval;
-    int transport;
+    int fLeveringen;
+    int fHubVaccins; // aantal vaccins in de HUB
+    int fInterval;
+    int fTransport;
 
-    vector<Vaccinatiecentrum> centra;
-
+    vector<Vaccinatiecentrum> fCentra;
     FileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
 
     bool properlyInitialized();

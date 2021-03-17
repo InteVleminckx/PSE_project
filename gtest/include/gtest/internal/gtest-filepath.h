@@ -162,8 +162,8 @@ class GTEST_API_ FilePath {
   // This does NOT check that a directory (or file) actually exists.
   bool IsDirectory() const;
 
-  // Returns true if pathname describes a root directory. (Windows has one
-  // root directory per disk drive.)
+  // Returns true if pathname describes a fRoot directory. (Windows has one
+  // fRoot directory per disk drive.)
   bool IsRootDirectory() const;
 
   // Returns true if pathname describes an absolute path.

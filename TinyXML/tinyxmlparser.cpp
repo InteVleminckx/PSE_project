@@ -681,7 +681,7 @@ void TiXmlDocument::StreamIn( std::istream * in, TIXML_STRING * tag )
 				delete node;
 				node = 0;
 
-				// If this is the root element, we're done. Parsing will be
+				// If this is the fRoot element, we're done. Parsing will be
 				// done by the >> operator.
 				if ( isElement )
 				{

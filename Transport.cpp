@@ -1,16 +1,14 @@
 /*
- * korte beschrijving:
- * @author: Vleminckx Inte en Karnaukh Maksim
- * @date:
- * @version:
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 18/03/2021
+ * @version: Specificatie 1.0
 */
 
 #include "Transport.h"
 
-
 Transport::Transport(FileParser &file) {
-    leveringInterval = file.interval;
-    aantalVaccins = 0;
+    fLeveringInterval = file.fInterval;
+    fAantalVaccins = 0;
     _initCheck = this;
     transportSimulatie(file);
 
@@ -32,52 +30,52 @@ void Transport::transportSimulatie(FileParser &file) {
     while (!isAllPeopleVaccinated(file)){
         //check allVaccinated
 
-        //als interval om is, nieuwe levering in de hub
-        if (day % (leveringInterval+1) == 0) {
-            aantalVaccins += file.leveringen;
-            cout << "week: " << day/7 << endl;
+        //als fInterval om is, nieuwe levering in de hub
+        if (day % (fLeveringInterval + 1) == 0) {
+            fAantalVaccins += file.fLeveringen;
+//            cout << "week: " << day/7 << endl;
         }
 
-        for (unsigned int i = 0; i < file.centra.size(); i++){
+        for (unsigned int i = 0; i < file.fCentra.size(); i++){
 
-            string centrumNaam = file.centra[i].getNaam();
+            string centrumNaam = file.fCentra[i].getNaam();
 
-            int vaccinsCentrum = file.centra[i].getVaccins();
-            int capaciteitCentrum = file.centra[i].getCapaciteit();
+            int vaccinsCentrum = file.fCentra[i].getVaccins();
+            int capaciteitCentrum = file.fCentra[i].getCapaciteit();
 
             double vaccins_transport_min = capaciteitCentrum - vaccinsCentrum;
 
             int ladingen = 0;
             bool foundLadingen = false;
 
-            int tempVaccins = aantalVaccins;
+            int tempVaccins = fAantalVaccins;
 
-            for (int j = 0; j < (vaccins_transport_min + file.transport)/file.transport; ++j) {
+            for (int j = 0; j < (vaccins_transport_min + file.fTransport) / file.fTransport; ++j) {
                 bool getLadingen = false;
 
-                if ((tempVaccins - j*file.transport) > 0 ){getLadingen = true;}
+                if ((tempVaccins - j*file.fTransport) > 0 ){ getLadingen = true;}
 
-                if (j*file.transport + vaccinsCentrum >= capaciteitCentrum &&
-                    2*capaciteitCentrum >= j*file.transport + vaccinsCentrum && !foundLadingen && getLadingen){
+                if (j*file.fTransport + vaccinsCentrum >= capaciteitCentrum &&
+                    2*capaciteitCentrum >= j*file.fTransport + vaccinsCentrum && !foundLadingen && getLadingen){
                     ladingen = j; foundLadingen = true;
                 }
 
             }
 
-            file.centra[i].setVaccins((ladingen*file.transport)+vaccinsCentrum);
+            file.fCentra[i].setVaccins((ladingen * file.fTransport) + vaccinsCentrum);
 
-            aantalVaccins -= ladingen*file.transport;
+            fAantalVaccins -= ladingen * file.fTransport;
 
-            OT << "Er werden " << ladingen << " ladingen (" << ladingen * file.transport <<
+            OT << "Er werden " << ladingen << " ladingen (" << ladingen * file.fTransport <<
                " vaccins) getransporteerd naar " << centrumNaam + ".\n";
 
-            vaccinatieInCentrum(file.centra[i]);
+            vaccinatieInCentrum(file.fCentra[i]);
 
         }
         OT << "\n";
         day++;
     }
-    file.hubVaccins = aantalVaccins;
+    file.fHubVaccins = fAantalVaccins;
 }
 
 void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
@@ -97,15 +95,15 @@ void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
     centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
 
     if (inwonersGevaccineerd != 0) {
-        OVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
+        fOVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
     }
 }
 
 bool Transport::isAllPeopleVaccinated(FileParser &file) {
     REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling isALlPeopleVaccinated");
 
-    for (unsigned int i = 0; i < file.centra.size(); i++) {
-        if (file.centra[i].getInwoners() != file.centra[i].getVaccinated()) {
+    for (unsigned int i = 0; i < file.fCentra.size(); i++) {
+        if (file.fCentra[i].getInwoners() != file.fCentra[i].getVaccinated()) {
             return false;
         }
     }

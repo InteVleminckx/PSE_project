@@ -1,16 +1,16 @@
-//
-// Created by inte on 13.03.21.
-//
+/*
+ * korte beschrijving:
+ * Test de algemene werking van het systeem + enkele randgevallen.
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 18/03/2021
+ * @version: Specificatie 1.0
+*/
+
 #include <gtest/gtest.h>
-#include "TinyXML/tinyxml.h"
 #include <string>
 #include <iostream>
 #include <vector>
-#include <map>
 #include <cmath>
-#include <algorithm>
-#include "Vaccinatiecentrum.h"
-#include <fstream>
 #include "FileParser.h"
 #include "Transport.h"
 
@@ -52,48 +52,48 @@ TEST_F(SystemsTests, beforeSimulation) {
     string file = "../test-bestanden/systemFiles/systemTest1.xml";
     parsedFile.parseFile(file);
 
-    EXPECT_GE(parsedFile.leveringen, 0); // aantal leveringen >= 0
+    EXPECT_GE(parsedFile.fLeveringen, 0); // aantal fLeveringen >= 0
 
-    EXPECT_GE(parsedFile.hubVaccins, 0); // aantal vaccins in hub >= 0
+    EXPECT_GE(parsedFile.fHubVaccins, 0); // aantal vaccins in hub >= 0
 
-    EXPECT_GT(parsedFile.interval, 0); // interval > 0
+    EXPECT_GT(parsedFile.fInterval, 0); // fInterval > 0
 
-    EXPECT_GT(parsedFile.transport, 0); // Transport > 0
+    EXPECT_GT(parsedFile.fTransport, 0); // Transport > 0
 
-    EXPECT_GT(parsedFile.centra.size(), (unsigned) 0); // aantal centra > 0
+    EXPECT_GT(parsedFile.fCentra.size(), (unsigned) 0); // aantal fCentra > 0
 
     cout << "Start van de simulatie:" << endl;
     cout << "\n";
 
-    cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
+    cout << "Hub (" << parsedFile.fHubVaccins << " vaccins)\n";
 
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        EXPECT_NE("", parsedFile.centra[centrum].getNaam()); // naam mag niet leeg zijn
-        EXPECT_NE("", parsedFile.centra[centrum].getAdres()); // adres mag niet leeg zijn
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
+        EXPECT_NE("", parsedFile.fCentra[centrum].getNaam()); // naam mag niet leeg zijn
+        EXPECT_NE("", parsedFile.fCentra[centrum].getAdres()); // adres mag niet leeg zijn
 
-        EXPECT_GE(parsedFile.centra[centrum].getInwoners(),0); // inwoners centrum >= 0
-        EXPECT_GE(parsedFile.centra[centrum].getCapaciteit(),0); // capaciteit centrum >= 0
+        EXPECT_GE(parsedFile.fCentra[centrum].getInwoners(), 0); // inwoners centrum >= 0
+        EXPECT_GE(parsedFile.fCentra[centrum].getCapaciteit(), 0); // capaciteit centrum >= 0
 
-        EXPECT_GE(parsedFile.centra[centrum].getVaccins(),0); // vaccins in centrum >= 0
-        EXPECT_LE(parsedFile.centra[centrum].getVaccins(), parsedFile.centra[centrum].getCapaciteit()*2);
+        EXPECT_GE(parsedFile.fCentra[centrum].getVaccins(), 0); // vaccins in centrum >= 0
+        EXPECT_LE(parsedFile.fCentra[centrum].getVaccins(), parsedFile.fCentra[centrum].getCapaciteit() * 2);
 
-        EXPECT_GE( parsedFile.centra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
-        EXPECT_LE( parsedFile.centra[centrum].getVaccinated(), parsedFile.centra[centrum].getInwoners());
+        EXPECT_GE(parsedFile.fCentra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
+        EXPECT_LE(parsedFile.fCentra[centrum].getVaccinated(), parsedFile.fCentra[centrum].getInwoners());
     }
 
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
-        << " vaccins)""\n";
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
+        cout << "\t-> " << parsedFile.fCentra[centrum].getNaam() << "(" << parsedFile.fCentra[centrum].getVaccins()
+             << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
-    //lopen terug over de centra
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
+    //lopen terug over de fCentra
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
     //berekenen het aantal niet gevaccineerden
-        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
-                                   - parsedFile.centra[centrum].getVaccinated();
-        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
-        << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        int aantalNietGevaccineerden = parsedFile.fCentra[centrum].getInwoners()
+                                   - parsedFile.fCentra[centrum].getVaccinated();
+        cout << parsedFile.fCentra[centrum].getNaam() << ": " << parsedFile.fCentra[centrum].getVaccinated()
+             << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 
 }
@@ -105,39 +105,39 @@ TEST_F(SystemsTests, afterSimulation){
     parsedFile.parseFile(file);
     Transport transportSim(parsedFile);
 
-    EXPECT_GE(parsedFile.hubVaccins, 0); // aantal vaccins in hub >= 0
+    EXPECT_GE(parsedFile.fHubVaccins, 0); // aantal vaccins in hub >= 0
 
 
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
 
-        EXPECT_GE(parsedFile.centra[centrum].getVaccins(),0); // vaccins in centrum >= 0
-        EXPECT_LE(parsedFile.centra[centrum].getVaccins(), parsedFile.centra[centrum].getCapaciteit()*2);
+        EXPECT_GE(parsedFile.fCentra[centrum].getVaccins(), 0); // vaccins in centrum >= 0
+        EXPECT_LE(parsedFile.fCentra[centrum].getVaccins(), parsedFile.fCentra[centrum].getCapaciteit() * 2);
 
-        EXPECT_GE( parsedFile.centra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
-        EXPECT_LE( parsedFile.centra[centrum].getVaccinated(), parsedFile.centra[centrum].getInwoners());
+        EXPECT_GE(parsedFile.fCentra[centrum].getVaccinated(), 0); // gevaccineerden in centrum >= 0
+        EXPECT_LE(parsedFile.fCentra[centrum].getVaccinated(), parsedFile.fCentra[centrum].getInwoners());
 
         //er kunnen niet meer mensen gevaccineerd zijn dan er inwoners zijn
-        EXPECT_GE(parsedFile.centra[centrum].getInwoners() - parsedFile.centra[centrum].getVaccinated(), 0);
+        EXPECT_GE(parsedFile.fCentra[centrum].getInwoners() - parsedFile.fCentra[centrum].getVaccinated(), 0);
 
     }
 
     cout << "Einde van de simulatie:" << endl;
     cout << "\n";
-    cout << "Hub (" << parsedFile.hubVaccins << " vaccins)\n";
+    cout << "Hub (" << parsedFile.fHubVaccins << " vaccins)\n";
 
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
-        cout << "\t-> " << parsedFile.centra[centrum].getNaam() << "(" << parsedFile.centra[centrum].getVaccins()
-        << " vaccins)""\n";
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
+        cout << "\t-> " << parsedFile.fCentra[centrum].getNaam() << "(" << parsedFile.fCentra[centrum].getVaccins()
+             << " vaccins)""\n";
     }
     //wit regel in het bestand
     cout << "\n";
-    //lopen terug over de centra
-    for (unsigned int centrum = 0; centrum < parsedFile.centra.size(); centrum++) {
+    //lopen terug over de fCentra
+    for (unsigned int centrum = 0; centrum < parsedFile.fCentra.size(); centrum++) {
         //berekenen het aantal niet gevaccineerden
-        int aantalNietGevaccineerden = parsedFile.centra[centrum].getInwoners()
-                                       - parsedFile.centra[centrum].getVaccinated();
-        cout << parsedFile.centra[centrum].getNaam() << ": " << parsedFile.centra[centrum].getVaccinated()
-        << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
+        int aantalNietGevaccineerden = parsedFile.fCentra[centrum].getInwoners()
+                                       - parsedFile.fCentra[centrum].getVaccinated();
+        cout << parsedFile.fCentra[centrum].getNaam() << ": " << parsedFile.fCentra[centrum].getVaccinated()
+             << " gevaccineerd, nog " << aantalNietGevaccineerden << " niet gevaccineerd\n";
     }
 }
 

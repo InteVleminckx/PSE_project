@@ -1,8 +1,8 @@
 <SIMULATIE>
     <HUB>
-        <levering>7000</levering>
-        <interval>6</interval>
-        <Transport>1000</Transport>
+        <levering>30000</levering>
+        <fInterval>6</fInterval>
+        <Transport>100</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>

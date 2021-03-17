@@ -6,22 +6,21 @@
 */
 
 #include "FileParser.h"
-#include "DesignByContract.h"
 
 int FileParser::parseFile(string &file) {
 
-    if(!doc.LoadFile(file.c_str())) {
+    if(!fDoc.LoadFile(file.c_str())) {
         cout << endl;
-        std::cerr << doc.ErrorDesc() << std::endl;
+        std::cerr << fDoc.ErrorDesc() << std::endl;
         cout << endl;
         return 1;
     }
 
-    root = doc.FirstChildElement();
+    fRoot = fDoc.FirstChildElement();
 
-    if(root == NULL) {
-        std::cerr << "Failed to load file: No root element." << std::endl;
-        doc.Clear();
+    if(fRoot == NULL) {
+        std::cerr << "Failed to load file: No fRoot element." << std::endl;
+        fDoc.Clear();
         return 1;
     }
 
@@ -36,20 +35,19 @@ void FileParser::parseXML() {
     for (TiXmlElement *elem = root->FirstChildElement(); elem != NULL; elem = elem->NextSiblingElement()) {
         string elemName = elem->Value();
 
-
         if(elemName == "HUB") {
             HUBcounter++;
-            hubVaccins = 0;
+            fHubVaccins = 0;
 
             REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
 
             if (!isTag("levering", elem)) return 1;
-            if (!isTag("interval", elem)) return 1;
+            if (!isTag("fInterval", elem)) return 1;
             if (!isTag("Transport", elem)) return 1;
             if (!isTag("CENTRA", elem)) return 1;
 
             TiXmlNode* levering = elem->FirstChild("levering")->FirstChild();
-            TiXmlNode* intervalNode = elem->FirstChild("interval")->FirstChild();
+            TiXmlNode* intervalNode = elem->FirstChild("fInterval")->FirstChild();
             TiXmlNode* Transport = elem->FirstChild("Transport")->FirstChild();
             TiXmlNode* CENTRA = elem->FirstChildElement("CENTRA");
 
@@ -79,9 +77,9 @@ void FileParser::parseXML() {
             }
 
 
-            leveringen = atoi(levering->Value());
-            interval = atoi(intervalNode->Value());
-            transport = atoi(Transport->Value());
+            fLeveringen = atoi(levering->Value());
+            fInterval = atoi(intervalNode->Value());
+            fTransport = atoi(Transport->Value());
 
 
             for (TiXmlNode* element = CENTRA->FirstChild(); element != NULL;
@@ -98,7 +96,7 @@ void FileParser::parseXML() {
                 string naam = element->FirstChild()->Value();
                 Vaccinatiecentrum CENTRUM;
                 CENTRUM.setNaam(naam);
-                centra.push_back(CENTRUM);
+                fCentra.push_back(CENTRUM);
             }
 
             REQUIRE((centra.size() >= 1), "Er moet minstens 1 of meer vaccininatiecentra zijn.");
@@ -120,13 +118,13 @@ void FileParser::parseXML() {
             int inwonersInt = atoi(inwoners->Value());
             int capaciteitInt = atoi(capaciteit->Value());
 
-            for (unsigned int i = 0; i < centra.size(); i++) {
-                if (centra[i].getNaam() == naam->Value()) {
-                    centra[i].setAdres(adresString);
-                    centra[i].setInwoners(inwonersInt);
-                    centra[i].setCapaciteit(capaciteitInt);
-                    centra[i].setVaccins(0);
-                    centra[i].setVaccinated(0);
+            for (unsigned int i = 0; i < fCentra.size(); i++) {
+                if (fCentra[i].getNaam() == naam->Value()) {
+                    fCentra[i].setAdres(adresString);
+                    fCentra[i].setInwoners(inwonersInt);
+                    fCentra[i].setCapaciteit(capaciteitInt);
+                    fCentra[i].setVaccins(0);
+                    fCentra[i].setVaccinated(0);
                 }
             }
         }
@@ -160,21 +158,21 @@ void FileParser::uitvoer(bool begin) {
     if (Output.is_open())
     {
         //schrijven een string weg in het uitvoer bestand
-        Output << "Hub (" << hubVaccins << " vaccins)\n";
-        //lopen over alle centra
-        for (unsigned int i = 0; i < centra.size(); i++) {
+        Output << "Hub (" << fHubVaccins << " vaccins)\n";
+        //lopen over alle fCentra
+        for (unsigned int i = 0; i < fCentra.size(); i++) {
             //schrijven een string weg in het uitvoer bestand
-            Output << "\t-> " << centra[i].getNaam() << "(" << centra[i].getVaccins() << " vaccins)""\n";
+            Output << "\t-> " << fCentra[i].getNaam() << "(" << fCentra[i].getVaccins() << " vaccins)""\n";
         }
         //wit regel in het bestand
         Output << "\n";
-        //lopen terug over de centra
-        for (unsigned int i = 0; i < centra.size(); i++) {
+        //lopen terug over de fCentra
+        for (unsigned int i = 0; i < fCentra.size(); i++) {
             //berekenen het aantal niet gevaccineerden
-            int aantalNietGevaccineerden = centra[i].getInwoners() - centra[i].getVaccinated();
+            int aantalNietGevaccineerden = fCentra[i].getInwoners() - fCentra[i].getVaccinated();
             //schrijven dit weg in het output bestand
-            Output << centra[i].getNaam() << ": " << centra[i].getVaccinated() << " gevaccineerd, nog " <<
-                aantalNietGevaccineerden << " niet gevaccineerd\n";
+            Output << fCentra[i].getNaam() << ": " << fCentra[i].getVaccinated() << " gevaccineerd, nog " <<
+                   aantalNietGevaccineerden << " niet gevaccineerd\n";
         }
         //we sluiten de file
         Output.close();

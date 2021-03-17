@@ -106,6 +106,33 @@ CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Transport.cpp
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Transport.h
 CMakeFiles/ttt_debug.dir/Transport.cpp.o: ../Vaccinatiecentrum.h
 
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-death-test.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-message.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-param-test.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-printers.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-test-part.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest-typed-test.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest_pred_impl.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/gtest_prod.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-internal.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-port.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-string.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-tuple.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../gtest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../DesignByContract.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../FileParser.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../TinyXML/tinystr.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../TinyXML/tinyxml.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../Transport.h
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../UnitTests.cpp
+CMakeFiles/ttt_debug.dir/UnitTests.cpp.o: ../Vaccinatiecentrum.h
+
 CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../DesignByContract.h
 CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../Vaccinatiecentrum.cpp
 CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o: ../Vaccinatiecentrum.h
