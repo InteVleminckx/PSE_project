@@ -1,7 +1,7 @@
 <SIMULATIE>
     <HUB>
         <levering>20000</levering>
-        <fInterval>30</fInterval>
+        <interval>30</interval>
         <Transport>1000</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
@@ -13,7 +13,7 @@
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>50000</inwoners>
+        <inwoners>100000</inwoners>
         <capaciteit>5000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
@@ -25,7 +25,7 @@
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>10000</inwoners>
+        <inwoners>70000</inwoners>
         <capaciteit>1000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>

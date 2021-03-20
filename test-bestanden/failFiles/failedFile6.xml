@@ -1,7 +1,7 @@
 <SIMULATIE>
     <HUB>
         <levering>93000</levering>
-        <fInterval>6</fInterval>
+        <interval>6</interval>
         <Transport>2000</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
@@ -24,7 +24,6 @@
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
-        <adres>Gevaertlaan 1, Westerlo</adres>
         <inwoners>49451</inwoners>
         <capaciteit>1000</capaciteit>
     </VACCINATIECENTRUM>

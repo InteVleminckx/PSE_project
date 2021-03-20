@@ -142,6 +142,14 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Hub.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Hub.h">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/InputTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
@@ -188,6 +196,14 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/UnitTests.cpp">
 			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccin.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccin.h">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp">
 			<Option target="ttt_debug"/>

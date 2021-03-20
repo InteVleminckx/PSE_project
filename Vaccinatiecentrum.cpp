@@ -6,9 +6,35 @@
 
 #include "Vaccinatiecentrum.h"
 
+Vaccinatiecentrum::Vaccinatiecentrum() {
+    _initCheck = this;
+    ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
+}
+
+//void Vaccinatiecentrum::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
+//
+//    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling vaccinatieInCentrum");
+//
+//    fOVP.open("../simulatieOutput/overzichtVaccinatieprocedure.txt");
+//
+//    // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
+//    int inwonersGevaccineerd = min(fVaccinsInCentrum, fCapaciteit);
+//    inwonersGevaccineerd = min(inwonersGevaccineerd, fInwoners - fVaccinated);
+//
+//    fVaccinated += inwonersGevaccineerd;
+//    fVaccinsInCentrum -= inwonersGevaccineerd;
+//
+//    if (inwonersGevaccineerd != 0) {
+//        fOVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
+//    }
+//
+//}
+
+
 void Vaccinatiecentrum::setNaam(string &Cnaam) {
-    REQUIRE((!Cnaam.empty()), "Een vaccininatiecentrum moet een naam hebben, met minstens 1 karakter.");
-    naam = Cnaam;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNaam");
+    REQUIRE((!Cnaam.empty()), "Een vaccininatiecentrum moet een fNaam hebben, met minstens 1 karakter.");
+    fNaam = Cnaam;
     ENSURE((getNaam() == Cnaam), "setNaam postcondition failure.");
 }
 
@@ -19,56 +45,73 @@ void Vaccinatiecentrum::setAdres(string &Cadres) {
 }
 
 void Vaccinatiecentrum::setInwoners(int &Cinwoners) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setInwoners");
     REQUIRE((Cinwoners > 0), "Een gebied heeft meer dan 0 inwoners.");
-    inwoners = Cinwoners;
+    fInwoners = Cinwoners;
     ENSURE((getInwoners() == Cinwoners), "setInwoners postcondition failure.");
 }
 
 void Vaccinatiecentrum::setCapaciteit(int &Ccapaciteit) {
-    REQUIRE((Ccapaciteit > 0), "Een vaccininatiecentrum heeft een grotere capaciteit dan 0.");
-    capaciteit = Ccapaciteit;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setCapaciteit");
+    REQUIRE((Ccapaciteit > 0), "Een vaccininatiecentrum heeft een grotere fCapaciteit dan 0.");
+    fCapaciteit = Ccapaciteit;
     ENSURE((getCapaciteit() == Ccapaciteit), "setCapaciteit postcondition failure.");
 }
 
 void Vaccinatiecentrum::setVaccins(int Cvaccinaties) {
-    REQUIRE((Cvaccinaties >= 0), "Een vaccininatiecentrum heeft 0 of meer vaccins in bezit.");
-    vaccins = Cvaccinaties;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccins");
+    REQUIRE((Cvaccinaties >= 0), "Een vaccininatiecentrum heeft 0 of meer fVaccinsInCentrum in bezit.");
+    fVaccinsInCentrum = Cvaccinaties;
     ENSURE((getVaccins() == Cvaccinaties), "setVaccins postcondition failure.");
 }
 
 void Vaccinatiecentrum::setVaccinated(int Cvaccinated) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
     REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
-    vaccinated = Cvaccinated;
+    fVaccinated = Cvaccinated;
     ENSURE((getVaccinated() == Cvaccinated), "setVaccinated postcondition failure.");
 }
 
 string Vaccinatiecentrum::getNaam() {
-    return naam;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getNaam");
+    return fNaam;
 }
 
 string Vaccinatiecentrum::getAdres() {
-    return adres;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getAdres");
+    return fAdres;
 }
 
 int Vaccinatiecentrum::getInwoners() {
-    return inwoners;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getInwoners");
+    return fInwoners;
 }
 
 int Vaccinatiecentrum::getCapaciteit() {
-    return capaciteit;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getCapaciteit");
+    return fCapaciteit;
 }
 
 int Vaccinatiecentrum::getVaccins() {
-    return vaccins;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccins");
+
+    return fVaccinsInCentrum;
 }
 
 int Vaccinatiecentrum::getVaccinated() {
-    return vaccinated;
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinated");
+
+    return fVaccinated;
 }
+
+bool Vaccinatiecentrum::properlyInitialized() {
+    return _initCheck == this;
+}
+
 
 //void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {
 //
-//    REQUIRE((!Cadres.empty()), "Geen geldig adres voor het vaccinatiecentrum.");
+//    REQUIRE((!Cadres.empty()), "Geen geldig fAdres voor het vaccinatiecentrum.");
 //
 //    bool isPassedKomma = false;
 //    vector<string> beforeKomma;
@@ -121,8 +164,8 @@ int Vaccinatiecentrum::getVaccinated() {
 //
 //    REQUIRE((isCorrectHouseNumber == true), "Geen geldig huisnummer, "
 //        "moet bestaan uit allemaal cijfers en laatste kan zowel cijfer als letter zijn.");
-//    REQUIRE((beforeKomma.size() >= 2), "Geen geldig adres voor de komma.");
-//    REQUIRE((!afterKomma.empty()), "Geen geldig adres na de komma.");
+//    REQUIRE((beforeKomma.size() >= 2), "Geen geldig fAdres voor de komma.");
+//    REQUIRE((!afterKomma.empty()), "Geen geldig fAdres na de komma.");
 //
 //    // checken of achter de komma alles wel klopt ???
 //

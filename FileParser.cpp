@@ -36,6 +36,10 @@ void FileParser::parseXML() {
         string elemName = elem->Value();
 
         if(elemName == "HUB") {
+
+            Hub newHub;
+
+
             HUBcounter++;
             fHubVaccins = 0;
 
@@ -45,42 +49,11 @@ void FileParser::parseXML() {
             if (!isTag("fInterval", elem)) return 1;
             if (!isTag("Transport", elem)) return 1;
             if (!isTag("CENTRA", elem)) return 1;
-
-            TiXmlNode* levering = elem->FirstChild("levering")->FirstChild();
-            TiXmlNode* intervalNode = elem->FirstChild("fInterval")->FirstChild();
-            TiXmlNode* Transport = elem->FirstChild("Transport")->FirstChild();
             TiXmlNode* CENTRA = elem->FirstChildElement("CENTRA");
 
 //            REQUIRE((isDigit(levering->Value()) == true), "Leveringen moet een positieve integer zijn.");
 //            REQUIRE((isDigit(intervalNode->Value()) == true), "Interval moet een positieve integer zijn.");
 //            REQUIRE((isDigit(Transport->Value()) == true), "Transport moet een positieve integer zijn.");
-
-            if (!isDigit(levering->Value())){
-                cout << endl;
-                cerr << "Levering moet een positieve integer zijn." << endl;
-                cout << endl;
-                return 1;
-            }
-
-            if (!isDigit(intervalNode->Value())){
-                cout << endl;
-                cerr << "Interval moet een positieve integer zijn." << endl;
-                cout << endl;
-                return 1;
-            }
-
-            if (!isDigit(Transport->Value())){
-                cout << endl;
-                cerr << "Transport moet een positieve integer zijn." << endl;
-                cout << endl;
-                return 1;
-            }
-
-
-            fLeveringen = atoi(levering->Value());
-            fInterval = atoi(intervalNode->Value());
-            fTransport = atoi(Transport->Value());
-
 
             for (TiXmlNode* element = CENTRA->FirstChild(); element != NULL;
                 element = element->NextSiblingElement()){
@@ -158,11 +131,11 @@ void FileParser::uitvoer(bool begin) {
     if (Output.is_open())
     {
         //schrijven een string weg in het uitvoer bestand
-        Output << "Hub (" << fHubVaccins << " vaccins)\n";
+        Output << "Hub (" << fHubVaccins << " fVaccinsInCentrum)\n";
         //lopen over alle fCentra
         for (unsigned int i = 0; i < fCentra.size(); i++) {
             //schrijven een string weg in het uitvoer bestand
-            Output << "\t-> " << fCentra[i].getNaam() << "(" << fCentra[i].getVaccins() << " vaccins)""\n";
+            Output << "\t-> " << fCentra[i].getNaam() << "(" << fCentra[i].getVaccins() << " fVaccinsInCentrum)""\n";
         }
         //wit regel in het bestand
         Output << "\n";

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ttt_debug.dir/FileParser.cpp.o"
+  "CMakeFiles/ttt_debug.dir/Hub.cpp.o"
   "CMakeFiles/ttt_debug.dir/InputTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/SystemTests.cpp.o"
@@ -9,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxmlparser.cpp.o"
   "CMakeFiles/ttt_debug.dir/Transport.cpp.o"
   "CMakeFiles/ttt_debug.dir/UnitTests.cpp.o"
+  "CMakeFiles/ttt_debug.dir/Vaccin.cpp.o"
   "CMakeFiles/ttt_debug.dir/Vaccinatiecentrum.cpp.o"
   "ttt_debug"
   "ttt_debug.pdb"

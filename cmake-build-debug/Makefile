@@ -186,6 +186,36 @@ FileParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/FileParser.cpp.s
 .PHONY : FileParser.cpp.s
 
+Hub.o: Hub.cpp.o
+
+.PHONY : Hub.o
+
+# target to build an object file
+Hub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Hub.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Hub.cpp.o
+.PHONY : Hub.cpp.o
+
+Hub.i: Hub.cpp.i
+
+.PHONY : Hub.i
+
+# target to preprocess a source file
+Hub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Hub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Hub.cpp.i
+.PHONY : Hub.cpp.i
+
+Hub.s: Hub.cpp.s
+
+.PHONY : Hub.s
+
+# target to generate assembly for a file
+Hub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Hub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Hub.cpp.s
+.PHONY : Hub.cpp.s
+
 InputTests.o: InputTests.cpp.o
 
 .PHONY : InputTests.o
@@ -471,6 +501,36 @@ UnitTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/UnitTests.cpp.s
 .PHONY : UnitTests.cpp.s
 
+Vaccin.o: Vaccin.cpp.o
+
+.PHONY : Vaccin.o
+
+# target to build an object file
+Vaccin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Vaccin.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Vaccin.cpp.o
+.PHONY : Vaccin.cpp.o
+
+Vaccin.i: Vaccin.cpp.i
+
+.PHONY : Vaccin.i
+
+# target to preprocess a source file
+Vaccin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Vaccin.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Vaccin.cpp.i
+.PHONY : Vaccin.cpp.i
+
+Vaccin.s: Vaccin.cpp.s
+
+.PHONY : Vaccin.s
+
+# target to generate assembly for a file
+Vaccin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Vaccin.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Vaccin.cpp.s
+.PHONY : Vaccin.cpp.s
+
 Vaccinatiecentrum.o: Vaccinatiecentrum.cpp.o
 
 .PHONY : Vaccinatiecentrum.o
@@ -514,6 +574,9 @@ help:
 	@echo "... FileParser.o"
 	@echo "... FileParser.i"
 	@echo "... FileParser.s"
+	@echo "... Hub.o"
+	@echo "... Hub.i"
+	@echo "... Hub.s"
 	@echo "... InputTests.o"
 	@echo "... InputTests.i"
 	@echo "... InputTests.s"
@@ -544,6 +607,9 @@ help:
 	@echo "... UnitTests.o"
 	@echo "... UnitTests.i"
 	@echo "... UnitTests.s"
+	@echo "... Vaccin.o"
+	@echo "... Vaccin.i"
+	@echo "... Vaccin.s"
 	@echo "... Vaccinatiecentrum.o"
 	@echo "... Vaccinatiecentrum.i"
 	@echo "... Vaccinatiecentrum.s"

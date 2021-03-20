@@ -22,6 +22,10 @@ set(RELEASE_SOURCE_FILES
         Transport.cpp
         Transport.h
         DesignByContract.h
+        Hub.cpp
+        Hub.h
+        Vaccin.cpp
+        Vaccin.h
         )
 
 # Set source files for DEBUG target
@@ -37,6 +41,10 @@ set(DEBUG_SOURCE_FILES
         InputTests.cpp
         SystemTests.cpp
         UnitTests.cpp
+        Hub.cpp
+        Hub.h
+        Vaccin.cpp
+        Vaccin.h
         )
 
 # Create RELEASE target
@@ -50,6 +58,8 @@ add_executable(ttt ${RELEASE_SOURCE_FILES}
         TinyXML/tinyxml.cpp
         TinyXML/tinystr.h
         TinyXML/tinystr.cpp
+        Hub.cpp
+        Hub.h
         )
 
 # Create DEBUG target
@@ -58,6 +68,8 @@ add_executable(ttt_debug ${DEBUG_SOURCE_FILES}
         InputTests.cpp
         SystemTests.cpp
         UnitTests.cpp
+        Hub.cpp
+        Hub.h
         FileParser.cpp
         FileParser.h
         TinyXML/tinyxmlparser.cpp

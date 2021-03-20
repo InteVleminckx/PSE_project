@@ -1,7 +1,7 @@
 <SIMULATIE>
     <HUB>
         <levering>93000</levering>
-        <fInterval>1</fInterval>
+        <interval>1</interval>
         <Transport>2000</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
@@ -20,7 +20,7 @@
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
         <inwoners>76935</inwoners>
-            <capaciteit>2000</capaciteit>
+        <capaciteit>2000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>

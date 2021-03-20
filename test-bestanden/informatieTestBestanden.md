@@ -148,11 +148,11 @@ succesFile20:
 
 #SystemFiles
 
-bestand1.xml:
+systemTest1.xml:
 
     Standaard testbestand van 
 
-bestand2.xml:
+systemTest2.xml:
 
     uitzonderlijke situatie, niet voldoende vaccins om alle fCentra aan volle capaciteit te geven
 

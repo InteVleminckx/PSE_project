@@ -1,33 +1,27 @@
-/*
- * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
-*/
+//
+// Created by inte on 20.03.21.
+//
 
-#include "Transport.h"
+#include "Hub.h"
 
-Transport::Transport(FileParser &file) {
-    fLeveringInterval = file.fInterval;
-    fAantalVaccins = 0;
+Hub::Hub() {
     _initCheck = this;
-    transportSimulatie(file);
-
+    ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
 }
 
-void Transport::transportSimulatie(FileParser &file) {
+void Hub::distributie(FileParser &file) {
+    REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling distributie");
 
-    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling transportSimulatie");
     int day = 0;
 
     //aanmaken uitvoer bestand
     ofstream OT;
 
     //openen van het uitvoerbestand
-    OT.open("../overzichtTransport.txt");
-    OVP.open("../overzichtVaccinatieprocedure.txt");
+    OT.open("../simulatieOutput/overzichtTransport.txt");
 
 
-//    while (!isAllPeopleVaccinated(file)){
+    while (!isAllPeopleVaccinated(file)){
         //check allVaccinated
 
         //als fInterval om is, nieuwe levering in de hub
@@ -59,7 +53,6 @@ void Transport::transportSimulatie(FileParser &file) {
                     2*capaciteitCentrum >= j*file.fTransport + vaccinsCentrum && !foundLadingen && getLadingen){
                     ladingen = j; foundLadingen = true;
                 }
-
             }
 
             file.fCentra[i].setVaccins((ladingen * file.fTransport) + vaccinsCentrum);
@@ -75,32 +68,13 @@ void Transport::transportSimulatie(FileParser &file) {
         OT << "\n";
         day++;
     }
-//    file.fHubVaccins = fAantalVaccins;
-//}
-
-void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
-
-    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling vaccinatieInCentrum");
+    file.fHubVaccins = fAantalVaccins;
 
 
-    int vaccinsInCentrum = centrum.getVaccins();
-    int capaciteit = centrum.getCapaciteit();
-    int aantalOngevaccineerden = centrum.getInwoners() - centrum.getVaccinated();
-
-    int inwonersGevaccineerd = min(vaccinsInCentrum, capaciteit);
-    inwonersGevaccineerd = min(inwonersGevaccineerd, aantalOngevaccineerden);
-    // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
-
-    centrum.setVaccinated(inwonersGevaccineerd + centrum.getVaccinated());
-    centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
-
-    if (inwonersGevaccineerd != 0) {
-        fOVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
-    }
 }
 
-bool Transport::isAllPeopleVaccinated(FileParser &file) {
-    REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling isALlPeopleVaccinated");
+bool Hub::isAllPeopleVaccinated(FileParser &file) {
+    REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling isALlPeopleVaccinated");
 
     for (unsigned int i = 0; i < file.fCentra.size(); i++) {
         if (file.fCentra[i].getInwoners() != file.fCentra[i].getVaccinated()) {
@@ -110,8 +84,8 @@ bool Transport::isAllPeopleVaccinated(FileParser &file) {
     return true;
 }
 
-bool Transport::properlyInitialized() {
+
+bool Hub::properlyInitialized() {
 
     return _initCheck == this;
 }
-

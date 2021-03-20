@@ -1,7 +1,7 @@
 <SIMULATIE>
     <HUB>
         <levering>93000</levering>
-        <fInterval>6</fInterval>
+        <interval>6</interval>
         <Transport>2000</Transport>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
@@ -31,7 +31,6 @@
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>
         <adres>Maaltekouter 1, Sint-Denijs-Westrem</adres>
-        <inwoners>257029</inwoners>
         <capaciteit>3000</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>

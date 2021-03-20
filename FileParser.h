@@ -29,7 +29,7 @@ public:
 
     //HUB
     int fLeveringen;
-    int fHubVaccins; // aantal vaccins in de HUB
+    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
     int fInterval;
     int fTransport;
 

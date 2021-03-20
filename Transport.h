@@ -38,19 +38,21 @@ public:
     Transport(FileParser &file);
 
     /*
-     * Deze functie verzorgt de (automatische) verdeling van de vaccins over de vaccinatiecentra, met
-     * telkens op het fInterval een levering vaccins aan de HUB.
+     * @functie : transportSimulatie
+     * Deze functie verzorgt de (automatische) verdeling van de fVaccinsInCentrum over de vaccinatiecentra, met
+     * telkens op het fInterval een levering fVaccinsInCentrum aan de HUB.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
     void transportSimulatie(FileParser &file);
 
-    /*
-     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
-     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal vaccins in
-     * het centrum, en daarnaast wordt het aantal vaccins in het centrum verlaagd.
-     * @param centrum : het Vaccinatiecentrum
-     */
-    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
+//    /*
+//     * @functie : vaccinatieInCentrum
+//     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
+//     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal fVaccinsInCentrum in
+//     * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
+//     * @param centrum : het Vaccinatiecentrum
+//     */
+//    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
 
     /*
      * @functie : isAllPeopleVaccinated

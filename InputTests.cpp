@@ -48,7 +48,7 @@ TEST_F(InputTests, failedFile1) {
 
 TEST_F(InputTests, failedFile2) {
     string file = "../test-bestanden/failFiles/failedFile2.xml";
-    EXPECT_TRUE( parsedFile.parseFile(file));
+    EXPECT_TRUE(parsedFile.parseFile(file));
 }
 
 TEST_F(InputTests, failedFile3) {
@@ -237,21 +237,21 @@ TEST_F(InputTests, DefaultConstructor22) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 16000); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 16000); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5500); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5500); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 456500); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 3065); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 3065); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 76935); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 498); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 498); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 39502); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 4971); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 4971); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 
@@ -310,21 +310,21 @@ TEST_F(InputTests, succesFile2) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 162000); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 162000); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 23827); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 23827); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 540173); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 19065); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 19065); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 76935); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10549); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10549); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 49451); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 18971); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 18971); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 
@@ -383,21 +383,21 @@ TEST_F(InputTests, succesFile3) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 6600); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 6600); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 7527); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 7527); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 54073); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2105); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2105); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 7695); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1059); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1059); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 4941); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 971); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 971); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 
@@ -456,21 +456,21 @@ TEST_F(InputTests, succesFile4) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 2500); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 2500); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5945); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5945); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 540555); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 20445); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 20445); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 769555); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10459); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10459); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 495541); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 12971); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 12971); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 }
@@ -528,21 +528,21 @@ TEST_F(InputTests, succesFile5) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 4839); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 4839); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 10000); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 10000); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 23456); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2598); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2598); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 15975); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1764); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1764); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 64656); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 2378); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 2378); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 
@@ -601,21 +601,21 @@ TEST_F(InputTests, succesFile6) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 200000); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 200000); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 64245); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 64245); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 5405755); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 24245); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 24245); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 7695755); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 14459); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 14459); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 4905541); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 32971); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 32971); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 
@@ -674,21 +674,21 @@ TEST_F(InputTests, succesFile7) {
 
     Transport transport(parsedFile);
 
-    EXPECT_EQ(parsedFile.fHubVaccins, 3757740); // aantal vaccins in hub >= 0
+    EXPECT_EQ(parsedFile.fHubVaccins, 3757740); // aantal fVaccinsInCentrum in hub >= 0
 
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 1621); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 1621); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 44444); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2709); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2709); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 66666); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 3441); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 3441); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 999999); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
 
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 780); // vaccins in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 780); // fVaccinsInCentrum in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 159615); // gevaccineerden in centrum >= 0
     EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
 

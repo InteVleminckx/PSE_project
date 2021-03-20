@@ -113,7 +113,7 @@ TEST_F(UnitTests, Functie_isAlphaNum){
     str = "54646";
     EXPECT_EQ(1, newFile->isAlphaNum(str));
     str = "54,646";
-    EXPECT_EQ(1, newFile->isAlphaNum(str)); // toelaten want adres bestaat uit een komma ook
+    EXPECT_EQ(1, newFile->isAlphaNum(str)); // toelaten want fAdres bestaat uit een komma ook
     str = "xD";
     EXPECT_EQ(1, newFile->isAlphaNum(str));
     str = "10/10";
@@ -190,7 +190,7 @@ TEST_F(UnitTests, Functie_vaccinatieInCentrum){
     string adres = "Hertoginstraat 17, Antwerpen";
     int inwoners = 100000;
     int capaciteit = 10000;
-    int vaccins = 5000; // vaccins in het centrum
+    int vaccins = 5000; // fVaccinsInCentrum in het centrum
     int vaccinated = 20000; // aantal gevaccineerden
 
     centrum.setNaam(centrumNaam);
