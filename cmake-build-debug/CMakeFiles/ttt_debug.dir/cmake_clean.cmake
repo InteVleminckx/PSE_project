@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ttt_debug.dir/Hub.cpp.o"
   "CMakeFiles/ttt_debug.dir/InputTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.o"
+  "CMakeFiles/ttt_debug.dir/SimulatieUtils.cpp.o"
   "CMakeFiles/ttt_debug.dir/SystemTests.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinystr.cpp.o"
   "CMakeFiles/ttt_debug.dir/TinyXML/tinyxml.cpp.o"

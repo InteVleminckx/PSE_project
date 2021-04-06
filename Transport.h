@@ -17,10 +17,13 @@
 #include <algorithm>
 #include "Vaccinatiecentrum.h"
 #include <fstream>
-#include "FileParser.h"
+//#include "FileParser.h"
 #include <sstream>  // Required for stringstreams
 
 using namespace std;
+
+class FileParser;
+class Transport;
 
 class Transport {
 

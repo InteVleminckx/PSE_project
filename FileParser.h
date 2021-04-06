@@ -20,6 +20,9 @@
 #include <sstream>  // Required for stringstreams
 using namespace std;
 
+//class Hub;
+class FileParser;
+
 class FileParser {
 
     TiXmlDocument fDoc;
@@ -28,6 +31,8 @@ class FileParser {
 public:
 
     //HUB
+    vector<Hub*> fHubs;
+
     int fLeveringen;
     int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
     int fInterval;

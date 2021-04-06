@@ -5,6 +5,8 @@
 */
 
 #include "Transport.h"
+#include "FileParser.h"
+
 
 Transport::Transport(FileParser &file) {
     fLeveringInterval = file.fInterval;

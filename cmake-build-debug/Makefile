@@ -297,6 +297,33 @@ SimulatieTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SimulatieTests.cpp.s
 .PHONY : SimulatieTests.cpp.s
 
+SimulatieUtils.o: SimulatieUtils.cpp.o
+
+.PHONY : SimulatieUtils.o
+
+# target to build an object file
+SimulatieUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SimulatieUtils.cpp.o
+.PHONY : SimulatieUtils.cpp.o
+
+SimulatieUtils.i: SimulatieUtils.cpp.i
+
+.PHONY : SimulatieUtils.i
+
+# target to preprocess a source file
+SimulatieUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SimulatieUtils.cpp.i
+.PHONY : SimulatieUtils.cpp.i
+
+SimulatieUtils.s: SimulatieUtils.cpp.s
+
+.PHONY : SimulatieUtils.s
+
+# target to generate assembly for a file
+SimulatieUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/SimulatieUtils.cpp.s
+.PHONY : SimulatieUtils.cpp.s
+
 SystemTests.o: SystemTests.cpp.o
 
 .PHONY : SystemTests.o
@@ -586,6 +613,9 @@ help:
 	@echo "... SimulatieTests.o"
 	@echo "... SimulatieTests.i"
 	@echo "... SimulatieTests.s"
+	@echo "... SimulatieUtils.o"
+	@echo "... SimulatieUtils.i"
+	@echo "... SimulatieUtils.s"
 	@echo "... SystemTests.o"
 	@echo "... SystemTests.i"
 	@echo "... SystemTests.s"

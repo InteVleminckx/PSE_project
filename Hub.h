@@ -7,13 +7,13 @@
 
 #include "TinyXML/tinyxml.h"
 #include <string>
-#include <iostream>
+//#include <iostream>
 #include <vector>
 #include <map>
 #include <cmath>
 #include <algorithm>
 #include <fstream>
-#include "FileParser.h"
+//#include "FileParser.h"
 #include <sstream>  // Required for stringstreams
 #include "DesignByContract.h"
 #include "Vaccin.h"
@@ -28,7 +28,7 @@ public:
     int fLeveringInterval;
     ofstream fOVP; //overzichtVaccinatieProcedure
 
-    vector<Vaccin> vaccins;
+    vector<Vaccin*> vaccins;
 
     /*
      * @functie: Hub
@@ -41,7 +41,7 @@ public:
      * Deze functie verdeeld de fVaccinsInCentrum over de vaccinatiecentra.
      * @param file : .xml bestand dat wordt meegegeven.
      */
-    void distributie(FileParser &file);
+//    void distributie(FileParser &file);
 
     /*
      * @functie : isAllPeopleVaccinated
@@ -49,7 +49,7 @@ public:
      * @param file : het .xml bestand dat ingelezen wordt.
      * @return : true als alle inwoners gevaccineerd zijn, anders false.
      */
-    bool isAllPeopleVaccinated(FileParser &file);
+//    bool isAllPeopleVaccinated(FileParser &file);
 
 
     bool properlyInitialized();

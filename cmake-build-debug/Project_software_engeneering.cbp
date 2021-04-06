@@ -159,6 +159,12 @@
 		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieUtils.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieUtils.h">
+			<Option target="ttt_debug"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/SystemTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>

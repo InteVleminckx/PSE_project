@@ -6,6 +6,7 @@
 */
 
 #include "FileParser.h"
+#include "Hub.h"
 
 int FileParser::parseFile(string &file) {
 
@@ -37,42 +38,117 @@ void FileParser::parseXML() {
 
         if(elemName == "HUB") {
 
-            Hub newHub;
-
+            Hub *newHub = new Hub;
 
             HUBcounter++;
             fHubVaccins = 0;
 
             REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
 
-            if (!isTag("levering", elem)) return 1;
-            if (!isTag("fInterval", elem)) return 1;
-            if (!isTag("Transport", elem)) return 1;
-            if (!isTag("CENTRA", elem)) return 1;
-            TiXmlNode* CENTRA = elem->FirstChildElement("CENTRA");
+//                    if (!isTag("type", elem)) return 1;
+//                    if (!isTag("levering", elem)) return 1;
+//                    if (!isTag("interval", elem)) return 1;
+//                    if (!isTag("transport", elem)) return 1;
+//                    if (!isTag("hernieuwing", elem)) return 1;
+//                    if (!isTag("temperatuur", elem)) return 1;
 
-//            REQUIRE((isDigit(levering->Value()) == true), "Leveringen moet een positieve integer zijn.");
-//            REQUIRE((isDigit(intervalNode->Value()) == true), "Interval moet een positieve integer zijn.");
-//            REQUIRE((isDigit(Transport->Value()) == true), "Transport moet een positieve integer zijn.");
+                    if (!isTag("type", elem)) {
+                        testOutput << "Tag \"type\" niet gevonden.\n";
+                    }
+                    if (!isTag("levering", elem)) {
+                        testOutput << "Tag \"levering\" niet gevonden.\n";
+                    }
+                    if (!isTag("interval", elem)) {
+                        testOutput << "Tag \"interval\" niet gevonden.\n";
+                    }
+                    if (!isTag("transport", elem)) {
+                        testOutput << "Tag \"transport\" niet gevonden.\n";
+                    }
+                    if (!isTag("hernieuwing", elem)) {
+                        testOutput << "Tag \"hernieuwing\" niet gevonden.\n";
+                    }
+                    if (!isTag("temperatuur", elem)) {
+                        testOutput << "Tag \"temperatuur\" niet gevonden.\n";
+                    }
 
-            for (TiXmlNode* element = CENTRA->FirstChild(); element != NULL;
-                element = element->NextSiblingElement()){
+                    TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
+                    TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
+                    TiXmlNode* interval = elem1->FirstChild("interval")->FirstChild();
+                    TiXmlNode* transport = elem1->FirstChild("transport")->FirstChild();
+                    TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
+                    TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
+
+//                  REQUIRE((isDigit(levering->Value()) == true), "Leveringen moet een positieve integer zijn.");
+//                  REQUIRE((isDigit(intervalNode->Value()) == true), "Interval moet een positieve integer zijn.");
+//                  REQUIRE((isDigit(Transport->Value()) == true), "Transport moet een positieve integer zijn.");
+
+                    if (!isDigit(levering->Value())){
+//                        cout << endl;
+//                        cerr << "Levering moet een positieve integer zijn." << endl;
+//                        cout << endl;
+                        testOutput << "Levering moet een positieve integer zijn.\n";
+//                        return 1;
+                    }
+
+                    if (!isDigit(interval->Value())){
+//                        cout << endl;
+//                        cerr << "Interval moet een positieve integer zijn." << endl;
+//                        cout << endl;
+                        testOutput << "Interval moet een positieve integer zijn.\n";
+//                        return 1;
+                    }
+
+                    if (!isDigit(transport->Value())){
+//                        cout << endl;
+//                        cerr << "Transport moet een positieve integer zijn." << endl;
+//                        cout << endl;
+                        testOutput << "Transport moet een positieve integer zijn.\n";
+//                        return 1;
+                    }
+
+                    string typeString = type->Value();
+                    int leveringInt = atoi(levering->Value());
+                    int intervalInt = atoi(interval->Value());
+                    int transportInt = atoi(transport->Value());
+                    int hernieuwingInt = atoi(hernieuwing->Value());
+                    int temperatuurInt = atoi(temperatuur->Value());
+
+                    Vaccin* newVaccin = new Vaccin(typeString, leveringInt, intervalInt,
+                        transportInt, hernieuwingInt, temperatuurInt);
+
+                    newHub->vaccins.push_back(newVaccin);
+
+                }
+                else if(element == "CENTRA"){
+//            if (!isTag("CENTRA", elem)) return 1;
+
+                    TiXmlNode* CENTRA = elem->FirstChildElement("CENTRA");
+
+
+                    for (TiXmlNode* elementCentra = CENTRA->FirstChild(); elementCentra != NULL;
+                         elementCentra = elementCentra->NextSiblingElement()){
 
 //             REQUIRE((isAlpha(element->FirstChild()->Value()) == true), "Naam van een centrum moet een string zijn.");
-                if (!isAlpha(element->FirstChild()->Value())){
-                    cout << endl;
-                    cerr << "Naam van een centrum moet een string zijn." << endl;
-                    cout << endl;
-                    return 1;
-                }
+                        if (!isAlpha(elementCentra->FirstChild()->Value())){
+//                            cout << endl;
+//                            cerr << "Naam van een centrum moet een string zijn." << endl;
+//                            cout << endl;
+                            testOutput << "Naam van een centrum moet een string zijn.\n";
+//                            return 1;
+                        }
 
-                string naam = element->FirstChild()->Value();
-                Vaccinatiecentrum CENTRUM;
-                CENTRUM.setNaam(naam);
-                fCentra.push_back(CENTRUM);
+                        string naam = elementCentra->FirstChild()->Value();
+                        Vaccinatiecentrum CENTRUM;
+                        CENTRUM.setNaam(naam);
+                        fCentra.push_back(CENTRUM);
+                    }
+                }
             }
 
-            REQUIRE((centra.size() >= 1), "Er moet minstens 1 of meer vaccininatiecentra zijn.");
+
+            REQUIRE((fCentra.size() >= 1), "Er moet minstens 1 vaccininatiecentrum zijn.");
+
+            fHubs.push_back(newHub);
 
         }
 
