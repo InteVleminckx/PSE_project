@@ -24,11 +24,15 @@ class Hub {
 public:
 
     Hub* _initCheck;
-    int fAantalVaccins;
-    int fLeveringInterval;
-    ofstream fOVP; //overzichtVaccinatieProcedure
+//    int fAantalVaccins;
+//    int fLeveringInterval;
+//    ofstream fOVP; //overzichtVaccinatieProcedure
 
-    vector<Vaccin*> vaccins;
+    vector<Vaccin*> fVaccins;
+
+    vector<Vaccinatiecentrum*> fHubCentra;
+
+    int VCcounter;
 
     /*
      * @functie: Hub

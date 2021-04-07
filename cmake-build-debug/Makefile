@@ -156,6 +156,33 @@ ttt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/build
 .PHONY : ttt/fast
 
+Distributie.o: Distributie.cpp.o
+
+.PHONY : Distributie.o
+
+# target to build an object file
+Distributie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Distributie.cpp.o
+.PHONY : Distributie.cpp.o
+
+Distributie.i: Distributie.cpp.i
+
+.PHONY : Distributie.i
+
+# target to preprocess a source file
+Distributie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Distributie.cpp.i
+.PHONY : Distributie.cpp.i
+
+Distributie.s: Distributie.cpp.s
+
+.PHONY : Distributie.s
+
+# target to generate assembly for a file
+Distributie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Distributie.cpp.s
+.PHONY : Distributie.cpp.s
+
 FileParser.o: FileParser.cpp.o
 
 .PHONY : FileParser.o
@@ -598,6 +625,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ttt"
 	@echo "... ttt_debug"
+	@echo "... Distributie.o"
+	@echo "... Distributie.i"
+	@echo "... Distributie.s"
 	@echo "... FileParser.o"
 	@echo "... FileParser.i"
 	@echo "... FileParser.s"

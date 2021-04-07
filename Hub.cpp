@@ -6,6 +6,7 @@
 
 Hub::Hub() {
     _initCheck = this;
+    VCcounter = 0;
     ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
 }
 

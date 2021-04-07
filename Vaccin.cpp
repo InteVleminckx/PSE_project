@@ -11,7 +11,7 @@ Vaccin::Vaccin(string &type, int leveringen, int interval, int transport, int he
     fTransport = transport;
     fHernieuwingen = hernieuwingen;
     fTemperatuur = temperatuur;
-
+    fAantalVaccins = 0;
     _initCheck = this;
 
     ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
@@ -51,4 +51,9 @@ int Vaccin::getInterval() {
 int Vaccin::getTemperatuur() {
     REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling getTemperatuur");
     return fTemperatuur;
+}
+
+int Vaccin::getAantalVaccins() {
+    REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling getAantalVaccins");
+    return fAantalVaccins;
 }

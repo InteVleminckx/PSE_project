@@ -33,10 +33,10 @@ public:
     //HUB
     vector<Hub*> fHubs;
 
-    int fLeveringen;
-    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
-    int fInterval;
-    int fTransport;
+//    int fLeveringen;
+//    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
+//    int fInterval;
+//    int fTransport;
 
     vector<Vaccinatiecentrum> fCentra;
     FileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
@@ -73,6 +73,23 @@ public:
     bool isAlphaNum(const string &str);
     bool isTag(const string &tag, TiXmlElement *elem);
     bool isLittleAlpha(const string &str);
+
+    /*
+     * @functie: checkTags
+     * We kunnen met deze functie alle controle tags ineens aanroepen, dan staat dit niet allemaal minden in onze code
+     * @param elem
+     * @param isFirstchildElement
+     */
+    void checkTags(TiXmlElement *elem, bool isFirstchildElement);
+
+
+    /*
+     * @functie: checkValues
+     * We controleren hier of de values die tussen de 2 tags staat correct is
+     * @param elem
+     * @param isVaccins
+     */
+    void checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins);
 
 
 };

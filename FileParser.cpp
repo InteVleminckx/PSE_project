@@ -41,35 +41,15 @@ void FileParser::parseXML() {
             Hub *newHub = new Hub;
 
             HUBcounter++;
-            fHubVaccins = 0;
 
-            REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
+//            REQUIRE((HUBcounter == 1), "Het aantal hubs mag niet meer zijn dan 1.");
 
-//                    if (!isTag("type", elem)) return 1;
-//                    if (!isTag("levering", elem)) return 1;
-//                    if (!isTag("interval", elem)) return 1;
-//                    if (!isTag("transport", elem)) return 1;
-//                    if (!isTag("hernieuwing", elem)) return 1;
-//                    if (!isTag("temperatuur", elem)) return 1;
+            for (TiXmlNode* elem1 = elem->FirstChild(); elem1 != NULL; elem1 = elem1->NextSiblingElement()) {
 
-                    if (!isTag("type", elem)) {
-                        testOutput << "Tag \"type\" niet gevonden.\n";
-                    }
-                    if (!isTag("levering", elem)) {
-                        testOutput << "Tag \"levering\" niet gevonden.\n";
-                    }
-                    if (!isTag("interval", elem)) {
-                        testOutput << "Tag \"interval\" niet gevonden.\n";
-                    }
-                    if (!isTag("transport", elem)) {
-                        testOutput << "Tag \"transport\" niet gevonden.\n";
-                    }
-                    if (!isTag("hernieuwing", elem)) {
-                        testOutput << "Tag \"hernieuwing\" niet gevonden.\n";
-                    }
-                    if (!isTag("temperatuur", elem)) {
-                        testOutput << "Tag \"temperatuur\" niet gevonden.\n";
-                    }
+                string element = elem1->Value();
+                if (element == "VACCIN"){
+
+                    checkTags(elem, true);
 
                     TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
                     TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
@@ -78,33 +58,7 @@ void FileParser::parseXML() {
                     TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
                     TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
 
-//                  REQUIRE((isDigit(levering->Value()) == true), "Leveringen moet een positieve integer zijn.");
-//                  REQUIRE((isDigit(intervalNode->Value()) == true), "Interval moet een positieve integer zijn.");
-//                  REQUIRE((isDigit(Transport->Value()) == true), "Transport moet een positieve integer zijn.");
-
-                    if (!isDigit(levering->Value())){
-//                        cout << endl;
-//                        cerr << "Levering moet een positieve integer zijn." << endl;
-//                        cout << endl;
-                        testOutput << "Levering moet een positieve integer zijn.\n";
-//                        return 1;
-                    }
-
-                    if (!isDigit(interval->Value())){
-//                        cout << endl;
-//                        cerr << "Interval moet een positieve integer zijn." << endl;
-//                        cout << endl;
-                        testOutput << "Interval moet een positieve integer zijn.\n";
-//                        return 1;
-                    }
-
-                    if (!isDigit(transport->Value())){
-//                        cout << endl;
-//                        cerr << "Transport moet een positieve integer zijn." << endl;
-//                        cout << endl;
-                        testOutput << "Transport moet een positieve integer zijn.\n";
-//                        return 1;
-                    }
+                    checkValues(elem, elem1, true);
 
                     string typeString = type->Value();
                     int leveringInt = atoi(levering->Value());
@@ -116,32 +70,32 @@ void FileParser::parseXML() {
                     Vaccin* newVaccin = new Vaccin(typeString, leveringInt, intervalInt,
                         transportInt, hernieuwingInt, temperatuurInt);
 
-                    newHub->vaccins.push_back(newVaccin);
+                    newHub->fVaccins.push_back(newVaccin);
 
                 }
                 else if(element == "CENTRA"){
-//            if (!isTag("CENTRA", elem)) return 1;
 
                     TiXmlNode* CENTRA = elem->FirstChildElement("CENTRA");
-
 
                     for (TiXmlNode* elementCentra = CENTRA->FirstChild(); elementCentra != NULL;
                          elementCentra = elementCentra->NextSiblingElement()){
 
 //             REQUIRE((isAlpha(element->FirstChild()->Value()) == true), "Naam van een centrum moet een string zijn.");
                         if (!isAlpha(elementCentra->FirstChild()->Value())){
-//                            cout << endl;
-//                            cerr << "Naam van een centrum moet een string zijn." << endl;
-//                            cout << endl;
                             testOutput << "Naam van een centrum moet een string zijn.\n";
-//                            return 1;
                         }
 
                         string naam = elementCentra->FirstChild()->Value();
-                        Vaccinatiecentrum CENTRUM;
-                        CENTRUM.setNaam(naam);
-                        fCentra.push_back(CENTRUM);
+                        Vaccinatiecentrum* CENTRUM = new Vaccinatiecentrum;
+                        CENTRUM->setNaam(naam);
+                        newHub->fHubCentra.push_back(CENTRUM);
                     }
+                }
+
+                else {
+                    testOutput << "Geen correcte input voor de tag.\n";
+                    checkTags(elem, true);
+                    checkValues(elem, elem1, true);
                 }
             }
 
@@ -167,13 +121,19 @@ void FileParser::parseXML() {
             int inwonersInt = atoi(inwoners->Value());
             int capaciteitInt = atoi(capaciteit->Value());
 
-            for (unsigned int i = 0; i < fCentra.size(); i++) {
-                if (fCentra[i].getNaam() == naam->Value()) {
-                    fCentra[i].setAdres(adresString);
-                    fCentra[i].setInwoners(inwonersInt);
-                    fCentra[i].setCapaciteit(capaciteitInt);
-                    fCentra[i].setVaccins(0);
-                    fCentra[i].setVaccinated(0);
+            for (unsigned int i = 0; i < fHubs.size(); i++) {
+                fHubs[i]->VCcounter++;
+                for (unsigned int j = 0; j < fHubs[i]->fHubCentra.size(); j++) {
+                    if (fHubs[i]->fHubCentra[j]->getNaam() == naam->Value()) {
+                        fHubs[i]->fHubCentra[j]->setAdres(adresString);
+                        fHubs[i]->fHubCentra[j]->setInwoners(inwonersInt);
+                        fHubs[i]->fHubCentra[j]->setCapaciteit(capaciteitInt);
+                        for (int k = 0; k < fHubs[i]->fVaccins.size(); ++k) {
+                            string type = fHubs[i]->fVaccins[k]->getType();
+                            fHubs[i]->fHubCentra[j]->setVaccins(0, type);
+                        }
+                        fHubs[i]->fHubCentra[j]->setVaccinated(0);
+                    }
                 }
             }
         }
@@ -209,20 +169,7 @@ void FileParser::uitvoer(bool begin) {
         //schrijven een string weg in het uitvoer bestand
         Output << "Hub (" << fHubVaccins << " fVaccinsInCentrum)\n";
         //lopen over alle fCentra
-        for (unsigned int i = 0; i < fCentra.size(); i++) {
-            //schrijven een string weg in het uitvoer bestand
-            Output << "\t-> " << fCentra[i].getNaam() << "(" << fCentra[i].getVaccins() << " fVaccinsInCentrum)""\n";
-        }
-        //wit regel in het bestand
-        Output << "\n";
-        //lopen terug over de fCentra
-        for (unsigned int i = 0; i < fCentra.size(); i++) {
-            //berekenen het aantal niet gevaccineerden
-            int aantalNietGevaccineerden = fCentra[i].getInwoners() - fCentra[i].getVaccinated();
-            //schrijven dit weg in het output bestand
-            Output << fCentra[i].getNaam() << ": " << fCentra[i].getVaccinated() << " gevaccineerd, nog " <<
-                   aantalNietGevaccineerden << " niet gevaccineerd\n";
-        }
+
         //we sluiten de file
         Output.close();
     }
@@ -266,14 +213,11 @@ bool FileParser::isAlphaNum(const string &str) {
     return true;
 }
 
-bool FileParser::isTag(const string &tag, TiXmlElement *elem) {
+bool FileParser::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement) {
     REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isTag");
     const char *tagString = tag.c_str();
 
-    if (elem->FirstChildElement(tagString) == NULL){
-        cout << endl;
-        cerr << "De tag " + tag + " is niet gevonden." << endl;
-        cout << endl;
+    if (elem->FirstChildElement()->FirstChild(tagString) == NULL && isFirstchildElement == true){
         return false;
     }
     return true;
@@ -295,4 +239,93 @@ bool FileParser::isLittleAlpha(const string &str) {
 bool FileParser::properlyInitialized() {
 
     return _initCheck == this;
+}
+
+void FileParser::checkTags(TiXmlElement *elem, bool isFirstchildElement) {
+    if (isFirstchildElement) {
+
+        if (!isTag("type", elem, true)) {
+            testOutput << "Tag \"type\" niet gevonden.\n";
+        }
+        if (!isTag("levering", elem, true)) {
+            testOutput << "Tag \"levering\" niet gevonden.\n";
+        }
+        if (!isTag("interval", elem, true)) {
+            testOutput << "Tag \"interval\" niet gevonden.\n";
+        }
+        if (!isTag("transport", elem, true)) {
+            testOutput << "Tag \"transport\" niet gevonden.\n";
+        }
+        if (!isTag("hernieuwing", elem, true)) {
+            testOutput << "Tag \"hernieuwing\" niet gevonden.\n";
+        }
+        if (!isTag("temperatuur", elem, true)) {
+            testOutput << "Tag \"temperatuur\" niet gevonden.\n";
+        }
+
+    }
+
+    else{
+        if (! isTag("naam", elem, false)) {
+            testOutput << "Tag \"naam\" niet gevonden.\n";
+        }
+        if (! isTag("adres", elem, false)) {
+            testOutput << "Tag \"adres\" niet gevonden.\n";
+        }
+        if (! isTag("inwoners", elem, false)) {
+            testOutput << "Tag \"inwoners\" niet gevonden.\n";
+        }
+        if (! isTag("capaciteit", elem, false)) {
+            testOutput << "Tag \"capaciteit\" niet gevonden.\n";
+        }
+    }
+}
+
+
+void FileParser::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins) {
+
+    if (isVaccins){
+
+//        TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
+        TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
+        TiXmlNode* interval = elem1->FirstChild("interval")->FirstChild();
+        TiXmlNode* transport = elem1->FirstChild("transport")->FirstChild();
+//        TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
+//        TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
+
+        if (!isDigit(levering->Value())){
+            testOutput << "Levering moet een positieve integer zijn.\n";
+        }
+
+        if (!isDigit(interval->Value())){
+            testOutput << "Interval moet een positieve integer zijn.\n";
+        }
+
+        if (!isDigit(transport->Value())){
+            testOutput << "Transport moet een positieve integer zijn.\n";
+        }
+    }
+
+    else{
+
+        TiXmlNode* naam = elem->FirstChild("naam")->FirstChild();
+        TiXmlNode* adres = elem->FirstChild("adres")->FirstChild();
+        TiXmlNode* inwoners = elem->FirstChild("inwoners")->FirstChild();
+        TiXmlNode* capaciteit = elem->FirstChild("capaciteit")->FirstChild();
+
+        if (!isAlpha(naam->Value())){
+            testOutput << "Naam van een centrum moet een string zijn.\n";
+        }
+        if (!isAlphaNum(adres->Value())){
+            testOutput << "Adres moet bestaan uit een string (en integers).\n";
+        }
+        if (!isDigit(inwoners->Value())){
+            testOutput << "Inwoners moet een positieve integer zijn.\n";
+        }
+        if (!isDigit(capaciteit->Value())){
+            testOutput << "Capaciteit moet een positieve integer zijn.\n";
+        }
+    }
+
+
 }

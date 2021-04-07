@@ -81,6 +81,14 @@ public:
      */
     int getTemperatuur();
 
+    /*
+     * @functie: getAantalVaccins
+     * Deze functie geeft het aantal vaccins die van dit type in de hub bevinden terug.
+     * @return: int, het geeft aantal vaccins die van dit type in de hub bevinden terug.
+     * REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling getAantalVaccins");
+     */
+    int getAantalVaccins();
+
     bool properlyInitialized();
 
 

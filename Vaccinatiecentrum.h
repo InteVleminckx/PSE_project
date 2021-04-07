@@ -24,7 +24,7 @@ class Vaccinatiecentrum {
     string fAdres;
     int fInwoners;
     int fCapaciteit;
-    int fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
+    map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
     int fVaccinated; // aantal gevaccineerden
 
 //    ofstream fOVP;
@@ -91,7 +91,7 @@ public:
      * REQUIRE((Cvaccinaties >= 0), "Een vaccininatiecentrum heeft 0 of meer fVaccinsInCentrum in bezit.");
      * ENSURE((getVaccins() == Cvaccinaties), "setVaccins postcondition failure.");
      */
-    void setVaccins(int Cvaccinaties);
+    void setVaccins(int Cvaccinaties, string &type);
     /*
      * @functie: setVaccinated
      * Deze functie zet het aantal gevaccineerde in de omgeving van het vaccinatiecentrum.

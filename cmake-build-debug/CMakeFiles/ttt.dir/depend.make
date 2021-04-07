@@ -16,6 +16,7 @@ CMakeFiles/ttt.dir/Hub.cpp.o: ../Hub.h
 CMakeFiles/ttt.dir/Hub.cpp.o: ../TinyXML/tinystr.h
 CMakeFiles/ttt.dir/Hub.cpp.o: ../TinyXML/tinyxml.h
 CMakeFiles/ttt.dir/Hub.cpp.o: ../Vaccin.h
+CMakeFiles/ttt.dir/Hub.cpp.o: ../Vaccinatiecentrum.h
 
 CMakeFiles/ttt.dir/RunSimilatie.cpp.o: ../DesignByContract.h
 CMakeFiles/ttt.dir/RunSimilatie.cpp.o: ../FileParser.h

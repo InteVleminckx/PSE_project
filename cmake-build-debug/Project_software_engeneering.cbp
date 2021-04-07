@@ -134,6 +134,12 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Distributie.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Distributie.h">
+			<Option target="ttt_debug"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/FileParser.cpp">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>

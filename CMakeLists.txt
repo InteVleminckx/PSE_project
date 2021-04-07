@@ -45,7 +45,7 @@ set(DEBUG_SOURCE_FILES
         Hub.h
         Vaccin.cpp
         Vaccin.h
-        SimulatieUtils.cpp SimulatieUtils.h)
+        SimulatieUtils.cpp SimulatieUtils.h Distributie.cpp Distributie.h)
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES}

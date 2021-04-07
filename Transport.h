@@ -48,14 +48,14 @@ public:
      */
     void transportSimulatie(FileParser &file);
 
-//    /*
-//     * @functie : vaccinatieInCentrum
-//     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
-//     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal fVaccinsInCentrum in
-//     * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
-//     * @param centrum : het Vaccinatiecentrum
-//     */
-//    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
+    /*
+     * @functie : vaccinatieInCentrum
+     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
+     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal fVaccinsInCentrum in
+     * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
+     * @param centrum : het Vaccinatiecentrum
+     */
+    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
 
     /*
      * @functie : isAllPeopleVaccinated
