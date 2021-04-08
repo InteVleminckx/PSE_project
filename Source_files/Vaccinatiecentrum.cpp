@@ -64,7 +64,7 @@ void Vaccinatiecentrum::setVaccins(int Cvaccinaties, string &type) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccins");
     REQUIRE((Cvaccinaties >= 0), "Een vaccininatiecentrum heeft 0 of meer fVaccinsInCentrum in bezit.");
     fVaccinsInCentrum[type] = Cvaccinaties;
-    ENSURE((getVaccins() == Cvaccinaties), "setVaccins postcondition failure.");
+    ENSURE((getVaccins(type) == Cvaccinaties), "setVaccins postcondition failure.");
 }
 
 void Vaccinatiecentrum::setVaccinated(int Cvaccinated) {
@@ -94,10 +94,10 @@ int Vaccinatiecentrum::getCapaciteit() {
     return fCapaciteit;
 }
 
-int Vaccinatiecentrum::getVaccins() {
+int Vaccinatiecentrum::getVaccins(string &type) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccins");
 
-    return fVaccinsInCentrum;
+    return fVaccinsInCentrum[type];
 }
 
 int Vaccinatiecentrum::getVaccinated() {

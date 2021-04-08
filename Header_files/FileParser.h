@@ -38,10 +38,10 @@ public:
     //HUB
     vector<Hub*> fHubs;
 
-//    int fLeveringen;
-//    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
-//    int fInterval;
-//    int fTransport;
+    int fLeveringen;
+    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
+    int fInterval;
+    int fTransport;
 
     ofstream testOutput;
 

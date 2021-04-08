@@ -6,14 +6,14 @@
 
 Distributie::Distributie(FileParser &file) {
 
-    for (int i = 0; i < file.fHubs.size(); ++i) {
-
-        file.fHubs[i].
-
-
-
-
-
-
-    }
+//    for (int i = 0; i < file.fHubs.size(); ++i) {
+//
+//        file.fHubs[i].
+//
+//
+//
+//
+//
+//
+//    }
 }

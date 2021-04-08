@@ -136,6 +136,7 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Distributie.h">
 			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/FileParser.h">
 			<Option target="ttt_debug"/>
@@ -153,6 +154,7 @@
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Utils.h">
+			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Vaccin.h">
@@ -165,6 +167,7 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Distributie.cpp">
 			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/FileParser.cpp">
 			<Option target="ttt_debug"/>
@@ -198,6 +201,7 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Utils.cpp">
 			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Vaccin.cpp">
 			<Option target="ttt_debug"/>

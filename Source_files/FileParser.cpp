@@ -162,7 +162,7 @@ void FileParser::setCentrumInformation(unsigned int i, TiXmlNode* naam, string &
             fHubs[i]->fHubCentra[j]->setAdres(adresString);
             fHubs[i]->fHubCentra[j]->setInwoners(inwonersInt);
             fHubs[i]->fHubCentra[j]->setCapaciteit(capaciteitInt);
-            for (int k = 0; k < fHubs[i]->fVaccins.size(); ++k) {
+            for (unsigned int k = 0; k < fHubs[i]->fVaccins.size(); ++k) {
                 string type = fHubs[i]->fVaccins[k]->getType();
                 fHubs[i]->fHubCentra[j]->setVaccins(0, type);
             }
@@ -194,7 +194,7 @@ void FileParser::uitvoer(bool begin) {
         //schrijven een string weg in het uitvoer bestand
         for (unsigned int i = 0; i < fHubs.size(); i++) {
 
-            Output << "Hub " << i << " Vaccins (";
+            Output << "Hub " << i << ": Vaccins ( ";
             for (unsigned int j = 0; j < fHubs[i]->fVaccins.size(); j++){
                 Output << fHubs[i]->fVaccins[j]->getType() << ": [" << fHubs[i]->fVaccins[j]->getAantalVaccins() << "] ";
             }
@@ -203,7 +203,17 @@ void FileParser::uitvoer(bool begin) {
 
             for (unsigned int j = 0; j < fHubs[i]->fHubCentra.size(); j++) {
                 //schrijven een string weg in het uitvoer bestand
-                Output << "\t-> " << fHubs[i]->fHubCentra[j]->getNaam() << " (" << fHubs[i]->fHubCentra[j]->getVaccins() << " vaccins)""\n";
+
+
+//                Output << "\t-> " << fHubs[i]->fHubCentra[j]->getNaam() << " (" << fHubs[i]->fHubCentra[j]->getVaccins(type) << " vaccins)""\n";
+                Output << "\t-> " << fHubs[i]->fHubCentra[j]->getNaam() << ": Vaccins ( ";
+                for (unsigned int k = 0; k < fHubs[i]->fVaccins.size(); k++){
+                    string type = fHubs[i]->fVaccins[k]->getType();
+
+                    Output << fHubs[i]->fVaccins[k]->getType() << ": [" << fHubs[i]->fVaccins[k]->getAantalVaccins() << "] ";
+                }
+                Output << ")\n";
+
             }
             //wit regel in het bestand
             Output << "\n";

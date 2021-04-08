@@ -99,6 +99,7 @@ public:
      * @functie: setVaccinated
      * Deze functie zet het aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
      * @param Cvaccinated : int, aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
+     * @param type : type van het vaccins.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
      * REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
      * ENSURE((getVaccinated() == Cvaccinated), "setVaccinated postcondition failure.");
@@ -140,10 +141,11 @@ public:
     /*
      * @functie: getVaccins
      * Deze functie geeft het huidige aantal fVaccinsInCentrum in bezit.
+     * @param type : type van het vaccins.
      * @return: int, huidig aantal fVaccinsInCentrum in het vaccinatiecentrum.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccins");
      */
-    int getVaccins();
+    int getVaccins(string &type);
 
     /*
      * @functie: getVaccinated

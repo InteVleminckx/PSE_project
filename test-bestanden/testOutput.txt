@@ -1,2 +1,0 @@
-Geen correcte input voor de tag.
-Transport moet een positieve integer zijn.

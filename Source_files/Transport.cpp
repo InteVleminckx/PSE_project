@@ -40,7 +40,7 @@ void Transport::transportSimulatie(FileParser &file) {
 
             string centrumNaam = file.fCentra[i].getNaam();
 
-            int vaccinsCentrum = file.fCentra[i].getVaccins();
+            int vaccinsCentrum = file.fCentra[i].getVaccins(centrumNaam);
             int capaciteitCentrum = file.fCentra[i].getCapaciteit();
 
             double vaccins_transport_min = capaciteitCentrum - vaccinsCentrum;
@@ -62,7 +62,7 @@ void Transport::transportSimulatie(FileParser &file) {
 
             }
 
-            file.fCentra[i].setVaccins((ladingen * file.fTransport) + vaccinsCentrum);
+            file.fCentra[i].setVaccins((ladingen * file.fTransport) + vaccinsCentrum, centrumNaam);
 
             fAantalVaccins -= ladingen * file.fTransport;
 
@@ -82,8 +82,9 @@ void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
 
     REQUIRE(this->properlyInitialized(), "transportSim wasn't initialized when calling vaccinatieInCentrum");
 
+    string randomString;
 
-    int vaccinsInCentrum = centrum.getVaccins();
+    int vaccinsInCentrum = centrum.getVaccins(randomString);
     int capaciteit = centrum.getCapaciteit();
     int aantalOngevaccineerden = centrum.getInwoners() - centrum.getVaccinated();
 
@@ -92,7 +93,7 @@ void Transport::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
     // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
 
     centrum.setVaccinated(inwonersGevaccineerd + centrum.getVaccinated());
-    centrum.setVaccins(centrum.getVaccins() - inwonersGevaccineerd);
+    centrum.setVaccins(centrum.getVaccins(randomString) - inwonersGevaccineerd, randomString);
 
     if (inwonersGevaccineerd != 0) {
         fOVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";

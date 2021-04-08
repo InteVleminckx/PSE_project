@@ -73,7 +73,7 @@ bool Utils::isCorrectTemperature(const string &str) {
     //negatief
     if (str[0] == '-'){
         string strN;
-        for (int i = 1; i < str.size(); ++i) strN.push_back(str[i]);
+        for (unsigned int i = 1; i < str.size(); ++i) strN.push_back(str[i]);
         return isDigit(strN);
     }
 

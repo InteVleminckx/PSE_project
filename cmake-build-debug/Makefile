@@ -163,6 +163,7 @@ Source_files/Distributie.o: Source_files/Distributie.cpp.o
 # target to build an object file
 Source_files/Distributie.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Distributie.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Distributie.cpp.o
 .PHONY : Source_files/Distributie.cpp.o
 
 Source_files/Distributie.i: Source_files/Distributie.cpp.i
@@ -172,6 +173,7 @@ Source_files/Distributie.i: Source_files/Distributie.cpp.i
 # target to preprocess a source file
 Source_files/Distributie.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Distributie.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Distributie.cpp.i
 .PHONY : Source_files/Distributie.cpp.i
 
 Source_files/Distributie.s: Source_files/Distributie.cpp.s
@@ -181,6 +183,7 @@ Source_files/Distributie.s: Source_files/Distributie.cpp.s
 # target to generate assembly for a file
 Source_files/Distributie.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Distributie.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Distributie.cpp.s
 .PHONY : Source_files/Distributie.cpp.s
 
 Source_files/FileParser.o: Source_files/FileParser.cpp.o
@@ -442,6 +445,7 @@ Source_files/Utils.o: Source_files/Utils.cpp.o
 # target to build an object file
 Source_files/Utils.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Utils.cpp.o
 .PHONY : Source_files/Utils.cpp.o
 
 Source_files/Utils.i: Source_files/Utils.cpp.i
@@ -451,6 +455,7 @@ Source_files/Utils.i: Source_files/Utils.cpp.i
 # target to preprocess a source file
 Source_files/Utils.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Utils.cpp.i
 .PHONY : Source_files/Utils.cpp.i
 
 Source_files/Utils.s: Source_files/Utils.cpp.s
@@ -460,6 +465,7 @@ Source_files/Utils.s: Source_files/Utils.cpp.s
 # target to generate assembly for a file
 Source_files/Utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Utils.cpp.s
 .PHONY : Source_files/Utils.cpp.s
 
 Source_files/Vaccin.o: Source_files/Vaccin.cpp.o
