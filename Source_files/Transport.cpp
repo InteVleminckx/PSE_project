@@ -7,11 +7,17 @@
 #include "../Header_files/Transport.h"
 #include "../Header_files/FileParser.h"
 
-Transport::Transport(FileParser &file) {
-    fLeveringInterval = file.fInterval;
-    fAantalVaccins = 0;
+Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum) {
     _initCheck = this;
-    transportSimulatie(file);
+
+//    fLeveringInterval = file.fInterval;
+//    fAantalVaccins = 0;
+//
+//    transportSimulatie(file);
+
+
+
+
 
 }
 

@@ -23,16 +23,25 @@ class Vaccin {
     Vaccin* _initCheck;
 
     string fType;
-    int fAantalVaccins;
     int fLeveringen;
     int fInterval;
     int fTransport;
     int fHernieuwingen;
     int fTemperatuur;
+    int fAantalVaccins;
 
 public:
 
     Vaccin(string &Type, int Leveringen, int Interval, int Transport, int Hernieuwingen, int Temperatuur);
+
+    /*
+     * @functie: setAantalVaccins
+     * Deze functie verhoogt het aantal vaccins die het centra bevat wanneer er een nieuwe levering is.
+     * @param aantalVaccins
+     * REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling setAantalVaccins");
+     * ENSURE(getAantalVaccins() == fAantalVaccins+aantalVaccins, "Postcondition failure");
+     */
+    void setAantalVaccins(int aantalVaccins);
 
     /*
      * @functie: getType

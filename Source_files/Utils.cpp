@@ -5,7 +5,6 @@
 #include "../Header_files/Utils.h"
 
 bool Utils::isDigit(const string &str) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isDigit");
 
     for (unsigned int i = 0; i < str.size(); ++i) {
         if (!isdigit(str[i])) {
@@ -16,7 +15,6 @@ bool Utils::isDigit(const string &str) {
 }
 
 bool Utils::isAlpha(const string &str) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isAlpha");
 
     for (unsigned int i = 0; i < str.size(); ++i) {
         if (str[i] != 32 ){
@@ -29,7 +27,6 @@ bool Utils::isAlpha(const string &str) {
 }
 
 bool Utils::isAlphaNum(const string &str) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isAlphaNum");
 
     for (unsigned int i = 0; i < str.size(); ++i) {
         if (str[i] != 32 && str[i] != 44 && str[i] != 45) {
@@ -42,7 +39,7 @@ bool Utils::isAlphaNum(const string &str) {
 }
 
 bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isTag");
+
     const char *tagString = tag.c_str();
 
     if (elem->FirstChildElement()->FirstChild(tagString) == NULL && isFirstchildElement == true){
@@ -55,7 +52,6 @@ bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElemen
 }
 
 bool Utils::isLittleAlpha(const string &str) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isLittleAlpha");
 
     for (unsigned int i = 0; i < str.size(); ++i) {
         if (str[i] != 32 ){
@@ -68,7 +64,6 @@ bool Utils::isLittleAlpha(const string &str) {
 }
 
 bool Utils::isCorrectTemperature(const string &str) {
-//    REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling isCorrectTemperature");
 
     //negatief
     if (str[0] == '-'){
@@ -77,8 +72,10 @@ bool Utils::isCorrectTemperature(const string &str) {
         return isDigit(strN);
     }
 
-        //positief
-    else return isDigit(str);
+    //positief
+    else {
+        return isDigit(str);
+    }
 }
 
 void Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput) {

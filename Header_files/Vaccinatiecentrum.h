@@ -86,20 +86,22 @@ public:
      * ENSURE((getCapaciteit() == Ccapaciteit), "setCapaciteit postcondition failure.");
      */
     void setCapaciteit(int &Ccapaciteit);
+
     /*
      * @functie: setVaccins
      * Deze functie zet het aantal fVaccinsInCentrum die het vaccinatiecentrum in bezit heeft.
      * @param Cvaccinaties : int, aantal fVaccinsInCentrum in het vaccinatiecentrum.
+     * @param type : type van het vaccins.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccins");
      * REQUIRE((Cvaccinaties >= 0), "Een vaccininatiecentrum heeft 0 of meer fVaccinsInCentrum in bezit.");
      * ENSURE((getVaccins() == Cvaccinaties), "setVaccins postcondition failure.");
      */
     void setVaccins(int Cvaccinaties, string &type);
+
     /*
      * @functie: setVaccinated
      * Deze functie zet het aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
      * @param Cvaccinated : int, aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
-     * @param type : type van het vaccins.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
      * REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
      * ENSURE((getVaccinated() == Cvaccinated), "setVaccinated postcondition failure.");

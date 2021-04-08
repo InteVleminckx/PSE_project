@@ -6,7 +6,7 @@
 #define PROJECT_SOFTWARE_ENGENEERING_DISTRIBUTIE_H
 #include <iostream>
 #include "FileParser.h"
-
+#include "Transport.h"
 //#include "TinyXML/tinyxml.h"
 //#include <string>
 //#include <vector>
@@ -25,6 +25,15 @@ public:
 
     Distributie(FileParser &file);
 
+    /*
+     * @functie : isAllPeopleVaccinated
+     * Deze functie checkt of alle inwoners van alle fCentra gevaccineerd zijn.
+     * @param file : het .xml bestand dat ingelezen wordt.
+     * @return : true als alle inwoners gevaccineerd zijn, anders false.
+     */
+    bool isAllPeopleVaccinated(FileParser &file, unsigned int j);
+
+    bool properlyInitialized();
 
 };
 

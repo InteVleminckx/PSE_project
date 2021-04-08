@@ -19,12 +19,13 @@
 #include <algorithm>
 #include "Vaccinatiecentrum.h"
 #include "../TinyXML/tinyxml.h"
+#include "Hub.h"
 //#include "FileParser.h"
 
 using namespace std;
 
 class FileParser;
-class Transport;
+//class Transport;
 
 class Transport {
 
@@ -40,7 +41,7 @@ public:
      * Deze functie is de constructor voor de transportsimulatie. Hier roepen we de functie transportSimulatie aan.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
-    Transport(FileParser &file);
+    Transport(Hub* hub, Vaccinatiecentrum* centrum);
 
     /*
      * @functie : transportSimulatie

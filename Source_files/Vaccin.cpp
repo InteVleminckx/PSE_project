@@ -23,6 +23,12 @@ bool Vaccin::properlyInitialized() {
 
 }
 
+void Vaccin::setAantalVaccins(int aantalVaccins) {
+    REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling setAantalVaccins");
+    fAantalVaccins+=aantalVaccins;
+    ENSURE(getAantalVaccins() == fAantalVaccins+aantalVaccins, "Postcondition failure");
+}
+
 string Vaccin::getType() {
     REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling getType");
     return fType;
@@ -57,3 +63,5 @@ int Vaccin::getAantalVaccins() {
     REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling getAantalVaccins");
     return fAantalVaccins;
 }
+
+

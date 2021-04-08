@@ -13,6 +13,7 @@
 #include "../Header_files/Vaccinatiecentrum.h"
 #include "../Header_files/FileParser.h"
 #include "../Header_files/Transport.h"
+#include "../Header_files/Utils.h"
 
 class UnitTests: public ::testing::Test {
 protected:
@@ -37,110 +38,107 @@ TEST_F(UnitTests, Functie_isDigit){
     string str = "geen digit";
     EXPECT_EQ(0, newFile->isDigit(str));
     str = "geen_digit";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "123";
-    EXPECT_EQ(1, newFile->isDigit(str));
+    EXPECT_EQ(1, Utils::isDigit(str));
     str = "abc123";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "!!!";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "_-_-_-_-_-_-_-_";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = ":)";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "54646";
-    EXPECT_EQ(1, newFile->isDigit(str));
+    EXPECT_EQ(1, Utils::isDigit(str));
     str = "54,646";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "xD";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "10/10";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
 }
 
 TEST_F(UnitTests, Functie_isAlpha){
 
-    FileParser* newFile = new FileParser;
-    newFile->_initCheck = newFile;
+//    FileParser* newFile = new FileParser;
+//    Utils::_initCheck = newFile;
 
     string str = "geendigit";
-    EXPECT_EQ(1, newFile->isAlpha(str));
+    EXPECT_EQ(1, Utils::isAlpha(str));
     str = "geen digit";
-    EXPECT_EQ(1, newFile->isAlpha(str));
+    EXPECT_EQ(1, Utils::isAlpha(str));
     str = "geen_digit";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "123";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "abc123";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "!!!";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "_-_-_-_-_-_-_-_";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = ":)";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "54646";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "54,646";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
     str = "xD";
-    EXPECT_EQ(1, newFile->isAlpha(str));
+    EXPECT_EQ(1, Utils::isAlpha(str));
     str = "10/10";
-    EXPECT_EQ(0, newFile->isAlpha(str));
+    EXPECT_EQ(0, Utils::isAlpha(str));
 }
 
 TEST_F(UnitTests, Functie_isAlphaNum){
 
-    FileParser* newFile = new FileParser;
-    newFile->_initCheck = newFile;
-
     string str = "geendigit";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "geen digit";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "geen_digit";
-    EXPECT_EQ(0, newFile->isAlphaNum(str));
+    EXPECT_EQ(0, Utils::isAlphaNum(str));
     str = "123";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "abc123";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "!!!";
-    EXPECT_EQ(0, newFile->isAlphaNum(str));
+    EXPECT_EQ(0, Utils::isAlphaNum(str));
     str = "_-_-_-_-_-_-_-_";
-    EXPECT_EQ(0, newFile->isAlphaNum(str));
+    EXPECT_EQ(0, Utils::isAlphaNum(str));
     str = ":)";
-    EXPECT_EQ(0, newFile->isAlphaNum(str));
+    EXPECT_EQ(0, Utils::isAlphaNum(str));
     str = "54646";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "54,646";
-    EXPECT_EQ(1, newFile->isAlphaNum(str)); // toelaten want fAdres bestaat uit een komma ook
+    EXPECT_EQ(1, Utils::isAlphaNum(str)); // toelaten want fAdres bestaat uit een komma ook
     str = "xD";
-    EXPECT_EQ(1, newFile->isAlphaNum(str));
+    EXPECT_EQ(1, Utils::isAlphaNum(str));
     str = "10/10";
-    EXPECT_EQ(0, newFile->isAlphaNum(str));
+    EXPECT_EQ(0, Utils::isAlphaNum(str));
 
-    delete newFile;
+//    delete newFile;
 }
 //
 //TEST_F(UnitTests, Functie_isTag){
 //
 //    FileParser* newFile = new FileParser;
-//    newFile->_initCheck = newFile;
+//    Utils::_initCheck = newFile;
 //
 //    string str = "geendigit";
 //    TiXmlElement* elem = new TiXmlElement("HUB");
 //    elem->FirstChildElement()->Value() = "fLeveringen";
 //
 //
-//    EXPECT_EQ(1, newFile->isTag(str, elem));
+//    EXPECT_EQ(1, Utils::isTag(str, elem));
 //
-//    EXPECT_EQ(1, newFile->isTag(str, elem));
+//    EXPECT_EQ(1, Utils::isTag(str, elem));
 //    str = "geen_digit";
-//    EXPECT_EQ(0, newFile->isTag(str, elem)); //
+//    EXPECT_EQ(0, Utils::isTag(str, elem)); //
 //    str = "123";
-//    EXPECT_EQ(1, newFile->isTag(str, elem));
+//    EXPECT_EQ(1, Utils::isTag(str, elem));
 //    str = "abc123";
-//    EXPECT_EQ(1, newFile->isTag(str, elem));
+//    EXPECT_EQ(1, Utils::isTag(str, elem));
 //
 //    delete elem;
 //    delete newFile;
@@ -148,35 +146,32 @@ TEST_F(UnitTests, Functie_isAlphaNum){
 
 TEST_F(UnitTests, Functie_isLittleAlpha){
 
-    FileParser* newFile = new FileParser;
-    newFile->_initCheck = newFile;
 
     string str = "geendigit";
-    EXPECT_EQ(1, newFile->isLittleAlpha(str));
+    EXPECT_EQ(1, Utils::isLittleAlpha(str));
     str = "geen digit";
-    EXPECT_EQ(1, newFile->isLittleAlpha(str));
+    EXPECT_EQ(1, Utils::isLittleAlpha(str));
     str = "geen_digit";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "123";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "abc123";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "!!!";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "_-_-_-_-_-_-_-_";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = ":)";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "54646";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "Xylofoon";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "xD";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
     str = "CHECK";
-    EXPECT_EQ(0, newFile->isLittleAlpha(str));
+    EXPECT_EQ(0, Utils::isLittleAlpha(str));
 
-    delete newFile;
 }
 
 
@@ -197,7 +192,7 @@ TEST_F(UnitTests, Functie_vaccinatieInCentrum){
     centrum.setAdres(adres);
     centrum.setInwoners(inwoners);
     centrum.setCapaciteit(capaciteit);
-    centrum.setVaccins(vaccins);
+//    centrum.setVaccins(vaccins);
     centrum.setVaccinated(vaccinated);
 
     // getters en setters testen
@@ -205,14 +200,14 @@ TEST_F(UnitTests, Functie_vaccinatieInCentrum){
     EXPECT_EQ("Hertoginstraat 17, Antwerpen", centrum.getAdres());
     EXPECT_EQ(100000, centrum.getInwoners());
     EXPECT_EQ(10000, centrum.getCapaciteit());
-    EXPECT_EQ(5000, centrum.getVaccins());
+//    EXPECT_EQ(5000, centrum.getVaccins());
     EXPECT_EQ(20000, centrum.getVaccinated());
 
     Transport transport(*newFile);
     transport.vaccinatieInCentrum(centrum);
 
     EXPECT_EQ(25000, centrum.getVaccinated()); // 20000 + 5000 = 25000
-    EXPECT_EQ(0, centrum.getVaccins()); // verlaagd met 5000
+//    EXPECT_EQ(0, centrum.getVaccins()); // verlaagd met 5000
 
     delete newFile;
 }
