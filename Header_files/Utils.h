@@ -13,6 +13,7 @@ using namespace std;
 
 class Utils {
 public:
+
     /*
      * @functie : isDigit
      * Deze functie checkt of de meegegeven string bestaat uit enkel digits (cijfers).
@@ -67,6 +68,7 @@ public:
      * We kunnen met deze functie alle controle tags ineens aanroepen, dan staat dit niet allemaal minden in onze code
      * @param elem
      * @param isFirstchildElement
+     * @param testOutput
      */
     static void checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput);
 
@@ -76,6 +78,7 @@ public:
      * We controleren hier of de values die tussen de 2 tags staat correct is
      * @param elem
      * @param isVaccins
+     * @param testOutput
      */
     static void checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput);
 
