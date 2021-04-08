@@ -2,7 +2,7 @@
 // Created by inte on 20.03.21.
 //
 
-#include "Vaccin.h"
+#include "../Header_files/Vaccin.h"
 
 Vaccin::Vaccin(string &type, int leveringen, int interval, int transport, int hernieuwingen, int temperatuur) {
     fType = type;

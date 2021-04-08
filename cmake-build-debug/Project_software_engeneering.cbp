@@ -130,49 +130,76 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/DesignByContract.h">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/DesignByContract.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Distributie.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Distributie.h">
 			<Option target="ttt_debug"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Distributie.h">
-			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/FileParser.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/FileParser.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/FileParser.h">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Hub.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Hub.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/SimulatieUtils.h">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Transport.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Hub.h">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Vaccin.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/InputTests.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Vaccinatiecentrum.h">
 			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/RunSimilatie.cpp">
 			<Option target="ttt"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieTests.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Distributie.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieUtils.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/FileParser.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Hub.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/InputTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/SimulatieUtils.h">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/RunSimilatie.cpp">
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/SimulatieTests.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/SystemTests.cpp">
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/SimulatieUtils.cpp">
 			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/SystemTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Transport.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/UnitTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Vaccin.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Vaccinatiecentrum.cpp">
+			<Option target="ttt_debug"/>
+			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinystr.cpp">
 			<Option target="ttt_debug"/>
@@ -195,33 +222,6 @@
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/TinyXML/tinyxmlparser.cpp">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Transport.cpp">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Transport.h">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/UnitTests.cpp">
-			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccin.cpp">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccin.h">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.cpp">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Vaccinatiecentrum.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>

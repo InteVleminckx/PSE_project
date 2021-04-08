@@ -2,7 +2,7 @@
 // Created by inte on 07.04.21.
 //
 
-#include "Distributie.h"
+#include "../Header_files/Distributie.h"
 
 Distributie::Distributie(FileParser &file) {
 

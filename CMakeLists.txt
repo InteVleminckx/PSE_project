@@ -14,64 +14,68 @@ link_directories(gtest/lib)
 
 # Set source files for RELEASE target
 set(RELEASE_SOURCE_FILES
-        RunSimilatie.cpp
-        FileParser.cpp
-        FileParser.h
-        Vaccinatiecentrum.cpp
-        Vaccinatiecentrum.h
-        Transport.cpp
-        Transport.h
-        DesignByContract.h
-        Hub.cpp
-        Hub.h
-        Vaccin.cpp
-        Vaccin.h
+        Source_files/RunSimilatie.cpp
+        Source_files/FileParser.cpp
+        Header_files/FileParser.h
+        Source_files/Vaccinatiecentrum.cpp
+        Header_files/Vaccinatiecentrum.h
+        Source_files/Transport.cpp
+        Header_files/Transport.h
+        Header_files/DesignByContract.h
+        Source_files/Hub.cpp
+        Header_files/Hub.h
+        Source_files/Vaccin.cpp
+        Header_files/Vaccin.h
         )
 
-# Set source files for DEBUG target
+# Set source_files for DEBUG target
 set(DEBUG_SOURCE_FILES
-        SimulatieTests.cpp
-        FileParser.cpp
-        FileParser.h
-        Vaccinatiecentrum.cpp
-        Vaccinatiecentrum.h
-        Transport.cpp
-        Transport.h
-        DesignByContract.h
-        InputTests.cpp
-        SystemTests.cpp
-        UnitTests.cpp
-        Hub.cpp
-        Hub.h
-        Vaccin.cpp
-        Vaccin.h
-        SimulatieUtils.cpp SimulatieUtils.h Distributie.cpp Distributie.h)
+        Source_files/SimulatieTests.cpp
+        Source_files/FileParser.cpp
+        Header_files/FileParser.h
+        Source_files/Vaccinatiecentrum.cpp
+        Header_files/Vaccinatiecentrum.h
+        Source_files/Transport.cpp
+        Header_files/Transport.h
+        Header_files/DesignByContract.h
+        Source_files/InputTests.cpp
+        Source_files/SystemTests.cpp
+        Source_files/UnitTests.cpp
+        Source_files/Hub.cpp
+        Header_files/Hub.h
+        Source_files/Vaccin.cpp
+        Header_files/Vaccin.h
+        Source_files/SimulatieUtils.cpp
+        Header_files/SimulatieUtils.h
+        Source_files/Distributie.cpp
+        Header_files/Distributie.h
+        )
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES}
-        RunSimilatie.cpp
-        FileParser.cpp
-        FileParser.h
+        Source_files/RunSimilatie.cpp
+        Source_files/FileParser.cpp
+        Header_files/FileParser.h
         TinyXML/tinyxmlparser.cpp
         TinyXML/tinyxmlerror.cpp
         TinyXML/tinyxml.h
         TinyXML/tinyxml.cpp
         TinyXML/tinystr.h
         TinyXML/tinystr.cpp
-        Hub.cpp
-        Hub.h
+        Source_files/Hub.cpp
+        Header_files/Hub.h
         )
 
 # Create DEBUG target
 add_executable(ttt_debug ${DEBUG_SOURCE_FILES}
-        SimulatieTests.cpp
-        InputTests.cpp
-        SystemTests.cpp
-        UnitTests.cpp
-        Hub.cpp
-        Hub.h
-        FileParser.cpp
-        FileParser.h
+        Source_files/SimulatieTests.cpp
+        Source_files/InputTests.cpp
+        Source_files/SystemTests.cpp
+        Source_files/UnitTests.cpp
+        Source_files/Hub.cpp
+        Header_files/Hub.h
+        Source_files/FileParser.cpp
+        Header_files/FileParser.h
         TinyXML/tinyxmlparser.cpp
         TinyXML/tinyxmlerror.cpp
         TinyXML/tinyxml.h

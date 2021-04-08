@@ -2,7 +2,7 @@
 // Created by inte on 20.03.21.
 //
 
-#include "Hub.h"
+#include "../Header_files/Hub.h"
 
 Hub::Hub() {
     _initCheck = this;

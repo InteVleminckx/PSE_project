@@ -4,8 +4,8 @@
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_DISTRIBUTIE_H
 #define PROJECT_SOFTWARE_ENGENEERING_DISTRIBUTIE_H
-#include "FileParser.h"
 #include <iostream>
+#include "FileParser.h"
 
 //#include "TinyXML/tinyxml.h"
 //#include <string>
