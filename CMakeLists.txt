@@ -26,7 +26,7 @@ set(RELEASE_SOURCE_FILES
         Header_files/Hub.h
         Source_files/Vaccin.cpp
         Header_files/Vaccin.h
-        )
+        Header_files/Utils.h)
 
 # Set source_files for DEBUG target
 set(DEBUG_SOURCE_FILES
@@ -49,7 +49,7 @@ set(DEBUG_SOURCE_FILES
         Header_files/SimulatieUtils.h
         Source_files/Distributie.cpp
         Header_files/Distributie.h
-        )
+        Source_files/Utils.cpp)
 
 # Create RELEASE target
 add_executable(ttt ${RELEASE_SOURCE_FILES}

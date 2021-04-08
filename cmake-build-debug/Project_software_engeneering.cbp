@@ -152,6 +152,9 @@
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
 		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Utils.h">
+			<Option target="ttt"/>
+		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Vaccin.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
@@ -191,6 +194,9 @@
 			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/UnitTests.cpp">
+			<Option target="ttt_debug"/>
+		</Unit>
+		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Utils.cpp">
 			<Option target="ttt_debug"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Vaccin.cpp">
