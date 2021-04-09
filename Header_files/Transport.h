@@ -41,7 +41,7 @@ public:
      * Deze functie is de constructor voor de transportsimulatie. Hier roepen we de functie transportSimulatie aan.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
-    Transport(Hub* hub, Vaccinatiecentrum* centrum);
+    Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT);
 
     /*
      * @functie : transportSimulatie
@@ -49,7 +49,7 @@ public:
      * telkens op het fInterval een levering fVaccinsInCentrum aan de HUB.
      * @param file : het .xml bestand dat ingelezen wordt.
      */
-    void transportSimulatie(FileParser &file);
+//    void transportSimulatie(FileParser &file);
 
     /*
      * @functie : vaccinatieInCentrum
@@ -58,7 +58,7 @@ public:
      * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
      * @param centrum : het Vaccinatiecentrum
      */
-    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
+    int vaccinatieInCentrum(Vaccinatiecentrum* centrum, string &vaccinType, int teVaccineren);
 
     /*
      * @functie : isAllPeopleVaccinated
@@ -66,7 +66,7 @@ public:
      * @param file : het .xml bestand dat ingelezen wordt.
      * @return : true als alle inwoners gevaccineerd zijn, anders false.
      */
-    bool isAllPeopleVaccinated(FileParser &file);
+//    bool isAllPeopleVaccinated(FileParser &file);
 
 
     bool properlyInitialized();

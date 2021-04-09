@@ -7,7 +7,8 @@
 */
 
 #include "../Header_files/FileParser.h"
-#include "../Header_files/Transport.h"
+//#include "../Header_files/Transport.h"
+#include "../Header_files/Distributie.h"
 
 int main(){
 
@@ -15,9 +16,9 @@ int main(){
     string file = "../testbestandVaccins.xml";
     FileParser parsedFile;
     parsedFile.parseFile(file);
-    parsedFile.uitvoer(); // uitvoer(bestand) aan begin van de simulatie.
+//    parsedFile.uitvoer(); // uitvoer(bestand) aan begin van de simulatie.
 
-//    Transport transport(parsedFile);
+    Distributie distributie(parsedFile);
 
 //    parsedFile.uitvoer(false); // uitvoer(bestand) aan einde van de simulatie.
 

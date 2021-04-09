@@ -38,14 +38,8 @@ public:
     //HUB
     vector<Hub*> fHubs;
 
-    int fLeveringen;
-    int fHubVaccins; // aantal fVaccinsInCentrum in de HUB
-    int fInterval;
-    int fTransport;
-
     ofstream testOutput;
 
-    vector<Vaccinatiecentrum> fCentra;
     FileParser * _initCheck; //use pointer to myself to verify whether I am properly initialized
 
     bool properlyInitialized();

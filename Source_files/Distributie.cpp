@@ -10,30 +10,44 @@ Distributie::Distributie(FileParser &file) {
 
     int day = 0;
 
-    for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
+    //aanmaken uitvoer bestand
+    ofstream OT;
 
-        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); j++) { // alle vaccins updaten (leveringen checken)
-            if (day % (file.fHubs[i]->fVaccins[j]->getInterval() + 1) == 0) { // als we op de leveringsdatum zitten
+    //openen van het uitvoerbestand
+    OT.open("../simulatieOutput/overzichtTransport.txt");
 
-                file.fHubs[i]->fVaccins[j]->setAantalVaccins(file.fHubs[i]->fVaccins[j]->getLeveringen());
+    while (!isAllPeopleVaccinatedInTotal(file)){
+
+
+
+        for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
+
+            OT << "Hub " << i+1 << endl;
+
+            for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); j++) { // alle vaccins updaten (leveringen checken)
+                if (day % (file.fHubs[i]->fVaccins[j]->getInterval() + 1) == 0) { // als we op de leveringsdatum zitten
+
+                    file.fHubs[i]->fVaccins[j]->setAantalVaccins(file.fHubs[i]->fVaccins[j]->getLeveringen());
 //            cout << "week: " << day/7 << endl;
-            }
-        }
-
-        while (!isAllPeopleVaccinated(file, i)){
-            for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
-
-                Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j]);
-
+                }
             }
 
-            day++; // hier? we kunnen
-        }
+            if (!isAllPeopleVaccinatedInHub(file, i)) {
+                for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
 
+                    Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j], OT);
+
+                }
+            }
+        }
+        day++;
+        if (day == 73){
+            cout << endl;
+        }
     }
 }
 
-bool Distributie::isAllPeopleVaccinated(FileParser &file, unsigned int j) {
+bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
     REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinated");
 
     for (unsigned int i = 0; i < file.fHubs[j]->fHubCentra.size(); i++) {
@@ -48,3 +62,5 @@ bool Distributie::isAllPeopleVaccinated(FileParser &file, unsigned int j) {
 bool Distributie::properlyInitialized() {
     return _initCheck == this;
 }
+
+

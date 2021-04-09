@@ -26,7 +26,7 @@ bool Vaccin::properlyInitialized() {
 void Vaccin::setAantalVaccins(int aantalVaccins) {
     REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling setAantalVaccins");
     fAantalVaccins+=aantalVaccins;
-    ENSURE(getAantalVaccins() == fAantalVaccins+aantalVaccins, "Postcondition failure");
+    ENSURE(getAantalVaccins() == fAantalVaccins, "Postcondition failure");
 }
 
 string Vaccin::getType() {
