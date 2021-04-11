@@ -9,6 +9,7 @@
 #include "../Header_files/FileParser.h"
 //#include "../Header_files/Transport.h"
 #include "../Header_files/Distributie.h"
+#include "../Header_files/Utils.h"
 
 int main(){
 

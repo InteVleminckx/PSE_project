@@ -10,6 +10,7 @@
 Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day) {
     _initCheck = this;
 
+
 //    //aanmaken uitvoer bestand
 //    ofstream OT;
 //
@@ -20,6 +21,8 @@ Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day
     int teVaccineren = 0;
 
     bool isHernieuwd = false;
+
+    int tempCapaciteit = centrum->getCapaciteit();
 
     for (unsigned int i = 0; i < hub->fVaccins.size(); ++i) {
         string type = hub->fVaccins[i]->getType();
@@ -32,7 +35,7 @@ Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day
     if (!isHernieuwd) {
         for (unsigned int i = 0; i < hub->fVaccins.size(); ++i) {
 
-            if (centrum->getVaccinatedSecondTime() == centrum->getInwoners()){
+            if (centrum->getVaccinatedFirstTime() == centrum->getInwoners()){
                 break;
             }
 
@@ -47,42 +50,7 @@ Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day
         OT << "\n";
     }
 
-//        string centrumNaam = centrum->getNaam();
-//        string vaccinType = hub->fVaccins[i]->getType();
-//        int vaccinsCentrum = centrum->getVaccins(vaccinType);
-//        int capaciteitCentrum = centrum->getCapaciteit();
-//        double vaccins_transport_min = capaciteitCentrum - vaccinsCentrum;
-//
-//        int ladingen = 0;
-//        bool foundLadingen = false;
-//
-//        int tempVaccins = hub->fVaccins[i]->getAantalVaccins();
-//
-//        for (int j = 0; j < (vaccins_transport_min + hub->fVaccins[i]->getTransport())/hub->fVaccins[i]->getTransport();
-//            ++j) {
-//
-//            bool getLadingen = false;
-//
-//            if ((tempVaccins - j*hub->fVaccins[i]->getTransport()) > 0 ){ getLadingen = true;}
-//
-//            if (j*hub->fVaccins[i]->getTransport() + vaccinsCentrum >= capaciteitCentrum &&
-//                2*capaciteitCentrum >= j*hub->fVaccins[i]->getTransport() + vaccinsCentrum && !foundLadingen && getLadingen){
-//                ladingen = j; foundLadingen = true;
-//            }
-//        }
-//        centrum->setVaccins((ladingen * hub->fVaccins[i]->getTransport()) + vaccinsCentrum, vaccinType);
-//
-//        hub->fVaccins[i]->setAantalVaccins(-(ladingen * hub->fVaccins[i]->getTransport()));
-//
-//        OT << "Er werden " << ladingen << " ladingen (" << ladingen * hub->fVaccins[i]->getTransport() <<
-//       " vaccins) getransporteerd naar " << centrumNaam + ".\n";
-//
-//        teVaccineren = vaccinatieInCentrum(centrum, hub->fVaccins[i], teVaccineren, day);
-//
-//        if (teVaccineren <= 0) {
-//            break;
-//        }
-
+    centrum->setCapaciteit(tempCapaciteit);
 }
 
 void Transport::vaccinatieHernieuwing(Vaccinatiecentrum *centrum, Vaccin* vaccin, int day, ofstream &OT) {
@@ -122,6 +90,12 @@ int Transport::vaccinatieInCentrum(Vaccinatiecentrum* centrum, string &vaccinTyp
         teVaccineren = inwonersGevaccineerd;
     }
 
+
+//    if (vaccin->getTemperatuur() < 0 && teVaccineren > centrum->getCapaciteit()){
+//        int lading = floor(centrum->getCapaciteit()/vaccin->getTransport());
+//        teVaccineren = lading * centrum->getCapaciteit();
+//    }
+
     if (teVaccineren < inwonersGevaccineerd){
         centrum->setVaccinatedFirstTime(teVaccineren + centrum->getVaccinatedFirstTime());
         centrum->setVaccins(centrum->getVaccins(vaccinType) - teVaccineren, vaccinType);
@@ -151,18 +125,55 @@ void Transport::vaccinatieFirstTime(Vaccin* vaccin, Vaccinatiecentrum* centrum, 
 
     int tempVaccins = vaccin->getAantalVaccins();
 
-    for (int j = 0; j < (vaccins_transport_min + vaccin->getTransport())/vaccin->getTransport();
-         ++j) {
+    if (vaccin->getTemperatuur() > 0){
+        for (int j = 0; j < (vaccins_transport_min + vaccin->getTransport())/vaccin->getTransport();
+             ++j) {
 
-        bool getLadingen = false;
+            bool getLadingen = false;
 
-        if ((tempVaccins - j*vaccin->getTransport()) > 0 ){ getLadingen = true;}
+            if ((tempVaccins - j*vaccin->getTransport()) > 0 ){ getLadingen = true;}
 
-        if (j*vaccin->getTransport() + vaccinsCentrum >= capaciteitCentrum &&
-            2*capaciteitCentrum >= j*vaccin->getTransport() + vaccinsCentrum && !foundLadingen && getLadingen){
-            ladingen = j; foundLadingen = true;
+            if (j*vaccin->getTransport() + vaccinsCentrum >= capaciteitCentrum &&
+                2*capaciteitCentrum >= j*vaccin->getTransport() + vaccinsCentrum && !foundLadingen && getLadingen){
+                ladingen = j; foundLadingen = true;
+            }
         }
     }
+
+    else{
+        foundLadingen = true;
+        for (int j = 0; j < (vaccins_transport_min + vaccin->getTransport())/vaccin->getTransport();
+             ++j) {
+
+            bool getLadingen = false;
+
+            if ((tempVaccins - j*vaccin->getTransport()) > 0 ){ getLadingen = true;}
+
+            if (j*vaccin->getTransport() + vaccinsCentrum <= capaciteitCentrum && foundLadingen && getLadingen){
+                ladingen = j; foundLadingen = true;
+            }
+            else {
+                break;
+            }
+        }
+    }
+
+    int inwonersTeVaccineren = centrum->getInwoners() - centrum->getVaccinatedFirstTime();
+
+
+    int tempLadingen = 0;
+    bool isChangedLadingen = false;
+    while (inwonersTeVaccineren < vaccin->getTransport()*ladingen){
+        tempLadingen = ladingen;
+        ladingen--;
+        isChangedLadingen = true;
+    }
+
+    if (isChangedLadingen){
+        ladingen = tempLadingen;
+    }
+
+
     centrum->setVaccins((ladingen * vaccin->getTransport()) + vaccinsCentrum, vaccinType);
 
     vaccin->setAantalVaccins(-(ladingen * vaccin->getTransport()));

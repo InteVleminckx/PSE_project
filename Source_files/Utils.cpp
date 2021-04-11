@@ -3,6 +3,7 @@
 //
 
 #include "../Header_files/Utils.h"
+#include "../Header_files/FileParser.h"
 
 bool Utils::isDigit(const string &str) {
 
