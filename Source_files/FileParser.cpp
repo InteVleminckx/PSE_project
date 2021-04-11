@@ -166,7 +166,8 @@ void FileParser::setCentrumInformation(unsigned int i, TiXmlNode* naam, string &
                 string type = fHubs[i]->fVaccins[k]->getType();
                 fHubs[i]->fHubCentra[j]->setVaccins(0, type);
             }
-            fHubs[i]->fHubCentra[j]->setVaccinated(0);
+            fHubs[i]->fHubCentra[j]->setVaccinatedFirstTime(0);
+            fHubs[i]->fHubCentra[j]->setVaccinatedSecondTime(0);
         }
     }
 
@@ -204,13 +205,12 @@ void FileParser::uitvoer(bool begin) {
             for (unsigned int j = 0; j < fHubs[i]->fHubCentra.size(); j++) {
                 //schrijven een string weg in het uitvoer bestand
 
+                map<string, int> vaccinsInCentrum = fHubs[i]->fHubCentra[j]->getVaccinsInCentrum();
 
 //                Output << "\t-> " << fHubs[i]->fHubCentra[j]->getNaam() << " (" << fHubs[i]->fHubCentra[j]->getVaccins(type) << " vaccins)""\n";
                 Output << "\t-> " << fHubs[i]->fHubCentra[j]->getNaam() << ": Vaccins ( ";
-                for (unsigned int k = 0; k < fHubs[i]->fVaccins.size(); k++){
-                    string type = fHubs[i]->fVaccins[k]->getType();
-
-                    Output << fHubs[i]->fVaccins[k]->getType() << ": [" << fHubs[i]->fVaccins[k]->getAantalVaccins() << "] ";
+                for (map<string, int>::iterator it = vaccinsInCentrum.begin(); it != vaccinsInCentrum.end(); it++){
+                    Output << it->first << ": [" << it->second << "] ";
                 }
                 Output << ")\n";
 
@@ -220,9 +220,10 @@ void FileParser::uitvoer(bool begin) {
             //lopen terug over de fCentra
             for (unsigned int j = 0; j < fHubs[i]->fHubCentra.size(); j++) {
                 //berekenen het aantal niet gevaccineerden
-                int aantalNietGevaccineerden = fHubs[i]->fHubCentra[j]->getInwoners() - fHubs[i]->fHubCentra[j]->getVaccinated();
+                int aantalNietGevaccineerden = fHubs[i]->fHubCentra[j]->getInwoners() -
+                        fHubs[i]->fHubCentra[j]->getVaccinatedFirstTime();
                 //schrijven dit weg in het output bestand
-                Output << fHubs[i]->fHubCentra[j]->getNaam() << ": " << fHubs[i]->fHubCentra[j]->getVaccinated() << " gevaccineerd, nog " <<
+                Output << fHubs[i]->fHubCentra[j]->getNaam() << ": " << fHubs[i]->fHubCentra[j]->getVaccinatedFirstTime() << " gevaccineerd, nog " <<
                        aantalNietGevaccineerden << " niet gevaccineerd\n";
             }
 

@@ -193,7 +193,7 @@ TEST_F(UnitTests, Functie_vaccinatieInCentrum){
     centrum.setInwoners(inwoners);
     centrum.setCapaciteit(capaciteit);
 //    centrum.setVaccins(vaccins);
-    centrum.setVaccinated(vaccinated);
+    centrum.setVaccinatedFirstTime(vaccinated);
 
     // getters en setters testen
     EXPECT_EQ("Alfa", centrum.getNaam());
@@ -201,12 +201,12 @@ TEST_F(UnitTests, Functie_vaccinatieInCentrum){
     EXPECT_EQ(100000, centrum.getInwoners());
     EXPECT_EQ(10000, centrum.getCapaciteit());
 //    EXPECT_EQ(5000, centrum.getVaccins());
-    EXPECT_EQ(20000, centrum.getVaccinated());
+    EXPECT_EQ(20000, centrum.getVaccinatedFirstTime());
 
     Transport transport(*newFile);
     transport.vaccinatieInCentrum(centrum);
 
-    EXPECT_EQ(25000, centrum.getVaccinated()); // 20000 + 5000 = 25000
+    EXPECT_EQ(25000, centrum.getVaccinatedFirstTime()); // 20000 + 5000 = 25000
 //    EXPECT_EQ(0, centrum.getVaccins()); // verlaagd met 5000
 
     delete newFile;

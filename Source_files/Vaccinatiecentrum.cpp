@@ -30,6 +30,10 @@ Vaccinatiecentrum::Vaccinatiecentrum() {
 //
 //}
 
+void Vaccinatiecentrum::eraseDayfromGebruikteVaccins(int dagHernieuwing, string &type) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling eraseDayfromGebruikteVaccins");
+    fGebruikteVaccins.erase(make_pair(dagHernieuwing, type));
+}
 
 void Vaccinatiecentrum::setNaam(string &Cnaam) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNaam");
@@ -67,11 +71,27 @@ void Vaccinatiecentrum::setVaccins(int Cvaccinaties, string &type) {
     ENSURE((getVaccins(type) == Cvaccinaties), "setVaccins postcondition failure.");
 }
 
-void Vaccinatiecentrum::setVaccinated(int Cvaccinated) {
-    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
+void Vaccinatiecentrum::setVaccinatedFirstTime(int Cvaccinated) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinatedFirstTime");
     REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
-    fVaccinated = Cvaccinated;
-    ENSURE((getVaccinated() == Cvaccinated), "setVaccinated postcondition failure.");
+    fVaccinatedFirstTime = Cvaccinated;
+    ENSURE((getVaccinatedFirstTime() == Cvaccinated), "setVaccinatedFirstTime postcondition failure.");
+}
+
+void Vaccinatiecentrum::setVaccinatedSecondTime(int Cvaccinated) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinatedSecondTime");
+    REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
+    fVaccinatedSecondTime = Cvaccinated;
+    ENSURE((getVaccinatedSecondTime() == Cvaccinated), "setVaccinatedSecondTime postcondition failure.");
+}
+
+void Vaccinatiecentrum::setGebruikteVaccins(int dagHernieuwing, string &type, int aantalPersonen) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setGebruikteVaccins");
+    REQUIRE((aantalPersonen >= 0), "Aantal personen moet groter of gelijk zijn aan 0.");
+    REQUIRE((dagHernieuwing > 0), "De dag van een hernieuwing moet positief zijn");
+    fGebruikteVaccins[make_pair(dagHernieuwing, type)] = aantalPersonen;
+    ENSURE((getGebruikteVaccins(dagHernieuwing, type) == aantalPersonen), "setGebruikteVaccins postcondtion failure");
+
 }
 
 string Vaccinatiecentrum::getNaam() {
@@ -96,14 +116,33 @@ int Vaccinatiecentrum::getCapaciteit() {
 
 int Vaccinatiecentrum::getVaccins(string &type) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccins");
-
     return fVaccinsInCentrum[type];
 }
 
-int Vaccinatiecentrum::getVaccinated() {
-    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinated");
+int Vaccinatiecentrum::getVaccinatedFirstTime() {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinatedFirstTime");
+    return fVaccinatedFirstTime;
+}
 
-    return fVaccinated;
+int Vaccinatiecentrum::getVaccinatedSecondTime() {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinatedSecondTime");
+    return fVaccinatedSecondTime;
+}
+
+int Vaccinatiecentrum::getGebruikteVaccins(int dagHernieuwing, string &type) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getGebruikteVaccins");
+
+    if (fGebruikteVaccins.count(make_pair(dagHernieuwing, type))){
+        return fGebruikteVaccins[make_pair(dagHernieuwing, type)];
+    }
+
+    return 0;
+
+}
+
+map<string, int> Vaccinatiecentrum::getVaccinsInCentrum() {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinsInCentrum");
+    return fVaccinsInCentrum;
 }
 
 bool Vaccinatiecentrum::properlyInitialized() {

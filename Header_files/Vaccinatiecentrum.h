@@ -27,19 +27,24 @@ class Vaccinatiecentrum {
     string fAdres;
     int fInwoners;
     int fCapaciteit;
-    map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
-    int fVaccinated; // aantal gevaccineerden
-
-//    ofstream fOVP;
-
+    int fVaccinatedFirstTime; // aantal gevaccineerden bij eerste inenting
+    int fVaccinatedSecondTime; // aantal gevaccineerde die al een hernieuwing hebben gehad
+    map<pair<int, string>, int> fGebruikteVaccins; //
     Vaccinatiecentrum* _initCheck;
-
-//    map<string,int> vaccinTypes;
-
+    map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
+    //    ofstream fOVP;
 public:
 
     Vaccinatiecentrum();
 
+    /*
+     * @functie: eraseDayfromGebruikteVaccins
+     * Wanneer we een hernieuwing hebben gedaan, kunnen we dit verwijderen uit de map
+     * @param dagHernieuwing
+     * @param type
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling eraseDayfromGebruikteVaccins");
+     */
+    void eraseDayfromGebruikteVaccins(int dagHernieuwing, string &type);
 
     /*
      * @functie : vaccinatieInCentrum
@@ -99,14 +104,38 @@ public:
     void setVaccins(int Cvaccinaties, string &type);
 
     /*
-     * @functie: setVaccinated
+     * @functie: setVaccinatedFirstTime
      * Deze functie zet het aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
      * @param Cvaccinated : int, aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
      * REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
-     * ENSURE((getVaccinated() == Cvaccinated), "setVaccinated postcondition failure.");
+     * ENSURE((getVaccinatedFirstTime() == Cvaccinated), "setVaccinatedFirstTime postcondition failure.");
      */
-    void setVaccinated(int Cvaccinated);
+    void setVaccinatedFirstTime(int Cvaccinated);
+
+    /*
+     * @functie: setVaccinatedSecondTime
+     * Deze functie zet het aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
+     * @param Cvaccinated : int, aantal gevaccineerde in de omgeving van het vaccinatiecentrum.
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setVaccinated");
+     * REQUIRE((Cvaccinated >= 0), "Een gebied kan 0 of meer personen hebben die gevaccineerd zijn.");
+     * ENSURE((getVaccinatedFirstTime() == Cvaccinated), "setVaccinatedFirstTime postcondition failure.");
+     */
+    void setVaccinatedSecondTime(int Cvaccinated);
+
+    /*
+     * @functie: setGebruikteVaccins
+     * Slaagt in een map op hoeveel personen er een hernieuwing moeten krijgen met een vaccin dat ze
+     * de vorige keer hebben gekregen en op welke dag.
+     * @param dagHernieuwing : int, dag dat ze een hernieuwing moeten krijgen.
+     * @param type : string, type van het vaccin.
+     * @param aantalPersonen : int, aantal personen die een hernieuwing moeten krijgen.
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setGebruikteVaccins");
+     * REQUIRE((aantalPersonen >= 0), "Aantal personen moet groter of gelijk zijn aan 0.");
+     * REQUIRE((dagHernieuwing > 0), "De dag van een hernieuwing moet positief zijn");
+     * ENSURE((getGebruikteVaccins(dagHernieuwing, type) == aantalPersonen), "setGebruikteVaccins postcondtion failure");
+     */
+    void setGebruikteVaccins(int dagHernieuwing, string &type, int aantalPersonen);
 
     /*
      * @functie: getNaam
@@ -150,12 +179,37 @@ public:
     int getVaccins(string &type);
 
     /*
-     * @functie: getVaccinated
+     * @functie: getVaccinatedFirstTime
      * Deze functie geeft hoeveel mensen er al gevaccineerd zijn.
      * @return: int, aantal personen die al gevaccineerd zijn.
-     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinated");
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinatedFirstTime");
      */
-    int getVaccinated();
+    int getVaccinatedFirstTime();
+
+    /*
+     * @functie: getVaccinatedSecondTime
+     * Deze functie geeft hoeveel mensen er al gevaccineerd zijn.
+     * @return: int, aantal personen die al gevaccineerd zijn.
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinatedFirstTime");
+     */
+    int getVaccinatedSecondTime();
+
+    /*
+     * @functie: getGebruikteVaccins
+     * Geeft het aantal personen terug die een hernieuwing moeten krijgen op de gegeven dag en type vaccin
+     * @param dagHernieuwing : int, dag dat ze een hernieuwing moeten krijgen.
+     * @param type : string, type van het vaccin.
+     * @return int, aantal personen die een hernieuwing moeten krijgen
+     */
+    int getGebruikteVaccins(int dagHernieuwing, string &type);
+
+
+    /*
+     * @functie: getVaccinsInCentrum
+     * Geeft het aantal vaccins in een centrum terug.
+     * @return map<string, int>, aantal vaccins in centrum
+     */
+    map<string, int> getVaccinsInCentrum();
 
 //    void isAdresGeldig(string &Cadres);
 

@@ -5,7 +5,7 @@
             <levering>93000</levering>
             <interval>6</interval>
             <transport>2000</transport>
-            <hernieuwing>21</hernieuwing>
+            <hernieuwing>15</hernieuwing>
             <temperatuur>-70</temperatuur>
 	    </VACCIN>
 	    <VACCIN>
@@ -13,7 +13,7 @@
             <levering>46000</levering>
             <interval>13</interval>
             <transport>1000</transport>
-            <hernieuwing>21</hernieuwing>
+            <hernieuwing>19</hernieuwing>
             <temperatuur>-70</temperatuur>
         </VACCIN>
         <VACCIN>
@@ -37,7 +37,7 @@
             <levering>93000</levering>
             <interval>6</interval>
             <transport>2000</transport>
-            <hernieuwing>21</hernieuwing>
+            <hernieuwing>15</hernieuwing>
             <temperatuur>-70</temperatuur>
         </VACCIN>
         <VACCIN>
@@ -45,7 +45,7 @@
             <levering>46000</levering>
             <interval>13</interval>
             <transport>1000</transport>
-            <hernieuwing>21</hernieuwing>
+            <hernieuwing>19</hernieuwing>
             <temperatuur>-70</temperatuur>
         </VACCIN>
         <VACCIN>

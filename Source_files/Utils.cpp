@@ -177,3 +177,10 @@ void Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, of
     }
 
 }
+
+void Utils::grafischeImpressie(FileParser &file) {
+
+    for (unsigned int i = 0; i < file.fHubs.size(); i++) {
+
+    }
+}

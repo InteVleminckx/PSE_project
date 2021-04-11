@@ -78,7 +78,7 @@ Hub::Hub() {
 //    REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling isALlPeopleVaccinated");
 //
 //    for (unsigned int i = 0; i < file.fCentra.size(); i++) {
-//        if (file.fCentra[i].getInwoners() != file.fCentra[i].getVaccinated()) {
+//        if (file.fCentra[i].getInwoners() != file.fCentra[i].getVaccinatedFirstTime()) {
 //            return false;
 //        }
 //    }

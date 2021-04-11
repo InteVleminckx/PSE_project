@@ -41,9 +41,9 @@ Distributie::Distributie(FileParser &file) {
             }
         }
         day++;
-        if (day == 73){
-            cout << endl;
-        }
+//        if (day == 106){
+//            cout << endl;
+//        }
     }
 }
 
@@ -51,7 +51,7 @@ bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
     REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinated");
 
     for (unsigned int i = 0; i < file.fHubs[j]->fHubCentra.size(); i++) {
-        if (file.fHubs[j]->fHubCentra[i]->getInwoners() != file.fHubs[j]->fHubCentra[i]->getVaccinated()) {
+        if (file.fHubs[j]->fHubCentra[i]->getInwoners() != file.fHubs[j]->fHubCentra[i]->getVaccinatedSecondTime()) {
             return false;
         }
     }

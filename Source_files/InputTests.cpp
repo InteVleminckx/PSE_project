@@ -205,8 +205,8 @@ TEST_F(InputTests, succesFile1) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 5000);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -214,8 +214,8 @@ TEST_F(InputTests, succesFile1) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 2000);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -223,8 +223,8 @@ TEST_F(InputTests, succesFile1) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 1000);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -232,28 +232,28 @@ TEST_F(InputTests, succesFile1) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 3000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 16000); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5500); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 456500); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 456500); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 3065); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 76935); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 76935); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 498); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 39502); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 39502); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 4971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
@@ -278,8 +278,8 @@ TEST_F(InputTests, succesFile2) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 17500);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -287,8 +287,8 @@ TEST_F(InputTests, succesFile2) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 12000);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -296,8 +296,8 @@ TEST_F(InputTests, succesFile2) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 11000);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -305,28 +305,28 @@ TEST_F(InputTests, succesFile2) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 13000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 162000); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 23827); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 540173); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 540173); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 19065); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 76935); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 76935); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10549); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 49451); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 49451); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 18971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
@@ -351,8 +351,8 @@ TEST_F(InputTests, succesFile3) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 7500);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -360,8 +360,8 @@ TEST_F(InputTests, succesFile3) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 2000);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -369,8 +369,8 @@ TEST_F(InputTests, succesFile3) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 1000);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -378,28 +378,28 @@ TEST_F(InputTests, succesFile3) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 3000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 6600); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 7527); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 54073); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 54073); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2105); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 7695); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 7695); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1059); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 4941); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 4941); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
@@ -424,8 +424,8 @@ TEST_F(InputTests, succesFile4) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 5500);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -433,8 +433,8 @@ TEST_F(InputTests, succesFile4) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 20055);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -442,8 +442,8 @@ TEST_F(InputTests, succesFile4) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 10050);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -451,28 +451,28 @@ TEST_F(InputTests, succesFile4) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 30000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 2500); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 5945); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 540555); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 540555); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 20445); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 769555); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 769555); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 10459); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 495541); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 495541); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 12971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 }
 
 TEST_F(InputTests, succesFile5) {
@@ -496,8 +496,8 @@ TEST_F(InputTests, succesFile5) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 10000);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -505,8 +505,8 @@ TEST_F(InputTests, succesFile5) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 2500);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -514,8 +514,8 @@ TEST_F(InputTests, succesFile5) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 1650);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -523,28 +523,28 @@ TEST_F(InputTests, succesFile5) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 3000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 4839); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 10000); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 23456); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 23456); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2598); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 15975); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 15975); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 1764); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 64656); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 64656); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 2378); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
@@ -569,8 +569,8 @@ TEST_F(InputTests, succesFile6) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 55000);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -578,8 +578,8 @@ TEST_F(InputTests, succesFile6) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 20055);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -587,8 +587,8 @@ TEST_F(InputTests, succesFile6) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 10050);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -596,28 +596,28 @@ TEST_F(InputTests, succesFile6) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 30000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 200000); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 64245); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 5405755); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 5405755); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 24245); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 7695755); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 7695755); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 14459); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 4905541); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 4905541); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 32971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 257029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 257029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
@@ -642,8 +642,8 @@ TEST_F(InputTests, succesFile7) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 1111);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -651,8 +651,8 @@ TEST_F(InputTests, succesFile7) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 2222);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -660,8 +660,8 @@ TEST_F(InputTests, succesFile7) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 3333);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -669,28 +669,28 @@ TEST_F(InputTests, succesFile7) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 555);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 3757740); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 1621); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 44444); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 44444); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2709); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 66666); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 66666); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 3441); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 999999); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 999999); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 780); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 159615); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 159615); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 //
@@ -715,8 +715,8 @@ TEST_F(InputTests, succesFile8) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 5700);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -724,8 +724,8 @@ TEST_F(InputTests, succesFile8) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 2000);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -733,8 +733,8 @@ TEST_F(InputTests, succesFile8) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 1000);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -742,28 +742,28 @@ TEST_F(InputTests, succesFile8) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 3000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 615000); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 6955); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 371045); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 371045); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 2033); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 53967); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 53967); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 506); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 15494); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 15494); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 3128); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 920872); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 920872); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 //
@@ -788,8 +788,8 @@ TEST_F(InputTests, succesFile9) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 75001);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -797,8 +797,8 @@ TEST_F(InputTests, succesFile9) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 20001);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -806,8 +806,8 @@ TEST_F(InputTests, succesFile9) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 10001);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -815,28 +815,28 @@ TEST_F(InputTests, succesFile9) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 30001);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 2709544); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 78543); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 5401731); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 5401731); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 30689); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 769351); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 769351); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 5514); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 494511); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 494511); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 29839); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 2570291); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 2570291); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 }
 //
 TEST_F(InputTests, succesFile10) {
@@ -860,8 +860,8 @@ TEST_F(InputTests, succesFile10) {
     EXPECT_EQ(parsedFile.fCentra[0].getCapaciteit(), 75000);
     EXPECT_GE(parsedFile.fCentra[0].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[0].getVaccins(), parsedFile.fCentra[0].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[0].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[0].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ("AED Studios", parsedFile.fCentra[1].getNaam());
     EXPECT_EQ("Fabriekstraat 38, Lint", parsedFile.fCentra[1].getAdres());
@@ -869,8 +869,8 @@ TEST_F(InputTests, succesFile10) {
     EXPECT_EQ(parsedFile.fCentra[1].getCapaciteit(), 22000);
     EXPECT_GE(parsedFile.fCentra[1].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[1].getVaccins(), parsedFile.fCentra[1].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[1].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[1].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ("De Zoerla", parsedFile.fCentra[2].getNaam());
     EXPECT_EQ("Gevaertlaan 1, Westerlo", parsedFile.fCentra[2].getAdres());
@@ -878,8 +878,8 @@ TEST_F(InputTests, succesFile10) {
     EXPECT_EQ(parsedFile.fCentra[2].getCapaciteit(), 10200);
     EXPECT_GE(parsedFile.fCentra[2].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[2].getVaccins(), parsedFile.fCentra[2].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[2].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[2].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ("Flanders Expo", parsedFile.fCentra[3].getNaam());
     EXPECT_EQ("Maaltekouter 1, Sint-Denijs-Westrem", parsedFile.fCentra[3].getAdres());
@@ -887,28 +887,28 @@ TEST_F(InputTests, succesFile10) {
     EXPECT_EQ(parsedFile.fCentra[3].getCapaciteit(), 32000);
     EXPECT_GE(parsedFile.fCentra[3].getVaccins(), 0);
     EXPECT_LE(parsedFile.fCentra[3].getVaccins(), parsedFile.fCentra[3].getCapaciteit() * 2);
-    EXPECT_GE(parsedFile.fCentra[3].getVaccinated(), 0);
-    EXPECT_LE(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_GE(parsedFile.fCentra[3].getVaccinatedFirstTime(), 0);
+    EXPECT_LE(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
     Transport transport(parsedFile);
 
     EXPECT_EQ(parsedFile.fHubVaccins, 255794); // aantal fVaccinsInCentrum in hub >= 0
 
     EXPECT_EQ(parsedFile.fCentra[0].getVaccins(), 75770 ); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), 5401730); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[0].getVaccinated(), parsedFile.fCentra[0].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), 5401730); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[0].getVaccinatedFirstTime(), parsedFile.fCentra[0].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[1].getVaccins(), 35965); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), 769035); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[1].getVaccinated(), parsedFile.fCentra[1].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), 769035); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[1].getVaccinatedFirstTime(), parsedFile.fCentra[1].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[2].getVaccins(), 13449); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), 494051); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[2].getVaccinated(), parsedFile.fCentra[2].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), 494051); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[2].getVaccinatedFirstTime(), parsedFile.fCentra[2].getInwoners());
 
     EXPECT_EQ(parsedFile.fCentra[3].getVaccins(), 12971); // fVaccinsInCentrum in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), 2507029); // gevaccineerden in centrum >= 0
-    EXPECT_EQ(parsedFile.fCentra[3].getVaccinated(), parsedFile.fCentra[3].getInwoners());
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), 2507029); // gevaccineerden in centrum >= 0
+    EXPECT_EQ(parsedFile.fCentra[3].getVaccinatedFirstTime(), parsedFile.fCentra[3].getInwoners());
 
 }
 
