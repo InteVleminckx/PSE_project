@@ -181,7 +181,110 @@ void Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, of
 
 void Utils::grafischeImpressie(FileParser &file) {
 
+    ofstream grafischeOutput;
+    grafischeOutput.open("../simulatieOutput/grafischeOutput.txt");
+
     for (unsigned int i = 0; i < file.fHubs.size(); i++) {
 
+        grafischeOutput << "Hub " << i << ":\n";
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+
+            grafischeOutput << file.fHubs[i]->fHubCentra[j]->getNaam() << ":\n";
+
+            int aantalVaccinsInCentrum = 0;
+            map<string, int> mapVaccins = file.fHubs[i]->fHubCentra[j]->getVaccinsInCentrum();
+            for (map<string, int>::iterator k = mapVaccins.begin(); k != mapVaccins.end(); k++) {
+                aantalVaccinsInCentrum += k->second;
+            }
+            double percentageVaccins = ((double) aantalVaccinsInCentrum/ (double) file.fHubs[i]->fHubCentra[j]->getCapaciteit());
+            double percentageGevaccineerden = ((double) file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime()/
+                    (double) file.fHubs[i]->fHubCentra[j]->getInwoners());
+
+            string laadbalk;
+            laadbalk = "[";
+            for (unsigned int l = 0; l < 20; l++) { // tot 20 want in het voorbeeld is het aantal '='.
+                if (l < round(20*percentageVaccins)) {
+                    laadbalk+="=";
+                }
+                else {
+                    laadbalk+=" ";
+                }
+            }
+            laadbalk += "]";
+            grafischeOutput << "\t- vaccins\t\t    " << laadbalk << round(percentageVaccins*100) << "%\n";
+
+            laadbalk = "[";
+            for (unsigned int l = 0; l < 20; l++) {
+                if (l < round(20*percentageGevaccineerden)) {
+                    laadbalk+="=";
+                }
+                else {
+                    laadbalk+=" ";
+                }
+            }
+            laadbalk += "]";
+
+            grafischeOutput << "\t- gevaccineerden\t" << laadbalk << round(percentageGevaccineerden*100) << "%\n";
+        }
+        grafischeOutput << "\n";
     }
+}
+
+void Utils::statistischeVerwerking(FileParser &file) {
+
+    ofstream OutputStat;
+    unsigned int grootsteWaarde = 0;
+
+    OutputStat.open("../simulatieOutput/overzichtStatischeVerwerking.cvs");
+    OutputStat << "Statistische gegevens\n";
+    int totaalAantalGevaccineerden = 0;
+    for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
+
+        OutputStat << "Hub " << i << " :\n";
+
+        //OutputStat << ",Pfizer, Moderna, AstraZeneca, ,Gevaccineerden\n";
+        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
+            OutputStat << "," << file.fHubs[i]->fVaccins[j]->getType();
+        }
+        OutputStat << ", ,Aantal\n";
+
+        OutputStat << "Geleverde vaccins";
+        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
+            string type = file.fHubs[i]->fVaccins[j]->getType();
+            int aantalGeleverdeVaccins = file.fHubs[i]->getAantalGeleverdeVaccins(type);
+            OutputStat << "," << aantalGeleverdeVaccins;
+        }
+        int totaalAantalGevaccineerdenPerHub = 0;
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+            totaalAantalGevaccineerdenPerHub += file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime();
+        }
+
+        OutputStat << "\n";
+        OutputStat << "Gevacineerden per hub";
+        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size()+2; ++j) {
+            OutputStat << ",";
+        }
+        OutputStat << totaalAantalGevaccineerdenPerHub;
+        OutputStat << "\n";
+
+        totaalAantalGevaccineerden += totaalAantalGevaccineerdenPerHub;
+
+        OutputStat << "\n";
+
+        if (grootsteWaarde < (unsigned int) file.fHubs[i]->fVaccins.size()+2){
+            grootsteWaarde = file.fHubs[i]->fVaccins.size()+2;
+        }
+
+    }
+
+    OutputStat << "\n";
+    OutputStat << "Totaal aantal gevaccineerden: ";
+
+    for (unsigned int i = 0; i < grootsteWaarde; ++i) {
+        OutputStat << ",";
+    }
+
+    OutputStat << totaalAantalGevaccineerden;
+
+    OutputStat.close();
 }

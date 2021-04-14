@@ -46,6 +46,7 @@ Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day
                     break;
                 }
             }
+
         }
         OT << "\n";
     }
@@ -73,7 +74,7 @@ void Transport::vaccinatieHernieuwing(Vaccinatiecentrum *centrum, Vaccin* vaccin
 }
 
 
-int Transport::vaccinatieInCentrum(Vaccinatiecentrum* centrum, string &vaccinType, int teVaccineren) {
+int Transport::vaccinatieInCentrum(Vaccinatiecentrum* centrum,Vaccin* vaccin, int teVaccineren, int day) {
 
     REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieInCentrum");
 
@@ -99,10 +100,30 @@ int Transport::vaccinatieInCentrum(Vaccinatiecentrum* centrum, string &vaccinTyp
     if (teVaccineren < inwonersGevaccineerd){
         centrum->setVaccinatedFirstTime(teVaccineren + centrum->getVaccinatedFirstTime());
         centrum->setVaccins(centrum->getVaccins(vaccinType) - teVaccineren, vaccinType);
+        if (vaccin->getHernieuwingen() == 0) {
+            centrum->setVaccinatedSecondTime(teVaccineren + centrum->getVaccinatedSecondTime());
+        }
+        else {
+            centrum->setGebruikteVaccins(day+vaccin->getHernieuwingen(), vaccinType, teVaccineren);
+        }
+
+        int newTempCapaciteit = centrum->getCapaciteit()-teVaccineren;
+        centrum->setCapaciteit(newTempCapaciteit);
+
     }
     else{
         centrum->setVaccinatedFirstTime(inwonersGevaccineerd + centrum->getVaccinatedFirstTime());
         centrum->setVaccins(centrum->getVaccins(vaccinType) - inwonersGevaccineerd, vaccinType);
+        if (vaccin->getHernieuwingen() == 0) {
+            centrum->setVaccinatedSecondTime(inwonersGevaccineerd + centrum->getVaccinatedSecondTime());
+        }
+        else {
+            centrum->setGebruikteVaccins(day+vaccin->getHernieuwingen(), vaccinType, inwonersGevaccineerd);
+        }
+
+        int newTempCapaciteit = centrum->getCapaciteit()-inwonersGevaccineerd;
+        centrum->setCapaciteit(newTempCapaciteit);
+
     }
 
 //    if (inwonersGevaccineerd != 0) {

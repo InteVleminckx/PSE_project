@@ -21,7 +21,9 @@ int main(){
 
     Distributie distributie(parsedFile);
 
-//    parsedFile.uitvoer(false); // uitvoer(bestand) aan einde van de simulatie.
+    parsedFile.uitvoer(false); // uitvoer(bestand) aan einde van de simulatie.
 
+    Utils::grafischeImpressie(parsedFile);
+    Utils::statistischeVerwerking(parsedFile);
     return 0;
 }

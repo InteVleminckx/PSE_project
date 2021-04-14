@@ -85,6 +85,11 @@ public:
     static void checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput);
 
 
+    static void grafischeImpressie(FileParser &file);
+
+
+    static void statistischeVerwerking(FileParser &file);
+
 };
 
 

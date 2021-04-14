@@ -21,7 +21,7 @@
             <levering>67000</levering>
             <interval>4</interval>
             <transport>1500</transport>
-            <hernieuwing>21</hernieuwing>
+            <hernieuwing>0</hernieuwing>
             <temperatuur>-70</temperatuur>
 	    </VACCIN>
         <CENTRA>
