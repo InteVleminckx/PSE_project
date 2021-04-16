@@ -55,9 +55,8 @@ public:
     /*
      * @functie : parseXML
      * Deze functie parst het .xml bestand.
-     * @return : true als het parsen succesvol was, anders false.
      */
-    bool parseXML();
+    void parseXML();
 
     /*
      * @functie : setCentrumInformation

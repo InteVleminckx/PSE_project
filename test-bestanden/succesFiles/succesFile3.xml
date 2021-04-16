@@ -1,8 +1,45 @@
 <SIMULATIE>
     <HUB>
-        <levering>9000</levering>
-        <interval>6</interval>
-        <Transport>200</Transport>
+       <VACCIN>
+            <type>Pfizer</type>
+            <levering>150000</levering>
+            <interval>13</interval>
+            <transport>2000</transport>
+            <hernieuwing>25</hernieuwing>
+            <temperatuur>-70</temperatuur>
+	    </VACCIN>
+	    <VACCIN>
+            <type>Moderna</type>
+            <levering>20000</levering>
+            <interval>13</interval>
+            <transport>1000</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>AED Studios</centrum>
+            <centrum>De Zoerla</centrum>
+            <centrum>Flanders Expo</centrum>
+        </CENTRA>
+    </HUB>
+    <HUB>
+        <VACCIN>
+            <type>Pfizer</type>
+            <levering>93000</levering>
+            <interval>6</interval>
+            <transport>2000</transport>
+            <hernieuwing>5</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>Moderna</type>
+            <levering>46000</levering>
+            <interval>13</interval>
+            <transport>1000</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
@@ -13,20 +50,20 @@
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>54073</inwoners>
-        <capaciteit>7500</capaciteit>
+        <inwoners>1000000</inwoners>
+        <capaciteit>25000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>7695</inwoners>
-        <capaciteit>2000</capaciteit>
+        <inwoners>90500</inwoners>
+            <capaciteit>5500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>4941</inwoners>
-        <capaciteit>1000</capaciteit>
+        <inwoners>150600</inwoners>
+        <capaciteit>6000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>
@@ -35,4 +72,5 @@
         <capaciteit>3000</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
+
 

@@ -10,7 +10,6 @@
 Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day) {
     _initCheck = this;
 
-
 //    //aanmaken uitvoer bestand
 //    ofstream OT;
 //

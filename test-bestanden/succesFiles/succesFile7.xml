@@ -1,8 +1,61 @@
 <SIMULATIE>
     <HUB>
-        <levering>98765</levering>
-        <interval>5</interval>
-        <Transport>555</Transport>
+       <VACCIN>
+            <type>Pfizer</type>
+            <levering>9500</levering>
+            <interval>1</interval>
+            <transport>500</transport>
+            <hernieuwing>15</hernieuwing>
+            <temperatuur>-70</temperatuur>
+	    </VACCIN>
+	    <VACCIN>
+            <type>Moderna</type>
+            <levering>93000</levering>
+            <interval>13</interval>
+            <transport>5000</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>15</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>95175</levering>
+            <interval>10</interval>
+            <transport>10000</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+	    </VACCIN>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>AED Studios</centrum>
+            <centrum>De Zoerla</centrum>
+            <centrum>Flanders Expo</centrum>
+        </CENTRA>
+    </HUB>
+    <HUB>
+        <VACCIN>
+            <type>Pfizer</type>
+            <levering>94678</levering>
+            <interval>6</interval>
+            <transport>5400</transport>
+            <hernieuwing>15</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>Moderna</type>
+            <levering>76214</levering>
+            <interval>13</interval>
+            <transport>8461</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>1000</levering>
+            <interval>4</interval>
+            <transport>200</transport>
+            <hernieuwing>21</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
@@ -13,26 +66,27 @@
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>44444</inwoners>
-        <capaciteit>1111</capaciteit>
+        <inwoners>946784</inwoners>
+        <capaciteit>2400</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>66666</inwoners>
-        <capaciteit>2222</capaciteit>
+        <inwoners>1915945</inwoners>
+        <capaciteit>5100</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>999999</inwoners>
-        <capaciteit>3333</capaciteit>
+        <inwoners>87000</inwoners>
+        <capaciteit>7000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>
         <adres>Maaltekouter 1, Sint-Denijs-Westrem</adres>
-        <inwoners>159615</inwoners>
-        <capaciteit>555</capaciteit>
+        <inwoners>976431</inwoners>
+        <capaciteit>5400</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
+
 

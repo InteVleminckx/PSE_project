@@ -43,18 +43,26 @@ failedFile10:
 failedFile11:
 
 	-geen fTransport
+    -geen type
 
 failedFile12:
 
 	-fLeveringen is geen int
+    -temperatuur is geen int
+    -hernieuwing is geen int
 
 failedFile13:
 
 	-fInterval is geen int
+    -tag van type in hoofdletters
+    -ontbreekt > bij vaccins
+    -ontbreekt < bij CENTRA
 
 failedFile14:
 
-	-fTransport is geen int
+	-fTransport is geen int 
+    -capaciteit is geen int
+    -centrumnaam is geen string
 
 failedFile15:
 
@@ -63,26 +71,32 @@ failedFile15:
 failedFile16:
 
 	-inwoners is geen int
+    -centra bevat geen string
 
 failedFile17:
 
 	-capaciteit is geen int
+    -inteval is geen int
 
 failedFile18:
 
 	-adres is geen alfnumeric
+    -centrum onbreekt bij CENTRA
 
 failedFile19:
 
 	-een centrum met te veel parameters
+    -parameter met hoofdletters
 
 failedFile20:
 
 	-parameter met hoofdletters
-	
+    	
+
 failedFile21:
 
 	-Naam van een fCentra is geen hoofdletter
+    
 
 #succesFiles:
 

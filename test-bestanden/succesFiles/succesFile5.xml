@@ -1,8 +1,29 @@
 <SIMULATIE>
     <HUB>
-        <levering>12345</levering>
-        <interval>5</interval>
-        <Transport>123</Transport>
+       <VACCIN>
+            <type>Pfizer</type>
+            <levering>20000</levering>
+            <interval>7</interval>
+            <transport>1000</transport>
+            <hernieuwing>0</hernieuwing>
+            <temperatuur>-70</temperatuur>
+	    </VACCIN>
+	    <VACCIN>
+            <type>Moderna</type>
+            <levering>80000</levering>
+            <interval>13</interval>
+            <transport>1500</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>5</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>67000</levering>
+            <interval>4</interval>
+            <transport>1500</transport>
+            <hernieuwing>6</hernieuwing>
+            <temperatuur>-100</temperatuur>
+	    </VACCIN>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
@@ -13,20 +34,20 @@
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>23456</inwoners>
-        <capaciteit>10000</capaciteit>
+        <inwoners>540173</inwoners>
+        <capaciteit>7500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>15975</inwoners>
-        <capaciteit>2500</capaciteit>
+        <inwoners>76935</inwoners>
+        <capaciteit>2000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>64656</inwoners>
-        <capaciteit>1650</capaciteit>
+        <inwoners>49451</inwoners>
+        <capaciteit>1000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>Flanders Expo</naam>
@@ -35,4 +56,5 @@
         <capaciteit>3000</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
+
 

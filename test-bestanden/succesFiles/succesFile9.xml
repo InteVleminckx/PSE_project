@@ -1,38 +1,68 @@
 <SIMULATIE>
     <HUB>
-        <levering>930001</levering>
-        <interval>6</interval>
-        <Transport>20001</Transport>
+       <VACCIN>
+            <type>Pfizer</type>
+            <levering>158000</levering>
+            <interval>7</interval>
+            <transport>4500</transport>
+            <hernieuwing>10</hernieuwing>
+            <temperatuur>-70</temperatuur>
+	    </VACCIN>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
             <centrum>De Zoerla</centrum>
-            <centrum>Flanders Expo</centrum>
+        </CENTRA>
+    </HUB>
+    <HUB>
+        <VACCIN>
+            <type>Pfizer</type>
+            <levering>42500</levering>
+            <interval>5</interval>
+            <transport>1500</transport>
+            <hernieuwing>10</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>Moderna</type>
+            <levering>15000</levering>
+            <interval>10</interval>
+            <transport>1700</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>100000</levering>
+            <interval>10</interval>
+            <transport>1000</transport>
+            <hernieuwing>21</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>AED Studios</centrum>
+            <centrum>De Zoerla</centrum>
         </CENTRA>
     </HUB>
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>
-        <inwoners>5401731</inwoners>
-        <capaciteit>75001</capaciteit>
+        <inwoners>987654</inwoners>
+        <capaciteit>12500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
-        <inwoners>769351</inwoners>
-        <capaciteit>20001</capaciteit>
+        <inwoners>75270</inwoners>
+        <capaciteit>4500</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>
         <adres>Gevaertlaan 1, Westerlo</adres>
-        <inwoners>494511</inwoners>
-        <capaciteit>10001</capaciteit>
-    </VACCINATIECENTRUM>
-    <VACCINATIECENTRUM>
-        <naam>Flanders Expo</naam>
-        <adres>Maaltekouter 1, Sint-Denijs-Westrem</adres>
-        <inwoners>2570291</inwoners>
-        <capaciteit>30001 </capaciteit>
+        <inwoners>69420</inwoners>
+        <capaciteit>5000</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
+
 

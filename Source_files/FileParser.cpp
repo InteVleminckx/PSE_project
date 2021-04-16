@@ -24,12 +24,12 @@ int FileParser::parseFile(string &file) {
         return 1;
     }
     _initCheck = this;
-    bool returnBool = parseXML();
+    parseXML();
     ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state");
-    return returnBool;
+    return 0;
 }
 
-bool FileParser::parseXML() {
+void FileParser::parseXML() {
     REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling parseXML");
 
     testOutput.open("../test-bestanden/testOutput.txt"); // openen bestand waar we errors naar gaan schrijven.
@@ -152,7 +152,6 @@ bool FileParser::parseXML() {
         }
     }
 
-    return 0;
 }
 
 void FileParser::setCentrumInformation(unsigned int i, TiXmlNode* naam, string &adresString, int inwonersInt, int capaciteitInt) {
