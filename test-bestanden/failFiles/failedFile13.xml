@@ -24,7 +24,7 @@
             <hernieuwing>0</hernieuwing>
             <temperatuur>-70</temperatuur>
 	    </VACCIN>
-        CENTRA>
+        <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
             <centrum>De Zoerla</centrum>
@@ -73,7 +73,7 @@
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
         <inwoners>76935</inwoners>
-            <capaciteit>2000</capaciteit>
+        <capaciteit>2000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>

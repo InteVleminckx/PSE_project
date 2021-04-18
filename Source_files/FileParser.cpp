@@ -8,32 +8,30 @@
 //#include "../Header_files/Hub.h"
 
 int FileParser::parseFile(string &file) {
+    _initCheck = this;
+    testOutput.open("../test-bestanden/testOutput.txt"); // openen bestand waar we errors naar gaan schrijven.
 
     if(!fDoc.LoadFile(file.c_str())) {
-        cout << endl;
-        std::cerr << fDoc.ErrorDesc() << std::endl;
-        cout << endl;
+        testOutput << fDoc.ErrorDesc() << std::endl;
         return 1;
     }
 
     fRoot = fDoc.FirstChildElement();
 
     if(fRoot == NULL) {
-        std::cerr << "Failed to load file: No fRoot element." << std::endl;
+        testOutput << "Failed to load file: No fRoot element." << std::endl;
         fDoc.Clear();
         return 1;
     }
-    _initCheck = this;
+
     parseXML();
     ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state");
+
     return 0;
 }
 
 void FileParser::parseXML() {
     REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling parseXML");
-
-    testOutput.open("../test-bestanden/testOutput.txt"); // openen bestand waar we errors naar gaan schrijven.
-
 
     vector<Hub> test;
 
@@ -56,23 +54,73 @@ void FileParser::parseXML() {
 
                 if (element == "VACCIN"){
 
-                    Utils::checkTags(elem, true, testOutput);
+                    vector<bool> isTags = Utils::checkTags(elem, true, testOutput, elem1); // checkt of de tags aanwezig zijn
+                    TiXmlNode* type = NULL;
+                    TiXmlNode* levering = NULL;
+                    TiXmlNode* interval = NULL;
+                    TiXmlNode* transport = NULL;
+                    TiXmlNode* hernieuwing = NULL;
+                    TiXmlNode* temperatuur = NULL;
 
-                    TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
-                    TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
-                    TiXmlNode* interval = elem1->FirstChild("interval")->FirstChild();
-                    TiXmlNode* transport = elem1->FirstChild("transport")->FirstChild();
-                    TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
-                    TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
+                    if (isTags[0])
+                    {
+                        type = elem1->FirstChild("type")->FirstChild();
+                    }
+                    if (isTags[1])
+                    {
+                        levering = elem1->FirstChild("levering")->FirstChild();
+                    }
+                    if (isTags[2])
+                    {
+                        interval = elem1->FirstChild("interval")->FirstChild();
+                    }
+                    if (isTags[3])
+                    {
+                        transport = elem1->FirstChild("transport")->FirstChild();
+                    }
+                    if (isTags[4])
+                    {
+                        hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
+                    }
+                    if (isTags[5])
+                    {
+                        temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
+                    }
 
-                    Utils::checkValues(elem, elem1, true, testOutput);
+                    vector<bool> isValue = Utils::checkValues(elem, elem1, true, testOutput, isTags);
 
-                    string typeString = type->Value();
-                    int leveringInt = atoi(levering->Value());
-                    int intervalInt = atoi(interval->Value());
-                    int transportInt = atoi(transport->Value());
-                    int hernieuwingInt = atoi(hernieuwing->Value());
-                    int temperatuurInt = atoi(temperatuur->Value());
+                    // default
+                    string typeString = "type";
+                    int leveringInt = 1;
+                    int intervalInt = 1;
+                    int transportInt = 1;
+                    int hernieuwingInt = 0;
+                    int temperatuurInt = 0;
+
+                    if (isValue[0])
+                    {
+                        typeString = type->Value();
+                    }
+                    if (isValue[1])
+                    {
+                        leveringInt = atoi(levering->Value());
+                    }
+                    if (isValue[2])
+                    {
+                        intervalInt = atoi(interval->Value());
+                    }
+                    if (isValue[3])
+                    {
+                        transportInt = atoi(transport->Value());
+                    }
+                    if (isValue[4])
+                    {
+                        hernieuwingInt = atoi(hernieuwing->Value());
+                    }
+                    if (isValue[5])
+                    {
+                        temperatuurInt = atoi(temperatuur->Value());
+                    }
 
                     Vaccin* newVaccin = new Vaccin(typeString, leveringInt, intervalInt,
                         transportInt, hernieuwingInt, temperatuurInt);
@@ -90,11 +138,12 @@ void FileParser::parseXML() {
                         if (!Utils::isAlpha(elementCentra->FirstChild()->Value())){
                             testOutput << "Naam van een centrum moet een string zijn.\n";
                         }
-
-                        string naam = elementCentra->FirstChild()->Value();
-                        Vaccinatiecentrum* CENTRUM = new Vaccinatiecentrum;
-                        CENTRUM->setNaam(naam);
-                        newHub->fHubCentra.push_back(CENTRUM);
+                        else{
+                            string naam = elementCentra->FirstChild()->Value();
+                            Vaccinatiecentrum* CENTRUM = new Vaccinatiecentrum;
+                            CENTRUM->setNaam(naam);
+                            newHub->fHubCentra.push_back(CENTRUM);
+                        }
                     }
                 }
 
@@ -110,7 +159,12 @@ void FileParser::parseXML() {
         }
         else if (elemName == "VACCINATIECENTRUM"){
 
-            Utils::checkTags(elem, false, testOutput);
+            vector<bool> isTags = Utils::checkTags(elem, false, testOutput, NULL);
+
+            TiXmlNode* naam = NULL;
+            TiXmlNode* adres = NULL;
+            TiXmlNode* inwoners = NULL;
+            TiXmlNode* capaciteit = NULL;
 
             for (TiXmlNode* element = elem->FirstChild(); element != NULL;
                  element = element->NextSiblingElement()){
@@ -120,10 +174,23 @@ void FileParser::parseXML() {
                 }
             }
 
-            TiXmlNode* naam = elem->FirstChild("naam")->FirstChild();
-            TiXmlNode* adres = elem->FirstChild("adres")->FirstChild();
-            TiXmlNode* inwoners = elem->FirstChild("inwoners")->FirstChild();
-            TiXmlNode* capaciteit = elem->FirstChild("capaciteit")->FirstChild();
+            if (isTags[0])
+            {
+                naam = elem->FirstChild("naam")->FirstChild();
+            }
+            if (isTags[1])
+            {
+                adres = elem->FirstChild("adres")->FirstChild();
+            }
+            if (isTags[2])
+            {
+                inwoners = elem->FirstChild("inwoners")->FirstChild();
+            }
+            if (isTags[3])
+            {
+                capaciteit = elem->FirstChild("capaciteit")->FirstChild();
+            }
+
 
             Utils::checkValues(elem, NULL, false, testOutput);
 
@@ -154,10 +221,10 @@ void FileParser::parseXML() {
 
 }
 
-void FileParser::setCentrumInformation(unsigned int i, TiXmlNode* naam, string &adresString, int inwonersInt, int capaciteitInt) {
+void FileParser::setCentrumInformation(unsigned int i, string &naam, string &adresString, int inwonersInt, int capaciteitInt) {
 
     for (unsigned int j = 0; j < fHubs[i]->fHubCentra.size(); j++) {
-        if (fHubs[i]->fHubCentra[j]->getNaam() == naam->Value()) {
+        if (fHubs[i]->fHubCentra[j]->getNaam() == naam) {
             fHubs[i]->fHubCentra[j]->setAdres(adresString);
             fHubs[i]->fHubCentra[j]->setInwoners(inwonersInt);
             fHubs[i]->fHubCentra[j]->setCapaciteit(capaciteitInt);

@@ -67,7 +67,7 @@ public:
      * @param inwonersInt
      * @param capaciteitInt
      */
-    void setCentrumInformation(unsigned int i, TiXmlNode* naam, string &adresString, int inwonersInt, int capaciteitInt);
+    void setCentrumInformation(unsigned int i, string &naam, string &adresString, int inwonersInt, int capaciteitInt);
 
     /*
      * @functie : uitvoer

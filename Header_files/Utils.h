@@ -8,6 +8,7 @@
 #include "iostream"
 #include "../TinyXML/tinyxml.h"
 #include <fstream>
+#include "vector"
 
 using namespace std;
 
@@ -72,7 +73,7 @@ public:
      * @param isFirstchildElement
      * @param testOutput
      */
-    static void checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput);
+    static vector<bool> checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput, TiXmlNode* elem1);
 
 
     /*

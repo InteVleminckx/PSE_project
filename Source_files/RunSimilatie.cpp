@@ -14,16 +14,16 @@
 int main(){
 
     // bestand dat wordt uitgevoerd in de main
-    string file = "../test-bestanden/succesFiles/succesFile10.xml";
+    string file = "../test-bestanden/failFiles/failedFile21.xml";
     FileParser parsedFile;
     parsedFile.parseFile(file);
 //    parsedFile.uitvoer(); // uitvoer(bestand) aan begin van de simulatie.
 
-    Distributie distributie(parsedFile);
+//    Distributie distributie(parsedFile);
 
-    parsedFile.uitvoer(false); // uitvoer(bestand) aan einde van de simulatie.
+//    parsedFile.uitvoer(false); // uitvoer(bestand) aan einde van de simulatie.
 
-    Utils::grafischeImpressie(parsedFile);
-    Utils::statistischeVerwerking(parsedFile);
+//    Utils::grafischeImpressie(parsedFile);
+//    Utils::statistischeVerwerking(parsedFile);
     return 0;
 }

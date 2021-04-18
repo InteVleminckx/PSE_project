@@ -39,7 +39,7 @@ bool Utils::isAlphaNum(const string &str) {
     return true;
 }
 
-bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement) {
+bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement, TiXmlNode* elem1) {
 
     const char *tagString = tag.c_str();
 
@@ -49,6 +49,7 @@ bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElemen
     if (elem->FirstChild(tagString) == NULL && isFirstchildElement == false){
         return false;
     }
+
     return true;
 }
 
@@ -79,25 +80,29 @@ bool Utils::isCorrectTemperature(const string &str) {
     }
 }
 
-void Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput) {
+vector<bool> Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput, TiXmlNode* elem1) {
+
+    vector<bool> isTags;
+
     if (isFirstchildElement) {
 
-        if (!isTag("type", elem, true)) {
+        if (!isTag("type", elem, false, elem1)) {
             testOutput << "Tag \"type\" niet gevonden.\n";
+            isTags[0] = false;
         }
-        if (!isTag("levering", elem, true)) {
+        if (!isTag("levering", elem, false, elem1)) {
             testOutput << "Tag \"levering\" niet gevonden.\n";
         }
-        if (!isTag("interval", elem, true)) {
+        if (!isTag("interval", elem, false, elem1)) {
             testOutput << "Tag \"interval\" niet gevonden.\n";
         }
-        if (!isTag("transport", elem, true)) {
+        if (!isTag("transport", elem, false, elem1)) {
             testOutput << "Tag \"transport\" niet gevonden.\n";
         }
-        if (!isTag("hernieuwing", elem, true)) {
+        if (!isTag("hernieuwing", elem, false, elem1)) {
             testOutput << "Tag \"hernieuwing\" niet gevonden.\n";
         }
-        if (!isTag("temperatuur", elem, true)) {
+        if (!isTag("temperatuur", elem, false, elem1)) {
             testOutput << "Tag \"temperatuur\" niet gevonden.\n";
         }
 
@@ -106,77 +111,154 @@ void Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &te
     else{
         if (!isTag("naam", elem, false)) {
             testOutput << "Tag \"naam\" niet gevonden.\n";
+            isTags[0] = false;
         }
-        if (!isTag("adres", elem, false)) {
+        if (!isTag("adres", elem, false, NULL)) {
             testOutput << "Tag \"adres\" niet gevonden.\n";
+            isTags[1] = false;
         }
-        if (!isTag("inwoners", elem, false)) {
+        if (!isTag("inwoners", elem, false, NULL)) {
             testOutput << "Tag \"inwoners\" niet gevonden.\n";
+            isTags[2] = false;
         }
-        if (!isTag("capaciteit", elem, false)) {
+        if (!isTag("capaciteit", elem, false, NULL)) {
             testOutput << "Tag \"capaciteit\" niet gevonden.\n";
+            isTags[3] = false;
         }
     }
+    return isTags;
 }
 
 void Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, ofstream &testOutput) {
 
+    vector<bool> isValue;
+
     if (isVaccins){
 
-        TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
-        TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
-        TiXmlNode* interval = elem1->FirstChild("interval")->FirstChild();
-        TiXmlNode* transport = elem1->FirstChild("transport")->FirstChild();
-        TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
-        TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
-
-        if (!isAlpha(type->Value())){
-            testOutput << "Type van een vaccin moet een string zijn.\n";
+        for (int i = 0; i < 6; ++i) {
+            isValue.push_back(true);
         }
 
-        if (!isDigit(levering->Value())){
-            testOutput << "Levering moet een positieve integer zijn.\n";
+        if (isTag[0]){
+            TiXmlNode* type = elem1->FirstChild("type")->FirstChild();
+            if (!isAlpha(type->Value())){
+                testOutput << "Type van een vaccin moet een string zijn.\n";
+                isValue[0] = false;
+            }
+        }
+        else{
+            isValue[0] = false;
         }
 
-        if (!isDigit(interval->Value())){
-            testOutput << "Interval moet een positieve integer zijn.\n";
+        if (isTag[1]){
+            TiXmlNode* levering = elem1->FirstChild("levering")->FirstChild();
+            if (!isDigit(levering->Value())){
+                testOutput << "Levering moet een positieve integer zijn.\n";
+                isValue[1] = false;
+            }
+        }
+        else{
+            isValue[1] = false;
         }
 
-        if (!isDigit(transport->Value())){
-            testOutput << "Transport moet een positieve integer zijn.\n";
+        if(isTag[2]){
+            TiXmlNode* interval = elem1->FirstChild("interval")->FirstChild();
+            if (!isDigit(interval->Value())){
+                testOutput << "Interval moet een positieve integer zijn.\n";
+                isValue[2] = false;
+            }
+        }
+        else{
+            isValue[2] = false;
         }
 
-        if (!isDigit(hernieuwing->Value())){
-            testOutput << "Hernieuwing moet een positieve integer zijn.\n";
+        if (isTag[3]) {
+            TiXmlNode* transport = elem1->FirstChild("transport")->FirstChild();
+            if (!isDigit(transport->Value())){
+                testOutput << "Transport moet een positieve integer zijn.\n";
+                isValue[3] = false;
+            }
+        }
+        else {
+            isValue[3] = false;
         }
 
-        if (!isCorrectTemperature(temperatuur->Value())){
-            testOutput << "Temperatuur moet een positieve of negatief integer zijn.\n";
+        if (isTag[4]) {
+            TiXmlNode* hernieuwing = elem1->FirstChild("hernieuwing")->FirstChild();
+            if (!isDigit(hernieuwing->Value())){
+                testOutput << "Hernieuwing moet een positieve integer zijn.\n";
+                isValue[4] = false;
+            }
+        }
+        else {
+            isValue[4] = false;
+        }
+
+        if(isTag[5]){
+            TiXmlNode* temperatuur = elem1->FirstChild("temperatuur")->FirstChild();
+            if (!isCorrectTemperature(temperatuur->Value())){
+                testOutput << "Temperatuur moet een positieve of negatief integer zijn.\n";
+                isValue[5] = false;
+            }
+        }
+        else{
+            isValue[5] = false;
         }
 
     }
 
     else{
 
-        TiXmlNode* naam = elem->FirstChild("naam")->FirstChild();
-        TiXmlNode* adres = elem->FirstChild("adres")->FirstChild();
-        TiXmlNode* inwoners = elem->FirstChild("inwoners")->FirstChild();
-        TiXmlNode* capaciteit = elem->FirstChild("capaciteit")->FirstChild();
+        for (int i = 0; i < 4; ++i) {
+            isValue.push_back(true);
+        }
 
-        if (!isAlpha(naam->Value())){
-            testOutput << "Naam van een centrum moet een string zijn.\n";
+        if (isTag[0]) {
+            TiXmlNode* naam = elem->FirstChild("naam")->FirstChild();
+            if (!isAlpha(naam->Value())){
+                testOutput << "Naam van een centrum moet een string zijn.\n";
+                isValue[0] = false;
+            }
         }
-        if (!isAlphaNum(adres->Value())){
-            testOutput << "Adres moet bestaan uit een string (en integers).\n";
+        else {
+            isValue[0] = false;
         }
-        if (!isDigit(inwoners->Value())){
-            testOutput << "Inwoners moet een positieve integer zijn.\n";
+
+        if(isTag[1]){
+            TiXmlNode* adres = elem->FirstChild("adres")->FirstChild();
+            if (!isAlphaNum(adres->Value())){
+                testOutput << "Adres moet bestaan uit een string (en integers).\n";
+                isValue[1] = false;
+            }
         }
-        if (!isDigit(capaciteit->Value())){
-            testOutput << "Capaciteit moet een positieve integer zijn.\n";
+        else{
+            isValue[1] = false;
+        }
+
+        if (isTag[2]){
+            TiXmlNode* inwoners = elem->FirstChild("inwoners")->FirstChild();
+            if (!isDigit(inwoners->Value())){
+                testOutput << "Inwoners moet een positieve integer zijn.\n";
+                isValue[2] = false;
+            }
+        }
+        else{
+            isValue[2] = false;
+        }
+
+        if (isTag[3]) {
+            TiXmlNode* capaciteit = elem->FirstChild("capaciteit")->FirstChild();
+            if (!isDigit(capaciteit->Value())){
+                testOutput << "Capaciteit moet een positieve integer zijn.\n";
+                isValue[3] = false;
+            }
+        }
+        else {
+            isValue[3] = false;
         }
     }
 
+    return isValue;
 }
 
 void Utils::grafischeImpressie(FileParser &file) {
