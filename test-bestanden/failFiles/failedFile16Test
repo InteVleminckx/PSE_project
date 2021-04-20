@@ -1,0 +1,3 @@
+Naam van een centrum moet een string zijn.
+Inwoners moet een positieve integer zijn.
+Het aantal vaccinatiecentra komt niet overeen met het aantal opgegeven centra in het begin.

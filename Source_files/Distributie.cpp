@@ -16,7 +16,7 @@ Distributie::Distributie(FileParser &file) {
     //openen van het uitvoerbestand
     OT.open("../simulatieOutput/overzichtTransport.txt");
 
-    while (!isAllPeopleVaccinatedInTotal(file)){
+    while (!isAllPeopleVaccinatedInTotal(file) || day == 1000){
 
 
 

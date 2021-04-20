@@ -26,7 +26,7 @@ int FileParser::parseFile(string &file) {
 
     parseXML();
     ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state");
-
+    testOutput.close();
     return 0;
 }
 
