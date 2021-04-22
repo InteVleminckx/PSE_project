@@ -1,3194 +1,1798 @@
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 5 ladingen (2500 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 8 ladingen (9600 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 6 ladingen (7200 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 9 ladingen (4500 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 8 ladingen (9600 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 1 ladingen (1200 vaccins) getransporteerd naar Flanders Expo.
-Er werden 3 ladingen (6000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 6 ladingen (3000 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 2500 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 1 ladingen (500 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 7 ladingen (8400 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 6 ladingen (7200 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 8 ladingen (9600 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 6 ladingen (7200 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 9 ladingen (4500 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 9600 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Er werden 7200 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 9600 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 3000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Er werden 1200 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 2 ladingen (4000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 5 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 2
-Er werden 4500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 4 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 6 ladingen (3000 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 8400 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 7200 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 9600 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 7200 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
+
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 2
-Er werden 4500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 2900 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 9 ladingen (4500 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 4 ladingen (4800 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 9 ladingen (4500 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
 
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
 
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 4500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 4800 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 4500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 19 ladingen (9500 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-
-
-Er werden 250 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-
-
-
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-
-
-
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-
-
-
-
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Er werden 9456 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-
-
-Hub 2
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
 
-Hub 1
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar AED Studios.
-Er werden 10 ladingen (5000 vaccins) getransporteerd naar AED Studios.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
 
+Er werden 2000 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 935 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 8 ladingen (4000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 935 mensen gevaccineerd (als hernieuwing) in AED Studios.
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 16 ladingen (8000 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 2 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-Er werden 5000 mensen gevaccineerd (als hernieuwing) in AED Studios.
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
 Hub 2
-Er werden 4000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 2 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 8000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
-Hub 1
 Hub 2
 Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
 Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Flanders Expo.
-Er werden 13 ladingen (6500 vaccins) getransporteerd naar Flanders Expo.
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
 
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 9 ladingen (4500 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
 
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-
-Hub 1
 Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Er werden 0 ladingen (0 vaccins) getransporteerd naar De Zoerla.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar De Zoerla.
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
-Er werden 6000 mensen gevaccineerd (als hernieuwing) in Flanders Expo.
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 4500 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 8 ladingen (4000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 500 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
-Er werden 250 mensen gevaccineerd (als hernieuwing) in De Zoerla.
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 6 ladingen (3000 vaccins) getransporteerd naar Park Spoor Oost.
-
-
 
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
-Er werden 4000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
-
 
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 3000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
-Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
-Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
-
 
 
-
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 20 ladingen (10000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 3 ladingen (6000 vaccins) getransporteerd naar Park Spoor Oost.
+Er werden 1 ladingen (1000 vaccins) getransporteerd naar Park Spoor Oost.
 Er werden 0 ladingen (0 vaccins) getransporteerd naar Park Spoor Oost.
-Er werden 1 ladingen (500 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
-Hub 1
 Hub 2
+Er werden 1 ladingen (2000 vaccins) getransporteerd naar Park Spoor Oost.
 
 
+Hub 1
 
 
-Hub 1
 Hub 2
 
 
+Hub 1
 
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
 
 
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
 
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 
-
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 
-
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 
-
 Hub 1
-Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
-Hub 2
 
 
+Hub 2
 
 
 Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 6000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
 Hub 1
+Er werden 1173 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1173 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
 
 
-Hub 1
 Hub 2
-Er werden 10000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
-
 
 
 Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+
 Hub 2
-Er werden 456 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 1
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 
+Hub 2
+Er werden 1000 mensen gevaccineerd (als hernieuwing) in Park Spoor Oost.
 

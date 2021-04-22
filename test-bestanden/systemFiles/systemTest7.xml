@@ -61,6 +61,9 @@
             <centrum>AED Studios</centrum>
             <centrum>De Zoerla</centrum>
             <centrum>Flanders Expo</centrum>
+            <centrum>De Waai</centrum>
+            <centrum>Evenementenhal De Soeverein</centrum>
+            <centrum>Welzijnscampus De Motten</centrum>
         </CENTRA>
     </HUB>
     <VACCINATIECENTRUM>
@@ -86,6 +89,24 @@
         <adres>Maaltekouter 1, Sint-Denijs-Westrem</adres>
         <inwoners>257029</inwoners>
         <capaciteit>3000</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>De Waai</naam>
+        <adres>Werft 28, Geel</adres>
+        <inwoners>63478</inwoners>
+        <capaciteit>1500</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>Evenementenhal De Soeverein</naam>
+        <adres>Sportveldenstraat 10, Lommel</adres>
+        <inwoners>113256</inwoners>
+        <capaciteit>2500</capaciteit>
+    </VACCINATIECENTRUM>
+    <VACCINATIECENTRUM>
+        <naam>Welzijnscampus De Motten</naam>
+        <adres>Dijk 124, Tongeren</adres>
+        <inwoners>179250</inwoners>
+        <capaciteit>2500</capaciteit>
     </VACCINATIECENTRUM>
 </SIMULATIE>
 

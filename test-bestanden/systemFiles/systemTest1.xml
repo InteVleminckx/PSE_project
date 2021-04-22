@@ -1,19 +1,19 @@
 <SIMULATIE>
     <HUB>
-       <VACCIN>
+        <VACCIN>
             <type>Pfizer</type>
             <levering>93000</levering>
             <interval>6</interval>
             <transport>2000</transport>
-            <hernieuwing>15</hernieuwing>
+            <hernieuwing>0</hernieuwing>
             <temperatuur>-70</temperatuur>
-	    </VACCIN>
-	    <VACCIN>
+        </VACCIN>
+        <VACCIN>
             <type>Moderna</type>
             <levering>46000</levering>
             <interval>13</interval>
             <transport>1000</transport>
-            <hernieuwing>19</hernieuwing>
+            <hernieuwing>0</hernieuwing>
             <temperatuur>-70</temperatuur>
         </VACCIN>
         <VACCIN>
@@ -23,7 +23,7 @@
             <transport>1500</transport>
             <hernieuwing>0</hernieuwing>
             <temperatuur>-70</temperatuur>
-	    </VACCIN>
+        </VACCIN>
         <CENTRA>
             <centrum>Park Spoor Oost</centrum>
             <centrum>AED Studios</centrum>
@@ -73,7 +73,7 @@
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
         <inwoners>76935</inwoners>
-            <capaciteit>2000</capaciteit>
+        <capaciteit>2000</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>

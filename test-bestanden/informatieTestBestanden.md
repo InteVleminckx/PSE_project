@@ -180,4 +180,16 @@ systemTest4.xml:
 
 systemTest5.xml:
 
+    capaciteit groter dan inwoners
+
+systemTest6.xml:
+
     uitzonderlijke situatie, zeer klein fTransport
+
+systemTest7.xml
+
+    meer centra
+
+systemTest8.xml
+
+    minder centra
