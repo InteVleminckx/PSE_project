@@ -312,10 +312,6 @@ Vaccinatiecentrum.h
 ../TinyXML/tinyxml.h
 /home/inte/CLionProjects/PSEgit/TinyXML/tinyxml.h
 
-/home/inte/CLionProjects/PSEgit/Header_files/SimulatieUtils.h
-iostream
--
-
 /home/inte/CLionProjects/PSEgit/Header_files/Transport.h
 sstream
 -
@@ -392,10 +388,12 @@ fstream
 DesignByContract.h
 /home/inte/CLionProjects/PSEgit/Header_files/DesignByContract.h
 
-/home/inte/CLionProjects/PSEgit/Source_files/InputTests.cpp
+/home/inte/CLionProjects/PSEgit/Source_files/SystemTests.cpp
 gtest/gtest.h
 -
 string
+-
+iostream
 -
 vector
 -
@@ -405,10 +403,6 @@ cmath
 /home/inte/CLionProjects/PSEgit/Header_files/FileParser.h
 ../Header_files/Transport.h
 /home/inte/CLionProjects/PSEgit/Header_files/Transport.h
-../Header_files/SimulatieUtils.h
-/home/inte/CLionProjects/PSEgit/Header_files/SimulatieUtils.h
-../Header_files/DesignByContract.h
-/home/inte/CLionProjects/PSEgit/Header_files/DesignByContract.h
 ../Header_files/Distributie.h
 /home/inte/CLionProjects/PSEgit/Header_files/Distributie.h
 
