@@ -1,0 +1,16 @@
+Hub 0:
+Park Spoor Oost:
+	- vaccins		    [==                  ]11%
+	- gevaccineerden	[====================]100%
+AED Studios:
+	- vaccins		    [===========         ]53%
+	- gevaccineerden	[====================]100%
+
+Hub 1:
+Park Spoor Oost:
+	- vaccins		    [==                  ]11%
+	- gevaccineerden	[====================]100%
+AED Studios:
+	- vaccins		    [===========         ]53%
+	- gevaccineerden	[====================]100%
+

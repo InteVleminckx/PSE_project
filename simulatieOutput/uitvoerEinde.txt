@@ -1,0 +1,14 @@
+Hub 0: Vaccins ( Pfizer: [1521892] Moderna: [490000] AstraZeneca: [2613000] )
+	-> Park Spoor Oost: Vaccins ( AstraZeneca: [0] Moderna: [0] Pfizer: [827] )
+	-> AED Studios: Vaccins ( AstraZeneca: [0] Moderna: [0] Pfizer: [1065] )
+
+Park Spoor Oost: 540173 gevaccineerd, nog 0 niet gevaccineerd
+AED Studios: 76935 gevaccineerd, nog 0 niet gevaccineerd
+
+Hub 1: Vaccins ( Pfizer: [1521892] Moderna: [490000] AstraZeneca: [2613000] )
+	-> Park Spoor Oost: Vaccins ( AstraZeneca: [0] Moderna: [0] Pfizer: [827] )
+	-> AED Studios: Vaccins ( AstraZeneca: [0] Moderna: [0] Pfizer: [1065] )
+
+Park Spoor Oost: 540173 gevaccineerd, nog 0 niet gevaccineerd
+AED Studios: 76935 gevaccineerd, nog 0 niet gevaccineerd
+
