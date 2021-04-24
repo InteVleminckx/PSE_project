@@ -1,10 +1,15 @@
-//
-// Created by inte on 20.03.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Hub), bevat het aantal vaccins in de hub zelf en de vaccinatiecentra waar de hub aan moet distribueren.
+ * Houdt ook het aantal geleverde vaccins van elk type bij.
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
+*/
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_HUB_H
 #define PROJECT_SOFTWARE_ENGENEERING_HUB_H
-//#include <iostream>
+
 #include <string>
 #include <vector>
 #include <map>
@@ -16,7 +21,7 @@
 #include "Vaccin.h"
 #include "Vaccinatiecentrum.h"
 #include "../TinyXML/tinyxml.h"
-//#include "FileParser.h"
+
 using namespace std;
 
 class Hub {
@@ -40,20 +45,24 @@ public:
     Hub();
 
     /*
-     * @functie: distributie
-     * Deze functie verdeeld de fVaccinsInCentrum over de vaccinatiecentra.
-     * @param file : .xml bestand dat wordt meegegeven.
+     * @functie : setAantalGeleverdeVaccins
+     * Deze functie zet het aantal vaccins van een type per hub.
+     * @param type : string, type van het vaccin
+     * @param aantal : int, hoeveelheid vaccins die worden toegevoegd
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling setAantalGeleverdeVaccins");
+     * REQUIRE(aantal > 0, "Het aantal geleverde vaccins moet groter zijn dan 0.");
+     * ENSURE((getAantalGeleverdeVaccins(type) == aantal), "setVaccinatedFirstTime postcondition failure.");
      */
-//    void distributie(FileParser &file);
+    void setAantalGeleverdeVaccins(string &type, int aantal);
 
     /*
-     * @functie : isAllPeopleVaccinated
-     * Deze functie checkt of alle inwoners van alle fCentra gevaccineerd zijn.
-     * @param file : het .xml bestand dat ingelezen wordt.
-     * @return : true als alle inwoners gevaccineerd zijn, anders false.
+     * @functie : getAantalGeleverdeVaccins
+     * Deze functie geeft het aantal vaccins in de hub van een type terug.
+     * @param type : string, type van het vaccin.
+     * @return : int, aantal vaccins van het type in de hub.
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getAantalGeleverdeVaccins");
      */
-//    bool isAllPeopleVaccinated(FileParser &file);
-
+    int getAantalGeleverdeVaccins(string &type);
 
     bool properlyInitialized();
 

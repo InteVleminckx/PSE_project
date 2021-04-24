@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Klasse (Transport), simuleert het verplaatsen van de vaccinaties naar de fCentra en het vaccineren van de inwoners in de fCentra.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_TRANSPORT_H
@@ -45,14 +45,6 @@ public:
     Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day);
 
     /*
-     * @functie : transportSimulatie
-     * Deze functie verzorgt de (automatische) verdeling van de fVaccinsInCentrum over de vaccinatiecentra, met
-     * telkens op het fInterval een levering fVaccinsInCentrum aan de HUB.
-     * @param file : het .xml bestand dat ingelezen wordt.
-     */
-//    void transportSimulatie(FileParser &file);
-
-    /*
      * @functie: vaccinatieHernieuwing
      * Deze functie voert de hernieuwingen uit.
      * @param centrum : Vaccinatiecentrum, centrum waar de hernieuwingen plaatsvinden
@@ -86,16 +78,7 @@ public:
      * @param centrum : het Vaccinatiecentrum
      * REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieInCentrum");
      */
-    int vaccinatieInCentrum(Vaccinatiecentrum* centrum, string &vaccinType, int teVaccineren);
-
-    /*
-     * @functie : isAllPeopleVaccinated
-     * Deze functie checkt of alle inwoners van alle fCentra gevaccineerd zijn.
-     * @param file : het .xml bestand dat ingelezen wordt.
-     * @return : true als alle inwoners gevaccineerd zijn, anders false.
-     */
-//    bool isAllPeopleVaccinated(FileParser &file);
-
+    int vaccinatieInCentrum(Vaccinatiecentrum* centrum, Vaccin* vaccin, int teVaccineren, int day);
 
     bool properlyInitialized();
 

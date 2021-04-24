@@ -1,6 +1,10 @@
-//
-// Created by inte on 08.04.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Utils) : Deze klasse bevat alle hulpfuncties die we gebruiken
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
+*/
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_UTILS_H
 #define PROJECT_SOFTWARE_ENGENEERING_UTILS_H
@@ -85,7 +89,12 @@ public:
      */
     static void checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput);
 
-
+    /*
+     * @functie : grafischeImpressie
+     * Deze functie geeft in een percentage weer hoeveel mensen er gevaccineerd zijn en hoeveel vaccins er nog in een
+     * centra zit
+     * @param file : het geparste xml bestand, met alle huidige gegevens in
+     */
     static void grafischeImpressie(FileParser &file);
 
 

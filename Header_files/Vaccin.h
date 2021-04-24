@@ -32,6 +32,17 @@ class Vaccin {
 
 public:
 
+    /*
+     * functie : Vaccin
+     * Deze functie maakt een vaccin aan met de meegegeven parameters.
+     * @param Type : string type van het vaccin.
+     * @param Leveringen : int, het aantal vaccins dat geleverd wordt per interval.
+     * @param Interval : int, het leverinterval.
+     * @param Transport : int, hoeveel vaccins die per lading worden getransporteerd naar de centra.
+     * @param Hernieuwingen : int, het aantal dagen waarna mensen nog eens met het vaccin waarop de hernieuwing is
+     * toegepast, moeten gevaccineerd worden.
+     * @param Temperatuur : int, de temperatuur waarin een vaccin bewaart moet worden.
+     */
     Vaccin(string &Type, int Leveringen, int Interval, int Transport, int Hernieuwingen, int Temperatuur);
 
     /*

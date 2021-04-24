@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Klasse (Vaccinatiecentrum) om een vaccinatiecentrum aan te maken.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_VACCINATIECENTRUM_H
@@ -45,16 +45,6 @@ public:
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling eraseDayfromGebruikteVaccins");
      */
     void eraseDayfromGebruikteVaccins(int dagHernieuwing, string &type);
-
-    /*
-     * @functie : vaccinatieInCentrum
-     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
-     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal fVaccinsInCentrum in
-     * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
-     * @param centrum : het Vaccinatiecentrum
-     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling vaccinatieInCentrum");
-     */
-//    void vaccinatieInCentrum(Vaccinatiecentrum &centrum);
 
     /*
      * @functie: setNaam

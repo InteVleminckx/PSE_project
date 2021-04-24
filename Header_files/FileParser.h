@@ -2,12 +2,13 @@
  * korte beschrijving:
  * klasse (FileParser), parsed het xml bestand en geeft een uitvoer weer van de simulatie
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_FILEPARSER_H
 #define PROJECT_SOFTWARE_ENGENEERING_FILEPARSER_H
+
 #include <sstream>  // Required for stringstreams
 #include <string>
 #include <iostream>
@@ -55,17 +56,19 @@ public:
     /*
      * @functie : parseXML
      * Deze functie parst het .xml bestand.
+     * REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling parseXML");
      */
     void parseXML();
 
     /*
      * @functie : setCentrumInformation
      * Deze functie geeft alle informatie die het xml bestand bevat over een centrum, aan het juiste centrum
-     * @param i
-     * @param naam
-     * @param adresString
-     * @param inwonersInt
-     * @param capaciteitInt
+     * @param i : iterator voor de hub in de hubvector
+     * @param naam : naam van vaccinatiecentrum
+     * @param adresString : adres van vaccinatiecentrum
+     * @param inwonersInt : inwoners van het vaccinatiecentrum
+     * @param capaciteitInt : capaciteit van het vaccinatiecentrum
+     * REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling setCentrumInformation");
      */
     void setCentrumInformation(unsigned int i, string &naam, string &adresString, int inwonersInt, int capaciteitInt);
 
@@ -76,6 +79,7 @@ public:
      * @param begin : (by default op true) Deze boolean parameter duidt aan of we
      * uitvoerBegin.txt (bij true) (overzicht aan het begin van de simulatie) of
      * uitvoerEinde.txt (bij false) (overzicht aan het einde van de simulatie) moeten aanmaken.
+     * REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");
      */
     void uitvoer(bool begin = true);
 
