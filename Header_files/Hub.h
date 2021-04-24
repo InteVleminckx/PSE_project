@@ -28,11 +28,11 @@ class Hub {
 public:
 
     Hub* _initCheck;
-//    int fAantalVaccins;
-//    int fLeveringInterval;
+
 //    ofstream fOVP; //overzichtVaccinatieProcedure
 
     vector<Vaccin*> fVaccins;
+    map<string, int> fAantalGeleverdeVaccins;
 
     vector<Vaccinatiecentrum*> fHubCentra;
 

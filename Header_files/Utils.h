@@ -52,7 +52,7 @@ public:
      * @param elem : (TiXmlElement) element dat wordt meegegeven.
      * @return : true als de string (fNaam) een child is van het element, anders false.
      */
-    static bool isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement);
+    static bool isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement, TiXmlNode* elem1);
 
     /*
      * @functie : isLittleAlpha
@@ -87,7 +87,8 @@ public:
      * @param isVaccins
      * @param testOutput
      */
-    static void checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput);
+    static vector<bool> checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput,
+        const vector<bool>& isTag);
 
     /*
      * @functie : grafischeImpressie
@@ -97,10 +98,13 @@ public:
      */
     static void grafischeImpressie(FileParser &file);
 
-
+    /*
+     * @functie: statistischeVerwerking
+     * Deze functie geeft in een .cvs formaat de statistische gegevens weer (deze wordt aangeroepen op het einde van we simulatie)
+     * @param file : het geparste xml bestand, met alle huidige gegevens in
+     */
     static void statistischeVerwerking(FileParser &file);
 
 };
-
 
 #endif //PROJECT_SOFTWARE_ENGENEERING_UTILS_H

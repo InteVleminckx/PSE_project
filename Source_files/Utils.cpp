@@ -43,11 +43,19 @@ bool Utils::isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElemen
 
     const char *tagString = tag.c_str();
 
-    if (elem->FirstChildElement()->FirstChild(tagString) == NULL && isFirstchildElement == true){
-        return false;
+    if (elem1 == NULL){
+        if (elem->FirstChildElement()->FirstChild(tagString) == NULL && isFirstchildElement == true){
+            return false;
+        }
+        if (elem->FirstChild(tagString) == NULL && isFirstchildElement == false){
+            return false;
+        }
     }
-    if (elem->FirstChild(tagString) == NULL && isFirstchildElement == false){
-        return false;
+
+    else{
+        if (elem1->FirstChild(tagString) == NULL && isFirstchildElement == false) {
+            return false;
+        }
     }
 
     return true;
@@ -86,30 +94,44 @@ vector<bool> Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofst
 
     if (isFirstchildElement) {
 
+        for (unsigned int i = 0; i < 6; ++i) {
+            isTags.push_back(true);
+        }
+
         if (!isTag("type", elem, false, elem1)) {
             testOutput << "Tag \"type\" niet gevonden.\n";
             isTags[0] = false;
         }
         if (!isTag("levering", elem, false, elem1)) {
             testOutput << "Tag \"levering\" niet gevonden.\n";
+            isTags[1] = false;
         }
         if (!isTag("interval", elem, false, elem1)) {
             testOutput << "Tag \"interval\" niet gevonden.\n";
+            isTags[2] = false;
         }
         if (!isTag("transport", elem, false, elem1)) {
             testOutput << "Tag \"transport\" niet gevonden.\n";
+            isTags[3] = false;
         }
         if (!isTag("hernieuwing", elem, false, elem1)) {
             testOutput << "Tag \"hernieuwing\" niet gevonden.\n";
+            isTags[4] = false;
         }
         if (!isTag("temperatuur", elem, false, elem1)) {
             testOutput << "Tag \"temperatuur\" niet gevonden.\n";
+            isTags[5] = false;
         }
 
     }
 
     else{
-        if (!isTag("naam", elem, false)) {
+
+        for (unsigned int i = 0; i < 4; ++i) {
+            isTags.push_back(true);
+        }
+
+        if (!isTag("naam", elem, false, NULL)) {
             testOutput << "Tag \"naam\" niet gevonden.\n";
             isTags[0] = false;
         }
@@ -129,7 +151,7 @@ vector<bool> Utils::checkTags(TiXmlElement *elem, bool isFirstchildElement, ofst
     return isTags;
 }
 
-void Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, ofstream &testOutput) {
+vector<bool> Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, ofstream &testOutput, const vector<bool>& isTag) {
 
     vector<bool> isValue;
 
@@ -206,7 +228,6 @@ void Utils::checkValues(TiXmlElement *elem, TiXmlNode *elem1, bool isVaccins, of
         }
 
     }
-
     else{
 
         for (int i = 0; i < 4; ++i) {

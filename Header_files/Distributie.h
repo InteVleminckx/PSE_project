@@ -16,19 +16,35 @@
 using namespace std;
 
 class Distributie {
-
+    Distributie* _initCheck;
 public:
 
+    /*
+     * @functie: Distributie
+     * Deze functie is de bovenste laag van de simulatie, hier worden de vaccin leveringen geregeld, en wordt het transport van vaccins naar de centra geregeld.
+     * @param file : .xml bestand dat wordt meegegeven.
+     */
     Distributie(FileParser &file);
 
     /*
-     * @functie : isAllPeopleVaccinated
-     * Deze functie checkt of alle inwoners van alle fCentra gevaccineerd zijn.
+     * @functie : isAllPeopleVaccinatedInHub
+     * Deze functie checkt of alle "inwoners" van een hub gevaccineerd zijn.
+     * @param file : het .xml bestand dat ingelezen wordt.
+     * @param j: unsigned int, iterator voor de huidige hub in de vector
+     * REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinated");
+     * @return : true als alle inwoners gevaccineerd zijn, anders false.
+     */
+    bool isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j);
+
+    /*
+     * @functie : isAllPeopleVaccinatedinTotal
+     * Deze functie checkt of alle inwoners van alle hubs in elk centrum gevaccineerd zijn.
      * @param file : het .xml bestand dat ingelezen wordt.
      * REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinatedIntotal");
      * @return : true als alle inwoners gevaccineerd zijn, anders false.
      */
-    bool isAllPeopleVaccinated(FileParser &file, unsigned int j);
+    bool isAllPeopleVaccinatedInTotal(FileParser &file);
+
 
     bool properlyInitialized();
 

@@ -93,10 +93,6 @@ failedFile20:
 	-parameter met hoofdletters
     	
 
-failedFile21:
-
-	-Naam van een fCentra is geen hoofdletter
-    
 
 #succesFiles:
 

@@ -12,6 +12,9 @@
 #include <cmath>
 #include "../Header_files/FileParser.h"
 #include "../Header_files/Transport.h"
+#include "../Header_files/SimulatieUtils.h"
+#include "../Header_files/DesignByContract.h"
+#include "../Header_files/Distributie.h"
 
 class InputTests: public ::testing::Test {
 protected:
@@ -38,14 +41,15 @@ TEST_F(InputTests, failedFile1) {
     ASSERT_TRUE(DirectoryExists("../test-bestanden/failFiles"));
 
     string file = "../test-bestanden/failFiles/failedFile1.xml";
-    EXPECT_TRUE(parsedFile.parseFile(file));
+    parsedFile.parseFile(file);
+    ofstream test;
+    test.open("../test-bestanden/failFiles/failedFile1Test");
 
-//    try {
-//        parsedFile.parseFile(file);
-//        fail(); // did not throw
-//    } catch (bool e) {
-//        cout << "Fout" << endl;
-//    }
+    test << "Error reading Attributes.\n";
+
+    test.close();
+
+    EXPECT_TRUE(FileCompare("../test-bestanden/testOutput.txt", "../test-bestanden/failFiles/failedFile1Test"));
 
 }
 

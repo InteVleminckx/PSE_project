@@ -33,10 +33,8 @@ protected:
 
 TEST_F(UnitTests, Functie_isDigit){
 
-    FileParser* newFile = new FileParser;
-    newFile->_initCheck = newFile;
     string str = "geen digit";
-    EXPECT_EQ(0, newFile->isDigit(str));
+    EXPECT_EQ(0, Utils::isDigit(str));
     str = "geen_digit";
     EXPECT_EQ(0, Utils::isDigit(str));
     str = "123";

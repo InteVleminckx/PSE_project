@@ -20,13 +20,10 @@
 #include "Vaccinatiecentrum.h"
 #include "../TinyXML/tinyxml.h"
 #include "Hub.h"
-//#include "FileParser.h"
 
 using namespace std;
 
 class FileParser;
-//class Transport;
-
 class Transport {
 
     Transport* _initCheck;

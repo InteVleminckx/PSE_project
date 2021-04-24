@@ -126,6 +126,7 @@ void FileParser::parseXML() {
                         transportInt, hernieuwingInt, temperatuurInt);
 
                     newHub->fVaccins.push_back(newVaccin);
+                    newHub->setAantalGeleverdeVaccins(typeString, leveringInt);
 
                 }
                 else if(element == "CENTRA"){
@@ -149,12 +150,14 @@ void FileParser::parseXML() {
 
                 else {
                     testOutput << "Geen correcte input voor de tag.\n";
-                    Utils::checkTags(elem, true, testOutput);
-                    Utils::checkValues(elem, elem1, true, testOutput);
+                    vector<bool> isTags = Utils::checkTags(elem, true, testOutput, NULL); ////
+                    Utils::checkValues(elem, elem1, true, testOutput, isTags);
                 }
             }
-
-            REQUIRE((!newHub->fHubCentra.empty()), "Er moet minstens 1 vaccininatiecentrum zijn.");
+            if (newHub->fHubCentra.empty()) {
+                testOutput << "Er moet minstens 1 vaccinatiecentrum zijn.\n";
+            }
+//            REQUIRE((!newHub->fHubCentra.empty()), "Er moet minstens 1 vaccininatiecentrum zijn.");
             fHubs.push_back(newHub);
         }
         else if (elemName == "VACCINATIECENTRUM"){
@@ -191,23 +194,52 @@ void FileParser::parseXML() {
                 capaciteit = elem->FirstChild("capaciteit")->FirstChild();
             }
 
+            vector<bool> isValue = Utils::checkValues(elem, NULL, false, testOutput, isTags);
 
-            Utils::checkValues(elem, NULL, false, testOutput);
+            string naam1 = "naam";
+            string adresString = "adres";
+            int inwonersInt = 1;
+            int capaciteitInt = 1;
 
-            string adresString = adres->Value();
-            int inwonersInt = atoi(inwoners->Value());
-            int capaciteitInt = atoi(capaciteit->Value());
+            if (isValue[0]) {
+                naam1 = naam->Value();
+            }
+            if (isValue[1]) {
+                adresString = adres->Value();
+            }
+            if (isValue[2]) {
+                inwonersInt = atoi(inwoners->Value());
+            }
+            if (isValue[3]) {
+                capaciteitInt = atoi(capaciteit->Value());
+            }
 
             for (unsigned int i = 0; i < fHubs.size(); i++) {
                 fHubs[i]->VCcounter++;
-                setCentrumInformation(i, naam, adresString, inwonersInt, capaciteitInt);
+                setCentrumInformation(i, naam1, adresString, inwonersInt, capaciteitInt);
             }
         }
 
         else{
+
             testOutput << "Geen correcte input voor de tag.\n";
-            Utils::checkTags(elem, false, testOutput);
-            Utils::checkValues(elem, NULL, false, testOutput);
+
+            for (TiXmlNode* elem1 = elem->FirstChild(); elem1 != NULL; elem1 = elem1->NextSiblingElement()) {
+                string element = elem1->Value();
+                vector<bool> isTags;
+                if (element != "CENTRA") {
+                    if (elem->FirstChildElement()->FirstChild() != NULL) {
+                        isTags = Utils::checkTags(elem, true, testOutput, elem1);
+                        Utils::checkValues(elem, elem->FirstChildElement(), true, testOutput, isTags);
+                    }
+                    else {
+                        isTags = Utils::checkTags(elem, false, testOutput, NULL);
+                        Utils::checkValues(elem, NULL, false, testOutput, isTags);
+                    }
+                }
+            }
+
+            //Utils::checkValues(elem, NULL, true, testOutput, isTags);
         }
     }
 
@@ -218,6 +250,7 @@ void FileParser::parseXML() {
             testOutput << "Het aantal vaccinatiecentra komt niet overeen met het aantal opgegeven centra in het begin.\n";
         }
     }
+
 
 }
 
@@ -297,8 +330,6 @@ void FileParser::uitvoer(bool begin) {
             Output << "\n";
 
         }
-        //lopen over alle fCentra
-
         //we sluiten de file
         Output.close();
     }

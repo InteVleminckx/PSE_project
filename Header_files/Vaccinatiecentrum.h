@@ -32,7 +32,6 @@ class Vaccinatiecentrum {
     map<pair<int, string>, int> fGebruikteVaccins; //
     Vaccinatiecentrum* _initCheck;
     map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
-    //    ofstream fOVP;
 public:
 
     Vaccinatiecentrum();

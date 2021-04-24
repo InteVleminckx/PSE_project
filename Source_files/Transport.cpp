@@ -67,7 +67,7 @@ void Transport::vaccinatieHernieuwing(Vaccinatiecentrum *centrum, Vaccin* vaccin
     centrum->eraseDayfromGebruikteVaccins(day, vaccinType);
 
     OT << "Er werden " << gebruikteVaccins << " mensen "  <<
-       " gevaccineerd (als vernieuwing) in " << centrum->getNaam() + ".\n";
+       "gevaccineerd (als hernieuwing) in " << centrum->getNaam() + ".\n";
 
 
 }

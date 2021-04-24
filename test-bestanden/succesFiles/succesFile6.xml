@@ -47,6 +47,62 @@
             <centrum>Flanders Expo</centrum>
         </CENTRA>
     </HUB>
+    <HUB>
+        <VACCIN>
+            <type>Moderna</type>
+            <levering>28500</levering>
+            <interval>13</interval>
+            <transport>1000</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-20</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>45000</levering>
+            <interval>4</interval>
+            <transport>1500</transport>
+            <hernieuwing>21</hernieuwing>
+            <temperatuur>-20</temperatuur>
+        </VACCIN>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>AED Studios</centrum>
+            <centrum>De Zoerla</centrum>
+            <centrum>Flanders Expo</centrum>
+        </CENTRA>
+    </HUB>
+    <HUB>
+        <VACCIN>
+            <type>Pfizer</type>
+            <levering>15000</levering>
+            <interval>3</interval>
+            <transport>500</transport>
+            <hernieuwing>15</hernieuwing>
+            <temperatuur>-80</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>Moderna</type>
+            <levering>20000</levering>
+            <interval>5</interval>
+            <transport>850</transport>
+            <hernieuwing>19</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <VACCIN>
+            <type>AstraZeneca</type>
+            <levering>12000</levering>
+            <interval>4</interval>
+            <transport>450</transport>
+            <hernieuwing>21</hernieuwing>
+            <temperatuur>-70</temperatuur>
+        </VACCIN>
+        <CENTRA>
+            <centrum>Park Spoor Oost</centrum>
+            <centrum>AED Studios</centrum>
+            <centrum>De Zoerla</centrum>
+            <centrum>Flanders Expo</centrum>
+        </CENTRA>
+    </HUB>
     <VACCINATIECENTRUM>
         <naam>Park Spoor Oost</naam>
         <adres>Noordersingel 40, Antwerpen</adres>

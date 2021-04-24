@@ -1,6 +1,10 @@
-//
-// Created by inte on 20.03.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Vaccin)
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 24/04/2021
+ * @version: Specificatie 1.0
+*/
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_VACCIN_H
 #define PROJECT_SOFTWARE_ENGENEERING_VACCIN_H
@@ -48,7 +52,7 @@ public:
     /*
      * @functie: setAantalVaccins
      * Deze functie verhoogt het aantal vaccins die het centra bevat wanneer er een nieuwe levering is.
-     * @param aantalVaccins
+     * @param aantalVaccins : int, de levering van vaccins aan het vaccin object.
      * REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling setAantalVaccins");
      * ENSURE(getAantalVaccins() == fAantalVaccins+aantalVaccins, "Postcondition failure");
      */
@@ -112,8 +116,6 @@ public:
 
     bool properlyInitialized();
 
-
 };
-
 
 #endif //PROJECT_SOFTWARE_ENGENEERING_VACCIN_H

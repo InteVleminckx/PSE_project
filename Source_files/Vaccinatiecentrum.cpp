@@ -59,7 +59,7 @@ void Vaccinatiecentrum::setInwoners(int &Cinwoners) {
 
 void Vaccinatiecentrum::setCapaciteit(int &Ccapaciteit) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setCapaciteit");
-    REQUIRE((Ccapaciteit > 0), "Een vaccininatiecentrum heeft een grotere fCapaciteit dan 0.");
+    REQUIRE((Ccapaciteit >= 0), "Een vaccininatiecentrum heeft een grotere fCapaciteit dan 0.");
     fCapaciteit = Ccapaciteit;
     ENSURE((getCapaciteit() == Ccapaciteit), "setCapaciteit postcondition failure.");
 }

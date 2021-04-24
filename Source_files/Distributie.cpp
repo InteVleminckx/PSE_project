@@ -1,6 +1,10 @@
-//
-// Created by inte on 07.04.21.
-//
+/*
+ * korte beschrijving:
+ * klasse (Distributie), Roept de transport aan en doet de leveringen aan de de hubs
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 24/04/2021
+ * @version: Specificatie 2.0
+*/
 
 #include "../Header_files/Distributie.h"
 
@@ -16,9 +20,7 @@ Distributie::Distributie(FileParser &file) {
     //openen van het uitvoerbestand
     OT.open("../simulatieOutput/overzichtTransport.txt");
 
-    while (!isAllPeopleVaccinatedInTotal(file) || day == 1000){
-
-
+    while (!isAllPeopleVaccinatedInTotal(file) && day < 1000){
 
         for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
 
@@ -28,23 +30,25 @@ Distributie::Distributie(FileParser &file) {
                 if (day % (file.fHubs[i]->fVaccins[j]->getInterval() + 1) == 0) { // als we op de leveringsdatum zitten
 
                     file.fHubs[i]->fVaccins[j]->setAantalVaccins(file.fHubs[i]->fVaccins[j]->getLeveringen());
-//            cout << "week: " << day/7 << endl;
+
+                    string type = file.fHubs[i]->fVaccins[j]->getType();
+                    file.fHubs[i]->setAantalGeleverdeVaccins(type, file.fHubs[i]->getAantalGeleverdeVaccins(type)
+                        + file.fHubs[i]->fVaccins[j]->getLeveringen());
+//                    cout << "week: " << day/7 << endl;
                 }
             }
 
             if (!isAllPeopleVaccinatedInHub(file, i)) {
                 for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
 
-                    Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j], OT);
+                    Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j], OT, day);
 
                 }
             }
         }
         day++;
-//        if (day == 106){
-//            cout << endl;
-//        }
     }
+
 }
 
 bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
@@ -56,6 +60,20 @@ bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
         }
     }
 
+    return true;
+}
+
+
+bool Distributie::isAllPeopleVaccinatedInTotal(FileParser &file) {
+    REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinatedInTotal");
+
+    for (unsigned int i = 0; i < file.fHubs.size(); i++) {
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+            if (file.fHubs[i]->fHubCentra[j]->getInwoners() != file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime()) {
+                return false;
+            }
+        }
+    }
     return true;
 }
 
