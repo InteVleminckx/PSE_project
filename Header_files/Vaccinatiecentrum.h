@@ -189,6 +189,7 @@ public:
      * @param dagHernieuwing : int, dag dat ze een hernieuwing moeten krijgen.
      * @param type : string, type van het vaccin.
      * @return int, aantal personen die een hernieuwing moeten krijgen
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getGebruikteVaccins");
      */
     int getGebruikteVaccins(int dagHernieuwing, string &type);
 
@@ -197,6 +198,7 @@ public:
      * @functie: getVaccinsInCentrum
      * Geeft het aantal vaccins in een centrum terug.
      * @return map<string, int>, aantal vaccins in centrum
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getVaccinsInCentrum");
      */
     map<string, int> getVaccinsInCentrum();
 
