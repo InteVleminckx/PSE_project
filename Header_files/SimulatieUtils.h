@@ -12,7 +12,7 @@
 #include <iostream>
 
 /*
- * @functie : DirectoryExists
+ * @functie : DirectoryExists (overgenomen uit TicTacToe19)
  * Deze functie kijkt na of de directory bestaat.
  * @param dirname : string, pad van de directory.
  * @return : bool, true als de directoty bestaat, false als deze niet bestaat.
@@ -21,7 +21,7 @@ bool DirectoryExists(const std::string dirname);
 
 
 /*
- * @functie : FileCompare
+ * @functie : FileCompare (overgenomen uit TicTacToe19)
  * Deze functie kijkt na of de inhoud van 2 bestanden hetzelfde is.
  * @param leftFileName : string, pad van het eerste bestand.
  * @param rightFileName : string, pad van het tweede bestand.
