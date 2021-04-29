@@ -2205,12 +2205,12 @@ TEST_F(InputTests, succesFile7) {
         //hub0
 
         //hub vaccins
-        EXPECT_EQ(hub0->fVaccins[0]->getAantalVaccins(),  131550185);
-        EXPECT_EQ(hub0->fVaccins[1]->getAantalVaccins(), 186872155);
-        EXPECT_EQ(hub0->fVaccins[2]->getAantalVaccins(), 247740525);
+        EXPECT_EQ(hub0->fVaccins[0]->getAantalVaccins(),  565969);
+        EXPECT_EQ(hub0->fVaccins[1]->getAantalVaccins(), 3290155);
+        EXPECT_EQ(hub0->fVaccins[2]->getAantalVaccins(), 8660925);
 
         // centra's
-        EXPECT_EQ(hub0->fHubCentra[0]->getVaccins(Pfizer), 216);
+        EXPECT_EQ(hub0->fHubCentra[0]->getVaccins(Pfizer), 0);
         EXPECT_EQ(hub0->fHubCentra[0]->getVaccins(Moderna), 0);
         EXPECT_EQ(hub0->fHubCentra[0]->getVaccins(AstraZeneca), 0);
 
@@ -2229,8 +2229,8 @@ TEST_F(InputTests, succesFile7) {
         //vaccinatiecentrum1
         vaccinatiecentrum = hub0->fHubCentra[0];
 
-        EXPECT_EQ(946784, vaccinatiecentrum->getVaccinatedFirstTime());
-        EXPECT_EQ(946784, vaccinatiecentrum->getVaccinatedSecondTime());
+        EXPECT_EQ(820000, vaccinatiecentrum->getVaccinatedFirstTime());
+        EXPECT_EQ(806000, vaccinatiecentrum->getVaccinatedSecondTime());
 
         //vaccinatiecentrum2
         vaccinatiecentrum = hub0->fHubCentra[1];
@@ -2250,18 +2250,18 @@ TEST_F(InputTests, succesFile7) {
 
         //hub1
         //hub vaccins
-        EXPECT_EQ(hub1->fVaccins[0]->getAantalVaccins(), 385195067);
-        EXPECT_EQ(hub1->fVaccins[1]->getAantalVaccins(), 155933844);
-        EXPECT_EQ(hub1->fVaccins[2]->getAantalVaccins(), 1471);
+        EXPECT_EQ(hub1->fVaccins[0]->getAantalVaccins(), 11406323);
+        EXPECT_EQ(hub1->fVaccins[1]->getAantalVaccins(), 5487408);
+        EXPECT_EQ(hub1->fVaccins[2]->getAantalVaccins(), 0);
 
         // centra's
         EXPECT_EQ(hub1->fHubCentra[0]->getVaccins(Pfizer), 0);
         EXPECT_EQ(hub1->fHubCentra[0]->getVaccins(Moderna), 0);
-        EXPECT_EQ(hub1->fHubCentra[0]->getVaccins(AstraZeneca), 16);
+        EXPECT_EQ(hub1->fHubCentra[0]->getVaccins(AstraZeneca), 0);
 
         EXPECT_EQ(hub1->fHubCentra[1]->getVaccins(Pfizer), 0);
         EXPECT_EQ(hub1->fHubCentra[1]->getVaccins(Moderna), 0);
-        EXPECT_EQ(hub1->fHubCentra[1]->getVaccins(AstraZeneca), 55);
+        EXPECT_EQ(hub1->fHubCentra[1]->getVaccins(AstraZeneca), 0);
 
         EXPECT_EQ(hub1->fHubCentra[2]->getVaccins(Pfizer), 4800);
         EXPECT_EQ(hub1->fHubCentra[2]->getVaccins(Moderna), 0);
@@ -2274,13 +2274,13 @@ TEST_F(InputTests, succesFile7) {
         //vaccinatiecentrum1
         vaccinatiecentrum = hub1->fHubCentra[0];
 
-        EXPECT_EQ(946784, vaccinatiecentrum->getVaccinatedFirstTime());
-        EXPECT_EQ(946784, vaccinatiecentrum->getVaccinatedSecondTime());
+        EXPECT_EQ(100000, vaccinatiecentrum->getVaccinatedFirstTime());
+        EXPECT_EQ(100000, vaccinatiecentrum->getVaccinatedSecondTime());
 
         //vaccinatiecentrum2
         vaccinatiecentrum = hub1->fHubCentra[1];
-        EXPECT_EQ(1915945, vaccinatiecentrum->getVaccinatedFirstTime());
-        EXPECT_EQ(1915945, vaccinatiecentrum->getVaccinatedSecondTime());
+        EXPECT_EQ(0, vaccinatiecentrum->getVaccinatedFirstTime());
+        EXPECT_EQ(0, vaccinatiecentrum->getVaccinatedSecondTime());
 
         //vaccinatiecentrum3
         vaccinatiecentrum = hub1->fHubCentra[2];

@@ -22,6 +22,7 @@ Distributie::Distributie(FileParser &file) {
 
     while (!isAllPeopleVaccinatedInTotal(file) && day < 1000){
 
+
         for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
 
             OT << "Hub " << i+1 << endl;
