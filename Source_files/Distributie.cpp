@@ -20,8 +20,11 @@ Distributie::Distributie(FileParser &file) {
     //openen van het uitvoerbestand
     OT.open("../simulatieOutput/overzichtTransport.txt");
 
+    Utils utils;
+
     while (!isAllPeopleVaccinatedInTotal(file) && day < 1000){
 
+        utils.Graphics(file, day, this);
 
         for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
 
@@ -40,6 +43,7 @@ Distributie::Distributie(FileParser &file) {
             }
 
             if (!isAllPeopleVaccinatedInHub(file, i)) {
+
                 for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
 
                     Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j], OT, day);
@@ -49,6 +53,8 @@ Distributie::Distributie(FileParser &file) {
         }
         day++;
     }
+
+    utils.Graphics(file, day, this,true);
 
 }
 

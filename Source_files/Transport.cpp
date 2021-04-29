@@ -45,7 +45,6 @@ Transport::Transport(Hub* hub, Vaccinatiecentrum* centrum, ofstream &OT, int day
                     break;
                 }
             }
-
         }
         OT << "\n";
     }

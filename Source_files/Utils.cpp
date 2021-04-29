@@ -4,6 +4,7 @@
 
 #include "../Header_files/Utils.h"
 #include "../Header_files/FileParser.h"
+#include "../Header_files/Distributie.h"
 
 bool Utils::isDigit(const string &str) {
 
@@ -390,4 +391,227 @@ void Utils::statistischeVerwerking(FileParser &file) {
     OutputStat << totaalAantalGevaccineerden;
 
     OutputStat.close();
+}
+
+void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool close) {
+
+    if(day == 0){
+        fFileList.open("../simulatieOutput/GrafischeVisualitatie/filelist");
+    }
+
+    map<string,vector<double> > kleurenMap;
+
+    vector<double> kleurenVectorRGB;
+    kleurenVectorRGB.push_back(186); // rood
+    kleurenVectorRGB.push_back(33);
+    kleurenVectorRGB.push_back(58);
+    kleurenMap["0"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(255);
+    kleurenVectorRGB.push_back(0);
+    kleurenVectorRGB.push_back(0);
+    kleurenMap["1"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(243);
+    kleurenVectorRGB.push_back(109);
+    kleurenVectorRGB.push_back(69);
+    kleurenMap["2"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(242);
+    kleurenVectorRGB.push_back(172);
+    kleurenVectorRGB.push_back(111);
+    kleurenMap["3"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(255);
+    kleurenVectorRGB.push_back(165);
+    kleurenVectorRGB.push_back(0);
+    kleurenMap["4"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(255); // geel
+    kleurenVectorRGB.push_back(255);
+    kleurenVectorRGB.push_back(0);
+    kleurenMap["5"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(155);
+    kleurenVectorRGB.push_back(205);
+    kleurenVectorRGB.push_back(131);
+    kleurenMap["6"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(173);
+    kleurenVectorRGB.push_back(255);
+    kleurenVectorRGB.push_back(47);
+    kleurenMap["7"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(0);
+    kleurenVectorRGB.push_back(255);
+    kleurenVectorRGB.push_back(0);
+    kleurenMap["8"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+    kleurenVectorRGB.push_back(0); // groen
+    kleurenVectorRGB.push_back(128);
+    kleurenVectorRGB.push_back(0);
+    kleurenMap["9"] = kleurenVectorRGB;
+    kleurenVectorRGB.clear();
+
+
+    for (unsigned int i = 0; i < 1; i++){
+
+        if (distributie->isAllPeopleVaccinatedInHub(file, i) && !close) {
+            continue;
+        }
+
+        fFileList << "hub_" << i << "_" << day << ".ini\n";
+
+        ofstream iniFile;
+        ostringstream sHub;
+        ostringstream sDay;
+
+        sHub << i;
+        sDay << day;
+
+        string path = "../simulatieOutput/GrafischeVisualitatie/hub_" + sHub.str() + "_" + sDay.str() + ".ini";
+        int figures = 2 + (2*file.fHubs[i]->fHubCentra.size());
+        iniFile.open(path.c_str());
+
+
+        iniFile << "[General]" << endl;
+        iniFile << "size =1024" << endl;
+        iniFile << "backgroundcolor = (0, 0, 0)" << endl;
+        iniFile << "type = \"LightedZBuffering\"" << endl;
+        iniFile << "nrLights = 1" << endl;
+        iniFile << "eye = (-135, 0, 75)" << endl;
+        iniFile << "nrFigures = " << figures << "\n";
+
+        iniFile << "[Light0]" << endl;
+        iniFile << "infinity = TRUE" << endl;
+        iniFile << "direction = (-1, -1, -1)" << endl;
+        iniFile << "ambientLight = (1, 1, 1)" << "\n";
+        iniFile << "diffuseLight = (1, 1, 1)" << "\n";
+
+        double yCenter = 0.5;
+
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+
+            //even
+            if (j != 0  && j % 2 == 0){
+                yCenter*=-1;
+                yCenter+=1;
+            }
+                //oneven
+            else if (j != 0  && j % 2 != 0){
+                yCenter*=-1;
+            }
+
+            iniFile << "[Figure" <<  j << "]" << endl; // niemand gaat ooit 100 centra's hebben.
+            iniFile << "type = \"Cylinder\"" << endl;
+            iniFile << "height = " << 4.99 << endl;
+            iniFile << "n = 36" << endl;
+            iniFile << "scale = 0.25" << endl;
+            iniFile << "rotateX = 0" << endl;
+            iniFile << "rotateY = 0" << endl;
+            iniFile << "rotateZ = 0" << endl;
+            iniFile << "center = " << "(0.001, " << yCenter << ", 1)" << endl;
+            iniFile << "ambientReflection = (" << 0.5 << "," << 0.5 << "," << 0.5 << ")" << endl;
+            iniFile << "diffuseReflection = (" << 0.5 << "," << 0.5 << "," << 0.5 << ")" << endl;
+        }
+
+        yCenter = 0.5;
+
+
+        vector<double> color; // de kleur dat het centrum voorstellende object moet hebben.
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+
+            iniFile << "[Figure" <<  j+file.fHubs[i]->fHubCentra.size() << "]" << endl;
+            iniFile << "type = \"Cylinder\"" << endl;
+
+            //even
+            if (j != 0  && j % 2 == 0){
+                yCenter*=-1;
+                yCenter+=1;
+            }
+            //oneven
+            else if (j != 0  && j % 2 != 0){
+                yCenter*=-1;
+            }
+
+
+            int aantalGevaccineerden = file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime();
+            int verhouding = aantalGevaccineerden*100/file.fHubs[i]->fHubCentra[j]->getInwoners();
+            ostringstream firstNumberOfVerhouding;
+            firstNumberOfVerhouding << verhouding;
+            string firstNumberOfVerhoudingString;
+            if (firstNumberOfVerhouding.str().size() == 1) {
+                firstNumberOfVerhoudingString = "0" + firstNumberOfVerhouding.str();
+                firstNumberOfVerhoudingString = firstNumberOfVerhoudingString[0];
+            }
+            else{
+                firstNumberOfVerhoudingString = firstNumberOfVerhouding.str()[0];
+            }
+
+
+            if (verhouding != 100) {
+                color = kleurenMap[firstNumberOfVerhoudingString];
+            }
+            else {
+                color.clear();
+                color.push_back(0); // zeer donker groen als we op exact 100% zitten.
+                color.push_back(100);
+                color.push_back(0);
+            }
+
+            double deling = (double) verhouding/100 * 5;
+            double kleur = (double) verhouding/100;
+
+
+            iniFile << "height = " << deling << endl;
+            iniFile << "n = 36" << endl;
+            iniFile << "scale = 0.25" << endl;
+            iniFile << "rotateX = 0" << endl;
+            iniFile << "rotateY = 0" << endl;
+            iniFile << "rotateZ = 0" << endl;
+            iniFile << "center = " << "(0, " << yCenter << ", 1)" << endl;
+            iniFile << "ambientReflection = (" << 1-kleur << "," << kleur << "," << 0 << ")" << endl;
+            iniFile << "diffuseReflection = (" << 1-kleur << "," << kleur << "," << 0 << ")" << endl;
+
+        }
+
+        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size()) << "]" << endl;
+        iniFile << "type = \"Cylinder\"" << endl;
+        iniFile << "height = 1" << endl;
+        iniFile << "n = 36" << endl;
+        iniFile << "scale = 1" << endl;
+        iniFile << "rotateX = 0" << endl;
+        iniFile << "rotateY = 0" << endl;
+        iniFile << "rotateZ = 0" << endl;
+        iniFile << "center = (0, 0, -3)" << endl;
+        iniFile << "ambientReflection = (1, 1, 0.6)" << endl;
+        iniFile << "diffuseReflection = (1, 1, 0.6)" << endl;
+
+        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+1 << "]\n";
+        iniFile << "type = \"Cone\"" << endl;
+        iniFile << "height = 1" << endl;
+        iniFile << "n = 36" << endl;
+        iniFile << "scale = 1.15" << endl;
+        iniFile << "rotateX = 0" << endl;
+        iniFile << "rotateY = 0" << endl;
+        iniFile << "rotateZ = 0" << endl;
+        iniFile << "center = (0, 0, -2)" << endl;
+        iniFile << "ambientReflection = (0.4, 0.2, 0.00)" << endl;
+        iniFile << "diffuseReflection = (0.4, 0.2, 0.00)" << endl;
+
+        iniFile.close();
+    }
+
+    if (close){
+        fFileList.close();
+    }
 }

@@ -1,28 +1,28 @@
 Hub 0:
 Park Spoor Oost:
-	- vaccins		    [                    ]0%
-	- gevaccineerden	[=================   ]85%
+	- vaccins		    [==                  ]11%
+	- gevaccineerden	[====================]100%
 AED Studios:
-	- vaccins		    [========            ]40%
+	- vaccins		    [===========         ]53%
 	- gevaccineerden	[====================]100%
 De Zoerla:
-	- vaccins		    [=                   ]7%
+	- vaccins		    [===========         ]55%
 	- gevaccineerden	[====================]100%
 Flanders Expo:
-	- vaccins		    [==========          ]48%
+	- vaccins		    [======              ]32%
 	- gevaccineerden	[====================]100%
 
 Hub 1:
 Park Spoor Oost:
-	- vaccins		    [                    ]0%
-	- gevaccineerden	[==                  ]11%
+	- vaccins		    [==                  ]11%
+	- gevaccineerden	[====================]100%
 AED Studios:
-	- vaccins		    [                    ]0%
-	- gevaccineerden	[                    ]0%
+	- vaccins		    [===========         ]53%
+	- gevaccineerden	[====================]100%
 De Zoerla:
-	- vaccins		    [==============      ]69%
+	- vaccins		    [===========         ]55%
 	- gevaccineerden	[====================]100%
 Flanders Expo:
-	- vaccins		    [====                ]18%
+	- vaccins		    [======              ]32%
 	- gevaccineerden	[====================]100%
 

@@ -14,7 +14,7 @@
 int main(){
 
     // bestand dat wordt uitgevoerd in de main
-    string file = "../test-bestanden/succesFiles/succesFile7.xml";
+    string file = "../test-bestanden/succesFiles/succesFile1.xml";
     FileParser parsedFile;
     parsedFile.parseFile(file);
 //    parsedFile.uitvoer(); // uitvoer(bestand) aan begin van de simulatie.

@@ -14,11 +14,17 @@
 #include <fstream>
 #include "vector"
 
+
 using namespace std;
 
+class Distributie;
 class FileParser;
 
 class Utils {
+private:
+
+    ofstream fFileList;
+
 public:
 
     /*
@@ -104,6 +110,8 @@ public:
      * @param file : het geparste xml bestand, met alle huidige gegevens in
      */
     static void statistischeVerwerking(FileParser &file);
+
+    void Graphics(FileParser &file, int day, Distributie* distributie,bool close = false);
 
 };
 
