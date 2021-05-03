@@ -149,10 +149,6 @@
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/SimulatieUtils.h">
 			<Option target="ttt_debug"/>
 		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Transport.h">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
-		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Header_files/Utils.h">
 			<Option target="ttt_debug"/>
 			<Option target="ttt"/>
@@ -191,10 +187,6 @@
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/SystemTests.cpp">
 			<Option target="ttt_debug"/>
-		</Unit>
-		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/Transport.cpp">
-			<Option target="ttt_debug"/>
-			<Option target="ttt"/>
 		</Unit>
 		<Unit filename="/home/inte/CLionProjects/PSEgit/Source_files/UnitTests.cpp">
 			<Option target="ttt_debug"/>

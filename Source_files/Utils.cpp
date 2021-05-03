@@ -479,7 +479,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         sDay << day;
 
         string path = "../simulatieOutput/GrafischeVisualitatie/hub_" + sHub.str() + "_" + sDay.str() + ".ini";
-        int figures = 2 + (2*file.fHubs[i]->fHubCentra.size());
+        int figures = 9 + (2*file.fHubs[i]->fHubCentra.size());
         iniFile.open(path.c_str());
 
 
@@ -584,6 +584,12 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         }
 
+        int allVaccinsInHub = 0;
+
+        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
+            allVaccinsInHub += file.fHubs[i]->fVaccins[i]->getAantalVaccins();
+        }
+
         iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size()) << "]" << endl;
         iniFile << "type = \"Cylinder\"" << endl;
         iniFile << "height = 1" << endl;
@@ -593,8 +599,8 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "rotateY = 0" << endl;
         iniFile << "rotateZ = 0" << endl;
         iniFile << "center = (0, 0, -3)" << endl;
-        iniFile << "ambientReflection = (1, 1, 0.6)" << endl;
-        iniFile << "diffuseReflection = (1, 1, 0.6)" << endl;
+        iniFile << "ambientReflection = (" << 1 << "," << 0 << "," << 0 << ")" << endl;
+        iniFile << "diffuseReflection = (" << 1 << "," << 0 << "," << 0 << ")" << endl;
 
         iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+1 << "]\n";
         iniFile << "type = \"Cone\"" << endl;
@@ -614,4 +620,70 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
     if (close){
         fFileList.close();
     }
+}
+
+void Utils::createCube(ofstream &iniFile, vector<double> coord, vector<double> kleur) {
+    iniFile << "type = \"Cube\"" << endl;
+    iniFile << "scale = 0.25" << endl;
+    iniFile << "rotateX = 0" << endl;
+    iniFile << "rotateY = 0" << endl;
+    iniFile << "rotateZ = 0" << endl;
+    iniFile << "center = (" << coord[0] << "," << coord[1] << "," << coord[2] << ")" << endl;
+    iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+    iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+
+}
+
+void Utils::createCone(ofstream &iniFile, vector<double> coord, vector<double> kleur) {
+    iniFile << "type = \"Cone\"" << endl;
+    iniFile << "height = 2.5" << endl;
+    iniFile << "n = 36" << endl;
+    iniFile << "scale = 0.35" << endl;
+    iniFile << "rotateX = 0" << endl;
+    iniFile << "rotateY = 0" << endl;
+    iniFile << "rotateZ = 0" << endl;
+    iniFile << "center = (" << coord[0] << "," << coord[1] << "," << coord[2] << ")" << endl;
+    iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+    iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+}
+
+void Utils::createTorus(ofstream &iniFile, vector<double> coord, vector<double> kleur) {
+    iniFile << "type = \"Torus\"" << endl;
+    iniFile << "r = 1" << endl;
+    iniFile << "R = 3" << endl;
+    iniFile << "m = 36" << endl;
+    iniFile << "n = 36" << endl;
+    iniFile << "scale = 0.1" << endl;
+    iniFile << "rotateX = 0" << endl;
+    iniFile << "rotateY = 0" << endl;
+    iniFile << "rotateZ = 0" << endl;
+    iniFile << "center = (" << coord[0] << "," << coord[1] << "," << coord[2] << ")" << endl;
+    iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+    iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+}
+
+void Utils::createOctahedron(ofstream &iniFile, vector<double> coord, vector<double> kleur) {
+    iniFile << "type = \"Octahedron\"" << endl;
+    iniFile << "scale = 0.35" << endl;
+    iniFile << "rotateX = 0" << endl;
+    iniFile << "rotateY = 0" << endl;
+    iniFile << "rotateZ = 0" << endl;
+    iniFile << "center = (" << coord[0] << "," << coord[1] << "," << coord[2] << ")" << endl;
+    iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+    iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+}
+
+void Utils::createSphere(ofstream &iniFile, vector<double> coord, vector<double> kleur){
+
+    iniFile << "type = \"Sphere\" "  << endl;
+    iniFile << "n = 3 " << endl;
+    iniFile << "scale = 0.3 " << endl;
+    iniFile << "rotateX = 0 " << endl;
+    iniFile << "rotateY = 0 " << endl;
+    iniFile << "rotateZ = 0 " << endl;
+    iniFile << "center = (" << coord[0] << "," << coord[1] << "," << coord[2] << ")" << endl;
+    iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+    iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+
+
 }

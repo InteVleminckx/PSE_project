@@ -96,12 +96,12 @@ clean: CMakeFiles/ttt.dir/clean
 CMakeFiles/ttt_debug.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target ttt_debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28 "Built target ttt_debug"
 .PHONY : CMakeFiles/ttt_debug.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ttt_debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ttt_debug.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ttt_debug.dir/rule
@@ -123,12 +123,12 @@ CMakeFiles/ttt_debug.dir/clean:
 CMakeFiles/ttt.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target ttt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ttt"
 .PHONY : CMakeFiles/ttt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ttt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ttt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inte/CLionProjects/PSEgit/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ttt.dir/rule

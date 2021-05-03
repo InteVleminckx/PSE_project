@@ -51,7 +51,8 @@ public:
      * @param Cnaam : string, fNaam van het vaccinatiecentrum.
      * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNaam");
      * REQUIRE((!Cnaam.empty()), "Een vaccininatiecentrum moet een fNaam hebben, met minstens 1 karakter.");
-     * ENSURE((getNaam() == Cnaam), "setNaam postcondition failure.");     */
+     * ENSURE((getNaam() == Cnaam), "setNaam postcondition failure.");
+     */
     void setNaam(string &Cnaam);
     /*
      * @functie: setAdres

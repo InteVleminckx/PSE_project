@@ -19,8 +19,6 @@ set(RELEASE_SOURCE_FILES
         Header_files/FileParser.h
         Source_files/Vaccinatiecentrum.cpp
         Header_files/Vaccinatiecentrum.h
-        Source_files/Transport.cpp
-        Header_files/Transport.h
         Header_files/DesignByContract.h
         Source_files/Hub.cpp
         Header_files/Hub.h
@@ -37,8 +35,6 @@ set(DEBUG_SOURCE_FILES
         Header_files/FileParser.h
         Source_files/Vaccinatiecentrum.cpp
         Header_files/Vaccinatiecentrum.h
-        Source_files/Transport.cpp
-        Header_files/Transport.h
         Header_files/DesignByContract.h
         Source_files/InputTests.cpp
         Source_files/SystemTests.cpp

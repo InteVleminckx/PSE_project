@@ -24,6 +24,8 @@ Distributie::Distributie(FileParser &file) {
 
     while (!isAllPeopleVaccinatedInTotal(file) && day < 1000){
 
+
+
         utils.Graphics(file, day, this);
 
         for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
@@ -46,7 +48,7 @@ Distributie::Distributie(FileParser &file) {
 
                 for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
 
-                    Transport(file.fHubs[i], file.fHubs[i]->fHubCentra[j], OT, day);
+                    file.fHubs[i]->transport(file.fHubs[i]->fHubCentra[j], OT, day);
 
                 }
             }

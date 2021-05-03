@@ -11,24 +11,150 @@ Vaccinatiecentrum::Vaccinatiecentrum() {
     ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
 }
 
-//void Vaccinatiecentrum::vaccinatieInCentrum(Vaccinatiecentrum &centrum) {
-//
-//    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling vaccinatieInCentrum");
-//
-//    fOVP.open("../simulatieOutput/overzichtVaccinatieprocedure.txt");
-//
-//    // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
-//    int inwonersGevaccineerd = min(fVaccinsInCentrum, fCapaciteit);
-//    inwonersGevaccineerd = min(inwonersGevaccineerd, fInwoners - fVaccinated);
-//
-//    fVaccinated += inwonersGevaccineerd;
-//    fVaccinsInCentrum -= inwonersGevaccineerd;
-//
-//    if (inwonersGevaccineerd != 0) {
-//        fOVP << "Er werden " << inwonersGevaccineerd << " inwoners gevaccineerd in " << centrum.getNaam() << ".\n";
-//    }
-//
-//}
+
+void Vaccinatiecentrum::vaccinatieHernieuwing(Vaccin *vaccin, int day, ofstream &OT) {
+
+    REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieHernieuwing");
+
+    string vaccinType = vaccin->getType();
+    int gebruikteVaccins = getGebruikteVaccins(day, vaccinType);
+
+    vaccin->setAantalVaccins(-gebruikteVaccins);
+
+    setVaccinatedSecondTime(gebruikteVaccins + getVaccinatedSecondTime());
+
+    eraseDayfromGebruikteVaccins(day, vaccinType);
+
+    OT << "Er werden " << gebruikteVaccins << " mensen "  <<
+       "gevaccineerd (als hernieuwing) in " << getNaam() + ".\n";
+
+}
+
+void Vaccinatiecentrum::vaccinatieFirstTime(Vaccin *vaccin, ofstream &OT, int day, int &teVaccineren) {
+
+
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling vaccinatieFirstTime");
+
+    string centrumNaam = getNaam();
+    string vaccinType = vaccin->getType();
+    int vaccinsCentrum =getVaccins(vaccinType);
+    int capaciteitCentrum = getCapaciteit();
+    double vaccins_transport_min = capaciteitCentrum - vaccinsCentrum;
+
+    int ladingen = 0;
+    bool foundLadingen = false;
+
+    int tempVaccins = vaccin->getAantalVaccins();
+
+    if (vaccin->getTemperatuur() > 0){
+        for (int j = 0; j < (vaccins_transport_min + vaccin->getTransport())/vaccin->getTransport();
+             ++j) {
+
+            bool getLadingen = false;
+
+            if ((tempVaccins - j*vaccin->getTransport()) > 0 ){ getLadingen = true;}
+
+            if (j*vaccin->getTransport() + vaccinsCentrum >= capaciteitCentrum &&
+                2*capaciteitCentrum >= j*vaccin->getTransport() + vaccinsCentrum && !foundLadingen && getLadingen){
+                ladingen = j; foundLadingen = true;
+            }
+        }
+    }
+
+    else{
+        foundLadingen = true;
+        for (int j = 0; j < (vaccins_transport_min + vaccin->getTransport())/vaccin->getTransport();
+             ++j) {
+
+            bool getLadingen = false;
+
+            if ((tempVaccins - j*vaccin->getTransport()) > 0 ){ getLadingen = true;}
+
+            if (j*vaccin->getTransport() + vaccinsCentrum <= capaciteitCentrum && foundLadingen && getLadingen){
+                ladingen = j; foundLadingen = true;
+            }
+            else {
+                break;
+            }
+        }
+    }
+
+    int inwonersTeVaccineren = getInwoners() - getVaccinatedFirstTime();
+
+
+    int tempLadingen = 0;
+    bool isChangedLadingen = false;
+    while (inwonersTeVaccineren < vaccin->getTransport()*ladingen){
+        tempLadingen = ladingen;
+        ladingen--;
+        isChangedLadingen = true;
+    }
+
+    if (isChangedLadingen){
+        ladingen = tempLadingen;
+    }
+
+
+    setVaccins((ladingen * vaccin->getTransport()) + vaccinsCentrum, vaccinType);
+
+    vaccin->setAantalVaccins(-(ladingen * vaccin->getTransport()));
+
+    OT << "Er werden " << ladingen << " ladingen (" << ladingen * vaccin->getTransport() <<
+       " vaccins) getransporteerd naar " << centrumNaam + ".\n";
+
+    teVaccineren = vaccinatieInCentrum(vaccin, teVaccineren, day);
+
+
+}
+
+int Vaccinatiecentrum::vaccinatieInCentrum(Vaccin *vaccin, int teVaccineren, int day) {
+
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling vaccinatieInCentrum");
+
+    string vaccinType = vaccin->getType();
+    int vaccinsInCentrum = getVaccins(vaccinType);
+    int capaciteit = getCapaciteit();
+    int aantalOngevaccineerden = getInwoners() - getVaccinatedFirstTime();
+
+    int inwonersGevaccineerd = min(vaccinsInCentrum, capaciteit);
+    inwonersGevaccineerd = min(inwonersGevaccineerd, aantalOngevaccineerden);
+    // min van drie elementen werkt niet, dus we hebben het 2 keer apart gedaan.
+
+    if (teVaccineren == 0){
+        teVaccineren = inwonersGevaccineerd;
+    }
+
+    if (teVaccineren < inwonersGevaccineerd){
+        setVaccinatedFirstTime(teVaccineren + getVaccinatedFirstTime());
+        setVaccins(getVaccins(vaccinType) - teVaccineren, vaccinType);
+        if (vaccin->getHernieuwingen() == 0) {
+            setVaccinatedSecondTime(teVaccineren + getVaccinatedSecondTime());
+        }
+        else {
+            setGebruikteVaccins(day+vaccin->getHernieuwingen(), vaccinType, teVaccineren);
+        }
+
+        int newTempCapaciteit = getCapaciteit()-teVaccineren;
+        setCapaciteit(newTempCapaciteit);
+
+    }
+    else{
+        setVaccinatedFirstTime(inwonersGevaccineerd + getVaccinatedFirstTime());
+        setVaccins(getVaccins(vaccinType) - inwonersGevaccineerd, vaccinType);
+        if (vaccin->getHernieuwingen() == 0) {
+            setVaccinatedSecondTime(inwonersGevaccineerd + getVaccinatedSecondTime());
+        }
+        else {
+            setGebruikteVaccins(day+vaccin->getHernieuwingen(), vaccinType, inwonersGevaccineerd);
+        }
+
+        int newTempCapaciteit = getCapaciteit()-inwonersGevaccineerd;
+        setCapaciteit(newTempCapaciteit);
+
+    }
+
+    return capaciteit - inwonersGevaccineerd;
+}
 
 void Vaccinatiecentrum::eraseDayfromGebruikteVaccins(int dagHernieuwing, string &type) {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling eraseDayfromGebruikteVaccins");
@@ -150,6 +276,8 @@ bool Vaccinatiecentrum::properlyInitialized() {
 }
 
 
+
+
 //void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {
 //
 //    REQUIRE((!Cadres.empty()), "Geen geldig fAdres voor het vaccinatiecentrum.");
@@ -184,7 +312,7 @@ bool Vaccinatiecentrum::properlyInitialized() {
 //    bool isCorrectHouseNumber = false;
 //
 //
-//    //controllen huisnummer allemaal numbers laatste kan zowel nummer als letter zijn
+//    //controlleren huisnummer, allemaal numbers, laatste kan zowel nummer als letter zijn
 //    if (beforeKomma[beforeKomma.size()-1].size() == 1){
 //        if ('0' < beforeKomma[beforeKomma.size()-1][0] && beforeKomma[beforeKomma.size()-1][0] <= '9'){
 //            isCorrectHouseNumber = true;

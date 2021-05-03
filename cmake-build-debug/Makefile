@@ -381,36 +381,6 @@ Source_files/SystemTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/SystemTests.cpp.s
 .PHONY : Source_files/SystemTests.cpp.s
 
-Source_files/Transport.o: Source_files/Transport.cpp.o
-
-.PHONY : Source_files/Transport.o
-
-# target to build an object file
-Source_files/Transport.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Transport.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Transport.cpp.o
-.PHONY : Source_files/Transport.cpp.o
-
-Source_files/Transport.i: Source_files/Transport.cpp.i
-
-.PHONY : Source_files/Transport.i
-
-# target to preprocess a source file
-Source_files/Transport.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Transport.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Transport.cpp.i
-.PHONY : Source_files/Transport.cpp.i
-
-Source_files/Transport.s: Source_files/Transport.cpp.s
-
-.PHONY : Source_files/Transport.s
-
-# target to generate assembly for a file
-Source_files/Transport.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt_debug.dir/build.make CMakeFiles/ttt_debug.dir/Source_files/Transport.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ttt.dir/build.make CMakeFiles/ttt.dir/Source_files/Transport.cpp.s
-.PHONY : Source_files/Transport.cpp.s
-
 Source_files/UnitTests.o: Source_files/UnitTests.cpp.o
 
 .PHONY : Source_files/UnitTests.o
@@ -682,9 +652,6 @@ help:
 	@echo "... Source_files/SystemTests.o"
 	@echo "... Source_files/SystemTests.i"
 	@echo "... Source_files/SystemTests.s"
-	@echo "... Source_files/Transport.o"
-	@echo "... Source_files/Transport.i"
-	@echo "... Source_files/Transport.s"
 	@echo "... Source_files/UnitTests.o"
 	@echo "... Source_files/UnitTests.i"
 	@echo "... Source_files/UnitTests.s"
