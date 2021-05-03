@@ -113,6 +113,16 @@ public:
 
     void Graphics(FileParser &file, int day, Distributie* distributie,bool close = false);
 
+    void createSphere(ofstream &iniFile, vector<double> coord, vector<double> kleur);
+
+    void createCube(ofstream &iniFile, vector<double> coord, vector<double> kleur);
+
+    void createCone(ofstream &iniFile, vector<double> coord, vector<double> kleur);
+
+    void createTorus(ofstream &iniFile, vector<double> coord, vector <double> kleur);
+
+    void createOctahedron(ofstream &iniFile, vector<double> coord, vector<double> kleur);
+
 };
 
 #endif //PROJECT_SOFTWARE_ENGENEERING_UTILS_H

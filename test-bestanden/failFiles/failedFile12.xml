@@ -15,7 +15,7 @@
             <transport>1000</transport>
             <hernieuwing>19</hernieuwing>
             <temperatuur>-70</temperatuur>
-        <VACCIN>
+        </VACCIN>
         <VACCIN>
             <type>AstraZeneca</type>
             <levering>67000</levering>

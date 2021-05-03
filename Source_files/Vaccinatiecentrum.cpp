@@ -263,7 +263,6 @@ int Vaccinatiecentrum::getGebruikteVaccins(int dagHernieuwing, string &type) {
     }
 
     return 0;
-
 }
 
 map<string, int> Vaccinatiecentrum::getVaccinsInCentrum() {

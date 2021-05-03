@@ -614,6 +614,129 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "ambientReflection = (0.4, 0.2, 0.00)" << endl;
         iniFile << "diffuseReflection = (0.4, 0.2, 0.00)" << endl;
 
+        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+2 << "]" << endl;
+        iniFile << "type = \"Torus\"" << endl;
+        iniFile << "r = 1" << endl;
+        iniFile << "R = 3" << endl;
+        iniFile << "m = 36" << endl;
+        iniFile << "n = 36" << endl;
+        iniFile << "scale = 0.1" << endl;
+        iniFile << "rotateX = 0" << endl;
+        iniFile << "rotateY = 0" << endl;
+        iniFile << "rotateZ = 0" << endl;
+        iniFile << "center = (0, 2.5, -6)" << endl;
+        iniFile << "ambientReflection = (0.0, 0.0, 0.00)" << endl;
+        iniFile << "diffuseReflection = (0.0, 0.0, 0.00)" << endl;
+
+        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+3 << "]" << endl;
+        iniFile << "type = \"Torus\"" << endl;
+        iniFile << "r = 1" << endl;
+        iniFile << "R = 3" << endl;
+        iniFile << "m = 36" << endl;
+        iniFile << "n = 36" << endl;
+        iniFile << "scale = 0.1" << endl;
+        iniFile << "rotateX = 0" << endl;
+        iniFile << "rotateY = 0" << endl;
+        iniFile << "rotateZ = 0" << endl;
+        iniFile << "center = (0, -2.5, -6)" << endl;
+        iniFile << "ambientReflection = (0.0, 0.0, 0.00)" << endl;
+        iniFile << "diffuseReflection = (0.0, 0.0, 0.00)" << endl;
+
+        map<int, pair<string, vector<double> > > figuren;
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.5); // oranje
+        kleurenVectorRGB.push_back(0.25);
+        kleurenVectorRGB.push_back(0);
+        figuren[50000] = make_pair("Cube", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0); // groen
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0.5);
+        figuren[250000] = make_pair("Cone", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0); // cyaan
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0.5);
+        figuren[1250000] = make_pair("Sphere", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.5); // geel
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0);
+        figuren[6250000] = make_pair("Torus", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.38); // paars
+        kleurenVectorRGB.push_back(0);
+        kleurenVectorRGB.push_back(0.38);
+        figuren[31250000] = make_pair("Octahedron", kleurenVectorRGB);
+
+        string figuur;
+        vector<double> kleur;
+        int aantal = 0;
+        for (map<int,pair<string, vector<double> > >::iterator it = figuren.begin(); it != figuren.end(); it++) {
+            if (allVaccinsInHub < it->first) {
+                figuur = it->second.first;
+                kleur = it->second.second;
+                aantal = it->first;
+                break;
+            }
+        }
+        unsigned int aantalFiguren = floor(allVaccinsInHub/(aantal/5));
+        unsigned int nietFiguren  = 5 - floor(allVaccinsInHub/(aantal/5));
+
+
+        for (unsigned int j = 0; j < aantalFiguren;j++) {
+            iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+4+j << "]" << endl;
+
+            vector<double> coord;
+            coord.push_back(0);
+            coord.push_back(-2+(int)j);
+            coord.push_back(-5);
+            if (figuur == "Cube") {
+                createCube(iniFile, coord, kleur);
+            }
+            else if (figuur == "Cone") {
+                createCone(iniFile, coord, kleur);
+            }
+            else if (figuur == "Sphere") {
+                createSphere(iniFile, coord, kleur);
+            }
+            else if (figuur == "Torus") {
+                createTorus(iniFile, coord, kleur);
+            }
+            else if (figuur == "Octahedron") {
+                createOctahedron(iniFile, coord, kleur);
+            }
+        }
+
+
+        for (unsigned int j = aantalFiguren; j < nietFiguren+aantalFiguren;j++) {
+            iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+4+j << "]" << endl;
+
+            vector<double> zwart;
+            zwart.push_back(0);
+            zwart.push_back(0);
+            zwart.push_back(0);
+            vector<double> coord;
+            coord.push_back(0);
+            coord.push_back(+2-(int)j);
+            coord.push_back(-5);
+            if (figuur == "Cube") {
+                createCube(iniFile, coord, zwart);
+            }
+            else if (figuur == "Cone") {
+                createCone(iniFile, coord, zwart);
+            }
+            else if (figuur == "Sphere") {
+                createSphere(iniFile, coord, zwart);
+            }
+            else if (figuur == "Torus") {
+                createTorus(iniFile, coord, zwart);
+            }
+            else if (figuur == "Octahedron") {
+                createOctahedron(iniFile, coord, zwart);
+            }
+        }
+
         iniFile.close();
     }
 

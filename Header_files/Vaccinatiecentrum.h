@@ -1,6 +1,6 @@
 /*
  * korte beschrijving:
- * Klasse (Vaccinatiecentrum) om een vaccinatiecentrum aan te maken.
+ * Klasse (Vaccinatiecentrum) om een vaccinatiecentrum aan te maken, en de vaccinaties in het centrum te regelen.
  * @author: Inte Vleminckx en Karnaukh Maksim
  * @date: 24/04/2021
  * @version: Specificatie 2.0
@@ -18,6 +18,7 @@
 #include <sstream>  // Required for stringstreams
 #include <fstream>
 #include "DesignByContract.h"
+#include "Vaccin.h"
 
 using namespace std;
 
@@ -35,6 +36,39 @@ class Vaccinatiecentrum {
 public:
 
     Vaccinatiecentrum();
+
+    /*
+     * @functie: vaccinatieHernieuwing
+     * Deze functie voert de hernieuwingen uit.
+     * @param vaccin : Vaccin, het vaccin waar de hernieuwing mee moet gebeuren
+     * @param day : int, de dag van de hernieuwing
+     * @param OT : uitvoer bestand waar de transport informatie in te vinden is
+     * REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieHernieuwing");
+     */
+    void vaccinatieHernieuwing(Vaccin* vaccin, int day, ofstream &OT);
+
+    /*
+     * @functie: vaccinatieFirstTime
+     * Wanneer er geen hernieuwingen moeten plaatsvinden dan worden er mensen die nog niet gevaccineerd
+     * zijn voor de eerste keer gevaccineerd. Dit wordt hier bepaalt, het aan transport wordt hier dan
+     * ook ineens berekent.
+     * @param vaccin : Het vaccin die wordt gebruikt om te vaccineren.
+     * @param OT : uitvoer bestand waar de transport informatie in te vinden is
+     * @param day : de huidige dag waar ons bevinden in de simulatie
+     * @param teVaccineren : controllen waarde om voor te breaken van de for loop, wanneer er geen nieuwe berekingen
+     *                       meer gedaan moeten worden
+     * REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieFirstTime");
+     */
+    void vaccinatieFirstTime(Vaccin* vaccin, ofstream &OT, int day, int &teVaccineren);
+
+    /*
+     * @functie : vaccinatieInCentrum
+     * Deze functie verzorgt de (automatische) vaccinatie van de mensen in het Vaccinatiecentrum.
+     * Het aantal gevaccineerden in het centrum wordt vergroot gelijk aan het aantal fVaccinsInCentrum in
+     * het centrum, en daarnaast wordt het aantal fVaccinsInCentrum in het centrum verlaagd.
+     * REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieInCentrum");
+     */
+    int vaccinatieInCentrum(Vaccin* vaccin, int teVaccineren, int day);
 
     /*
      * @functie: eraseDayfromGebruikteVaccins

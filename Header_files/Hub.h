@@ -45,6 +45,15 @@ public:
     Hub();
 
     /*
+     * @functie : transport
+     * Deze functie regelt het transport van de hubs naar de vaccinatiecentrums.
+     * @param centrum : Het centrum waar de vaccins naar getransporteert worden
+     * @param OT : uitvoer bestand waar de transport informatie in te vinden is
+     * @param day : de huidige dag waar ons bevinden in de simulatie
+     */
+    void transport(Vaccinatiecentrum* centrum, ofstream &OT, int day);
+
+    /*
      * @functie : setAantalGeleverdeVaccins
      * Deze functie zet het aantal vaccins van een type per hub.
      * @param type : string, type van het vaccin
