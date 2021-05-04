@@ -70,4 +70,26 @@ int Hub::getAantalGeleverdeVaccins(string &type) {
     return 0;
 }
 
+int Hub::getAantalOngevaccineerdeInwonersInHub(Hub* hub) {
+    REQUIRE(hub->properlyInitialized(), "Hub wasn't initialized when calling getAantalOngevaccineerdeInwonersInHub");
+
+    int aantalOngevaccineerden = 0;
+
+    for (unsigned int i = 0; i < hub->fHubCentra.size(); ++i) {
+        aantalOngevaccineerden += (hub->fHubCentra[i]->getInwoners() - hub->fHubCentra[i]->getVaccinatedSecondTime());
+    }
+    return aantalOngevaccineerden;
+}
+
+int Hub::getAantalOngevaccineerdeInwonersInTotal(const vector<Hub*>& hubs) {
+
+    int aantalOngevaccineerden = 0;
+    for (unsigned int j = 0; j < hubs.size(); j++) {
+        REQUIRE(hubs[j]->properlyInitialized(), "Hub wasn't initialized when calling getAantalOngevaccineerdeInwonersInTotal");
+        aantalOngevaccineerden += getAantalOngevaccineerdeInwonersInHub(hubs[j]);
+    }
+
+    return aantalOngevaccineerden;
+}
+
 

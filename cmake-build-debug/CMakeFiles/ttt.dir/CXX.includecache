@@ -124,11 +124,7 @@ DesignByContract.h
 Vaccin.h
 /home/inte/CLionProjects/PSEgit/Header_files/Vaccin.h
 
-/home/inte/CLionProjects/PSEgit/Source_files/Utils.cpp
-../Header_files/Utils.h
-/home/inte/CLionProjects/PSEgit/Header_files/Utils.h
-../Header_files/FileParser.h
-/home/inte/CLionProjects/PSEgit/Header_files/FileParser.h
+/home/inte/CLionProjects/PSEgit/Source_files/Distributie.cpp
 ../Header_files/Distributie.h
 /home/inte/CLionProjects/PSEgit/Header_files/Distributie.h
 

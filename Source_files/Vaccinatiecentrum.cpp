@@ -99,6 +99,8 @@ void Vaccinatiecentrum::vaccinatieFirstTime(Vaccin *vaccin, ofstream &OT, int da
 
     vaccin->setAantalVaccins(-(ladingen * vaccin->getTransport()));
 
+    fLadingen += ladingen;
+
     OT << "Er werden " << ladingen << " ladingen (" << ladingen * vaccin->getTransport() <<
        " vaccins) getransporteerd naar " << centrumNaam + ".\n";
 

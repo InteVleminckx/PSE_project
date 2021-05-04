@@ -479,7 +479,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         sDay << day;
 
         string path = "../simulatieOutput/GrafischeVisualitatie/hub_" + sHub.str() + "_" + sDay.str() + ".ini";
-        int figures = 9 + (2*file.fHubs[i]->fHubCentra.size());
+        int figures = 9 + (2*file.fHubs[i]->fHubCentra.size()) + aantalLadingenTotaal;
         iniFile.open(path.c_str());
 
 
@@ -590,6 +590,46 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
             allVaccinsInHub += file.fHubs[i]->fVaccins[i]->getAantalVaccins();
         }
 
+        map<int, pair<string, vector<double> > > figuren;
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.5); // oranje
+        kleurenVectorRGB.push_back(0.25);
+        kleurenVectorRGB.push_back(0);
+        figuren[50000] = make_pair("Cube", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0); // groen
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0);
+        figuren[250000] = make_pair("Cone", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0); // cyaan
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0.5);
+        figuren[1250000] = make_pair("Sphere", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.5); // geel
+        kleurenVectorRGB.push_back(0.5);
+        kleurenVectorRGB.push_back(0);
+        figuren[6250000] = make_pair("Torus", kleurenVectorRGB);
+        kleurenVectorRGB.clear();
+        kleurenVectorRGB.push_back(0.38); // paars
+        kleurenVectorRGB.push_back(0);
+        kleurenVectorRGB.push_back(0.38);
+        figuren[31250000] = make_pair("Octahedron", kleurenVectorRGB);
+
+        string figuur;
+        vector<double> kleur;
+        int aantal = 0;
+        for (map<int,pair<string, vector<double> > >::iterator it = figuren.begin(); it != figuren.end(); it++) {
+            if (allVaccinsInHub < it->first) {
+                figuur = it->second.first;
+                kleur = it->second.second;
+                aantal = it->first;
+                break;
+            }
+        }
+
+
         iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size()) << "]" << endl;
         iniFile << "type = \"Cylinder\"" << endl;
         iniFile << "height = 1" << endl;
@@ -599,8 +639,8 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "rotateY = 0" << endl;
         iniFile << "rotateZ = 0" << endl;
         iniFile << "center = (0, 0, -3)" << endl;
-        iniFile << "ambientReflection = (" << 1 << "," << 0 << "," << 0 << ")" << endl;
-        iniFile << "diffuseReflection = (" << 1 << "," << 0 << "," << 0 << ")" << endl;
+        iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
+        iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
 
         iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+1 << "]\n";
         iniFile << "type = \"Cone\"" << endl;
@@ -734,6 +774,42 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
             }
             else if (figuur == "Octahedron") {
                 createOctahedron(iniFile, coord, zwart);
+            }
+        }
+
+        yCenter = 0.5;
+
+        int figureNumber = 17;
+
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+
+            int ladingen = file.fHubs[i]->fHubCentra[j]->fLadingen;
+            //even
+            if (j != 0  && j % 2 == 0){
+                yCenter*=-1;
+                yCenter+=1;
+            }
+                //oneven
+            else if (j != 0  && j % 2 != 0){
+                yCenter*=-1;
+            }
+
+            double zPos = 0.7;
+
+            for (unsigned int k = 0; (int) k < ladingen; k++) {
+
+                iniFile << "[Figure" << figureNumber << "]" << endl;
+                iniFile << "type = \"Sphere\"" << endl;
+                iniFile << "n = 3" << endl;
+                iniFile << "scale = 0.05" << endl;
+                iniFile << "rotateX = 0" << endl;
+                iniFile << "rotateY = 0" << endl;
+                iniFile << "rotateZ = 0" << endl;
+                iniFile << "center = " << "(0, " << yCenter << "," << zPos - (0.2*k) << ")" << endl;
+                iniFile << "ambientReflection = (0.00, 0.50, 1.0)" << endl;
+                iniFile << "diffuseReflection = (0.00, 0.50, 1.0)" << endl;
+
+                figureNumber++;
             }
         }
 
