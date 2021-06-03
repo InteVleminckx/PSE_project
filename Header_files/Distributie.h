@@ -22,6 +22,7 @@ public:
      * @functie: Distributie
      * Deze functie is de bovenste laag van de simulatie, hier worden de vaccin leveringen geregeld, en wordt het transport van vaccins naar de centra geregeld.
      * @param file : .xml bestand dat wordt meegegeven.
+     * ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state");
      */
     Distributie(FileParser &file);
 
@@ -32,6 +33,7 @@ public:
      * @param j: unsigned int, iterator voor de huidige hub in de vector
      * REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinated");
      * @return : true als alle inwoners gevaccineerd zijn, anders false.
+     * ENSURE(file.fHubs[j]->getAantalOngevaccineerdeInwonersInHub() == 0, "isAllPeopleVaccinatedInHub postcondition failed.");
      */
     bool isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j);
 
@@ -41,6 +43,7 @@ public:
      * @param file : het .xml bestand dat ingelezen wordt.
      * REQUIRE(this->properlyInitialized(), "Distributie wasn't initialized when calling isALlPeopleVaccinatedIntotal");
      * @return : true als alle inwoners gevaccineerd zijn, anders false.
+     * ENSURE(file.fHubs[0]->getAantalOngevaccineerdeInwonersInTotal(file.fHubs) == 0, "isAllPeopleVaccinatedInTotal postcondition failed.");
      */
     bool isAllPeopleVaccinatedInTotal(FileParser &file);
 

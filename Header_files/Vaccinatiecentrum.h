@@ -33,8 +33,15 @@ class Vaccinatiecentrum {
     map<pair<int, string>, int> fGebruikteVaccins; //
     Vaccinatiecentrum* _initCheck;
     map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
-public:
 
+public:
+    int fLadingen;
+
+    /*
+     * @functie: Vaccinatiecentrum
+     * Constructor voor een vaccinatiecentrum.
+     * ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
+     */
     Vaccinatiecentrum();
 
     /*

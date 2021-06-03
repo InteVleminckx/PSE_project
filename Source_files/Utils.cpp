@@ -463,7 +463,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
     kleurenVectorRGB.clear();
 
 
-    for (unsigned int i = 0; i < 1; i++){
+    for (unsigned int i = 0; i < file.fHubs.size(); i++){
 
         if (distributie->isAllPeopleVaccinatedInHub(file, i) && !close) {
             continue;
@@ -477,6 +477,11 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         sHub << i;
         sDay << day;
+
+        int aantalLadingenTotaal = 0;
+        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+            aantalLadingenTotaal += file.fHubs[i]->fHubCentra[j]->fLadingen;
+        }
 
         string path = "../simulatieOutput/GrafischeVisualitatie/hub_" + sHub.str() + "_" + sDay.str() + ".ini";
         int figures = 9 + (2*file.fHubs[i]->fHubCentra.size()) + aantalLadingenTotaal;
@@ -511,7 +516,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
                 yCenter*=-1;
             }
 
-            iniFile << "[Figure" <<  j << "]" << endl; // niemand gaat ooit 100 centra's hebben.
+            iniFile << "[Figure" <<  j << "]" << endl;
             iniFile << "type = \"Cylinder\"" << endl;
             iniFile << "height = " << 4.99 << endl;
             iniFile << "n = 36" << endl;
@@ -587,7 +592,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         int allVaccinsInHub = 0;
 
         for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
-            allVaccinsInHub += file.fHubs[i]->fVaccins[i]->getAantalVaccins();
+            allVaccinsInHub += file.fHubs[i]->fVaccins[j]->getAantalVaccins();
         }
 
         map<int, pair<string, vector<double> > > figuren;
@@ -682,47 +687,9 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "ambientReflection = (0.0, 0.0, 0.00)" << endl;
         iniFile << "diffuseReflection = (0.0, 0.0, 0.00)" << endl;
 
-        map<int, pair<string, vector<double> > > figuren;
-        kleurenVectorRGB.clear();
-        kleurenVectorRGB.push_back(0.5); // oranje
-        kleurenVectorRGB.push_back(0.25);
-        kleurenVectorRGB.push_back(0);
-        figuren[50000] = make_pair("Cube", kleurenVectorRGB);
-        kleurenVectorRGB.clear();
-        kleurenVectorRGB.push_back(0); // groen
-        kleurenVectorRGB.push_back(0.5);
-        kleurenVectorRGB.push_back(0.5);
-        figuren[250000] = make_pair("Cone", kleurenVectorRGB);
-        kleurenVectorRGB.clear();
-        kleurenVectorRGB.push_back(0); // cyaan
-        kleurenVectorRGB.push_back(0.5);
-        kleurenVectorRGB.push_back(0.5);
-        figuren[1250000] = make_pair("Sphere", kleurenVectorRGB);
-        kleurenVectorRGB.clear();
-        kleurenVectorRGB.push_back(0.5); // geel
-        kleurenVectorRGB.push_back(0.5);
-        kleurenVectorRGB.push_back(0);
-        figuren[6250000] = make_pair("Torus", kleurenVectorRGB);
-        kleurenVectorRGB.clear();
-        kleurenVectorRGB.push_back(0.38); // paars
-        kleurenVectorRGB.push_back(0);
-        kleurenVectorRGB.push_back(0.38);
-        figuren[31250000] = make_pair("Octahedron", kleurenVectorRGB);
 
-        string figuur;
-        vector<double> kleur;
-        int aantal = 0;
-        for (map<int,pair<string, vector<double> > >::iterator it = figuren.begin(); it != figuren.end(); it++) {
-            if (allVaccinsInHub < it->first) {
-                figuur = it->second.first;
-                kleur = it->second.second;
-                aantal = it->first;
-                break;
-            }
-        }
         unsigned int aantalFiguren = floor(allVaccinsInHub/(aantal/5));
         unsigned int nietFiguren  = 5 - floor(allVaccinsInHub/(aantal/5));
-
 
         for (unsigned int j = 0; j < aantalFiguren;j++) {
             iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+4+j << "]" << endl;

@@ -56,6 +56,8 @@ Distributie::Distributie(FileParser &file) {
 
     utils.Graphics(file, day, this,true);
 
+    ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state"); //
+
 }
 
 bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
@@ -67,6 +69,7 @@ bool Distributie::isAllPeopleVaccinatedInHub(FileParser &file, unsigned int j) {
         }
     }
 
+    ENSURE(Hub::getAantalOngevaccineerdeInwonersInHub(file.fHubs[j]) == 0, "isAllPeopleVaccinatedInHub postcondition failed.");
     return true;
 }
 
@@ -81,6 +84,8 @@ bool Distributie::isAllPeopleVaccinatedInTotal(FileParser &file) {
             }
         }
     }
+    ENSURE(Hub::getAantalOngevaccineerdeInwonersInTotal(file.fHubs) == 0, "isAllPeopleVaccinatedInTotal postcondition failed.");
+
     return true;
 }
 

@@ -73,6 +73,23 @@ public:
      */
     int getAantalGeleverdeVaccins(string &type);
 
+    /*
+     * @functie : getAantalOngevaccineerdeInwonersInHub
+     * Deze functie geeft aantal niet gevaccineerde personen per hub.
+     * @return : int, aantal ongevaccineerde inwoners.
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getAantalOngevaccineerdeInwonersInHub");
+     */
+    static int getAantalOngevaccineerdeInwonersInHub(Hub* hub);
+
+    /*
+     *@functie : getAantalOngevaccineerdeInwonersInTotal
+     * Deze functie geeft aantal niet gevaccineerde personen intotaal van alle hubs.
+     * @param hubs : alle hubs die vaccines verdelen over centra.
+     * @return : int, aantal ongevaccineerde inwoners.
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getAantalOngevaccineerdeInwonersInTotal");
+     */
+    static int getAantalOngevaccineerdeInwonersInTotal(const vector<Hub*>& hubs);
+
     bool properlyInitialized();
 
 };

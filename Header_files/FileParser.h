@@ -48,7 +48,8 @@ public:
      * @functie : parseFile
      * Deze functie is de constructor. Hier roepen we de functie parseXML aan.
      * @param file : het .xml bestand dat ingelezen wordt.
-     * @return : true als de invoer geldig is, anders false.
+     * @return : true als de invoer geldig is, anders false.*
+     * ENSURE(properlyInitialized(), "constructor must end in properlyInitialized state");
      */
     int parseFile(string &file);
 

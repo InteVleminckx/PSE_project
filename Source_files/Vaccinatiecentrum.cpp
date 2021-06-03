@@ -16,6 +16,7 @@ void Vaccinatiecentrum::vaccinatieHernieuwing(Vaccin *vaccin, int day, ofstream 
     REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieHernieuwing");
 
     string vaccinType = vaccin->getType();
+
     int gebruikteVaccins = getGebruikteVaccins(day, vaccinType);
 
 
@@ -129,8 +130,6 @@ void Vaccinatiecentrum::vaccinatieFirstTime(Vaccin *vaccin, ofstream &OT, int da
        " vaccins) getransporteerd naar " << centrumNaam + ".\n";
 
     teVaccineren = vaccinatieInCentrum(vaccin, teVaccineren, day);
-
-
 }
 
 int Vaccinatiecentrum::vaccinatieInCentrum(Vaccin *vaccin, int teVaccineren, int day) {
