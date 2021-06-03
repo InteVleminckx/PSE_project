@@ -2,8 +2,6 @@
 // Created by inte on 06.04.21.
 //
 
-// bron: TicTacToe19
-
 #include <iostream>
 #include <fstream>
 #include <sys/stat.h>

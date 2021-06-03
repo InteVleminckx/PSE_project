@@ -25,7 +25,6 @@ using namespace std;
 class Vaccin {
 
     Vaccin* _initCheck;
-
     string fType;
     int fLeveringen;
     int fInterval;
@@ -46,6 +45,7 @@ public:
      * @param Hernieuwingen : int, het aantal dagen waarna mensen nog eens met het vaccin waarop de hernieuwing is
      * toegepast, moeten gevaccineerd worden.
      * @param Temperatuur : int, de temperatuur waarin een vaccin bewaart moet worden.
+     * ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
      */
     Vaccin(string &Type, int Leveringen, int Interval, int Transport, int Hernieuwingen, int Temperatuur);
 

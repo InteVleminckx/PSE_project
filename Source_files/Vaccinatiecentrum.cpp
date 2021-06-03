@@ -11,7 +11,6 @@ Vaccinatiecentrum::Vaccinatiecentrum() {
     ENSURE(this->properlyInitialized(), "Constructor was not properly initialized");
 }
 
-
 void Vaccinatiecentrum::vaccinatieHernieuwing(Vaccin *vaccin, int day, ofstream &OT) {
 
     REQUIRE(this->properlyInitialized(), "Transport wasn't initialized when calling vaccinatieHernieuwing");
@@ -19,15 +18,40 @@ void Vaccinatiecentrum::vaccinatieHernieuwing(Vaccin *vaccin, int day, ofstream 
     string vaccinType = vaccin->getType();
     int gebruikteVaccins = getGebruikteVaccins(day, vaccinType);
 
-    vaccin->setAantalVaccins(-gebruikteVaccins);
 
-    setVaccinatedSecondTime(gebruikteVaccins + getVaccinatedSecondTime());
+    if (vaccin->getAantalVaccins() < gebruikteVaccins) {
+        // nieuwe map met telkens +1 dag
+        map<pair<int, string>, int> nieuweMap;
+        int maxDay = 0;
+        for (map<pair<int, string>, int>::iterator it = fGebruikteVaccins.begin(); it != fGebruikteVaccins.end(); it++) {
+            if (it->first.first > maxDay) {
+                maxDay = it->first.first;
+            }
+        }
 
-    eraseDayfromGebruikteVaccins(day, vaccinType);
+        for (unsigned int i = 0; (int)i <= maxDay; i++) {
 
-    OT << "Er werden " << gebruikteVaccins << " mensen "  <<
-       "gevaccineerd (als hernieuwing) in " << getNaam() + ".\n";
+            int aantalGebruikteVaccins = getGebruikteVaccins((int)i, vaccinType);
+            if (aantalGebruikteVaccins > 0)
+            {
+                int newDay = (int)i+1;
+                nieuweMap[make_pair(newDay, vaccinType)] = aantalGebruikteVaccins;
+            }
+        }
+        setNewMapGebruikteVaccins(nieuweMap);
+    }
 
+    else
+    {
+        vaccin->setAantalVaccins(-gebruikteVaccins);
+
+        setVaccinatedSecondTime(gebruikteVaccins + getVaccinatedSecondTime());
+
+        eraseDayfromGebruikteVaccins(day, vaccinType);
+
+        OT << "Er werden " << gebruikteVaccins << " mensen "  <<
+           "gevaccineerd (als hernieuwing) in " << getNaam() + ".\n";
+    }
 }
 
 void Vaccinatiecentrum::vaccinatieFirstTime(Vaccin *vaccin, ofstream &OT, int day, int &teVaccineren) {
@@ -171,7 +195,6 @@ void Vaccinatiecentrum::setNaam(string &Cnaam) {
 }
 
 void Vaccinatiecentrum::setAdres(string &Cadres) {
-//    isAdresGeldig(Cadres);
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setAdres");
     REQUIRE((!Cadres.empty()), "Het fAdres moet minstens 1 karakter.");
     fAdres = Cadres;
@@ -276,8 +299,12 @@ bool Vaccinatiecentrum::properlyInitialized() {
     return _initCheck == this;
 }
 
+void Vaccinatiecentrum::setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNewMapGebruikteVaccins");
+    fGebruikteVaccins = newGebruikteVaccins;
+    ENSURE((fGebruikteVaccins == newGebruikteVaccins), "setNewMapGebruikteVaccins postcondition failure");
 
-
+}
 
 //void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {
 //

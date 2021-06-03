@@ -237,7 +237,18 @@ public:
      */
     map<string, int> getVaccinsInCentrum();
 
+    /*
+     * @functie: setNewMapGebruikteVaccins
+     * Deze functie vervangt de map fGebruikteVaccins, wanneer er niet genoeg vaccins zijn bij de hernieuwing
+     * @param newGebruikteVaccins
+     */
+    void setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins);
+
+
+
+
 //    void isAdresGeldig(string &Cadres);
+
 
     bool properlyInitialized();
 

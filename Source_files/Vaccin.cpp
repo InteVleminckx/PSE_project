@@ -26,6 +26,9 @@ bool Vaccin::properlyInitialized() {
 void Vaccin::setAantalVaccins(int aantalVaccins) {
     REQUIRE(this->properlyInitialized(), "Vaccin wasn't initialized when calling setAantalVaccins");
     fAantalVaccins+=aantalVaccins;
+    if (fAantalVaccins < 0) {
+        cout << "negatief aantal vaccins" << endl;
+    }
     ENSURE(getAantalVaccins() == fAantalVaccins, "Postcondition failure");
 }
 

@@ -4,6 +4,7 @@
  * @author: Inte Vleminckx en Karnaukh Maksim
  * @date: 24/04/2021
  * @version: Specificatie 2.0
+ * @bron: TicTacToe19
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_SIMULATIEUTILS_H
