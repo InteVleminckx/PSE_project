@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Klasse (Vaccinatiecentrum) om een vaccinatiecentrum aan te maken, en de vaccinaties in het centrum te regelen.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 24/04/2021
- * @version: Specificatie 2.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_VACCINATIECENTRUM_H
@@ -28,15 +28,14 @@ class Vaccinatiecentrum {
     string fAdres;
     int fInwoners;
     int fCapaciteit;
-    int fVaccinatedFirstTime; // aantal gevaccineerden bij eerste inenting
+    int fVaccinatedFirstTime;  // aantal gevaccineerden bij eerste inenting
     int fVaccinatedSecondTime; // aantal gevaccineerde die al een hernieuwing hebben gehad
-    map<pair<int, string>, int> fGebruikteVaccins; //
+    int fLadingen;
+    map<pair<int, string>, int> fGebruikteVaccins;
     Vaccinatiecentrum* _initCheck;
     map<string, int> fVaccinsInCentrum; // fVaccinsInCentrum in het centrum
 
 public:
-    int fLadingen;
-
     /*
      * @functie: Vaccinatiecentrum
      * Constructor voor een vaccinatiecentrum.
@@ -169,6 +168,22 @@ public:
     void setGebruikteVaccins(int dagHernieuwing, string &type, int aantalPersonen);
 
     /*
+     * @functie: setLadingen
+     * Deze functie geeft de ladingen terug van het vaccinatiecent
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setLadingen");
+     * REQUIRE((ladingen >= 0), "Aantal ladingen moet positief zijn");
+     * ENSURE((getLadingen() == ladingen), "setLadingen postcondtion failure");
+     */
+    void setLadingen(int ladingen);
+
+    /*
+     * @functie: setNewMapGebruikteVaccins
+     * Deze functie vervangt de map fGebruikteVaccins, wanneer er niet genoeg vaccins zijn bij de hernieuwing
+     * @param newGebruikteVaccins
+     */
+    void setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins);
+
+    /*
      * @functie: getNaam
      * Deze functie geeft de fNaam van het vaccinatiecentrum.
      * @return: string, de fNaam van het vaccinatiecentrum.
@@ -245,18 +260,14 @@ public:
     map<string, int> getVaccinsInCentrum();
 
     /*
-     * @functie: setNewMapGebruikteVaccins
-     * Deze functie vervangt de map fGebruikteVaccins, wanneer er niet genoeg vaccins zijn bij de hernieuwing
-     * @param newGebruikteVaccins
+     * @functie: getLadingen
+     * Geeft het aantal ladingen in een centrum terug.
+     * @return : int, aantal ladingen in centrum
+     * REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getLadingen");
      */
-    void setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins);
-
-
-
+    int getLadingen();
 
 //    void isAdresGeldig(string &Cadres);
-
-
     bool properlyInitialized();
 
 };

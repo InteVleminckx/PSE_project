@@ -244,6 +244,20 @@ void Vaccinatiecentrum::setGebruikteVaccins(int dagHernieuwing, string &type, in
 
 }
 
+void Vaccinatiecentrum::setLadingen(int ladingen) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setLadingen");
+    REQUIRE((ladingen >= 0), "Aantal ladingen moet positief zijn");
+    fLadingen = ladingen;
+    ENSURE((getLadingen() == ladingen), "setLadingen postcondtion failure");
+}
+
+void Vaccinatiecentrum::setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins) {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNewMapGebruikteVaccins");
+    fGebruikteVaccins = newGebruikteVaccins;
+    ENSURE((fGebruikteVaccins == newGebruikteVaccins), "setNewMapGebruikteVaccins postcondition failure");
+
+}
+
 string Vaccinatiecentrum::getNaam() {
     REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getNaam");
     return fNaam;
@@ -298,11 +312,9 @@ bool Vaccinatiecentrum::properlyInitialized() {
     return _initCheck == this;
 }
 
-void Vaccinatiecentrum::setNewMapGebruikteVaccins(map<pair<int, string>, int> &newGebruikteVaccins) {
-    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling setNewMapGebruikteVaccins");
-    fGebruikteVaccins = newGebruikteVaccins;
-    ENSURE((fGebruikteVaccins == newGebruikteVaccins), "setNewMapGebruikteVaccins postcondition failure");
-
+int Vaccinatiecentrum::getLadingen() {
+    REQUIRE(this->properlyInitialized(), "Vaccinatiecentrum wasn't initialized when calling getLadingen");
+    return fLadingen;
 }
 
 //void Vaccinatiecentrum::isAdresGeldig(string &Cadres) {

@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Klasse (Utils) : Deze klasse bevat alle hulpfuncties die we gebruiken
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 24/04/2021
- * @version: Specificatie 2.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_UTILS_H
@@ -14,7 +14,6 @@
 #include <fstream>
 #include "vector"
 
-
 using namespace std;
 
 class Distributie;
@@ -22,7 +21,6 @@ class FileParser;
 
 class Utils {
 private:
-
     ofstream fFileList;
 
 public:
@@ -111,16 +109,59 @@ public:
      */
     static void statistischeVerwerking(FileParser &file);
 
+    /*
+     * @functie: Graphics
+     * Deze functie maakt de ini files voor het graphische deel
+     * @param file: FileParser, het .xml bestand dat ingelezen wordt.
+     * @param day: int, dag van de simulatie.
+     * @param distributie: Distributie, wordt gebruikt om te kijken of iedereen gevaccineerd is.
+     * @param close: bool, geeft aan of de file die alle filenames bevat gesloten moet worden of niet.
+     */
     void Graphics(FileParser &file, int day, Distributie* distributie,bool close = false);
 
+    /*
+     * @functie: createSphere
+     * Maakt een bol aan voor de graphische weergave.
+     * @param iniFile: ofstream, het bestand waar de informatie wordt weggeschreven.
+     * @param coord: vector<double>, de coordinaten waar de figuur komt te staan.
+     * @param kleur: vector<double>, de kleur van de figuur.
+     */
     void createSphere(ofstream &iniFile, vector<double> coord, vector<double> kleur);
 
+    /*
+     * @functie: createCube
+     * Maakt een kubus aan voor de graphische weergave.
+     * @param iniFile: ofstream, het bestand waar de informatie wordt weggeschreven.
+     * @param coord: vector<double>, de coordinaten waar de figuur komt te staan.
+     * @param kleur: vector<double>, de kleur van de figuur.
+     */
     void createCube(ofstream &iniFile, vector<double> coord, vector<double> kleur);
 
+    /*
+     * @functie: createCone
+     * Maakt een kegel aan voor de graphische weergave.
+     * @param iniFile: ofstream, het bestand waar de informatie wordt weggeschreven.
+     * @param coord: vector<double>, de coordinaten waar de figuur komt te staan.
+     * @param kleur: vector<double>, de kleur van de figuur.
+     */
     void createCone(ofstream &iniFile, vector<double> coord, vector<double> kleur);
 
+    /*
+     * @functie: createTorus
+     * Maakt een torus aan voor de graphische weergave.
+     * @param iniFile: ofstream, het bestand waar de informatie wordt weggeschreven.
+     * @param coord: vector<double>, de coordinaten waar de figuur komt te staan.
+     * @param kleur: vector<double>, de kleur van de figuur.
+     */
     void createTorus(ofstream &iniFile, vector<double> coord, vector <double> kleur);
 
+    /*
+     * @functie: createOctahedron
+     * Maakt een octahedron aan voor de graphische weergave.
+     * @param iniFile: ofstream, het bestand waar de informatie wordt weggeschreven.
+     * @param coord: vector<double>, de coordinaten waar de figuur komt te staan.
+     * @param kleur: vector<double>, de kleur van de figuur.
+     */
     void createOctahedron(ofstream &iniFile, vector<double> coord, vector<double> kleur);
 
 };

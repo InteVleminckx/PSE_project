@@ -288,21 +288,21 @@ void Utils::grafischeImpressie(FileParser &file) {
     ofstream grafischeOutput;
     grafischeOutput.open("../simulatieOutput/grafischeOutput.txt");
 
-    for (unsigned int i = 0; i < file.fHubs.size(); i++) {
+    for (unsigned int i = 0; i < file.getHubs().size(); i++) {
 
         grafischeOutput << "Hub " << i << ":\n";
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); j++) {
 
-            grafischeOutput << file.fHubs[i]->fHubCentra[j]->getNaam() << ":\n";
+            grafischeOutput << file.getHubs()[i]->getHubCentra()[j]->getNaam() << ":\n";
 
             int aantalVaccinsInCentrum = 0;
-            map<string, int> mapVaccins = file.fHubs[i]->fHubCentra[j]->getVaccinsInCentrum();
+            map<string, int> mapVaccins = file.getHubs()[i]->getHubCentra()[j]->getVaccinsInCentrum();
             for (map<string, int>::iterator k = mapVaccins.begin(); k != mapVaccins.end(); k++) {
                 aantalVaccinsInCentrum += k->second;
             }
-            double percentageVaccins = ((double) aantalVaccinsInCentrum/ (double) file.fHubs[i]->fHubCentra[j]->getCapaciteit());
-            double percentageGevaccineerden = ((double) file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime()/
-                    (double) file.fHubs[i]->fHubCentra[j]->getInwoners());
+            double percentageVaccins = ((double) aantalVaccinsInCentrum/ (double) file.getHubs()[i]->getHubCentra()[j]->getCapaciteit());
+            double percentageGevaccineerden = ((double) file.getHubs()[i]->getHubCentra()[j]->getVaccinatedSecondTime()/
+                    (double) file.getHubs()[i]->getHubCentra()[j]->getInwoners());
 
             string laadbalk;
             laadbalk = "[";
@@ -342,30 +342,30 @@ void Utils::statistischeVerwerking(FileParser &file) {
     OutputStat.open("../simulatieOutput/overzichtStatischeVerwerking.cvs");
     OutputStat << "Statistische gegevens\n";
     int totaalAantalGevaccineerden = 0;
-    for (unsigned int i = 0; i < file.fHubs.size(); ++i) {
+    for (unsigned int i = 0; i < file.getHubs().size(); ++i) {
 
         OutputStat << "Hub " << i << " :\n";
 
         //OutputStat << ",Pfizer, Moderna, AstraZeneca, ,Gevaccineerden\n";
-        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
-            OutputStat << "," << file.fHubs[i]->fVaccins[j]->getType();
+        for (unsigned int j = 0; j < file.getHubs()[i]->getVaccins().size(); ++j) {
+            OutputStat << "," << file.getHubs()[i]->getVaccins()[j]->getType();
         }
         OutputStat << ", ,Aantal\n";
 
         OutputStat << "Geleverde vaccins";
-        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
-            string type = file.fHubs[i]->fVaccins[j]->getType();
-            int aantalGeleverdeVaccins = file.fHubs[i]->getAantalGeleverdeVaccins(type);
+        for (unsigned int j = 0; j < file.getHubs()[i]->getVaccins().size(); ++j) {
+            string type = file.getHubs()[i]->getVaccins()[j]->getType();
+            int aantalGeleverdeVaccins = file.getHubs()[i]->getAantalGeleverdeVaccins(type);
             OutputStat << "," << aantalGeleverdeVaccins;
         }
         int totaalAantalGevaccineerdenPerHub = 0;
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
-            totaalAantalGevaccineerdenPerHub += file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime();
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); j++) {
+            totaalAantalGevaccineerdenPerHub += file.getHubs()[i]->getHubCentra()[j]->getVaccinatedSecondTime();
         }
 
         OutputStat << "\n";
         OutputStat << "Gevacineerden per hub";
-        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size()+2; ++j) {
+        for (unsigned int j = 0; j < file.getHubs()[i]->getVaccins().size()+2; ++j) {
             OutputStat << ",";
         }
         OutputStat << totaalAantalGevaccineerdenPerHub;
@@ -375,8 +375,8 @@ void Utils::statistischeVerwerking(FileParser &file) {
 
         OutputStat << "\n";
 
-        if (grootsteWaarde < (unsigned int) file.fHubs[i]->fVaccins.size()+2){
-            grootsteWaarde = file.fHubs[i]->fVaccins.size()+2;
+        if (grootsteWaarde < (unsigned int) file.getHubs()[i]->getVaccins().size()+2){
+            grootsteWaarde = file.getHubs()[i]->getVaccins().size()+2;
         }
 
     }
@@ -463,7 +463,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
     kleurenVectorRGB.clear();
 
 
-    for (unsigned int i = 0; i < file.fHubs.size(); i++){
+    for (unsigned int i = 0; i < file.getHubs().size(); i++){
 
         if (distributie->isAllPeopleVaccinatedInHub(file, i) && !close) {
             continue;
@@ -479,12 +479,12 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         sDay << day;
 
         int aantalLadingenTotaal = 0;
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
-            aantalLadingenTotaal += file.fHubs[i]->fHubCentra[j]->fLadingen;
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); ++j) {
+            aantalLadingenTotaal += file.getHubs()[i]->getHubCentra()[j]->getLadingen();
         }
 
         string path = "../simulatieOutput/GrafischeVisualitatie/hub_" + sHub.str() + "_" + sDay.str() + ".ini";
-        int figures = 9 + (2*file.fHubs[i]->fHubCentra.size()) + aantalLadingenTotaal;
+        int figures = 9 + (2*file.getHubs()[i]->getHubCentra().size()) + aantalLadingenTotaal;
         iniFile.open(path.c_str());
 
 
@@ -750,7 +750,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
 
-            int ladingen = file.fHubs[i]->fHubCentra[j]->fLadingen;
+            int ladingen = file.getHubs()[i]->getHubCentra()[j]->getLadingen();
             //even
             if (j != 0  && j % 2 == 0){
                 yCenter*=-1;

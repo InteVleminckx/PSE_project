@@ -25,7 +25,7 @@
         <naam>AED Studios</naam>
         <adres>Fabriekstraat 38, Lint</adres>
         <inwoners>95600</inwoners>
-            <capaciteit>3900</capaciteit>
+        <capaciteit>3900</capaciteit>
     </VACCINATIECENTRUM>
     <VACCINATIECENTRUM>
         <naam>De Zoerla</naam>

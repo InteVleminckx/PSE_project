@@ -3,9 +3,10 @@
  * Roept alle testen op.
  * Deze klasse runt alle testen.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
-*/
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
+ */
+
 
 #include <gtest/gtest.h>
 

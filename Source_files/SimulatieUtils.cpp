@@ -1,10 +1,12 @@
-//
-// Created by inte on 06.04.21.
-//
+/*
+ * korte beschrijving:
+ * (SimulatieUtils), bevat twee functies: DirectoryExists en FileCompare die we nodig hebben voor de testen.
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
+ * @bron: TicTacToe19
+*/
 
-#include <iostream>
-#include <fstream>
-#include <sys/stat.h>
 #include "../Header_files/SimulatieUtils.h"
 
 using namespace std;

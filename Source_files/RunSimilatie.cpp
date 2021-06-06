@@ -2,14 +2,12 @@
  * korte beschrijving:
  * main file om de simulatie uit te voeren.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
 */
 
 #include "../Header_files/FileParser.h"
-//#include "../Header_files/Transport.h"
 #include "../Header_files/Distributie.h"
-#include "../Header_files/Utils.h"
 
 int main(){
 

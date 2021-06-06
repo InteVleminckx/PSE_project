@@ -2,8 +2,8 @@
  * korte beschrijving:
  * (SimulatieUtils), bevat twee functies: DirectoryExists en FileCompare die we nodig hebben voor de testen.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 24/04/2021
- * @version: Specificatie 2.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
  * @bron: TicTacToe19
 */
 
@@ -11,6 +11,8 @@
 #define PROJECT_SOFTWARE_ENGENEERING_SIMULATIEUTILS_H
 
 #include <iostream>
+#include <fstream>
+#include <sys/stat.h>
 
 /*
  * @functie : DirectoryExists (overgenomen uit TicTacToe19)

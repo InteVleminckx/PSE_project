@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Klasse (Vaccin)
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 24/04/2021
- * @version: Specificatie 1.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
 */
 
 #ifndef PROJECT_SOFTWARE_ENGENEERING_VACCIN_H
@@ -23,7 +23,6 @@
 using namespace std;
 
 class Vaccin {
-
     Vaccin* _initCheck;
     string fType;
     int fLeveringen;
