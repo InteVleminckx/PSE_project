@@ -1,6 +1,11 @@
-//
-// Created by inte on 20.03.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Hub), bevat het aantal vaccins in de hub zelf en de vaccinatiecentra waar de hub aan moet distribueren.
+ * Houdt ook het aantal geleverde vaccins van elk type bij.
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
+*/
 
 #include "../Header_files/Hub.h"
 

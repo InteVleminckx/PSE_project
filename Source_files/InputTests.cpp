@@ -2022,7 +2022,7 @@ TEST_F(InputTests, succesFile7) {
         //voor simulatie
 
         //hub0
-        Hub* hub0 = parsedFile.fHubs[0];
+        Hub* hub0 = parsedFile.getHubs()[0];
 
         //vaccin1
         Vaccin* vaccin = hub0->getVaccins()[0];
@@ -2108,7 +2108,7 @@ TEST_F(InputTests, succesFile7) {
         EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-        Hub* hub1 = parsedFile.fHubs[1];
+        Hub* hub1 = parsedFile.getHubs()[1];
 
         //vaccin1
         vaccin = hub1->getVaccins()[0];
@@ -2307,7 +2307,7 @@ TEST_F(InputTests, succesFile8) {
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -2393,7 +2393,7 @@ TEST_F(InputTests, succesFile8) {
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -2593,7 +2593,7 @@ TEST_F(InputTests, succesFile9) {
     mapVaccinsHub2["AstraZeneca"] = 0;
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -2648,7 +2648,7 @@ TEST_F(InputTests, succesFile9) {
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -2814,7 +2814,7 @@ TEST_F(InputTests, succesFile10) {
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -2900,7 +2900,7 @@ TEST_F(InputTests, succesFile10) {
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];

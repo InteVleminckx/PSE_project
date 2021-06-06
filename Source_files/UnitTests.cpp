@@ -2,8 +2,8 @@
  * korte beschrijving:
  * Deze klasse checkt voor elke klasse of de functies erin werken met zelfgemaakte locale input (per functie).
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 07/04/2021
+ * @version: Specificatie 2.1
 */
 
 #include <gtest/gtest.h>

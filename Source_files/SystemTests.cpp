@@ -2,13 +2,12 @@
  * korte beschrijving:
  * Test de algemene werking van het systeem + enkele randgevallen.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 07/04/2021
+ * @version: Specificatie 2.1
 */
 
 #include <gtest/gtest.h>
 #include <string>
-#include <iostream>
 #include <vector>
 #include <cmath>
 #include "../Header_files/FileParser.h"
@@ -1026,7 +1025,7 @@ TEST_F(SystemsTests, ZeerGrootInterval){
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -1225,7 +1224,7 @@ TEST_F(SystemsTests, InwonersLessThanCapaciteit){
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -1311,7 +1310,7 @@ TEST_F(SystemsTests, InwonersLessThanCapaciteit){
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -1510,7 +1509,7 @@ TEST_F(SystemsTests, ZeerKleinTransport){
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -1596,7 +1595,7 @@ TEST_F(SystemsTests, ZeerKleinTransport){
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -1795,7 +1794,7 @@ TEST_F(SystemsTests, groterAantalCentra){
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -1881,7 +1880,7 @@ TEST_F(SystemsTests, groterAantalCentra){
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];
@@ -2149,7 +2148,7 @@ TEST_F(SystemsTests, kleinerAantalCentra){
     //voor simulatie
 
     //hub0
-    Hub* hub0 = parsedFile.fHubs[0];
+    Hub* hub0 = parsedFile.getHubs()[0];
 
     //vaccin1
     Vaccin* vaccin = hub0->getVaccins()[0];
@@ -2206,7 +2205,7 @@ TEST_F(SystemsTests, kleinerAantalCentra){
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(Moderna));
     EXPECT_EQ(0, vaccinatiecentrum->getVaccins(AstraZeneca));
 
-    Hub* hub1 = parsedFile.fHubs[1];
+    Hub* hub1 = parsedFile.getHubs()[1];
 
     //vaccin1
     vaccin = hub1->getVaccins()[0];

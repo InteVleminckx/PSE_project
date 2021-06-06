@@ -2,8 +2,8 @@
  * korte beschrijving:
  * klasse (Distributie), Roept de transport aan en doet de leveringen aan de de hubs
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 24/04/2021
- * @version: Specificatie 2.0
+ * @date: 07/04/2021
+ * @version: Specificatie 2.1
 */
 
 #include "../Header_files/Distributie.h"
@@ -42,7 +42,7 @@ Distributie::Distributie(FileParser &file) {
 
             if (!isAllPeopleVaccinatedInHub(file, i)) {
 
-                for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+                for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); ++j) {
 
                     file.fHubs[i]->fHubCentra[j]->fLadingen = 0;
                     file.fHubs[i]->transport(file.fHubs[i]->fHubCentra[j], OT, day);
@@ -84,7 +84,7 @@ bool Distributie::isAllPeopleVaccinatedInTotal(FileParser &file) {
             }
         }
     }
-    ENSURE(Hub::getAantalOngevaccineerdeInwonersInTotal(file.fHubs) == 0, "isAllPeopleVaccinatedInTotal postcondition failed.");
+    ENSURE(Hub::getAantalOngevaccineerdeInwonersInTotal(file.getHubs()) == 0, "isAllPeopleVaccinatedInTotal postcondition failed.");
 
     return true;
 }

@@ -1,6 +1,10 @@
-//
-// Created by inte on 08.04.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Utils) : Deze klasse bevat alle hulpfuncties die we gebruiken
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
+*/
 
 #include "../Header_files/Utils.h"
 #include "../Header_files/FileParser.h"
@@ -504,7 +508,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         double yCenter = 0.5;
 
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); ++j) {
 
             //even
             if (j != 0  && j % 2 == 0){
@@ -533,9 +537,9 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
 
         vector<double> color; // de kleur dat het centrum voorstellende object moet hebben.
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); j++) {
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); j++) {
 
-            iniFile << "[Figure" <<  j+file.fHubs[i]->fHubCentra.size() << "]" << endl;
+            iniFile << "[Figure" <<  j+file.getHubs()[i]->getHubCentra().size() << "]" << endl;
             iniFile << "type = \"Cylinder\"" << endl;
 
             //even
@@ -549,8 +553,8 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
             }
 
 
-            int aantalGevaccineerden = file.fHubs[i]->fHubCentra[j]->getVaccinatedSecondTime();
-            int verhouding = aantalGevaccineerden*100/file.fHubs[i]->fHubCentra[j]->getInwoners();
+            int aantalGevaccineerden = file.getHubs()[i]->getHubCentra()[j]->getVaccinatedSecondTime();
+            int verhouding = aantalGevaccineerden*100/file.getHubs()[i]->getHubCentra()[j]->getInwoners();
             ostringstream firstNumberOfVerhouding;
             firstNumberOfVerhouding << verhouding;
             string firstNumberOfVerhoudingString;
@@ -591,8 +595,8 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         int allVaccinsInHub = 0;
 
-        for (unsigned int j = 0; j < file.fHubs[i]->fVaccins.size(); ++j) {
-            allVaccinsInHub += file.fHubs[i]->fVaccins[j]->getAantalVaccins();
+        for (unsigned int j = 0; j < file.getHubs()[i]->getVaccins().size(); ++j) {
+            allVaccinsInHub += file.getHubs()[i]->getVaccins()[j]->getAantalVaccins();
         }
 
         map<int, pair<string, vector<double> > > figuren;
@@ -635,7 +639,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         }
 
 
-        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size()) << "]" << endl;
+        iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size()) << "]" << endl;
         iniFile << "type = \"Cylinder\"" << endl;
         iniFile << "height = 1" << endl;
         iniFile << "n = 36" << endl;
@@ -647,7 +651,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "ambientReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
         iniFile << "diffuseReflection = (" << kleur[0] << "," << kleur[1] << "," << kleur[2] << ")" << endl;
 
-        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+1 << "]\n";
+        iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size())+1 << "]\n";
         iniFile << "type = \"Cone\"" << endl;
         iniFile << "height = 1" << endl;
         iniFile << "n = 36" << endl;
@@ -659,7 +663,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "ambientReflection = (0.4, 0.2, 0.00)" << endl;
         iniFile << "diffuseReflection = (0.4, 0.2, 0.00)" << endl;
 
-        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+2 << "]" << endl;
+        iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size())+2 << "]" << endl;
         iniFile << "type = \"Torus\"" << endl;
         iniFile << "r = 1" << endl;
         iniFile << "R = 3" << endl;
@@ -673,7 +677,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         iniFile << "ambientReflection = (0.0, 0.0, 0.00)" << endl;
         iniFile << "diffuseReflection = (0.0, 0.0, 0.00)" << endl;
 
-        iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+3 << "]" << endl;
+        iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size())+3 << "]" << endl;
         iniFile << "type = \"Torus\"" << endl;
         iniFile << "r = 1" << endl;
         iniFile << "R = 3" << endl;
@@ -692,7 +696,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
         unsigned int nietFiguren  = 5 - floor(allVaccinsInHub/(aantal/5));
 
         for (unsigned int j = 0; j < aantalFiguren;j++) {
-            iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+4+j << "]" << endl;
+            iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size())+4+j << "]" << endl;
 
             vector<double> coord;
             coord.push_back(0);
@@ -717,7 +721,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
 
         for (unsigned int j = aantalFiguren; j < nietFiguren+aantalFiguren;j++) {
-            iniFile << "[Figure" << (2*file.fHubs[i]->fHubCentra.size())+4+j << "]" << endl;
+            iniFile << "[Figure" << (2*file.getHubs()[i]->getHubCentra().size())+4+j << "]" << endl;
 
             vector<double> zwart;
             zwart.push_back(0);
@@ -748,7 +752,7 @@ void Utils::Graphics(FileParser &file, int day, Distributie* distributie, bool c
 
         int figureNumber = 17;
 
-        for (unsigned int j = 0; j < file.fHubs[i]->fHubCentra.size(); ++j) {
+        for (unsigned int j = 0; j < file.getHubs()[i]->getHubCentra().size(); ++j) {
 
             int ladingen = file.getHubs()[i]->getHubCentra()[j]->getLadingen();
             //even

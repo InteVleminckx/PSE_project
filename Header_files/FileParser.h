@@ -76,7 +76,7 @@ public:
      * @functie : uitvoer
      * Deze functie maakt een output bestand aan met daarin een overzicht van het aantal fVaccinsInCentrum in de HUB,
      * het aantal fVaccinsInCentrum per centrum op dat moment en het aantal gevaccineerden per centrum.
-     * @param begin : (by default op true) Deze boolean parameter duidt aan of we
+     * @param begin : bool, (by default op true) deze boolean parameter duidt aan of we
      * uitvoerBegin.txt (bij true) (overzicht aan het begin van de simulatie) of
      * uitvoerEinde.txt (bij false) (overzicht aan het einde van de simulatie) moeten aanmaken.
      * REQUIRE(this->properlyInitialized(), "parsedFile wasn't initialized when calling uitvoer");

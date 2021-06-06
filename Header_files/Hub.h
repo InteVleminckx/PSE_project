@@ -90,6 +90,30 @@ public:
      */
     static int getAantalOngevaccineerdeInwonersInTotal(const vector<Hub*>& hubs);
 
+    /*
+     *@functie : getVaccinatiecentrumCounter
+     * Deze functie geeft de counter terug voor het aantal vaccinatiecentra (per hub).
+     * @return : int, counter voor het aantal vaccinatiecentra (per hub)
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getVaccinatiecentrumCounter");
+     */
+    int getVaccinatiecentrumCounter();
+
+    /*
+     *@functie : getVaccins
+     * Deze functie geeft de vector van vaccins terug.
+     * @return : vector<Vaccin*>, de vector van vaccins.
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getVaccins");
+     */
+    vector<Vaccin*> getVaccins();
+
+    /*
+     *@functie : getHubCentra
+     * Deze functie geeft de vector van centra terug.
+     * @return : vector<Vaccinatiecentrum*>, de vector van centra.
+     * REQUIRE(this->properlyInitialized(), "Hub wasn't initialized when calling getHubCentra");
+     */
+    vector<Vaccinatiecentrum*> getHubCentra();
+
     bool properlyInitialized();
 
 };

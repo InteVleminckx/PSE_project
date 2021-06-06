@@ -1,7 +1,7 @@
 /*
  * @author: Vleminckx Inte en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 07/04/2021
+ * @version: Specificatie 2.1
 */
 
 #include "../Header_files/FileParser.h"
@@ -125,7 +125,7 @@ void FileParser::parseXML() {
                     Vaccin* newVaccin = new Vaccin(typeString, leveringInt, intervalInt,
                         transportInt, hernieuwingInt, temperatuurInt);
 
-                    newHub->fVaccins.push_back(newVaccin);
+                    newHub->setVaccins(newVaccin); //
                     newHub->setAantalGeleverdeVaccins(typeString, leveringInt);
 
                 }
@@ -143,7 +143,8 @@ void FileParser::parseXML() {
                             string naam = elementCentra->FirstChild()->Value();
                             Vaccinatiecentrum* CENTRUM = new Vaccinatiecentrum;
                             CENTRUM->setNaam(naam);
-                            newHub->fHubCentra.push_back(CENTRUM);
+
+                            newHub->setHubCentra(CENTRUM); //
                         }
                     }
                 }
@@ -154,7 +155,7 @@ void FileParser::parseXML() {
                     Utils::checkValues(elem, elem1, true, testOutput, isTags);
                 }
             }
-            if (newHub->fHubCentra.empty()) {
+            if (newHub->getHubCentra().empty()) {
                 testOutput << "Er moet minstens 1 vaccinatiecentrum zijn.\n";
             }
 //            REQUIRE((!newHub->fHubCentra.empty()), "Er moet minstens 1 vaccininatiecentrum zijn.");
@@ -296,8 +297,8 @@ void FileParser::uitvoer(bool begin) {
         for (unsigned int i = 0; i < fHubs.size(); i++) {
 
             Output << "Hub " << i << ": Vaccins ( ";
-            for (unsigned int j = 0; j < fHubs[i]->fVaccins.size(); j++){
-                Output << fHubs[i]->fVaccins[j]->getType() << ": [" << fHubs[i]->fVaccins[j]->getAantalVaccins() << "] ";
+            for (unsigned int j = 0; j < fHubs[i]->getVaccins().size(); j++){
+                Output << fHubs[i]->getVaccins()[j]->getType() << ": [" << fHubs[i]->getVaccins()[j]->getAantalVaccins() << "] ";
             }
 
             Output << ")\n";

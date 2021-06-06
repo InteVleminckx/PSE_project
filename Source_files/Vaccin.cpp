@@ -1,6 +1,10 @@
-//
-// Created by inte on 20.03.21.
-//
+/*
+ * korte beschrijving:
+ * Klasse (Vaccin)
+ * @author: Inte Vleminckx en Karnaukh Maksim
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
+*/
 
 #include "../Header_files/Vaccin.h"
 

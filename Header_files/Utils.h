@@ -54,6 +54,7 @@ public:
      * Deze functie checkt of het meegegeven element een child bevat die de fNaam tag heeft.
      * @param tag : (string) string die wordt meegegeven.
      * @param elem : (TiXmlElement) element dat wordt meegegeven.
+     * @param isFirstchildElement : (bool) boolean die aangeeft of we in een first childe element zitten.
      * @return : true als de string (fNaam) een child is van het element, anders false.
      */
     static bool isTag(const string &tag, TiXmlElement *elem, bool isFirstchildElement, TiXmlNode* elem1);
@@ -77,19 +78,21 @@ public:
     /*
      * @functie: checkTags
      * We kunnen met deze functie alle controle tags ineens aanroepen, dan staat dit niet allemaal minden in onze code
-     * @param elem
-     * @param isFirstchildElement
-     * @param testOutput
+     * @param elem : (TiXmlElement) element dat wordt meegegeven.
+     * @param isFirstchildElement : (bool), boolean die aangeeft of we in een first childe element zitten.
+     * @param testOutput : (ofstream), bestand met de error codes waarnaar de errors worden weggeschreven.
+     * @param elem1 : (TiXmlNode) node dat wordt meegegeven.
      */
     static vector<bool> checkTags(TiXmlElement *elem, bool isFirstchildElement, ofstream &testOutput, TiXmlNode* elem1);
 
 
     /*
      * @functie: checkValues
-     * We controleren hier of de values die tussen de 2 tags staat correct is
-     * @param elem
-     * @param isVaccins
-     * @param testOutput
+     * We controleren hier of de values die tussen de 2 tags staat correct is.
+     * @param elem : (TiXmlElement) element dat wordt meegegeven.
+     * @param elem1 : (TiXmlNode) node dat wordt meegegeven.
+     * @param isVaccins : (bool), boolean die aangeeft of we in de vaccins (tag) zitten.
+     * @param testOutput : (ofstream), bestand met de error codes waarnaar de errors worden weggeschreven.
      */
     static vector<bool> checkValues(TiXmlElement *elem, TiXmlNode* elem1, bool isVaccins, ofstream &testOutput,
         const vector<bool>& isTag);
@@ -97,7 +100,7 @@ public:
     /*
      * @functie : grafischeImpressie
      * Deze functie geeft in een percentage weer hoeveel mensen er gevaccineerd zijn en hoeveel vaccins er nog in een
-     * centra zit
+     * centra zit.
      * @param file : het geparste xml bestand, met alle huidige gegevens in
      */
     static void grafischeImpressie(FileParser &file);

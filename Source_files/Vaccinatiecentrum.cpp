@@ -1,7 +1,9 @@
 /*
+ * korte beschrijving:
+ * Klasse (Vaccinatiecentrum) om een vaccinatiecentrum aan te maken, en de vaccinaties in het centrum te regelen.
  * @author: Inte Vleminckx en Karnaukh Maksim
- * @date: 18/03/2021
- * @version: Specificatie 1.0
+ * @date: 07/06/2021
+ * @version: Specificatie 2.1
 */
 
 #include "../Header_files/Vaccinatiecentrum.h"
