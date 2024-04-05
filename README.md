@@ -1,7 +1,7 @@
 #project software engineering
 
-**Korte beschrijving:**
-Deze klasse checkt voor elke klasse of de functies erin werken met zelfgemaakte locale input (per functie).
+**Description:**
+Project: Simulation of vaccination centers and the distribution of vaccines.
 
 @author: Inte Vleminckx en Karnaukh Maksim
 
